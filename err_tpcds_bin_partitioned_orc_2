@@ -1,0 +1,1772 @@
+@@@sample-queries-tpcds/query12.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.014 seconds
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_item_sk, ws_ext_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_desc, i_item_id, i_class, i_category, i_current_price, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+OK
+Time taken: 6.413 seconds, Fetched: 192 row(s)
+@@@sample-queries-tpcds/query13.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.146 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_cdemo_sk, ss_ext_sales_price, ss_net_profit, ss_ext_wholesale_cost, ss_addr_sk, ss_store_sk, ss_hdemo_sk, ss_quantity, ss_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer_demographics, Columns: cd_demo_sk, cd_education_status, cd_marital_status
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_demo_sk, hd_dep_count
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_state, ca_address_sk, ca_country
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+OK
+Time taken: 6.815 seconds, Fetched: 199 row(s)
+@@@sample-queries-tpcds/query15.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.107 seconds
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_sales_price, cs_bill_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_current_addr_sk, c_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_zip, ca_state, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_qoy, d_year
+OK
+Time taken: 6.395 seconds, Fetched: 175 row(s)
+@@@sample-queries-tpcds/query17.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.019 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_ticket_number, ss_item_sk, ss_store_sk, ss_quantity
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_ticket_number, sr_item_sk, sr_return_quantity, sr_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_item_sk, cs_quantity, cs_bill_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_quarter_name, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_quarter_name, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_quarter_name, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_state, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_desc, i_item_id, i_item_sk
+OK
+Time taken: 11.399 seconds, Fetched: 406 row(s)
+@@@sample-queries-tpcds/query18.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.083 seconds
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_net_profit, cs_bill_cdemo_sk, cs_item_sk, cs_quantity, cs_sales_price, cs_coupon_amt, cs_list_price, cs_bill_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@customer_demographics, Columns: cd_demo_sk, cd_education_status, cd_dep_count, cd_gender
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_current_addr_sk, c_customer_sk, c_current_cdemo_sk, c_birth_month, c_birth_year
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_county, ca_state, ca_address_sk, ca_country
+No Stats for tpcds_bin_partitioned_orc_2@customer_demographics, Columns: cd_demo_sk
+OK
+Time taken: 6.955 seconds, Fetched: 250 row(s)
+@@@sample-queries-tpcds/query19.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.079 seconds
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_ext_sales_price, ss_item_sk, ss_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_manager_id, i_brand, i_manufact_id, i_brand_id, i_manufact, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_current_addr_sk, c_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_zip, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_zip, s_store_sk
+OK
+Time taken: 6.856 seconds, Fetched: 225 row(s)
+@@@sample-queries-tpcds/query20.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.078 seconds
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_ext_sales_price, cs_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_desc, i_item_id, i_class, i_category, i_current_price, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+OK
+Time taken: 6.416 seconds, Fetched: 192 row(s)
+@@@sample-queries-tpcds/query21.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.007 seconds
+No Stats for tpcds_bin_partitioned_orc_2@inventory, Columns: inv_quantity_on_hand, inv_warehouse_sk, inv_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@warehouse, Columns: w_warehouse_name, w_warehouse_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_current_price, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+OK
+Time taken: 4.215 seconds, Fetched: 170 row(s)
+@@@sample-queries-tpcds/query22.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.224 seconds
+No Stats for tpcds_bin_partitioned_orc_2@inventory, Columns: inv_quantity_on_hand, inv_warehouse_sk, inv_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_month_seq, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_class, i_category, i_brand, i_product_name, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@warehouse, Columns: w_warehouse_sk
+OK
+Time taken: 4.342 seconds, Fetched: 171 row(s)
+@@@sample-queries-tpcds/query24.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.065 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_ticket_number, ss_item_sk, ss_store_sk, ss_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_ticket_number, sr_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_zip, s_state, s_market_id, s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_manager_id, i_units, i_current_price, i_size, i_color, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_customer_sk, c_last_name, c_birth_country, c_first_name
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_zip, ca_state, ca_country
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_ticket_number, ss_item_sk, ss_store_sk, ss_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_ticket_number, sr_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_zip, s_state, s_market_id, s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_manager_id, i_units, i_current_price, i_size, i_color, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_customer_sk, c_last_name, c_birth_country, c_first_name
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_zip, ca_state, ca_country
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_ticket_number, ss_item_sk, ss_store_sk, ss_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_ticket_number, sr_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_zip, s_state, s_market_id, s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_manager_id, i_units, i_current_price, i_size, i_color, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_customer_sk, c_last_name, c_birth_country, c_first_name
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_zip, ca_state, ca_country
+Warning: Map Join MAPJOIN[201][bigTable=?] in task 'Stage-38:MAPRED' is a cross product
+Warning: Shuffle Join JOIN[137][tables = [$hdt$_0, $hdt$_1, $hdt$_2]] in Stage 'Stage-8:MAPRED' is a cross product
+Warning: Map Join MAPJOIN[202][bigTable=?] in task 'Stage-40:MAPRED' is a cross product
+Warning: Map Join MAPJOIN[203][bigTable=?] in task 'Stage-41:MAPRED' is a cross product
+Warning: Shuffle Join JOIN[134][tables = [$hdt$_0, $hdt$_1]] in Stage 'Stage-7:MAPRED' is a cross product
+OK
+Time taken: 10.532 seconds, Fetched: 874 row(s)
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_ticket_number, ss_item_sk, ss_store_sk, ss_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_ticket_number, sr_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_zip, s_state, s_market_id, s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_manager_id, i_units, i_current_price, i_size, i_color, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_customer_sk, c_last_name, c_birth_country, c_first_name
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_zip, ca_state, ca_country
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_ticket_number, ss_item_sk, ss_store_sk, ss_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_ticket_number, sr_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_zip, s_state, s_market_id, s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_manager_id, i_units, i_current_price, i_size, i_color, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_customer_sk, c_last_name, c_birth_country, c_first_name
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_zip, ca_state, ca_country
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_ticket_number, ss_item_sk, ss_store_sk, ss_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_ticket_number, sr_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_zip, s_state, s_market_id, s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_manager_id, i_units, i_current_price, i_size, i_color, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_customer_sk, c_last_name, c_birth_country, c_first_name
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_zip, ca_state, ca_country
+Warning: Map Join MAPJOIN[201][bigTable=?] in task 'Stage-38:MAPRED' is a cross product
+Warning: Shuffle Join JOIN[137][tables = [$hdt$_0, $hdt$_1, $hdt$_2]] in Stage 'Stage-8:MAPRED' is a cross product
+Warning: Map Join MAPJOIN[202][bigTable=?] in task 'Stage-40:MAPRED' is a cross product
+Warning: Map Join MAPJOIN[203][bigTable=?] in task 'Stage-41:MAPRED' is a cross product
+Warning: Shuffle Join JOIN[134][tables = [$hdt$_0, $hdt$_1]] in Stage 'Stage-7:MAPRED' is a cross product
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
+Query ID = wentingt_20180112083007_70913073-1db1-42ce-90d0-bc1b271752ba
+Total jobs = 13
+Launching Job 1 out of 13
+Number of reduce tasks not specified. Estimated from input data size: 2
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1515437644683_0297, Tracking URL = http://dc1master-dc1:8088/proxy/application_1515437644683_0297/
+Kill Command = /users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/bin/hadoop job  -kill job_1515437644683_0297
+Hadoop job information for Stage-1: number of mappers: 2; number of reducers: 2
+2018-01-12 08:30:29,157 Stage-1 map = 0%,  reduce = 0%
+2018-01-12 08:30:46,776 Stage-1 map = 9%,  reduce = 0%, Cumulative CPU 37.73 sec
+2018-01-12 08:30:51,934 Stage-1 map = 13%,  reduce = 0%, Cumulative CPU 77.46 sec
+2018-01-12 08:30:52,965 Stage-1 map = 17%,  reduce = 0%, Cumulative CPU 85.76 sec
+2018-01-12 08:30:58,116 Stage-1 map = 21%,  reduce = 0%, Cumulative CPU 97.82 sec
+2018-01-12 08:30:59,147 Stage-1 map = 26%,  reduce = 0%, Cumulative CPU 105.45 sec
+2018-01-12 08:31:04,300 Stage-1 map = 28%,  reduce = 0%, Cumulative CPU 119.47 sec
+2018-01-12 08:31:05,332 Stage-1 map = 34%,  reduce = 0%, Cumulative CPU 126.64 sec
+2018-01-12 08:31:10,475 Stage-1 map = 37%,  reduce = 0%, Cumulative CPU 139.79 sec
+2018-01-12 08:31:11,506 Stage-1 map = 42%,  reduce = 0%, Cumulative CPU 152.08 sec
+2018-01-12 08:31:16,652 Stage-1 map = 46%,  reduce = 0%, Cumulative CPU 162.99 sec
+2018-01-12 08:31:17,682 Stage-1 map = 51%,  reduce = 0%, Cumulative CPU 171.18 sec
+2018-01-12 08:31:22,824 Stage-1 map = 74%,  reduce = 0%, Cumulative CPU 191.15 sec
+2018-01-12 08:31:28,991 Stage-1 map = 77%,  reduce = 0%, Cumulative CPU 202.53 sec
+2018-01-12 08:31:34,136 Stage-1 map = 82%,  reduce = 0%, Cumulative CPU 216.36 sec
+2018-01-12 08:31:40,299 Stage-1 map = 86%,  reduce = 0%, Cumulative CPU 225.19 sec
+2018-01-12 08:31:44,415 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 229.71 sec
+2018-01-12 08:32:02,408 Stage-1 map = 100%,  reduce = 33%, Cumulative CPU 235.15 sec
+2018-01-12 08:32:03,478 Stage-1 map = 100%,  reduce = 42%, Cumulative CPU 236.46 sec
+2018-01-12 08:32:06,614 Stage-1 map = 100%,  reduce = 58%, Cumulative CPU 244.84 sec
+2018-01-12 08:32:08,672 Stage-1 map = 100%,  reduce = 84%, Cumulative CPU 252.44 sec
+2018-01-12 08:32:13,812 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 257.74 sec
+MapReduce Total cumulative CPU time: 4 minutes 17 seconds 740 msec
+Ended Job = job_1515437644683_0297
+Launching Job 2 out of 13
+Number of reduce tasks not specified. Estimated from input data size: 2
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1515437644683_0298, Tracking URL = http://dc1master-dc1:8088/proxy/application_1515437644683_0298/
+Kill Command = /users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/bin/hadoop job  -kill job_1515437644683_0298
+Hadoop job information for Stage-14: number of mappers: 2; number of reducers: 2
+2018-01-12 08:32:30,738 Stage-14 map = 0%,  reduce = 0%
+2018-01-12 08:32:49,270 Stage-14 map = 9%,  reduce = 0%, Cumulative CPU 55.6 sec
+2018-01-12 08:32:54,425 Stage-14 map = 17%,  reduce = 0%, Cumulative CPU 71.94 sec
+2018-01-12 08:33:00,608 Stage-14 map = 26%,  reduce = 0%, Cumulative CPU 89.58 sec
+2018-01-12 08:33:06,786 Stage-14 map = 32%,  reduce = 0%, Cumulative CPU 109.55 sec
+2018-01-12 08:33:12,954 Stage-14 map = 41%,  reduce = 0%, Cumulative CPU 126.79 sec
+2018-01-12 08:33:19,128 Stage-14 map = 50%,  reduce = 0%, Cumulative CPU 146.67 sec
+2018-01-12 08:33:25,301 Stage-14 map = 57%,  reduce = 0%, Cumulative CPU 165.98 sec
+2018-01-12 08:33:30,440 Stage-14 map = 76%,  reduce = 0%, Cumulative CPU 172.48 sec
+2018-01-12 08:33:31,471 Stage-14 map = 80%,  reduce = 0%, Cumulative CPU 178.8 sec
+2018-01-12 08:33:36,633 Stage-14 map = 83%,  reduce = 0%, Cumulative CPU 187.16 sec
+2018-01-12 08:33:42,801 Stage-14 map = 100%,  reduce = 0%, Cumulative CPU 193.12 sec
+2018-01-12 08:33:57,233 Stage-14 map = 100%,  reduce = 50%, Cumulative CPU 207.26 sec
+2018-01-12 08:34:00,316 Stage-14 map = 100%,  reduce = 89%, Cumulative CPU 217.86 sec
+2018-01-12 08:34:03,395 Stage-14 map = 100%,  reduce = 100%, Cumulative CPU 220.89 sec
+MapReduce Total cumulative CPU time: 3 minutes 40 seconds 890 msec
+Ended Job = job_1515437644683_0298
+Launching Job 3 out of 13
+Number of reduce tasks not specified. Estimated from input data size: 2
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1515437644683_0299, Tracking URL = http://dc1master-dc1:8088/proxy/application_1515437644683_0299/
+Kill Command = /users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/bin/hadoop job  -kill job_1515437644683_0299
+Hadoop job information for Stage-26: number of mappers: 2; number of reducers: 2
+2018-01-12 08:34:24,564 Stage-26 map = 0%,  reduce = 0%
+2018-01-12 08:34:42,093 Stage-26 map = 5%,  reduce = 0%, Cumulative CPU 28.09 sec
+2018-01-12 08:34:43,126 Stage-26 map = 9%,  reduce = 0%, Cumulative CPU 66.18 sec
+2018-01-12 08:34:48,275 Stage-26 map = 14%,  reduce = 0%, Cumulative CPU 74.01 sec
+2018-01-12 08:34:49,306 Stage-26 map = 18%,  reduce = 0%, Cumulative CPU 84.49 sec
+2018-01-12 08:34:54,456 Stage-26 map = 23%,  reduce = 0%, Cumulative CPU 92.66 sec
+2018-01-12 08:34:55,484 Stage-26 map = 28%,  reduce = 0%, Cumulative CPU 105.83 sec
+2018-01-12 08:35:00,626 Stage-26 map = 35%,  reduce = 0%, Cumulative CPU 124.65 sec
+2018-01-12 08:35:05,766 Stage-26 map = 40%,  reduce = 0%, Cumulative CPU 131.6 sec
+2018-01-12 08:35:06,803 Stage-26 map = 46%,  reduce = 0%, Cumulative CPU 144.66 sec
+2018-01-12 08:35:11,944 Stage-26 map = 51%,  reduce = 0%, Cumulative CPU 161.15 sec
+2018-01-12 08:35:12,975 Stage-26 map = 54%,  reduce = 0%, Cumulative CPU 174.63 sec
+2018-01-12 08:35:17,096 Stage-26 map = 73%,  reduce = 0%, Cumulative CPU 180.91 sec
+2018-01-12 08:35:19,154 Stage-26 map = 77%,  reduce = 0%, Cumulative CPU 190.14 sec
+2018-01-12 08:35:25,346 Stage-26 map = 82%,  reduce = 0%, Cumulative CPU 201.48 sec
+2018-01-12 08:35:31,518 Stage-26 map = 94%,  reduce = 0%, Cumulative CPU 207.66 sec
+2018-01-12 08:35:32,564 Stage-26 map = 100%,  reduce = 0%, Cumulative CPU 209.06 sec
+2018-01-12 08:35:51,132 Stage-26 map = 100%,  reduce = 17%, Cumulative CPU 211.87 sec
+2018-01-12 08:35:57,322 Stage-26 map = 100%,  reduce = 72%, Cumulative CPU 224.93 sec
+2018-01-12 08:36:00,411 Stage-26 map = 100%,  reduce = 83%, Cumulative CPU 228.32 sec
+2018-01-12 08:36:02,470 Stage-26 map = 100%,  reduce = 100%, Cumulative CPU 237.2 sec
+MapReduce Total cumulative CPU time: 3 minutes 57 seconds 200 msec
+Ended Job = job_1515437644683_0299
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+2018-01-12 08:36:10	Starting to launch local task to process map join;	maximum memory = 477626368
+2018-01-12 08:36:12	Dump the side-table for tag: 1 with group count: 4748 into file: file:/tmp/wentingt/e53411db-cc75-4c11-bece-0edc385486b8/hive_2018-01-12_08-30-07_694_1434100023102116564-1/-local-10031/HashTable-Stage-6/MapJoin-mapfile181--.hashtable
+2018-01-12 08:36:12	Uploaded 1 File to: file:/tmp/wentingt/e53411db-cc75-4c11-bece-0edc385486b8/hive_2018-01-12_08-30-07_694_1434100023102116564-1/-local-10031/HashTable-Stage-6/MapJoin-mapfile181--.hashtable (722992 bytes)
+2018-01-12 08:36:12	Dump the side-table for tag: 1 with group count: 144000 into file: file:/tmp/wentingt/e53411db-cc75-4c11-bece-0edc385486b8/hive_2018-01-12_08-30-07_694_1434100023102116564-1/-local-10031/HashTable-Stage-6/MapJoin-mapfile191--.hashtable
+2018-01-12 08:36:13	Uploaded 1 File to: file:/tmp/wentingt/e53411db-cc75-4c11-bece-0edc385486b8/hive_2018-01-12_08-30-07_694_1434100023102116564-1/-local-10031/HashTable-Stage-6/MapJoin-mapfile191--.hashtable (6439955 bytes)
+2018-01-12 08:36:13	Dump the side-table for tag: 1 with group count: 62 into file: file:/tmp/wentingt/e53411db-cc75-4c11-bece-0edc385486b8/hive_2018-01-12_08-30-07_694_1434100023102116564-1/-local-10031/HashTable-Stage-6/MapJoin-mapfile201--.hashtable
+2018-01-12 08:36:13	Uploaded 1 File to: file:/tmp/wentingt/e53411db-cc75-4c11-bece-0edc385486b8/hive_2018-01-12_08-30-07_694_1434100023102116564-1/-local-10031/HashTable-Stage-6/MapJoin-mapfile201--.hashtable (2529 bytes)
+2018-01-12 08:36:13	Dump the side-table for tag: 1 with group count: 1 into file: file:/tmp/wentingt/e53411db-cc75-4c11-bece-0edc385486b8/hive_2018-01-12_08-30-07_694_1434100023102116564-1/-local-10031/HashTable-Stage-6/MapJoin-mapfile211--.hashtable
+2018-01-12 08:36:13	Uploaded 1 File to: file:/tmp/wentingt/e53411db-cc75-4c11-bece-0edc385486b8/hive_2018-01-12_08-30-07_694_1434100023102116564-1/-local-10031/HashTable-Stage-6/MapJoin-mapfile211--.hashtable (293 bytes)
+2018-01-12 08:36:13	End of local task; Time Taken: 3.0 sec.
+Execution completed successfully
+MapredLocal task succeeded
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+2018-01-12 08:36:20	Starting to launch local task to process map join;	maximum memory = 477626368
+2018-01-12 08:36:23	Dump the side-table for tag: 1 with group count: 4748 into file: file:/tmp/wentingt/e53411db-cc75-4c11-bece-0edc385486b8/hive_2018-01-12_08-30-07_694_1434100023102116564-1/-local-10033/HashTable-Stage-19/MapJoin-mapfile221--.hashtable
+2018-01-12 08:36:23	Uploaded 1 File to: file:/tmp/wentingt/e53411db-cc75-4c11-bece-0edc385486b8/hive_2018-01-12_08-30-07_694_1434100023102116564-1/-local-10033/HashTable-Stage-19/MapJoin-mapfile221--.hashtable (722992 bytes)
+2018-01-12 08:36:23	Dump the side-table for tag: 1 with group count: 144000 into file: file:/tmp/wentingt/e53411db-cc75-4c11-bece-0edc385486b8/hive_2018-01-12_08-30-07_694_1434100023102116564-1/-local-10033/HashTable-Stage-19/MapJoin-mapfile231--.hashtable
+2018-01-12 08:36:23	Uploaded 1 File to: file:/tmp/wentingt/e53411db-cc75-4c11-bece-0edc385486b8/hive_2018-01-12_08-30-07_694_1434100023102116564-1/-local-10033/HashTable-Stage-19/MapJoin-mapfile231--.hashtable (6439955 bytes)
+2018-01-12 08:36:23	Dump the side-table for tag: 1 with group count: 26000 into file: file:/tmp/wentingt/e53411db-cc75-4c11-bece-0edc385486b8/hive_2018-01-12_08-30-07_694_1434100023102116564-1/-local-10033/HashTable-Stage-19/MapJoin-mapfile241--.hashtable
+2018-01-12 08:36:23	Uploaded 1 File to: file:/tmp/wentingt/e53411db-cc75-4c11-bece-0edc385486b8/hive_2018-01-12_08-30-07_694_1434100023102116564-1/-local-10033/HashTable-Stage-19/MapJoin-mapfile241--.hashtable (1120125 bytes)
+2018-01-12 08:36:23	Dump the side-table for tag: 1 with group count: 1 into file: file:/tmp/wentingt/e53411db-cc75-4c11-bece-0edc385486b8/hive_2018-01-12_08-30-07_694_1434100023102116564-1/-local-10033/HashTable-Stage-19/MapJoin-mapfile251--.hashtable
+2018-01-12 08:36:23	Uploaded 1 File to: file:/tmp/wentingt/e53411db-cc75-4c11-bece-0edc385486b8/hive_2018-01-12_08-30-07_694_1434100023102116564-1/-local-10033/HashTable-Stage-19/MapJoin-mapfile251--.hashtable (293 bytes)
+2018-01-12 08:36:23	End of local task; Time Taken: 3.085 sec.
+Execution completed successfully
+MapredLocal task succeeded
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+2018-01-12 08:36:31	Starting to launch local task to process map join;	maximum memory = 477626368
+2018-01-12 08:36:34	Dump the side-table for tag: 1 with group count: 4748 into file: file:/tmp/wentingt/e53411db-cc75-4c11-bece-0edc385486b8/hive_2018-01-12_08-30-07_694_1434100023102116564-1/-local-10035/HashTable-Stage-31/MapJoin-mapfile261--.hashtable
+2018-01-12 08:36:34	Uploaded 1 File to: file:/tmp/wentingt/e53411db-cc75-4c11-bece-0edc385486b8/hive_2018-01-12_08-30-07_694_1434100023102116564-1/-local-10035/HashTable-Stage-31/MapJoin-mapfile261--.hashtable (722992 bytes)
+2018-01-12 08:36:34	Dump the side-table for tag: 1 with group count: 144000 into file: file:/tmp/wentingt/e53411db-cc75-4c11-bece-0edc385486b8/hive_2018-01-12_08-30-07_694_1434100023102116564-1/-local-10035/HashTable-Stage-31/MapJoin-mapfile271--.hashtable
+2018-01-12 08:36:34	Uploaded 1 File to: file:/tmp/wentingt/e53411db-cc75-4c11-bece-0edc385486b8/hive_2018-01-12_08-30-07_694_1434100023102116564-1/-local-10035/HashTable-Stage-31/MapJoin-mapfile271--.hashtable (6439955 bytes)
+2018-01-12 08:36:34	Dump the side-table for tag: 1 with group count: 26000 into file: file:/tmp/wentingt/e53411db-cc75-4c11-bece-0edc385486b8/hive_2018-01-12_08-30-07_694_1434100023102116564-1/-local-10035/HashTable-Stage-31/MapJoin-mapfile281--.hashtable
+2018-01-12 08:36:34	Uploaded 1 File to: file:/tmp/wentingt/e53411db-cc75-4c11-bece-0edc385486b8/hive_2018-01-12_08-30-07_694_1434100023102116564-1/-local-10035/HashTable-Stage-31/MapJoin-mapfile281--.hashtable (1120125 bytes)
+2018-01-12 08:36:34	Dump the side-table for tag: 1 with group count: 1 into file: file:/tmp/wentingt/e53411db-cc75-4c11-bece-0edc385486b8/hive_2018-01-12_08-30-07_694_1434100023102116564-1/-local-10035/HashTable-Stage-31/MapJoin-mapfile291--.hashtable
+2018-01-12 08:36:34	Uploaded 1 File to: file:/tmp/wentingt/e53411db-cc75-4c11-bece-0edc385486b8/hive_2018-01-12_08-30-07_694_1434100023102116564-1/-local-10035/HashTable-Stage-31/MapJoin-mapfile291--.hashtable (293 bytes)
+2018-01-12 08:36:34	End of local task; Time Taken: 3.052 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 4 out of 13
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1515437644683_0300, Tracking URL = http://dc1master-dc1:8088/proxy/application_1515437644683_0300/
+Kill Command = /users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/bin/hadoop job  -kill job_1515437644683_0300
+Hadoop job information for Stage-6: number of mappers: 1; number of reducers: 1
+2018-01-12 08:36:48,235 Stage-6 map = 0%,  reduce = 0%
+2018-01-12 08:36:57,506 Stage-6 map = 100%,  reduce = 0%, Cumulative CPU 12.83 sec
+2018-01-12 08:37:04,728 Stage-6 map = 100%,  reduce = 100%, Cumulative CPU 16.21 sec
+MapReduce Total cumulative CPU time: 16 seconds 210 msec
+Ended Job = job_1515437644683_0300
+Launching Job 5 out of 13
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1515437644683_0301, Tracking URL = http://dc1master-dc1:8088/proxy/application_1515437644683_0301/
+Kill Command = /users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/bin/hadoop job  -kill job_1515437644683_0301
+Hadoop job information for Stage-19: number of mappers: 1; number of reducers: 1
+2018-01-12 08:37:19,355 Stage-19 map = 0%,  reduce = 0%
+2018-01-12 08:37:28,646 Stage-19 map = 100%,  reduce = 0%, Cumulative CPU 12.93 sec
+2018-01-12 08:37:36,894 Stage-19 map = 100%,  reduce = 100%, Cumulative CPU 16.39 sec
+MapReduce Total cumulative CPU time: 16 seconds 390 msec
+Ended Job = job_1515437644683_0301
+Launching Job 6 out of 13
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1515437644683_0302, Tracking URL = http://dc1master-dc1:8088/proxy/application_1515437644683_0302/
+Kill Command = /users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/bin/hadoop job  -kill job_1515437644683_0302
+Hadoop job information for Stage-31: number of mappers: 2; number of reducers: 1
+2018-01-12 08:37:50,734 Stage-31 map = 0%,  reduce = 0%
+2018-01-12 08:37:58,986 Stage-31 map = 50%,  reduce = 0%, Cumulative CPU 11.33 sec
+2018-01-12 08:38:00,020 Stage-31 map = 100%,  reduce = 0%, Cumulative CPU 22.94 sec
+2018-01-12 08:38:08,262 Stage-31 map = 100%,  reduce = 100%, Cumulative CPU 26.37 sec
+MapReduce Total cumulative CPU time: 26 seconds 370 msec
+Ended Job = job_1515437644683_0302
+Launching Job 7 out of 13
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1515437644683_0303, Tracking URL = http://dc1master-dc1:8088/proxy/application_1515437644683_0303/
+Kill Command = /users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/bin/hadoop job  -kill job_1515437644683_0303
+Hadoop job information for Stage-20: number of mappers: 1; number of reducers: 1
+2018-01-12 08:38:20,183 Stage-20 map = 0%,  reduce = 0%
+2018-01-12 08:38:27,412 Stage-20 map = 100%,  reduce = 0%, Cumulative CPU 3.55 sec
+2018-01-12 08:38:34,635 Stage-20 map = 100%,  reduce = 100%, Cumulative CPU 9.96 sec
+MapReduce Total cumulative CPU time: 9 seconds 960 msec
+Ended Job = job_1515437644683_0303
+Launching Job 8 out of 13
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1515437644683_0304, Tracking URL = http://dc1master-dc1:8088/proxy/application_1515437644683_0304/
+Kill Command = /users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/bin/hadoop job  -kill job_1515437644683_0304
+Hadoop job information for Stage-32: number of mappers: 1; number of reducers: 1
+2018-01-12 08:38:47,577 Stage-32 map = 0%,  reduce = 0%
+2018-01-12 08:38:54,814 Stage-32 map = 100%,  reduce = 0%, Cumulative CPU 2.41 sec
+2018-01-12 08:39:03,067 Stage-32 map = 100%,  reduce = 100%, Cumulative CPU 7.34 sec
+MapReduce Total cumulative CPU time: 7 seconds 340 msec
+Ended Job = job_1515437644683_0304
+Stage-56 is filtered out by condition resolver.
+Stage-57 is selected by condition resolver.
+Stage-7 is filtered out by condition resolver.
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+2018-01-12 08:39:10	Starting to launch local task to process map join;	maximum memory = 477626368
+2018-01-12 08:39:12	Dump the side-table for tag: 0 with group count: 0 into file: file:/tmp/wentingt/e53411db-cc75-4c11-bece-0edc385486b8/hive_2018-01-12_08-30-07_694_1434100023102116564-1/-local-10029/HashTable-Stage-41/MapJoin-mapfile170--.hashtable
+2018-01-12 08:39:12	Uploaded 1 File to: file:/tmp/wentingt/e53411db-cc75-4c11-bece-0edc385486b8/hive_2018-01-12_08-30-07_694_1434100023102116564-1/-local-10029/HashTable-Stage-41/MapJoin-mapfile170--.hashtable (260 bytes)
+2018-01-12 08:39:12	End of local task; Time Taken: 1.269 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 10 out of 13
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1515437644683_0305, Tracking URL = http://dc1master-dc1:8088/proxy/application_1515437644683_0305/
+Kill Command = /users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/bin/hadoop job  -kill job_1515437644683_0305
+Hadoop job information for Stage-41: number of mappers: 1; number of reducers: 0
+2018-01-12 08:39:26,112 Stage-41 map = 0%,  reduce = 0%
+2018-01-12 08:39:33,344 Stage-41 map = 100%,  reduce = 0%, Cumulative CPU 4.53 sec
+MapReduce Total cumulative CPU time: 4 seconds 530 msec
+Ended Job = job_1515437644683_0305
+Stage-55 is selected by condition resolver.
+Stage-8 is filtered out by condition resolver.
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+2018-01-12 08:39:41	Starting to launch local task to process map join;	maximum memory = 477626368
+2018-01-12 08:39:42	Dump the side-table for tag: 1 with group count: 1 into file: file:/tmp/wentingt/e53411db-cc75-4c11-bece-0edc385486b8/hive_2018-01-12_08-30-07_694_1434100023102116564-1/-local-10025/HashTable-Stage-38/MapJoin-mapfile151--.hashtable
+2018-01-12 08:39:42	Uploaded 1 File to: file:/tmp/wentingt/e53411db-cc75-4c11-bece-0edc385486b8/hive_2018-01-12_08-30-07_694_1434100023102116564-1/-local-10025/HashTable-Stage-38/MapJoin-mapfile151--.hashtable (277 bytes)
+2018-01-12 08:39:42	End of local task; Time Taken: 1.354 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 12 out of 13
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1515437644683_0306, Tracking URL = http://dc1master-dc1:8088/proxy/application_1515437644683_0306/
+Kill Command = /users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/bin/hadoop job  -kill job_1515437644683_0306
+Hadoop job information for Stage-38: number of mappers: 1; number of reducers: 0
+2018-01-12 08:39:56,138 Stage-38 map = 0%,  reduce = 0%
+2018-01-12 08:40:03,377 Stage-38 map = 100%,  reduce = 0%, Cumulative CPU 4.33 sec
+MapReduce Total cumulative CPU time: 4 seconds 330 msec
+Ended Job = job_1515437644683_0306
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 2  Reduce: 2   Cumulative CPU: 257.74 sec   HDFS Read: 105204585 HDFS Write: 15283393 SUCCESS
+Stage-Stage-14: Map: 2  Reduce: 2   Cumulative CPU: 220.89 sec   HDFS Read: 89826886 HDFS Write: 13162245 SUCCESS
+Stage-Stage-26: Map: 2  Reduce: 2   Cumulative CPU: 237.2 sec   HDFS Read: 105204621 HDFS Write: 15283393 SUCCESS
+Stage-Stage-6: Map: 1  Reduce: 1   Cumulative CPU: 16.21 sec   HDFS Read: 15311138 HDFS Write: 96 SUCCESS
+Stage-Stage-19: Map: 1  Reduce: 1   Cumulative CPU: 16.39 sec   HDFS Read: 13187470 HDFS Write: 114 SUCCESS
+Stage-Stage-31: Map: 2  Reduce: 1   Cumulative CPU: 26.37 sec   HDFS Read: 15328428 HDFS Write: 127 SUCCESS
+Stage-Stage-20: Map: 1  Reduce: 1   Cumulative CPU: 9.96 sec   HDFS Read: 4988 HDFS Write: 112 SUCCESS
+Stage-Stage-32: Map: 1  Reduce: 1   Cumulative CPU: 7.34 sec   HDFS Read: 5971 HDFS Write: 113 SUCCESS
+Stage-Stage-41: Map: 1   Cumulative CPU: 4.53 sec   HDFS Read: 3944 HDFS Write: 96 SUCCESS
+Stage-Stage-38: Map: 1   Cumulative CPU: 4.33 sec   HDFS Read: 5697 HDFS Write: 87 SUCCESS
+Total MapReduce CPU Time Spent: 13 minutes 20 seconds 960 msec
+OK
+Time taken: 597.796 seconds
+@@@sample-queries-tpcds/query25.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.039 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_net_profit, ss_ticket_number, ss_item_sk, ss_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_ticket_number, sr_net_loss, sr_item_sk, sr_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_net_profit, cs_item_sk, cs_bill_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_id, s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_desc, i_item_id, i_item_sk
+OK
+Time taken: 11.614 seconds, Fetched: 402 row(s)
+@@@sample-queries-tpcds/query26.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.121 seconds
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_bill_cdemo_sk, cs_item_sk, cs_quantity, cs_sales_price, cs_coupon_amt, cs_promo_sk, cs_list_price
+No Stats for tpcds_bin_partitioned_orc_2@customer_demographics, Columns: cd_demo_sk, cd_education_status, cd_marital_status, cd_gender
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@promotion, Columns: p_channel_event, p_channel_email, p_promo_sk
+OK
+Time taken: 6.599 seconds, Fetched: 194 row(s)
+@@@sample-queries-tpcds/query27.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.215 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_cdemo_sk, ss_item_sk, ss_coupon_amt, ss_store_sk, ss_quantity, ss_list_price, ss_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@customer_demographics, Columns: cd_demo_sk, cd_education_status, cd_marital_status, cd_gender
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_state, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+OK
+Time taken: 6.595 seconds, Fetched: 194 row(s)
+@@@sample-queries-tpcds/query28.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.1 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_wholesale_cost, ss_coupon_amt, ss_quantity, ss_list_price
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_wholesale_cost, ss_coupon_amt, ss_quantity, ss_list_price
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_wholesale_cost, ss_coupon_amt, ss_quantity, ss_list_price
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_wholesale_cost, ss_coupon_amt, ss_quantity, ss_list_price
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_wholesale_cost, ss_coupon_amt, ss_quantity, ss_list_price
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_wholesale_cost, ss_coupon_amt, ss_quantity, ss_list_price
+Warning: Map Join MAPJOIN[70][bigTable=?] in task 'Stage-8:MAPRED' is a cross product
+Warning: Map Join MAPJOIN[73][bigTable=?] in task 'Stage-11:MAPRED' is a cross product
+Warning: Map Join MAPJOIN[71][bigTable=?] in task 'Stage-9:MAPRED' is a cross product
+Warning: Map Join MAPJOIN[75][bigTable=?] in task 'Stage-13:MAPRED' is a cross product
+Warning: Map Join MAPJOIN[72][bigTable=?] in task 'Stage-10:MAPRED' is a cross product
+Warning: Map Join MAPJOIN[74][bigTable=?] in task 'Stage-12:MAPRED' is a cross product
+Warning: Shuffle Join JOIN[48][tables = [$hdt$_0, $hdt$_1, $hdt$_2, $hdt$_3, $hdt$_4, $hdt$_5]] in Stage 'Stage-2:MAPRED' is a cross product
+OK
+Time taken: 6.228 seconds, Fetched: 962 row(s)
+@@@sample-queries-tpcds/query29.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.08 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_ticket_number, ss_item_sk, ss_store_sk, ss_quantity
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_ticket_number, sr_item_sk, sr_return_quantity, sr_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_item_sk, cs_quantity, cs_bill_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_id, s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_desc, i_item_id, i_item_sk
+OK
+Time taken: 11.051 seconds, Fetched: 402 row(s)
+@@@sample-queries-tpcds/query31.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.882 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_ext_sales_price, ss_addr_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_qoy, d_year
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_county, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_ext_sales_price, ss_addr_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_qoy, d_year
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_county, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_ext_sales_price, ss_addr_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_qoy, d_year
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_county, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_ext_sales_price, ws_bill_addr_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_qoy, d_year
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_county, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_ext_sales_price, ws_bill_addr_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_qoy, d_year
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_county, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_ext_sales_price, ws_bill_addr_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_qoy, d_year
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_county, ca_address_sk
+OK
+Time taken: 11.547 seconds, Fetched: 1283 row(s)
+@@@sample-queries-tpcds/query32.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.198 seconds
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_item_sk, cs_ext_discount_amt
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_manufact_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_item_sk, cs_ext_discount_amt
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+OK
+Time taken: 7.022 seconds, Fetched: 446 row(s)
+@@@sample-queries-tpcds/query34.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.042 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_ticket_number, ss_store_sk, ss_hdemo_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_dom, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_sk, s_county
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_buy_potential, hd_demo_sk, hd_dep_count, hd_vehicle_count
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_salutation, c_preferred_cust_flag, c_customer_sk, c_last_name, c_first_name
+OK
+Time taken: 6.505 seconds, Fetched: 204 row(s)
+@@@sample-queries-tpcds/query39.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.918 seconds
+No Stats for tpcds_bin_partitioned_orc_2@inventory, Columns: inv_quantity_on_hand, inv_warehouse_sk, inv_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@warehouse, Columns: w_warehouse_name, w_warehouse_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@inventory, Columns: inv_quantity_on_hand, inv_warehouse_sk, inv_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@warehouse, Columns: w_warehouse_name, w_warehouse_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+OK
+Time taken: 5.09 seconds, Fetched: 439 row(s)
+No Stats for tpcds_bin_partitioned_orc_2@inventory, Columns: inv_quantity_on_hand, inv_warehouse_sk, inv_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@warehouse, Columns: w_warehouse_name, w_warehouse_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@inventory, Columns: inv_quantity_on_hand, inv_warehouse_sk, inv_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@warehouse, Columns: w_warehouse_name, w_warehouse_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
+Query ID = wentingt_20180112084310_328bdbbf-05c0-41fb-8833-9492d3eb908c
+Total jobs = 6
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+2018-01-12 08:43:18	Starting to launch local task to process map join;	maximum memory = 477626368
+2018-01-12 08:43:20	Dump the side-table for tag: 1 with group count: 31 into file: file:/tmp/wentingt/7e3d3095-2d52-40e3-97a5-1b7f3628b26a/hive_2018-01-12_08-43-10_101_5494533510893789575-1/-local-10017/HashTable-Stage-4/MapJoin-mapfile101--.hashtable
+2018-01-12 08:43:20	Uploaded 1 File to: file:/tmp/wentingt/7e3d3095-2d52-40e3-97a5-1b7f3628b26a/hive_2018-01-12_08-43-10_101_5494533510893789575-1/-local-10017/HashTable-Stage-4/MapJoin-mapfile101--.hashtable (914 bytes)
+2018-01-12 08:43:20	Dump the side-table for tag: 1 with group count: 5 into file: file:/tmp/wentingt/7e3d3095-2d52-40e3-97a5-1b7f3628b26a/hive_2018-01-12_08-43-10_101_5494533510893789575-1/-local-10017/HashTable-Stage-4/MapJoin-mapfile111--.hashtable
+2018-01-12 08:43:20	Uploaded 1 File to: file:/tmp/wentingt/7e3d3095-2d52-40e3-97a5-1b7f3628b26a/hive_2018-01-12_08-43-10_101_5494533510893789575-1/-local-10017/HashTable-Stage-4/MapJoin-mapfile111--.hashtable (430 bytes)
+2018-01-12 08:43:20	Dump the side-table for tag: 1 with group count: 26000 into file: file:/tmp/wentingt/7e3d3095-2d52-40e3-97a5-1b7f3628b26a/hive_2018-01-12_08-43-10_101_5494533510893789575-1/-local-10017/HashTable-Stage-4/MapJoin-mapfile121--.hashtable
+2018-01-12 08:43:20	Uploaded 1 File to: file:/tmp/wentingt/7e3d3095-2d52-40e3-97a5-1b7f3628b26a/hive_2018-01-12_08-43-10_101_5494533510893789575-1/-local-10017/HashTable-Stage-4/MapJoin-mapfile121--.hashtable (522416 bytes)
+2018-01-12 08:43:20	End of local task; Time Taken: 2.063 sec.
+Execution completed successfully
+MapredLocal task succeeded
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+2018-01-12 08:43:28	Starting to launch local task to process map join;	maximum memory = 477626368
+2018-01-12 08:43:30	Dump the side-table for tag: 1 with group count: 30 into file: file:/tmp/wentingt/7e3d3095-2d52-40e3-97a5-1b7f3628b26a/hive_2018-01-12_08-43-10_101_5494533510893789575-1/-local-10019/HashTable-Stage-13/MapJoin-mapfile131--.hashtable
+2018-01-12 08:43:30	Uploaded 1 File to: file:/tmp/wentingt/7e3d3095-2d52-40e3-97a5-1b7f3628b26a/hive_2018-01-12_08-43-10_101_5494533510893789575-1/-local-10019/HashTable-Stage-13/MapJoin-mapfile131--.hashtable (893 bytes)
+2018-01-12 08:43:30	Dump the side-table for tag: 1 with group count: 5 into file: file:/tmp/wentingt/7e3d3095-2d52-40e3-97a5-1b7f3628b26a/hive_2018-01-12_08-43-10_101_5494533510893789575-1/-local-10019/HashTable-Stage-13/MapJoin-mapfile141--.hashtable
+2018-01-12 08:43:30	Uploaded 1 File to: file:/tmp/wentingt/7e3d3095-2d52-40e3-97a5-1b7f3628b26a/hive_2018-01-12_08-43-10_101_5494533510893789575-1/-local-10019/HashTable-Stage-13/MapJoin-mapfile141--.hashtable (430 bytes)
+2018-01-12 08:43:30	Dump the side-table for tag: 1 with group count: 26000 into file: file:/tmp/wentingt/7e3d3095-2d52-40e3-97a5-1b7f3628b26a/hive_2018-01-12_08-43-10_101_5494533510893789575-1/-local-10019/HashTable-Stage-13/MapJoin-mapfile151--.hashtable
+2018-01-12 08:43:31	Uploaded 1 File to: file:/tmp/wentingt/7e3d3095-2d52-40e3-97a5-1b7f3628b26a/hive_2018-01-12_08-43-10_101_5494533510893789575-1/-local-10019/HashTable-Stage-13/MapJoin-mapfile151--.hashtable (522416 bytes)
+2018-01-12 08:43:31	End of local task; Time Taken: 2.184 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 6
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1515437644683_0307, Tracking URL = http://dc1master-dc1:8088/proxy/application_1515437644683_0307/
+Kill Command = /users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/bin/hadoop job  -kill job_1515437644683_0307
+Hadoop job information for Stage-4: number of mappers: 2; number of reducers: 1
+2018-01-12 08:43:45,719 Stage-4 map = 0%,  reduce = 0%
+2018-01-12 08:44:03,292 Stage-4 map = 61%,  reduce = 0%, Cumulative CPU 40.99 sec
+2018-01-12 08:44:08,450 Stage-4 map = 68%,  reduce = 0%, Cumulative CPU 48.15 sec
+2018-01-12 08:44:14,630 Stage-4 map = 75%,  reduce = 0%, Cumulative CPU 54.79 sec
+2018-01-12 08:44:20,803 Stage-4 map = 82%,  reduce = 0%, Cumulative CPU 61.28 sec
+2018-01-12 08:44:22,860 Stage-4 map = 100%,  reduce = 0%, Cumulative CPU 64.04 sec
+2018-01-12 08:44:32,163 Stage-4 map = 100%,  reduce = 100%, Cumulative CPU 72.57 sec
+MapReduce Total cumulative CPU time: 1 minutes 12 seconds 570 msec
+Ended Job = job_1515437644683_0307
+Launching Job 2 out of 6
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1515437644683_0308, Tracking URL = http://dc1master-dc1:8088/proxy/application_1515437644683_0308/
+Kill Command = /users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/bin/hadoop job  -kill job_1515437644683_0308
+Hadoop job information for Stage-13: number of mappers: 2; number of reducers: 1
+2018-01-12 08:44:44,583 Stage-13 map = 0%,  reduce = 0%
+2018-01-12 08:45:02,108 Stage-13 map = 50%,  reduce = 0%, Cumulative CPU 19.38 sec
+2018-01-12 08:45:03,144 Stage-13 map = 61%,  reduce = 0%, Cumulative CPU 40.78 sec
+2018-01-12 08:45:08,297 Stage-13 map = 68%,  reduce = 0%, Cumulative CPU 47.89 sec
+2018-01-12 08:45:14,477 Stage-13 map = 75%,  reduce = 0%, Cumulative CPU 54.46 sec
+2018-01-12 08:45:20,659 Stage-13 map = 81%,  reduce = 0%, Cumulative CPU 61.46 sec
+2018-01-12 08:45:23,753 Stage-13 map = 100%,  reduce = 0%, Cumulative CPU 64.44 sec
+2018-01-12 08:45:33,016 Stage-13 map = 100%,  reduce = 100%, Cumulative CPU 73.01 sec
+MapReduce Total cumulative CPU time: 1 minutes 13 seconds 10 msec
+Ended Job = job_1515437644683_0308
+Stage-26 is filtered out by condition resolver.
+Stage-27 is selected by condition resolver.
+Stage-5 is filtered out by condition resolver.
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+2018-01-12 08:45:40	Starting to launch local task to process map join;	maximum memory = 477626368
+2018-01-12 08:45:41	Dump the side-table for tag: 0 with group count: 180 into file: file:/tmp/wentingt/7e3d3095-2d52-40e3-97a5-1b7f3628b26a/hive_2018-01-12_08-43-10_101_5494533510893789575-1/-local-10015/HashTable-Stage-18/MapJoin-mapfile90--.hashtable
+2018-01-12 08:45:41	Uploaded 1 File to: file:/tmp/wentingt/7e3d3095-2d52-40e3-97a5-1b7f3628b26a/hive_2018-01-12_08-43-10_101_5494533510893789575-1/-local-10015/HashTable-Stage-18/MapJoin-mapfile90--.hashtable (7126 bytes)
+2018-01-12 08:45:41	End of local task; Time Taken: 1.264 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 4 out of 6
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1515437644683_0309, Tracking URL = http://dc1master-dc1:8088/proxy/application_1515437644683_0309/
+Kill Command = /users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/bin/hadoop job  -kill job_1515437644683_0309
+Hadoop job information for Stage-18: number of mappers: 1; number of reducers: 0
+2018-01-12 08:46:01,463 Stage-18 map = 0%,  reduce = 0%
+2018-01-12 08:46:08,691 Stage-18 map = 100%,  reduce = 0%, Cumulative CPU 4.75 sec
+MapReduce Total cumulative CPU time: 4 seconds 750 msec
+Ended Job = job_1515437644683_0309
+Launching Job 5 out of 6
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1515437644683_0310, Tracking URL = http://dc1master-dc1:8088/proxy/application_1515437644683_0310/
+Kill Command = /users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/bin/hadoop job  -kill job_1515437644683_0310
+Hadoop job information for Stage-6: number of mappers: 1; number of reducers: 1
+2018-01-12 08:46:20,448 Stage-6 map = 0%,  reduce = 0%
+2018-01-12 08:46:26,642 Stage-6 map = 100%,  reduce = 0%, Cumulative CPU 2.51 sec
+2018-01-12 08:46:33,857 Stage-6 map = 100%,  reduce = 100%, Cumulative CPU 6.07 sec
+MapReduce Total cumulative CPU time: 6 seconds 70 msec
+Ended Job = job_1515437644683_0310
+MapReduce Jobs Launched: 
+Stage-Stage-4: Map: 2  Reduce: 1   Cumulative CPU: 72.57 sec   HDFS Read: 30859286 HDFS Write: 6749 SUCCESS
+Stage-Stage-13: Map: 2  Reduce: 1   Cumulative CPU: 73.01 sec   HDFS Read: 30859071 HDFS Write: 118437 SUCCESS
+Stage-Stage-18: Map: 1   Cumulative CPU: 4.75 sec   HDFS Read: 123282 HDFS Write: 495 SUCCESS
+Stage-Stage-6: Map: 1  Reduce: 1   Cumulative CPU: 6.07 sec   HDFS Read: 8348 HDFS Write: 684 SUCCESS
+Total MapReduce CPU Time Spent: 2 minutes 36 seconds 400 msec
+OK
+Time taken: 204.844 seconds, Fetched: 7 row(s)
+@@@sample-queries-tpcds/query3.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.212 seconds
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_ext_sales_price, ss_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_brand, i_manufact_id, i_brand_id, i_item_sk
+OK
+Time taken: 6.42 seconds, Fetched: 141 row(s)
+@@@sample-queries-tpcds/query40.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.151 seconds
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_warehouse_sk, cs_order_number, cs_item_sk, cs_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@catalog_returns, Columns: cr_refunded_cash, cr_order_number, cr_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@warehouse, Columns: w_state, w_warehouse_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_current_price, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+OK
+Time taken: 8.504 seconds, Fetched: 211 row(s)
+@@@sample-queries-tpcds/query42.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.968 seconds
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_ext_sales_price, ss_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_manager_id, i_category, i_category_id, i_item_sk
+OK
+Time taken: 6.391 seconds, Fetched: 144 row(s)
+@@@sample-queries-tpcds/query43.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.232 seconds
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_day_name, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_store_sk, ss_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_id, s_store_name, s_gmt_offset, s_store_sk
+OK
+Time taken: 6.352 seconds, Fetched: 141 row(s)
+@@@sample-queries-tpcds/query45.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.247 seconds
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_item_sk, ws_bill_customer_sk, ws_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_current_addr_sk, c_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_county, ca_zip, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_qoy, d_year
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+OK
+Time taken: 6.842 seconds, Fetched: 374 row(s)
+@@@sample-queries-tpcds/query46.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.961 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_net_profit, ss_addr_sk, ss_ticket_number, ss_coupon_amt, ss_store_sk, ss_hdemo_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_dow, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_city, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_demo_sk, hd_dep_count, hd_vehicle_count
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_city, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_current_addr_sk, c_customer_sk, c_last_name, c_first_name
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_city, ca_address_sk
+OK
+Time taken: 6.881 seconds, Fetched: 264 row(s)
+@@@sample-queries-tpcds/query48.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.335 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_cdemo_sk, ss_net_profit, ss_addr_sk, ss_store_sk, ss_quantity, ss_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer_demographics, Columns: cd_demo_sk, cd_education_status, cd_marital_status
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_state, ca_address_sk, ca_country
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+OK
+Time taken: 6.673 seconds, Fetched: 166 row(s)
+@@@sample-queries-tpcds/query49.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.218 seconds
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_order_number, ws_item_sk, ws_quantity, ws_net_profit, ws_net_paid
+No Stats for tpcds_bin_partitioned_orc_2@web_returns, Columns: wr_order_number, wr_return_amt, wr_return_quantity, wr_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_order_number, cs_net_paid, cs_net_profit, cs_item_sk, cs_quantity
+No Stats for tpcds_bin_partitioned_orc_2@catalog_returns, Columns: cr_order_number, cr_return_quantity, cr_item_sk, cr_return_amount
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_net_profit, ss_ticket_number, ss_net_paid, ss_item_sk, ss_quantity
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_ticket_number, sr_return_amt, sr_item_sk, sr_return_quantity
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+OK
+Time taken: 17.348 seconds, Fetched: 776 row(s)
+@@@sample-queries-tpcds/query50.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.134 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_ticket_number, ss_item_sk, ss_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_ticket_number, sr_item_sk, sr_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_city, s_street_number, s_zip, s_state, s_store_name, s_suite_number, s_street_name, s_company_id, s_store_sk, s_street_type, s_county
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+OK
+Time taken: 8.764 seconds, Fetched: 211 row(s)
+@@@sample-queries-tpcds/query51.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.027 seconds
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_item_sk, ws_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_month_seq, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_item_sk, ss_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_month_seq, d_date_sk
+OK
+Time taken: 8.519 seconds, Fetched: 331 row(s)
+@@@sample-queries-tpcds/query52.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.273 seconds
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_ext_sales_price, ss_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_manager_id, i_brand, i_brand_id, i_item_sk
+OK
+Time taken: 6.228 seconds, Fetched: 145 row(s)
+@@@sample-queries-tpcds/query54.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.141 seconds
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_item_sk, cs_bill_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_item_sk, ws_bill_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_class, i_category, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_current_addr_sk, c_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_ext_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_county, ca_state, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_state, s_county
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_month_seq, d_date_sk
+OK
+Time taken: 11.101 seconds, Fetched: 503 row(s)
+@@@sample-queries-tpcds/query55.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.995 seconds
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_ext_sales_price, ss_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_manager_id, i_brand, i_brand_id, i_item_sk
+OK
+Time taken: 6.145 seconds, Fetched: 141 row(s)
+@@@sample-queries-tpcds/query56.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.159 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_ext_sales_price, ss_addr_sk, ss_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_address_sk, ca_gmt_offset
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_color
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_ext_sales_price, cs_item_sk, cs_bill_addr_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_address_sk, ca_gmt_offset
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_color
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_item_sk, ws_ext_sales_price, ws_bill_addr_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_address_sk, ca_gmt_offset
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_color
+OK
+Time taken: 11.583 seconds, Fetched: 1030 row(s)
+@@@sample-queries-tpcds/query58.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.927 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_ext_sales_price, ss_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_week_seq
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_week_seq
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_ext_sales_price, cs_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_week_seq
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_week_seq
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_item_sk, ws_ext_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_week_seq
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_week_seq
+OK
+Time taken: 11.826 seconds, Fetched: 1197 row(s)
+@@@sample-queries-tpcds/query60.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.917 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_ext_sales_price, ss_addr_sk, ss_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_address_sk, ca_gmt_offset
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_category
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_ext_sales_price, cs_item_sk, cs_bill_addr_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_address_sk, ca_gmt_offset
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_category
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_item_sk, ws_ext_sales_price, ws_bill_addr_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_address_sk, ca_gmt_offset
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_category
+OK
+Time taken: 11.657 seconds, Fetched: 1032 row(s)
+@@@sample-queries-tpcds/query64.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.924 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_cdemo_sk, ss_promo_sk, ss_addr_sk, ss_ticket_number, ss_wholesale_cost, ss_item_sk, ss_coupon_amt, ss_store_sk, ss_hdemo_sk, ss_list_price
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_ticket_number, sr_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_current_hdemo_sk, c_first_sales_date_sk, c_current_addr_sk, c_customer_sk, c_current_cdemo_sk, c_first_shipto_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_zip, s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer_demographics, Columns: cd_demo_sk, cd_marital_status
+No Stats for tpcds_bin_partitioned_orc_2@customer_demographics, Columns: cd_demo_sk, cd_marital_status
+No Stats for tpcds_bin_partitioned_orc_2@promotion, Columns: p_promo_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_income_band_sk, hd_demo_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_income_band_sk, hd_demo_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_street_number, ca_zip, ca_city, ca_street_name, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_street_number, ca_zip, ca_city, ca_street_name, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@income_band, Columns: ib_income_band_sk
+No Stats for tpcds_bin_partitioned_orc_2@income_band, Columns: ib_income_band_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_current_price, i_color, i_product_name, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_order_number, cs_item_sk, cs_ext_list_price
+No Stats for tpcds_bin_partitioned_orc_2@catalog_returns, Columns: cr_refunded_cash, cr_order_number, cr_reversed_charge, cr_item_sk, cr_store_credit
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_cdemo_sk, ss_promo_sk, ss_addr_sk, ss_ticket_number, ss_wholesale_cost, ss_item_sk, ss_coupon_amt, ss_store_sk, ss_hdemo_sk, ss_list_price
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_ticket_number, sr_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_current_hdemo_sk, c_first_sales_date_sk, c_current_addr_sk, c_customer_sk, c_current_cdemo_sk, c_first_shipto_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_zip, s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer_demographics, Columns: cd_demo_sk, cd_marital_status
+No Stats for tpcds_bin_partitioned_orc_2@customer_demographics, Columns: cd_demo_sk, cd_marital_status
+No Stats for tpcds_bin_partitioned_orc_2@promotion, Columns: p_promo_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_income_band_sk, hd_demo_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_income_band_sk, hd_demo_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_street_number, ca_zip, ca_city, ca_street_name, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_street_number, ca_zip, ca_city, ca_street_name, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@income_band, Columns: ib_income_band_sk
+No Stats for tpcds_bin_partitioned_orc_2@income_band, Columns: ib_income_band_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_current_price, i_color, i_product_name, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_order_number, cs_item_sk, cs_ext_list_price
+No Stats for tpcds_bin_partitioned_orc_2@catalog_returns, Columns: cr_refunded_cash, cr_order_number, cr_reversed_charge, cr_item_sk, cr_store_credit
+OK
+Time taken: 30.056 seconds, Fetched: 1840 row(s)
+@@@sample-queries-tpcds/query65.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.916 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_desc, i_brand, i_wholesale_cost, i_current_price, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_item_sk, ss_store_sk, ss_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_month_seq, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_item_sk, ss_store_sk, ss_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_month_seq, d_date_sk
+Warning: Map Join MAPJOIN[72][bigTable=?] in task 'Stage-14:MAPRED' is a cross product
+OK
+Time taken: 6.948 seconds, Fetched: 408 row(s)
+@@@sample-queries-tpcds/query66.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.232 seconds
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_warehouse_sk, ws_ship_mode_sk, ws_quantity, ws_sold_time_sk, ws_sales_price, ws_net_paid_inc_tax
+No Stats for tpcds_bin_partitioned_orc_2@warehouse, Columns: w_warehouse_name, w_warehouse_sq_ft, w_state, w_country, w_city, w_warehouse_sk, w_county
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@time_dim, Columns: t_time, t_time_sk
+No Stats for tpcds_bin_partitioned_orc_2@ship_mode, Columns: sm_ship_mode_sk, sm_carrier
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_warehouse_sk, cs_ext_sales_price, cs_ship_mode_sk, cs_quantity, cs_sold_time_sk, cs_net_paid_inc_ship_tax
+No Stats for tpcds_bin_partitioned_orc_2@warehouse, Columns: w_warehouse_name, w_warehouse_sq_ft, w_state, w_country, w_city, w_warehouse_sk, w_county
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@time_dim, Columns: t_time, t_time_sk
+No Stats for tpcds_bin_partitioned_orc_2@ship_mode, Columns: sm_ship_mode_sk, sm_carrier
+OK
+Time taken: 9.747 seconds, Fetched: 411 row(s)
+@@@sample-queries-tpcds/query67.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.214 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_item_sk, ss_store_sk, ss_quantity, ss_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_month_seq, d_date_sk, d_qoy, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_id, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_class, i_category, i_brand, i_product_name, i_item_sk
+OK
+Time taken: 6.595 seconds, Fetched: 223 row(s)
+@@@sample-queries-tpcds/query68.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.957 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_ext_sales_price, ss_addr_sk, ss_ticket_number, ss_ext_list_price, ss_ext_tax, ss_store_sk, ss_hdemo_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_dom, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_city, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_demo_sk, hd_dep_count, hd_vehicle_count
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_city, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_current_addr_sk, c_customer_sk, c_last_name, c_first_name
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_city, ca_address_sk
+OK
+Time taken: 6.858 seconds, Fetched: 264 row(s)
+@@@sample-queries-tpcds/query70.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.151 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_net_profit, ss_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_month_seq, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_state, s_store_sk, s_county
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_net_profit, ss_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_state, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_month_seq, d_date_sk
+OK
+Time taken: 7.223 seconds, Fetched: 449 row(s)
+@@@sample-queries-tpcds/query71.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.051 seconds
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_manager_id, i_brand, i_brand_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_item_sk, ws_ext_sales_price, ws_sold_time_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_ext_sales_price, cs_item_sk, cs_sold_time_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_sold_time_sk, ss_ext_sales_price, ss_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@time_dim, Columns: t_hour, t_meal_time, t_minute, t_time_sk
+OK
+Time taken: 10.743 seconds, Fetched: 301 row(s)
+@@@sample-queries-tpcds/query72.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.013 seconds
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_order_number, cs_ship_date_sk, cs_bill_cdemo_sk, cs_item_sk, cs_quantity, cs_bill_hdemo_sk, cs_promo_sk
+No Stats for tpcds_bin_partitioned_orc_2@inventory, Columns: inv_quantity_on_hand, inv_warehouse_sk, inv_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@warehouse, Columns: w_warehouse_name, w_warehouse_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_desc, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer_demographics, Columns: cd_demo_sk, cd_marital_status
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_buy_potential, hd_demo_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk, d_week_seq, d_year
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_week_seq
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@promotion, Columns: p_promo_sk
+No Stats for tpcds_bin_partitioned_orc_2@catalog_returns, Columns: cr_order_number, cr_item_sk
+OK
+Time taken: 9.873 seconds, Fetched: 465 row(s)
+@@@sample-queries-tpcds/query73.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.882 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_ticket_number, ss_store_sk, ss_hdemo_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_dom, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_sk, s_county
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_buy_potential, hd_demo_sk, hd_dep_count, hd_vehicle_count
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_salutation, c_preferred_cust_flag, c_customer_sk, c_last_name, c_first_name
+OK
+Time taken: 6.625 seconds, Fetched: 204 row(s)
+@@@sample-queries-tpcds/query75.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.235 seconds
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_order_number, cs_ext_sales_price, cs_item_sk, cs_quantity
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_class_id, i_category, i_category_id, i_manufact_id, i_brand_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@catalog_returns, Columns: cr_order_number, cr_return_quantity, cr_item_sk, cr_return_amount
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_ext_sales_price, ss_ticket_number, ss_item_sk, ss_quantity
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_class_id, i_category, i_category_id, i_manufact_id, i_brand_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_ticket_number, sr_return_amt, sr_item_sk, sr_return_quantity
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_order_number, ws_item_sk, ws_quantity, ws_ext_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_class_id, i_category, i_category_id, i_manufact_id, i_brand_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@web_returns, Columns: wr_order_number, wr_return_amt, wr_return_quantity, wr_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_order_number, cs_ext_sales_price, cs_item_sk, cs_quantity
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_class_id, i_category, i_category_id, i_manufact_id, i_brand_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@catalog_returns, Columns: cr_order_number, cr_return_quantity, cr_item_sk, cr_return_amount
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_ext_sales_price, ss_ticket_number, ss_item_sk, ss_quantity
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_class_id, i_category, i_category_id, i_manufact_id, i_brand_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_ticket_number, sr_return_amt, sr_item_sk, sr_return_quantity
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_order_number, ws_item_sk, ws_quantity, ws_ext_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_class_id, i_category, i_category_id, i_manufact_id, i_brand_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@web_returns, Columns: wr_order_number, wr_return_amt, wr_return_quantity, wr_item_sk
+OK
+Time taken: 19.096 seconds, Fetched: 1388 row(s)
+@@@sample-queries-tpcds/query76.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.989 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_ext_sales_price, ss_addr_sk, ss_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_category, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_qoy, d_year
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_item_sk, ws_ext_sales_price, ws_web_page_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_category, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_qoy, d_year
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_warehouse_sk, cs_ext_sales_price, cs_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_category, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_qoy, d_year
+OK
+Time taken: 10.69 seconds, Fetched: 306 row(s)
+@@@sample-queries-tpcds/query79.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.0 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_net_profit, ss_addr_sk, ss_ticket_number, ss_coupon_amt, ss_store_sk, ss_hdemo_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_dow, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_city, s_number_employees, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_demo_sk, hd_dep_count, hd_vehicle_count
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_customer_sk, c_last_name, c_first_name
+OK
+Time taken: 6.706 seconds, Fetched: 209 row(s)
+@@@sample-queries-tpcds/query7.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.267 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_cdemo_sk, ss_promo_sk, ss_item_sk, ss_coupon_amt, ss_quantity, ss_list_price, ss_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@customer_demographics, Columns: cd_demo_sk, cd_education_status, cd_marital_status, cd_gender
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@promotion, Columns: p_channel_event, p_channel_email, p_promo_sk
+OK
+Time taken: 6.569 seconds, Fetched: 194 row(s)
+@@@sample-queries-tpcds/query80.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.161 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_promo_sk, ss_ext_sales_price, ss_net_profit, ss_ticket_number, ss_item_sk, ss_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_ticket_number, sr_return_amt, sr_net_loss, sr_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_id, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_current_price, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@promotion, Columns: p_promo_sk, p_channel_tv
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_catalog_page_sk, cs_order_number, cs_net_profit, cs_ext_sales_price, cs_item_sk, cs_promo_sk
+No Stats for tpcds_bin_partitioned_orc_2@catalog_returns, Columns: cr_order_number, cr_net_loss, cr_item_sk, cr_return_amount
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@catalog_page, Columns: cp_catalog_page_sk, cp_catalog_page_id
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_current_price, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@promotion, Columns: p_promo_sk, p_channel_tv
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_order_number, ws_item_sk, ws_promo_sk, ws_ext_sales_price, ws_web_site_sk, ws_net_profit
+No Stats for tpcds_bin_partitioned_orc_2@web_returns, Columns: wr_order_number, wr_net_loss, wr_return_amt, wr_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@web_site, Columns: web_site_sk, web_site_id
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_current_price, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@promotion, Columns: p_promo_sk, p_channel_tv
+OK
+Time taken: 16.677 seconds, Fetched: 776 row(s)
+@@@sample-queries-tpcds/query82.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.931 seconds
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_desc, i_item_id, i_manufact_id, i_current_price, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@inventory, Columns: inv_quantity_on_hand, inv_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_item_sk
+OK
+Time taken: 5.992 seconds, Fetched: 169 row(s)
+@@@sample-queries-tpcds/query83.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.322 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_item_sk, sr_return_quantity
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_week_seq
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_week_seq
+No Stats for tpcds_bin_partitioned_orc_2@catalog_returns, Columns: cr_return_quantity, cr_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_week_seq
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_week_seq
+No Stats for tpcds_bin_partitioned_orc_2@web_returns, Columns: wr_return_quantity, wr_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_week_seq
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_week_seq
+OK
+Time taken: 13.384 seconds, Fetched: 1288 row(s)
+@@@sample-queries-tpcds/query84.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.837 seconds
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_current_hdemo_sk, c_current_addr_sk, c_last_name, c_customer_id, c_current_cdemo_sk, c_first_name
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_city, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer_demographics, Columns: cd_demo_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_income_band_sk, hd_demo_sk
+No Stats for tpcds_bin_partitioned_orc_2@income_band, Columns: ib_income_band_sk, ib_lower_bound, ib_upper_bound
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_cdemo_sk
+OK
+Time taken: 6.64 seconds, Fetched: 355 row(s)
+@@@sample-queries-tpcds/query85.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.849 seconds
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_order_number, ws_item_sk, ws_quantity, ws_net_profit, ws_sales_price, ws_web_page_sk
+No Stats for tpcds_bin_partitioned_orc_2@web_returns, Columns: wr_order_number, wr_fee, wr_refunded_addr_sk, wr_returning_cdemo_sk, wr_refunded_cash, wr_reason_sk, wr_item_sk, wr_refunded_cdemo_sk
+No Stats for tpcds_bin_partitioned_orc_2@web_page, Columns: wp_web_page_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer_demographics, Columns: cd_demo_sk, cd_education_status, cd_marital_status
+No Stats for tpcds_bin_partitioned_orc_2@customer_demographics, Columns: cd_demo_sk, cd_education_status, cd_marital_status
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_state, ca_address_sk, ca_country
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@reason, Columns: r_reason_desc, r_reason_sk
+OK
+Time taken: 9.927 seconds, Fetched: 364 row(s)
+@@@sample-queries-tpcds/query87.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.067 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_month_seq, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_customer_sk, c_last_name, c_first_name
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_bill_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_month_seq, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_customer_sk, c_last_name, c_first_name
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_bill_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_month_seq, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_customer_sk, c_last_name, c_first_name
+OK
+Time taken: 10.715 seconds, Fetched: 516 row(s)
+@@@sample-queries-tpcds/query88.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.857 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_sold_time_sk, ss_store_sk, ss_hdemo_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_demo_sk, hd_dep_count, hd_vehicle_count
+No Stats for tpcds_bin_partitioned_orc_2@time_dim, Columns: t_hour, t_minute, t_time_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_sold_time_sk, ss_store_sk, ss_hdemo_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_demo_sk, hd_dep_count, hd_vehicle_count
+No Stats for tpcds_bin_partitioned_orc_2@time_dim, Columns: t_hour, t_minute, t_time_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_sold_time_sk, ss_store_sk, ss_hdemo_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_demo_sk, hd_dep_count, hd_vehicle_count
+No Stats for tpcds_bin_partitioned_orc_2@time_dim, Columns: t_hour, t_minute, t_time_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_sold_time_sk, ss_store_sk, ss_hdemo_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_demo_sk, hd_dep_count, hd_vehicle_count
+No Stats for tpcds_bin_partitioned_orc_2@time_dim, Columns: t_hour, t_minute, t_time_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_sold_time_sk, ss_store_sk, ss_hdemo_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_demo_sk, hd_dep_count, hd_vehicle_count
+No Stats for tpcds_bin_partitioned_orc_2@time_dim, Columns: t_hour, t_minute, t_time_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_sold_time_sk, ss_store_sk, ss_hdemo_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_demo_sk, hd_dep_count, hd_vehicle_count
+No Stats for tpcds_bin_partitioned_orc_2@time_dim, Columns: t_hour, t_minute, t_time_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_sold_time_sk, ss_store_sk, ss_hdemo_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_demo_sk, hd_dep_count, hd_vehicle_count
+No Stats for tpcds_bin_partitioned_orc_2@time_dim, Columns: t_hour, t_minute, t_time_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_sold_time_sk, ss_store_sk, ss_hdemo_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_demo_sk, hd_dep_count, hd_vehicle_count
+No Stats for tpcds_bin_partitioned_orc_2@time_dim, Columns: t_hour, t_minute, t_time_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_name, s_store_sk
+Warning: Map Join MAPJOIN[317][bigTable=?] in task 'Stage-60:MAPRED' is a cross product
+Warning: Map Join MAPJOIN[318][bigTable=?] in task 'Stage-61:MAPRED' is a cross product
+Warning: Map Join MAPJOIN[319][bigTable=?] in task 'Stage-62:MAPRED' is a cross product
+Warning: Map Join MAPJOIN[315][bigTable=?] in task 'Stage-58:MAPRED' is a cross product
+Warning: Map Join MAPJOIN[316][bigTable=?] in task 'Stage-59:MAPRED' is a cross product
+Warning: Map Join MAPJOIN[322][bigTable=?] in task 'Stage-65:MAPRED' is a cross product
+Warning: Map Join MAPJOIN[320][bigTable=?] in task 'Stage-63:MAPRED' is a cross product
+Warning: Map Join MAPJOIN[321][bigTable=?] in task 'Stage-64:MAPRED' is a cross product
+Warning: Shuffle Join JOIN[216][tables = [$hdt$_0, $hdt$_1, $hdt$_2, $hdt$_3, $hdt$_4, $hdt$_5, $hdt$_6, $hdt$_7]] in Stage 'Stage-5:MAPRED' is a cross product
+OK
+Time taken: 10.382 seconds, Fetched: 2223 row(s)
+@@@sample-queries-tpcds/query89.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.906 seconds
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_class, i_category, i_brand, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_item_sk, ss_store_sk, ss_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_company_name, s_store_name, s_store_sk
+OK
+Time taken: 6.48 seconds, Fetched: 225 row(s)
+@@@sample-queries-tpcds/query90.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.831 seconds
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_ship_hdemo_sk, ws_sold_time_sk, ws_web_page_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_demo_sk, hd_dep_count
+No Stats for tpcds_bin_partitioned_orc_2@time_dim, Columns: t_hour, t_time_sk
+No Stats for tpcds_bin_partitioned_orc_2@web_page, Columns: wp_char_count, wp_web_page_sk
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_ship_hdemo_sk, ws_sold_time_sk, ws_web_page_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_demo_sk, hd_dep_count
+No Stats for tpcds_bin_partitioned_orc_2@time_dim, Columns: t_hour, t_time_sk
+No Stats for tpcds_bin_partitioned_orc_2@web_page, Columns: wp_char_count, wp_web_page_sk
+Warning: Map Join MAPJOIN[87][bigTable=?] in task 'Stage-18:MAPRED' is a cross product
+Warning: Map Join MAPJOIN[86][bigTable=?] in task 'Stage-17:MAPRED' is a cross product
+Warning: Shuffle Join JOIN[54][tables = [$hdt$_0, $hdt$_1]] in Stage 'Stage-5:MAPRED' is a cross product
+OK
+Time taken: 6.59 seconds, Fetched: 398 row(s)
+@@@sample-queries-tpcds/query91.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.094 seconds
+No Stats for tpcds_bin_partitioned_orc_2@call_center, Columns: cc_call_center_sk, cc_call_center_id, cc_manager, cc_name
+No Stats for tpcds_bin_partitioned_orc_2@catalog_returns, Columns: cr_net_loss, cr_returning_customer_sk, cr_call_center_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_current_hdemo_sk, c_current_addr_sk, c_customer_sk, c_current_cdemo_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_address_sk, ca_gmt_offset
+No Stats for tpcds_bin_partitioned_orc_2@customer_demographics, Columns: cd_demo_sk, cd_education_status, cd_marital_status
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_buy_potential, hd_demo_sk
+OK
+Time taken: 7.278 seconds, Fetched: 245 row(s)
+@@@sample-queries-tpcds/query92.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.087 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_month_seq, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_item_sk, cs_bill_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_month_seq, d_date_sk
+OK
+Time taken: 8.194 seconds, Fetched: 214 row(s)
+@@@sample-queries-tpcds/query93.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.086 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_ticket_number, ss_item_sk, ss_quantity, ss_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_ticket_number, sr_reason_sk, sr_item_sk, sr_return_quantity
+No Stats for tpcds_bin_partitioned_orc_2@reason, Columns: r_reason_desc, r_reason_sk
+OK
+Time taken: 7.591 seconds, Fetched: 157 row(s)
+@@@sample-queries-tpcds/query94.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.037 seconds
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_order_number, ws_ship_date_sk, ws_web_site_sk, ws_net_profit, ws_ship_addr_sk, ws_ext_ship_cost
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_warehouse_sk, ws_order_number
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_warehouse_sk, ws_order_number
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_state, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@web_site, Columns: web_site_sk, web_company_name
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@web_returns, Columns: wr_order_number
+OK
+Time taken: 9.401 seconds, Fetched: 410 row(s)
+@@@sample-queries-tpcds/query95.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.954 seconds
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_order_number, ws_ship_date_sk, ws_web_site_sk, ws_net_profit, ws_ship_addr_sk, ws_ext_ship_cost
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_warehouse_sk, ws_order_number
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_warehouse_sk, ws_order_number
+No Stats for tpcds_bin_partitioned_orc_2@web_returns, Columns: wr_order_number
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_warehouse_sk, ws_order_number
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_warehouse_sk, ws_order_number
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_state, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@web_site, Columns: web_site_sk, web_company_name
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+OK
+Time taken: 9.793 seconds, Fetched: 514 row(s)
+@@@sample-queries-tpcds/query96.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.028 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_sold_time_sk, ss_store_sk, ss_hdemo_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_demo_sk, hd_dep_count
+No Stats for tpcds_bin_partitioned_orc_2@time_dim, Columns: t_hour, t_minute, t_time_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_name, s_store_sk
+OK
+Time taken: 5.798 seconds, Fetched: 157 row(s)
+@@@sample-queries-tpcds/query97.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.999 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_month_seq, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_item_sk, cs_bill_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_month_seq, d_date_sk
+OK
+Time taken: 8.213 seconds, Fetched: 218 row(s)
+@@@sample-queries-tpcds/query98.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.124 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_ext_sales_price, ss_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_desc, i_item_id, i_class, i_category, i_current_price, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+OK
+Time taken: 6.364 seconds, Fetched: 188 row(s)

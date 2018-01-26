@@ -1,0 +1,92 @@
+{
+  "NetNode": {
+    "n1": {
+      "compPower": 1,
+      "dataSources": []
+    },
+    "n2": {
+      "compPower": 1,
+      "dataSources": []
+    },
+    "n3": {
+      "compPower": 1,
+      "dataSources": []
+    },
+    "n4": {
+      "compPower": 1,
+      "dataSources": [
+        "p2"
+      ]
+    },
+    "n5": {
+      "compPower": 1,
+      "dataSources": [
+        "p1"
+      ]
+    },
+    "n6": {
+      "compPower": 1,
+      "dataSources": ["p3"]
+    }
+  },
+  "NetGraph": {
+    "n1": {
+      "n2": 10.0
+    },
+    "n2": {
+      "n1": 10.0,
+      "n3": 10.0,
+      "n6": 10.0
+    },
+    "n3": {
+      "n4": 10.0,
+      "n5": 10.0,
+      "n2": 10.0
+    },
+    "n4" :{
+      "n3" : 10.0
+    },
+    "n5" :{
+      "n3" : 10.0
+    },
+    "n6" :{
+      "n2" : 10.0
+    }
+  },
+  "DataSource": {
+    "p1": 1000,
+    "p2": 1000,
+    "p3": 1000
+  },
+  "DataDestination": "n1",
+  "QueryPlan": {
+    "ROOT": {
+      "child": [
+        "aggregate1"
+      ]
+    },
+    "aggregate1": {
+      "child": [
+        "filter1",
+        "filter2"
+      ],
+      "fanout": 0.2,
+      "type": "AGGREGATE"
+    },
+    "filter1": {
+      "child": [
+        "p1",
+        "p2"
+      ],
+      "fanout": 0.1,
+      "type": "FILTER"
+    },
+    "filter2": {
+      "child": [
+        "p3"
+      ],
+      "fanout": 0.1,
+      "type": "FILTER"
+    }
+  }
+}

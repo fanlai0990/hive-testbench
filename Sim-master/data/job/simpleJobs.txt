@@ -1,0 +1,18 @@
+# 5: TPC-H query15
+8 0 0
+Map1 44.0 0.18 0.21 0.26 0.01 0.14 0.02 68
+Reducer4 2.0 0.21 0.12 0.0 0.01 0.0 0.02 1
+Reducer7 1.0 0.24 0.12 0.0 0.01 0.0 0.02 1
+Reducer6 5.0 0.22 0.12 0.06 0.0 0.0 0.04 21
+Map8 7.0 0.18 0.21 0.01 0.01 0.04 0.07 4
+Map5 44.0 0.18 0.21 0.26 0.01 0.04 0.02 68
+Reducer3 42.0 0.1 0.12 0.05 0.0 0.0 0.01 6
+Reducer2 10.0 0.21 0.12 0.12 0.06 0.01 0.06 11
+7
+Map1 Reducer2 ata
+Reducer7 Reducer3 ata
+Reducer6 Reducer7 ata
+Map8 Reducer3 ata
+Map5 Reducer6 ata
+Reducer3 Reducer4 ata
+Reducer2 Reducer3 ata

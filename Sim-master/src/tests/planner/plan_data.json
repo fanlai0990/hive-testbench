@@ -1,0 +1,186 @@
+{
+  "simple" : {
+    "DataSource" : {
+      "p1" : 1000,
+      "p2" : 1000,
+      "p3" : 1000
+    },
+    "DataDestination" : "n1",
+    "QueryPlan" : {
+      "ROOT" : {
+        "child" : ["filter1"]
+      },
+      "filter1" : {
+        "child" : ["p1","p2", "p3"],
+        "fanout" : 0.1, "type": "FILTER"
+      }
+    },
+    "Source2Net" : {
+      "n2" : ["p1"],
+      "n3" : ["p2", "p3"]
+    }
+  },
+  "ya_simple" : {
+    "DataSource" : {
+      "p1" : 1000,
+      "p2" : 1000,
+      "p3" : 1000
+    },
+    "DataDestination" : "n1",
+    "QueryPlan" : {
+      "ROOT": {
+        "child": [
+          "filter1",
+          "filter2"
+        ]
+      },
+      "filter1": {
+        "child": [
+          "p1",
+          "p2"
+        ],
+        "fanout": 0.1,
+        "type": "FILTER"
+      },
+      "filter2": {
+        "child": [
+          "p3"
+        ],
+        "fanout": 0.2,
+        "type": "FILTER"
+      }
+    },
+      "Source2Net" : {
+      "n3" : ["p1"],
+      "n2" : ["p2", "p3"]
+    }
+  },
+  "complex" : {
+    "DataSource" : {
+      "A_p1" : 1000,
+      "A_p2" : 1000,
+      "B_p1" : 1000
+    },
+    "DataDestination" : "n1",
+    "QueryPlan" : {
+      "ROOT" : {
+        "child" : ["join1"]
+      },
+      "join1" : {
+        "child" : ["aggregate1"],
+        "fanout" : 2,
+        "type" : "JOIN"
+      },
+      "aggregate1" : {
+        "child" : ["filter1", "filter2"],
+        "fanout" : 0.1,
+        "type" : "AGGREGATE"
+      },
+      "filter1" : {
+        "child" : ["filter3"],
+        "fanout" : 0.5,
+        "type" : "FILTER"
+      },
+      "filter2" : {
+        "child" : ["filter4"],
+        "fanout" : 0.5,
+        "type" : "FILTER"
+      },
+      "filter3" : {
+        "child" : ["A_p1","A_p2"],
+        "fanout" : 0.1,
+        "type": "FILTER"
+      },
+      "filter4" : {
+        "child" : ["B_p1"],
+        "fanout" : 0.1,
+        "type": "FILTER"
+      }
+    },
+    "Source2Net" : {
+      "n2" : ["A_p1", "B_p1"],
+      "n3" : ["A_p2"]
+    }
+  },
+  "combine1" : {
+    "DataSource" : {
+      "p1" : 1000,
+      "p2" : 1000,
+      "p3" : 1000
+    },
+    "DataDestination" : "n1",
+    "QueryPlan" : {
+      "ROOT" : {
+        "child" : ["aggregate1"]
+      },
+      "aggregate1" : {
+        "child" : ["filter1", "filter2"],
+        "fanout" : 0.2,
+        "type" : "AGGREGATE"
+      },
+      "filter1" : {
+        "child" : ["p1","p2"],
+        "fanout" : 0.1, "type": "FILTER"
+      },
+      "filter2" : {
+        "child" : ["p3"],
+        "fanout" : 0.1, "type" : "FILTER"
+      }
+    },
+    "Source2Net" : {
+      "n2" : ["p1"],
+      "n3" : ["p2"],
+      "n4" : ["p3"]
+    }
+  },
+  "query3" : {
+    "DataSource" : {
+      "p1" : 1000,
+      "p2" : 1000,
+      "p3" : 1000,
+      "p4" : 1000,
+      "p5" : 1000,
+      "p6" : 1000,
+      "p7" : 1000,
+      "p8" : 1000
+    },
+    "DataDestination" : "n1",
+    "QueryPlan" : {
+      "ROOT" : {
+        "child" : ["aggregate1", "aggregate2"]
+      },
+      "aggregate1" : {
+        "child" : ["filter1", "filter2"],
+        "fanout" : 0.2,
+        "type" : "AGGREGATE"
+      },
+      "aggregate2" : {
+        "child" : ["filter3", "filter4"],
+        "fanout" : 0.2,
+        "type" : "AGGREGATE"
+      },
+      "filter1" : {
+        "child" : ["p1","p2"],
+        "fanout" : 0.1, "type": "FILTER"
+      },
+      "filter2" : {
+        "child" : ["p3"],
+        "fanout" : 0.1, "type" : "FILTER"
+      },
+      "filter3" : {
+        "child" : ["p4", "p5"],
+        "fanout" : 0.3, "type" : "FILTER"
+      },
+      "filter4" : {
+        "child" : ["p6", "p7", "p8"],
+        "fanout" : 0.2, "type" : "FILTER"
+      }
+    },
+    "Source2Net" : {
+      "n2" : ["p1"],
+      "n3" : ["p2", "p7", "p8"],
+      "n4" : ["p3", "p6"],
+      "n5" : ["p4", "p5"]
+    }
+  }
+}

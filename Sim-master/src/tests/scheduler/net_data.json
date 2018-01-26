@@ -1,0 +1,58 @@
+{
+  "simple" : {
+    "NetNode" : {
+      "n1" : {"compPower" : 1, "dataSources" : ["p1", "p2", "p3"] },
+      "n2" : {"compPower" : 1, "dataSources" : [] },
+      "n3" : {"compPower" : 1, "dataSources" : [] },
+      "n4" : {"compPower" : 1, "dataSources" : [] }
+  },
+    "NetGraph" :{
+      "n1" : {"n2" : 20.0, "n3" : 10.0},
+      "n2" : {"n4" : 10.0, "n1" : 20.0},
+      "n3" : {"n1" : 10.0, "n4" : 20.0},
+      "n4" : {"n2" : 10.0, "n3" : 20.0}
+    }
+  },
+    "simple11" : {
+    "NetNode" : {
+      "n1" : {"compPower" : 1, "dataSources" : ["p1", "p2", "p3"] },
+      "n2" : {"compPower" : 1, "dataSources" : [] },
+      "n3" : {"compPower" : 1, "dataSources" : [] },
+      "n4" : {"compPower" : 1, "dataSources" : [] }
+  },
+    "NetGraph" :{
+      "n1" : {"n2" : 20.0, "n3" : 10.0},
+      "n2" : {"n4" : 10.0, "n1" : 20.0, "n3" : 10.0},
+      "n3" : {"n1" : 10.0, "n4" : 20.0, "n2" : 10.0},
+      "n4" : {"n2" : 10.0, "n3" : 20.0}
+    }
+  },
+    "simple2" : {
+    "NetNode" : {
+      "n1" : {"compPower" : 1, "dataSources" : ["p1", "p2", "p3"] },
+      "n2" : {"compPower" : 1, "dataSources" : [] },
+      "n3" : {"compPower" : 1, "dataSources" : [] },
+      "n4" : {"compPower" : 1, "dataSources" : [] }
+  },
+    "NetGraph" :{
+      "n1" : {"n2" : 20.0, "n3" : 20.0},
+      "n2" : {"n4" : 40.0, "n1" : 20.0},
+      "n3" : {"n1" : 20.0, "n4" : 40.0},
+      "n4" : {"n2" : 40.0, "n3" : 40.0}
+    }
+  },
+    "paper" : {
+    "NetNode" : {
+      "n1" : {"compPower" : 1, "dataSources" : ["p1", "p3", "p3"] },
+      "n2" : {"compPower" : 1, "dataSources" : [] },
+      "n3" : {"compPower" : 1, "dataSources" : [] },
+      "n4" : {"compPower" : 1, "dataSources" : [] }
+  },
+    "NetGraph" :{
+      "n1" : {"n3" : 12.0, "n4" : 12.0},
+      "n2" : {"n3" :  8.0, "n4" :  8.0},
+      "n3" : {"n1" : 12.0, "n2" :  8.0},
+      "n4" : {"n1" : 12.0, "n2" :  8.0}
+    }
+  }
+}

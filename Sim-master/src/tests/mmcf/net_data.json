@@ -1,0 +1,110 @@
+{
+  "easy" : {
+    "NetNode" : {
+      "n1" : {"compPower" : 1, "dataSources" : ["p1", "p2", "p3"] },
+      "n2" : {"compPower" : 1, "dataSources" : [] },
+      "n3" : {"compPower" : 1, "dataSources" : [] },
+      "n4" : {"compPower" : 1, "dataSources" : [] }
+    },
+    "NetGraph" :{
+      "n1" : {"n2" : 20.0, "n3" : 10.0},
+      "n2" : {"n4" : 10.0, "n1" : 20.0},
+      "n3" : {"n1" : 10.0, "n4" : 20.0},
+      "n4" : {"n2" : 10.0, "n3" : 20.0}
+    }
+  },
+  "simple" : {
+    "NetNode" : {
+      "n1" : {"compPower" : 1, "dataSources" : ["p1", "p2"] },
+      "n2" : {"compPower" : 1, "dataSources" : [] },
+      "n3" : {"compPower" : 1, "dataSources" : [] },
+      "n4" : {"compPower" : 1, "dataSources" : [] }
+    },
+    "NetGraph" :{
+      "n1" : {"n2" : 20.0, "n3": 40},
+      "n2" : {"n1" : 20.0, "n4" : 40.0, "n3" : 20},
+      "n3" : {"n1" : 40.0, "n4" : 20.0, "n2" : 20},
+      "n4" : {"n2" : 40.0, "n3" : 20.0}
+    },
+    "DataSource" : {
+      "p1" : 40,
+      "p2" : 80
+    },
+    "DataDestination" : "n4"
+  },
+  "rapier" : {
+    "NetNode" : {
+      "n1" : {"compPower" : 1, "dataSources" : ["p1", "p2", "p3"] },
+      "n2" : {"compPower" : 1, "dataSources" : [] },
+      "n3" : {"compPower" : 1, "dataSources" : [] },
+      "n4" : {"compPower" : 1, "dataSources" : [] },
+      "n5" : {"compPower" : 1, "dataSources" : [] }
+    },
+    "NetGraph" :{
+      "n1" : {"n2" : 100.0, "n3": 60, "n4": 40},
+      "n2" : {"n1" : 100.0, "n5" : 100.0},
+      "n3" : {"n1" : 60.0, "n5" : 60.0},
+      "n4" : {"n1" : 40.0, "n5" : 40.0},
+      "n5" : {"n2" : 100.0, "n3": 60, "n4": 40}
+    },
+    "DataSource" : {
+      "p1" : 40,
+      "p2" : 80,
+      "p3" : 100
+    },
+    "DataDestination" : "n5"
+  },
+  "B4" : {
+    "NetNode" : {
+    "n1" : {"compPower" : 1, "dataSources" : [] },
+    "n2" : {"compPower" : 1, "dataSources" : [] },
+    "n3" : {"compPower" : 1, "dataSources" : [] },
+    "n4" : {"compPower" : 1, "dataSources" : ["p15", "p17", "p19"] },
+    "n5" : {"compPower" : 1, "dataSources" : ["p1"] },
+    "n6" : {"compPower" : 1, "dataSources" : ["p8"] },
+    "n7" : {"compPower" : 1, "dataSources" : ["p2", "p3", "p14", "p16"] },
+    "n8" : {"compPower" : 1, "dataSources" : ["p9", "p10", "p11", "p12"] },
+    "n9" : {"compPower" : 1, "dataSources" : ["p4", "p6", "p18"] },
+    "n10" : {"compPower" : 1, "dataSources" : [] },
+    "n11" : {"compPower" : 1, "dataSources" : ["p20"] },
+    "n12" : {"compPower" : 1, "dataSources" : ["p5", "p7", "p13"] }
+    },
+    "NetGraph" : {
+      "n1" : {"n2" : 20.0, "n3" : 5.0},
+      "n2" : {"n1" : 20.0, "n5" : 5.0},
+      "n3" : {"n1" : 5.0, "n4" : 10.0, "n6" : 5},
+      "n4" : {"n3" : 10.0, "n5" : 20.0, "n7" : 15.0, "n8" : 15.0},
+      "n5" : {"n2" : 5.00, "n4" : 20.0, "n6" : 15.0},
+      "n6" : {"n3" : 5.00, "n5" : 15.0, "n7" : 20.0, "n8" : 30.0},
+      "n7" : {"n4" : 15.0, "n6" : 20.0, "n8" : 20.0, "n11" : 5.0},
+      "n8" : {"n4" : 15.0, "n6" : 30.0, "n7" : 20.0, "n10" : 5.0},
+      "n9" : {"n10" : 20.0, "n11" : 30.0},
+      "n10" : {"n8" : 5.0, "n9" : 20.0, "n11" : 30.0, "n12" : 20.0},
+      "n11" : {"n7" : 5.0, "n9" : 30.0, "n10" : 30.0, "n12" : 25.0},
+      "n12" : {"n10" : 20.0, "n11" : 25.0}
+    },
+    "DataSource" : {
+      "p1" : 100,
+      "p2" : 100,
+      "p3" : 100,
+      "p4" : 100,
+      "p5" : 100,
+      "p6" : 100,
+      "p7" : 100,
+      "p8" : 100,
+      "p9" : 100,
+      "p10" : 100,
+      "p11" : 100,
+      "p12" : 100,
+      "p13" : 100,
+      "p14" : 100,
+      "p15" : 100,
+      "p16" : 100,
+      "p17" : 100,
+      "p18" : 100,
+      "p19" : 100,
+      "p20" : 100
+    },
+    "DataDestination" : "n1"
+  }
+}

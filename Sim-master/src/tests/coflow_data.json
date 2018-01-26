@@ -1,0 +1,23 @@
+{
+  "CoFlow" : {
+    "1": {
+      "all_volume": 60,
+      "type": "shuffle",
+      "start_nodes": {"n1": 10, "n2": 20},
+      "end_nodes": ["n3", "n4"]
+    },
+  "2": {
+    "all_volume": 160,
+    "type": "arbitrary",
+    "flow_descriptor": {
+      "n1": {
+        "n2": 10,
+        "n3": 100
+      },
+      "n2": {
+        "n4": 50
+      }
+    }
+  }
+  }
+}

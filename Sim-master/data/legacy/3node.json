@@ -1,0 +1,40 @@
+{
+  "NetNode" : {
+    "n1" : {"compPower" : 1, "dataSources" : [] },
+    "n2" : {"compPower" : 1, "dataSources" : ["p1", "p2", "p3"] },
+    "n3" : {"compPower" : 1, "dataSources" : ["p1", "p2", "p3"] }
+  },
+  "NetGraph" :{
+    "n1" : {"n2" : 20.0, "n3" : 10.0},
+    "n2" : {"n3" : 10.0, "n1" : 20.0},
+    "n3" : {"n1" : 10.0, "n2" : 10.0}
+  },
+  "DataSource" : {
+    "p1" : 1000,
+    "p2" : 1000,
+    "p3" : 1000
+  },
+  "DataDestination" : "n1",
+  "QueryPlan" : {
+    "ROOT" : {
+      "child" : ["filter1", "filter2"]
+    },
+    "filter1" : {
+      "child" : ["p1"],
+      "fanout" : 0.1,
+      "type": "FILTER"
+    },
+    "filter2" : {
+      "child" : ["p2", "p3"],
+      "fanout" : 0.2,
+      "type": "FILTER"
+    }
+  },
+  "event" : {
+    "break1" : {
+      "time" : 10,
+      "connection" : ["n1", "n2"],
+      "bandwidth" : 0
+    }
+  }
+}

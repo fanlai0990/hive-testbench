@@ -1,0 +1,103 @@
+{
+  "simple" : {
+    "NetNode": {
+      "n1": {
+        "compPower": 1,
+        "dataSources": [
+          "p1",
+          "p2",
+          "p3"
+        ]
+      },
+      "n2": {
+        "compPower": 1,
+        "dataSources": []
+      },
+      "n3": {
+        "compPower": 1,
+        "dataSources": []
+      },
+      "n4": {
+        "compPower": 1,
+        "dataSources": []
+      }
+    },
+    "NetGraph": {
+      "n1": {
+        "n2": 20.0,
+        "n3": 10
+      },
+      "n2": {
+        "n4": 10.0,
+        "n1": 20.0
+      },
+      "n3": {
+        "n1": 10.0,
+        "n4": 20.0
+      },
+      "n4": {
+        "n2": 10.0,
+        "n3": 20.0
+      }
+    }
+  },
+  "debug" : {
+    "NetNode": {
+      "n0": {
+        "compPower": 1,
+        "dataSources": [
+          "p1",
+          "p2",
+          "p3"
+        ]
+      },
+      "n1": {
+        "compPower": 1,
+        "dataSources": []
+      },
+      "n2": {
+        "compPower": 1,
+        "dataSources": []
+      },
+      "n3": {
+        "compPower": 1,
+        "dataSources": []
+      },
+      "n4": {
+        "compPower": 1,
+        "dataSources": []
+      },
+      "n5": {
+        "compPower": 1,
+        "dataSources": []
+      }
+    },
+    "NetGraph": {
+      "n0": {
+        "n1": 40.0
+      },
+      "n1": {
+        "n2": 20.0,
+        "n3": 10.0,
+        "n4": 10.0
+      },
+      "n2": {
+        "n4": 10.0,
+        "n1": 20.0
+      },
+      "n3": {
+        "n1": 10.0,
+        "n4": 20.0
+      },
+      "n4": {
+        "n1": 10.0,
+        "n2": 10.0,
+        "n3": 20.0,
+        "n5": 40.0
+      },
+      "n5": {
+        "n4": 40.0
+      }
+    }
+  }
+}

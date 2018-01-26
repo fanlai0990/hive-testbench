@@ -1,0 +1,23 @@
+{
+  "CoFlow" : {
+    "1": {
+      "all_volume": 60,
+      "type": "shuffle",
+      "start_nodes": {"NY54": 10, "SNFN": 20},
+      "end_nodes": ["DLLS", "CHCG"]
+    },
+  "2": {
+    "all_volume": 160,
+    "type": "arbitrary",
+    "flow_descriptor": {
+      "NY54": {
+        "SNFN": 10,
+        "DLLS": 100
+      },
+      "SNFN": {
+        "CHCG": 50
+      }
+    }
+  }
+  }
+}

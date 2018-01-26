@@ -205,7 +205,7 @@ public class AttMpls {
                     String query = line.substring(line.indexOf("query") + "query".length(), line.indexOf("."));
 
                     if ((line = reader.readLine()) != null) {
-                        String data_size = line.substring(line.indexOf("Data size:") + "Data size:".length()).trim().split(" ")[0];
+                        String data_size = line;
                         largestM.put(Integer.valueOf(query), Integer.valueOf(data_size));
                     }
                 }

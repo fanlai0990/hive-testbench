@@ -140,24 +140,29 @@ public class App {
 
                     int count = 0;
                     String temp = null;
+                    int largest = Integer.MIN_VALUE;
+
                     while ((line = reader.readLine()) != null) {
                         if (line.contains("Data size:")) {
                             temp = line;
                             count += 1;
+
+                            int cur = Integer.valueOf(line.trim().split(" ")[2]);
+                            largest = Integer.max(largest, cur);
                         }
                         if (line.equals("")) {
                             break;
                         }
                     }
 
-                    if (count == 1) {
+                    // if (count == 1) {
 
                         writer.append(query);
                         writer.newLine();
 
-                        writer.append(temp);
+                        writer.append(String.valueOf(largest));
                         writer.newLine();
-                    }
+                    // }
                  }
             }
 

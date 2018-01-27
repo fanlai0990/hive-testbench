@@ -17,6 +17,11 @@ public class AttMpls {
      */
     private static void delete(File file) throws IOException {
 
+        if (!file.exists()) {
+            // file/dir not exists
+            return;
+        }
+
         for (File childFile : file.listFiles()) {
 
             if (childFile.isDirectory()) {
@@ -35,7 +40,24 @@ public class AttMpls {
 
     public static void main( String[] args ) {
 
-        File theDir = new File("TPC-DS-AttMpls");
+        File dir = new File("../Sim-master/data/combined_traces_fb");
+        File[] directoryListing = dir.listFiles();
+        if (directoryListing != null) {
+            for (File child : directoryListing) {
+                System.out.println(child.toString());
+                helper(child.toString());
+            }
+        } else {
+            // Handle the case where dir is not really a directory.
+            // Checking dir.isDirectory() above would not be sufficient
+            // to avoid race conditions with another process that deletes
+            // directories.
+        }
+
+    }
+
+    static void helper(String input) {
+        File theDir = new File(input.substring(input.lastIndexOf("/")+1, input.lastIndexOf(".")));
 
         // delete existing directory
         try {
@@ -63,12 +85,12 @@ public class AttMpls {
                 //handle it
             }
             if(result) {
-                System.out.println("DIR created");
+                // System.out.println("DIR created");
             }
         }
 
-        Path fin = Paths.get("../Sim-master/data/combined_traces_fb/TPC-DS-AttMpls.txt");
-        Path fout = Paths.get("./TPC-DS-AttMpls/log");
+        Path fin = Paths.get(input);
+        Path fout = Paths.get(theDir.toString() + "/log");
 
         Charset charset = Charset.forName("US-ASCII");
 
@@ -76,7 +98,7 @@ public class AttMpls {
         SortedSet<Integer> queries = new TreeSet<>();
 
         try (BufferedReader reader = Files.newBufferedReader(fin, charset);
-              BufferedWriter writer = Files.newBufferedWriter(fout, charset)) {
+             BufferedWriter writer = Files.newBufferedWriter(fout, charset)) {
 
             int count = -1;
 
@@ -108,18 +130,19 @@ public class AttMpls {
             System.err.format("IOException: %s%n", x);
         }
 
+        System.out.print("count: ");
         System.out.println(queries.size());
 
         Map<Integer, Integer> largestMap = new HashMap<>();
 
-        Path foo =  Paths.get("./TPC-DS-AttMpls/log_largest");
+        Path foo =  Paths.get(theDir.toString() +"/log_largest");
         try (BufferedWriter Writer = Files.newBufferedWriter(foo, charset)) {
 
             // iterate all queries, write to new file
             for (Integer q : queries) {
 
                 Path fi = fout;
-                Path fo = Paths.get("./TPC-DS-AttMpls/log_query" + q.toString());
+                Path fo = Paths.get(theDir.toString() +"/log_query" + q.toString());
 
                 // scan input
                 try (BufferedReader reader = Files.newBufferedReader(fi, charset);
@@ -218,20 +241,29 @@ public class AttMpls {
         for (Map.Entry<Integer, Integer> e: largestM.entrySet()) {
             for (Map.Entry<Integer, Integer> ee: largestMap.entrySet()) {
                 if (e.getKey().equals(ee.getKey())) {
-                    System.out.println(e.getKey() + ": " + e.getValue() + ", " + ee.getValue());
+                    // System.out.println(e.getKey() + ": " + e.getValue() + ", " + ee.getValue());
                     // System.out.println("!!! " + (int) (Double.valueOf(ee.getValue()) / e.getValue()));
                 }
             }
         }
 
-        System.out.println();
         for (Map.Entry<Integer, Integer> e: largestM.entrySet()) {
             for (Map.Entry<Integer, Integer> ee: largestMap.entrySet()) {
                 if (e.getKey().equals(ee.getKey())) {
                     // System.out.println(e.getKey() + ": " + e.getValue() + ", " + ee.getValue());
-                    System.out.println((int) (Double.valueOf(ee.getValue()) / e.getValue()));
+                    int scale_factor = 0;
+                    if (e.getValue() == 0) { // ceil to 1
+                        scale_factor = (int) (ee.getValue() / 0.5);
+                    } else {
+                        scale_factor = (int) ((double) ee.getValue() / (double) e.getValue());
+                    }
+                    System.out.print(scale_factor * 2);
+                    System.out.print(",");
                 }
             }
         }
+        System.out.println();
+        System.out.println();
     }
+
 }

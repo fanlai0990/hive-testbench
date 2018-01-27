@@ -13,9 +13,12 @@ for filename in $DIR/*.sql; do
         echo "@@@$filename" >>$err_database
 
 	if $explain; then
-		hive --database $database -e "explain $(<$filename)" 1>>$log_database 2>>$err_database
+		filename_=${filename}_
+                cp $filename $filename_
+                tac $filename | sed 's/\;/\; explain/g' |  sed '1 s/explain//' | tac > $filename_
+    		hive --database $database -e "explain $(<$filename_)" 1>>$log_database 2>>$err_database
+                rm $filename_             
 	else 
         	hive --database $database -f $filename 1>>$log_database 2>>$err_database
 	fi
-
 done

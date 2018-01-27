@@ -9,8 +9,17 @@ import java.nio.file.*;
 public class App {
     public static void main( String[] args ) {
 
-        Path fin = Paths.get("../log_tpcds_bin_partitioned_orc_2");
-        Path fout = Paths.get("./log_tpcds_2_shuffle");
+//        Path fin = Paths.get("../log_tpcds_bin_partitioned_orc_2");
+        Path fin = Paths.get("../log_tpch_flat_orc_2");
+
+        Path fout;
+        if (fin.toString().contains("tpcds")) {
+            fout = Paths.get("./log_" + "tpcds" + "_2_shuffle");
+        } else if (fin.toString().contains("tpch")) {
+            fout = Paths.get("./log_" + "tpch" + "_2_shuffle");
+        } else { //bigbench
+            fout = Paths.get("./log_" + "bigb" + "_2_shuffle");
+        }
 
         try {
             Files.delete(fout);
@@ -61,7 +70,7 @@ public class App {
         // last line of *more than one* line of "Map Operator Tree"
 
         Path fi = fout;
-        Path fo = Paths.get("./log_tpcds_2_shuffle_largest");
+        Path fo = Paths.get(fout.toString() + "_largest");
 
         try {
             Files.delete(fo);
@@ -116,7 +125,7 @@ public class App {
 
         // if more than one line, cannot use the heuristic
         Path fii = fo;
-        Path foo = Paths.get("./log_tpcds_2_shuffle_largest_h");
+        Path foo = Paths.get(fo.toString() + "_h");
 
         try {
             Files.delete(foo);

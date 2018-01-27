@@ -1,0 +1,2174 @@
+@@@sample-queries-tpch/tpch_query10.sql
+STAGE DEPENDENCIES:
+  Stage-20 is a root stage
+  Stage-15 depends on stages: Stage-20
+  Stage-14 depends on stages: Stage-15 , consists of Stage-18, Stage-19, Stage-2
+  Stage-18 has a backup stage: Stage-2
+  Stage-12 depends on stages: Stage-18
+  Stage-11 depends on stages: Stage-2, Stage-12, Stage-13 , consists of Stage-16, Stage-17, Stage-3
+  Stage-16 has a backup stage: Stage-3
+  Stage-9 depends on stages: Stage-16
+  Stage-4 depends on stages: Stage-3, Stage-9, Stage-10
+  Stage-5 depends on stages: Stage-4
+  Stage-17 has a backup stage: Stage-3
+  Stage-10 depends on stages: Stage-17
+  Stage-3
+  Stage-19 has a backup stage: Stage-2
+  Stage-13 depends on stages: Stage-19
+  Stage-2
+  Stage-0 depends on stages: Stage-5
+
+STAGE PLANS:
+  Stage: Stage-20
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 0
+              Data size: 0
+                Data size: 0
+
+  Stage: Stage-15
+    Map Reduce
+      Map Operator Tree:
+            Data size: 166
+              Data size: 166
+                Data size: 166
+                  Data size: 183
+      Local Work:
+
+  Stage: Stage-14
+    Conditional Operator
+
+  Stage: Stage-18
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 1516
+              Data size: 168
+                Data size: 168
+
+  Stage: Stage-12
+    Map Reduce
+      Map Operator Tree:
+              Data size: 185
+      Local Work:
+
+  Stage: Stage-11
+    Conditional Operator
+
+  Stage: Stage-16
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 9222
+              Data size: 4611
+                Data size: 4611
+
+  Stage: Stage-9
+    Map Reduce
+      Map Operator Tree:
+              Data size: 5072
+                Data size: 5072
+                  Data size: 5072
+      Local Work:
+
+  Stage: Stage-4
+    Map Reduce
+      Map Operator Tree:
+              Data size: 5072
+      Reduce Operator Tree:
+          Data size: 2536
+            Data size: 2536
+
+  Stage: Stage-5
+    Map Reduce
+      Map Operator Tree:
+              Data size: 2536
+      Reduce Operator Tree:
+          Data size: 2536
+            Data size: 0
+              Data size: 0
+
+  Stage: Stage-17
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-10
+    Map Reduce
+      Map Operator Tree:
+            Data size: 9222
+              Data size: 4611
+                Data size: 4611
+                  Data size: 5072
+                    Data size: 5072
+                      Data size: 5072
+      Local Work:
+
+  Stage: Stage-3
+    Map Reduce
+      Map Operator Tree:
+              Data size: 185
+            Data size: 9222
+              Data size: 4611
+                Data size: 4611
+                  Data size: 4611
+      Reduce Operator Tree:
+          Data size: 5072
+            Data size: 5072
+              Data size: 5072
+
+  Stage: Stage-19
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-13
+    Map Reduce
+      Map Operator Tree:
+            Data size: 1516
+              Data size: 168
+                Data size: 168
+                  Data size: 185
+      Local Work:
+
+  Stage: Stage-2
+    Map Reduce
+      Map Operator Tree:
+              Data size: 183
+            Data size: 1516
+              Data size: 168
+                Data size: 168
+                  Data size: 168
+      Reduce Operator Tree:
+          Data size: 185
+
+  Stage: Stage-0
+    Fetch Operator
+      limit: 20
+      Processor Tree:
+
+@@@sample-queries-tpch/tpch_query11.sql
+STAGE DEPENDENCIES:
+  Stage-0 is a root stage
+
+STAGE PLANS:
+  Stage: Stage-0
+      Drop Table Operator:
+
+STAGE DEPENDENCIES:
+  Stage-0 is a root stage
+
+STAGE PLANS:
+  Stage: Stage-0
+      Drop Table Operator:
+
+STAGE DEPENDENCIES:
+  Stage-1 is a root stage
+
+STAGE PLANS:
+  Stage: Stage-1
+      Create View Operator:
+	`partsupp`.`ps_partkey`,
+	sum(`partsupp`.`ps_supplycost` * `partsupp`.`ps_availqty`) as `part_value`
+from
+	`tpch_flat_orc_2`.`partsupp`,
+	`tpch_flat_orc_2`.`supplier`,
+	`tpch_flat_orc_2`.`nation`
+where
+	`partsupp`.`ps_suppkey` = `supplier`.`s_suppkey`
+	and `supplier`.`s_nationkey` = `nation`.`n_nationkey`
+	and `nation`.`n_name` = 'GERMANY'
+group by `partsupp`.`ps_partkey`
+	ps_partkey,
+	sum(ps_supplycost * ps_availqty) as part_value
+from
+	partsupp,
+	supplier,
+	nation
+where
+	ps_suppkey = s_suppkey
+	and s_nationkey = n_nationkey
+	and n_name = 'GERMANY'
+group by ps_partkey
+
+@@@sample-queries-tpch/tpch_query12.sql
+STAGE DEPENDENCIES:
+  Stage-1 is a root stage
+  Stage-2 depends on stages: Stage-1
+  Stage-3 depends on stages: Stage-2
+  Stage-0 depends on stages: Stage-3
+
+STAGE PLANS:
+  Stage: Stage-1
+    Map Reduce
+      Map Operator Tree:
+            Data size: 1516
+              Data size: 1516
+                Data size: 1516
+                  Data size: 1516
+            Data size: 9222
+              Data size: 56
+                Data size: 56
+                  Data size: 56
+      Reduce Operator Tree:
+          Data size: 1667
+            Data size: 1667
+              Data size: 1667
+
+  Stage: Stage-2
+    Map Reduce
+      Map Operator Tree:
+              Data size: 1667
+      Reduce Operator Tree:
+          Data size: 833
+
+  Stage: Stage-3
+    Map Reduce
+      Map Operator Tree:
+              Data size: 833
+      Reduce Operator Tree:
+          Data size: 833
+            Data size: 833
+
+  Stage: Stage-0
+    Fetch Operator
+      limit: -1
+      Processor Tree:
+
+@@@sample-queries-tpch/tpch_query13.sql
+STAGE DEPENDENCIES:
+  Stage-1 is a root stage
+  Stage-2 depends on stages: Stage-1
+  Stage-3 depends on stages: Stage-2
+  Stage-4 depends on stages: Stage-3
+  Stage-0 depends on stages: Stage-4
+
+STAGE PLANS:
+  Stage: Stage-1
+    Map Reduce
+      Map Operator Tree:
+            Data size: 166
+              Data size: 166
+                Data size: 166
+            Data size: 1516
+              Data size: 758
+                Data size: 758
+                  Data size: 758
+      Reduce Operator Tree:
+          Data size: 833
+            Data size: 833
+
+  Stage: Stage-2
+    Map Reduce
+      Map Operator Tree:
+              Data size: 833
+      Reduce Operator Tree:
+          Data size: 416
+            Data size: 416
+              Data size: 416
+
+  Stage: Stage-3
+    Map Reduce
+      Map Operator Tree:
+              Data size: 416
+      Reduce Operator Tree:
+          Data size: 208
+
+  Stage: Stage-4
+    Map Reduce
+      Map Operator Tree:
+              Data size: 208
+      Reduce Operator Tree:
+          Data size: 208
+            Data size: 208
+
+  Stage: Stage-0
+    Fetch Operator
+      limit: -1
+      Processor Tree:
+
+@@@sample-queries-tpch/tpch_query14.sql
+STAGE DEPENDENCIES:
+  Stage-5 is a root stage
+  Stage-2 depends on stages: Stage-5
+  Stage-0 depends on stages: Stage-2
+
+STAGE PLANS:
+  Stage: Stage-5
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 235
+              Data size: 235
+                Data size: 235
+
+  Stage: Stage-2
+    Map Reduce
+      Map Operator Tree:
+            Data size: 9222
+              Data size: 1024
+                Data size: 1024
+                  Data size: 1127
+                    Data size: 1127
+                      Data size: 0
+                        Data size: 0
+      Local Work:
+      Reduce Operator Tree:
+          Data size: 0
+            Data size: 0
+              Data size: 0
+
+  Stage: Stage-0
+    Fetch Operator
+      limit: -1
+      Processor Tree:
+
+@@@sample-queries-tpch/tpch_query15.sql
+STAGE DEPENDENCIES:
+  Stage-0 is a root stage
+
+STAGE PLANS:
+  Stage: Stage-0
+      Drop Table Operator:
+
+STAGE DEPENDENCIES:
+  Stage-0 is a root stage
+
+STAGE PLANS:
+  Stage: Stage-0
+      Drop Table Operator:
+
+STAGE DEPENDENCIES:
+  Stage-1 is a root stage
+
+STAGE PLANS:
+  Stage: Stage-1
+      Create View Operator:
+	`lineitem`.`l_suppkey` as `supplier_no`,
+	sum(`lineitem`.`l_extendedprice` * (1 - `lineitem`.`l_discount`)) as `total_revenue`
+from
+	`tpch_flat_orc_2`.`lineitem`
+where
+	`lineitem`.`l_shipdate` >= '1996-01-01'
+	and `lineitem`.`l_shipdate` < '1996-04-01'
+group by `lineitem`.`l_suppkey`
+	l_suppkey as supplier_no,
+	sum(l_extendedprice * (1 - l_discount)) as total_revenue
+from
+	lineitem
+where
+	l_shipdate >= '1996-01-01'
+	and l_shipdate < '1996-04-01'
+group by l_suppkey
+
+@@@sample-queries-tpch/tpch_query16.sql
+STAGE DEPENDENCIES:
+  Stage-7 is a root stage
+  Stage-13 depends on stages: Stage-7, Stage-14 , consists of Stage-16, Stage-17, Stage-2
+  Stage-16 has a backup stage: Stage-2
+  Stage-11 depends on stages: Stage-16
+  Stage-10 depends on stages: Stage-2, Stage-8, Stage-11, Stage-12 , consists of Stage-15, Stage-3
+  Stage-15 has a backup stage: Stage-3
+  Stage-9 depends on stages: Stage-15
+  Stage-4 depends on stages: Stage-3, Stage-9
+  Stage-5 depends on stages: Stage-4
+  Stage-3
+  Stage-17 has a backup stage: Stage-2
+  Stage-12 depends on stages: Stage-17
+  Stage-2
+  Stage-8 is a root stage
+  Stage-18 is a root stage
+  Stage-14 depends on stages: Stage-18
+  Stage-0 depends on stages: Stage-5
+
+STAGE PLANS:
+  Stage: Stage-7
+    Map Reduce
+      Map Operator Tree:
+            Data size: 9
+              Data size: 4
+                Data size: 4
+                  Data size: 0
+                    Data size: 0
+      Reduce Operator Tree:
+          Data size: 0
+
+  Stage: Stage-13
+    Conditional Operator
+
+  Stage: Stage-16
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-11
+    Map Reduce
+      Map Operator Tree:
+              Data size: 422
+      Local Work:
+
+  Stage: Stage-10
+    Conditional Operator
+
+  Stage: Stage-15
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-9
+    Map Reduce
+      Map Operator Tree:
+              Data size: 465
+                Data size: 310
+                  Data size: 310
+                    Data size: 310
+      Local Work:
+
+  Stage: Stage-4
+    Map Reduce
+      Map Operator Tree:
+              Data size: 310
+      Reduce Operator Tree:
+          Data size: 155
+
+  Stage: Stage-5
+    Map Reduce
+      Map Operator Tree:
+              Data size: 155
+      Reduce Operator Tree:
+          Data size: 155
+            Data size: 155
+
+  Stage: Stage-3
+    Map Reduce
+      Map Operator Tree:
+              Data size: 422
+              Data size: 2
+      Reduce Operator Tree:
+          Data size: 465
+            Data size: 310
+              Data size: 310
+                Data size: 310
+
+  Stage: Stage-17
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-12
+    Map Reduce
+      Map Operator Tree:
+              Data size: 422
+      Local Work:
+
+  Stage: Stage-2
+    Map Reduce
+      Map Operator Tree:
+              Data size: 394
+              Data size: 0
+      Reduce Operator Tree:
+          Data size: 422
+
+  Stage: Stage-8
+    Map Reduce
+      Map Operator Tree:
+            Data size: 9
+              Data size: 4
+                Data size: 4
+                  Data size: 4
+                    Data size: 4
+      Reduce Operator Tree:
+          Data size: 2
+            Data size: 2
+
+  Stage: Stage-18
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 235
+              Data size: 58
+                Data size: 58
+
+  Stage: Stage-14
+    Map Reduce
+      Map Operator Tree:
+            Data size: 358
+              Data size: 358
+                Data size: 358
+                  Data size: 394
+      Local Work:
+
+  Stage: Stage-0
+    Fetch Operator
+      limit: -1
+      Processor Tree:
+
+@@@sample-queries-tpch/tpch_query17.sql
+STAGE DEPENDENCIES:
+  Stage-5 is a root stage
+  Stage-13 depends on stages: Stage-5 , consists of Stage-17, Stage-18, Stage-1
+  Stage-17 has a backup stage: Stage-1
+  Stage-11 depends on stages: Stage-17
+  Stage-2 depends on stages: Stage-1, Stage-11, Stage-12
+  Stage-10 depends on stages: Stage-2, Stage-14 , consists of Stage-15, Stage-16, Stage-3
+  Stage-15 has a backup stage: Stage-3
+  Stage-8 depends on stages: Stage-15
+  Stage-4 depends on stages: Stage-3, Stage-8, Stage-9
+  Stage-16 has a backup stage: Stage-3
+  Stage-9 depends on stages: Stage-16
+  Stage-3
+  Stage-18 has a backup stage: Stage-1
+  Stage-12 depends on stages: Stage-18
+  Stage-1
+  Stage-19 is a root stage
+  Stage-14 depends on stages: Stage-19
+  Stage-0 depends on stages: Stage-4
+
+STAGE PLANS:
+  Stage: Stage-5
+    Map Reduce
+      Map Operator Tree:
+            Data size: 235
+              Data size: 58
+                Data size: 58
+                  Data size: 58
+                    Data size: 58
+      Reduce Operator Tree:
+          Data size: 29
+
+  Stage: Stage-13
+    Conditional Operator
+
+  Stage: Stage-17
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-11
+    Map Reduce
+      Map Operator Tree:
+            Data size: 9222
+              Data size: 9222
+                Data size: 9222
+                  Data size: 10144
+                    Data size: 10144
+      Local Work:
+
+  Stage: Stage-2
+    Map Reduce
+      Map Operator Tree:
+              Data size: 10144
+      Reduce Operator Tree:
+          Data size: 5072
+            Data size: 5072
+
+  Stage: Stage-10
+    Conditional Operator
+
+  Stage: Stage-15
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-8
+    Map Reduce
+      Map Operator Tree:
+              Data size: 11159
+                Data size: 3719
+                  Data size: 3719
+                    Data size: 0
+      Local Work:
+
+  Stage: Stage-4
+    Map Reduce
+      Map Operator Tree:
+              Data size: 0
+      Reduce Operator Tree:
+          Data size: 0
+            Data size: 0
+              Data size: 0
+
+  Stage: Stage-16
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-9
+    Map Reduce
+      Map Operator Tree:
+              Data size: 11159
+                Data size: 3719
+                  Data size: 3719
+                    Data size: 0
+      Local Work:
+
+  Stage: Stage-3
+    Map Reduce
+      Map Operator Tree:
+              Data size: 5072
+              Data size: 10144
+      Reduce Operator Tree:
+          Data size: 11159
+            Data size: 3719
+              Data size: 3719
+                Data size: 0
+
+  Stage: Stage-18
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 9222
+              Data size: 9222
+                Data size: 9222
+
+  Stage: Stage-12
+    Map Reduce
+      Map Operator Tree:
+              Data size: 10144
+                Data size: 10144
+      Local Work:
+
+  Stage: Stage-1
+    Map Reduce
+      Map Operator Tree:
+            Data size: 9222
+              Data size: 9222
+                Data size: 9222
+                  Data size: 9222
+              Data size: 29
+      Reduce Operator Tree:
+          Data size: 10144
+            Data size: 10144
+
+  Stage: Stage-19
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 235
+              Data size: 58
+                Data size: 58
+                  Data size: 58
+
+  Stage: Stage-14
+    Map Reduce
+      Map Operator Tree:
+            Data size: 9222
+              Data size: 9222
+                Data size: 9222
+                  Data size: 10144
+                    Data size: 10144
+      Local Work:
+
+  Stage: Stage-0
+    Fetch Operator
+      limit: -1
+      Processor Tree:
+
+@@@sample-queries-tpch/tpch_query18.sql
+STAGE DEPENDENCIES:
+  Stage-0 is a root stage
+
+STAGE PLANS:
+  Stage: Stage-0
+      Drop Table Operator:
+
+STAGE DEPENDENCIES:
+  Stage-0 is a root stage
+
+STAGE PLANS:
+  Stage: Stage-0
+      Drop Table Operator:
+
+STAGE DEPENDENCIES:
+  Stage-1 is a root stage
+
+STAGE PLANS:
+  Stage: Stage-1
+      Create View Operator:
+	`lineitem`.`l_orderkey`,
+	sum(`lineitem`.`l_quantity`) as `t_sum_quantity`
+from
+	`tpch_flat_orc_2`.`lineitem`
+where
+	`lineitem`.`l_orderkey` is not null
+group by
+	`lineitem`.`l_orderkey`
+	l_orderkey,
+	sum(l_quantity) as t_sum_quantity
+from
+	lineitem
+where
+	l_orderkey is not null
+group by
+	l_orderkey
+
+@@@sample-queries-tpch/tpch_query19.sql
+STAGE DEPENDENCIES:
+  Stage-5 is a root stage
+  Stage-2 depends on stages: Stage-5
+  Stage-0 depends on stages: Stage-2
+
+STAGE PLANS:
+  Stage: Stage-5
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 235
+              Data size: 235
+                Data size: 235
+
+  Stage: Stage-2
+    Map Reduce
+      Map Operator Tree:
+            Data size: 9222
+              Data size: 2305
+                Data size: 2305
+                  Data size: 2536
+                    Data size: 23
+                      Data size: 23
+                        Data size: 0
+                          Data size: 0
+      Local Work:
+      Reduce Operator Tree:
+          Data size: 0
+            Data size: 0
+
+  Stage: Stage-0
+    Fetch Operator
+      limit: -1
+      Processor Tree:
+
+@@@sample-queries-tpch/tpch_query1.sql
+STAGE DEPENDENCIES:
+  Stage-1 is a root stage
+  Stage-2 depends on stages: Stage-1
+  Stage-0 depends on stages: Stage-2
+
+STAGE PLANS:
+  Stage: Stage-1
+    Map Reduce
+      Map Operator Tree:
+            Data size: 9222
+              Data size: 3074
+                Data size: 3074
+                  Data size: 3074
+                    Data size: 3074
+      Reduce Operator Tree:
+          Data size: 1537
+
+  Stage: Stage-2
+    Map Reduce
+      Map Operator Tree:
+              Data size: 1537
+      Reduce Operator Tree:
+          Data size: 1537
+            Data size: 1537
+
+  Stage: Stage-0
+    Fetch Operator
+      limit: -1
+      Processor Tree:
+
+@@@sample-queries-tpch/tpch_query20.sql
+STAGE DEPENDENCIES:
+  Stage-23 is a root stage
+  Stage-15 depends on stages: Stage-23
+  Stage-14 depends on stages: Stage-7, Stage-15 , consists of Stage-21, Stage-22, Stage-4
+  Stage-21 has a backup stage: Stage-4
+  Stage-12 depends on stages: Stage-21
+  Stage-11 depends on stages: Stage-4, Stage-12, Stage-13 , consists of Stage-20, Stage-1
+  Stage-20 has a backup stage: Stage-1
+  Stage-10 depends on stages: Stage-20
+  Stage-2 depends on stages: Stage-1, Stage-10
+  Stage-1
+  Stage-22 has a backup stage: Stage-4
+  Stage-13 depends on stages: Stage-22
+  Stage-4
+  Stage-26 is a root stage
+  Stage-19 depends on stages: Stage-26
+  Stage-18 depends on stages: Stage-19 , consists of Stage-24, Stage-25, Stage-6
+  Stage-24 has a backup stage: Stage-6
+  Stage-16 depends on stages: Stage-24
+  Stage-7 depends on stages: Stage-6, Stage-16, Stage-17
+  Stage-25 has a backup stage: Stage-6
+  Stage-17 depends on stages: Stage-25
+  Stage-6
+  Stage-0 depends on stages: Stage-2
+
+STAGE PLANS:
+  Stage: Stage-23
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 235
+              Data size: 117
+                Data size: 117
+                  Data size: 117
+
+  Stage: Stage-15
+    Map Reduce
+      Map Operator Tree:
+            Data size: 358
+              Data size: 358
+                Data size: 358
+                  Data size: 394
+      Local Work:
+
+  Stage: Stage-14
+    Conditional Operator
+
+  Stage: Stage-21
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-12
+    Map Reduce
+      Map Operator Tree:
+              Data size: 433
+                Data size: 144
+                  Data size: 144
+                    Data size: 144
+      Local Work:
+
+  Stage: Stage-11
+    Conditional Operator
+
+  Stage: Stage-20
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-10
+    Map Reduce
+      Map Operator Tree:
+            Data size: 9
+              Data size: 9
+                Data size: 9
+                  Data size: 159
+                    Data size: 159
+      Local Work:
+
+  Stage: Stage-2
+    Map Reduce
+      Map Operator Tree:
+              Data size: 159
+      Reduce Operator Tree:
+          Data size: 159
+            Data size: 159
+
+  Stage: Stage-1
+    Map Reduce
+      Map Operator Tree:
+            Data size: 9
+              Data size: 9
+                Data size: 9
+                  Data size: 9
+              Data size: 144
+      Reduce Operator Tree:
+          Data size: 159
+            Data size: 159
+
+  Stage: Stage-22
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-13
+    Map Reduce
+      Map Operator Tree:
+              Data size: 433
+                Data size: 144
+                  Data size: 144
+                    Data size: 144
+      Local Work:
+
+  Stage: Stage-4
+    Map Reduce
+      Map Operator Tree:
+              Data size: 394
+              Data size: 563
+      Reduce Operator Tree:
+          Data size: 433
+            Data size: 144
+              Data size: 144
+                Data size: 144
+
+  Stage: Stage-26
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 0
+              Data size: 0
+                Data size: 0
+
+  Stage: Stage-19
+    Map Reduce
+      Map Operator Tree:
+            Data size: 9
+              Data size: 9
+                Data size: 9
+                  Data size: 10
+      Local Work:
+
+  Stage: Stage-18
+    Conditional Operator
+
+  Stage: Stage-24
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-16
+    Map Reduce
+      Map Operator Tree:
+            Data size: 9222
+              Data size: 1024
+                Data size: 1024
+                  Data size: 1127
+                    Data size: 1127
+                      Data size: 1127
+      Local Work:
+
+  Stage: Stage-7
+    Map Reduce
+      Map Operator Tree:
+              Data size: 1127
+      Reduce Operator Tree:
+          Data size: 563
+            Data size: 563
+
+  Stage: Stage-25
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 9222
+              Data size: 1024
+                Data size: 1024
+
+  Stage: Stage-17
+    Map Reduce
+      Map Operator Tree:
+              Data size: 1127
+                Data size: 1127
+                  Data size: 1127
+      Local Work:
+
+  Stage: Stage-6
+    Map Reduce
+      Map Operator Tree:
+            Data size: 9222
+              Data size: 1024
+                Data size: 1024
+                  Data size: 1024
+              Data size: 10
+      Reduce Operator Tree:
+          Data size: 1127
+            Data size: 1127
+              Data size: 1127
+
+  Stage: Stage-0
+    Fetch Operator
+      limit: -1
+      Processor Tree:
+
+@@@sample-queries-tpch/tpch_query21.sql
+STAGE DEPENDENCIES:
+  Stage-1 is a root stage
+  Stage-0 depends on stages: Stage-1
+  Stage-3 depends on stages: Stage-0
+  Stage-2 depends on stages: Stage-3
+
+STAGE PLANS:
+  Stage: Stage-1
+    Map Reduce
+      Map Operator Tree:
+            Data size: 9222
+              Data size: 3074
+                Data size: 3074
+                  Data size: 3074
+                    Data size: 3074
+      Reduce Operator Tree:
+          Data size: 1537
+            Data size: 0
+              Data size: 0
+                Data size: 0
+
+  Stage: Stage-0
+    Move Operator
+      files:
+
+  Stage: Stage-3
+      Create Table Operator:
+
+  Stage: Stage-2
+    Stats-Aggr Operator
+
+@@@sample-queries-tpch/tpch_query22.sql
+STAGE DEPENDENCIES:
+  Stage-0 is a root stage
+
+STAGE PLANS:
+  Stage: Stage-0
+      Drop Table Operator:
+
+STAGE DEPENDENCIES:
+  Stage-0 is a root stage
+
+STAGE PLANS:
+  Stage: Stage-0
+      Drop Table Operator:
+
+STAGE DEPENDENCIES:
+  Stage-0 is a root stage
+
+STAGE PLANS:
+  Stage: Stage-0
+      Drop Table Operator:
+
+STAGE DEPENDENCIES:
+  Stage-1 is a root stage
+
+STAGE PLANS:
+  Stage: Stage-1
+      Create View Operator:
+	`customer`.`c_acctbal`,
+	`customer`.`c_custkey`,
+	substr(`customer`.`c_phone`, 1, 2) as `cntrycode`
+from
+	`tpch_flat_orc_2`.`customer`
+where
+	substr(`customer`.`c_phone`, 1, 2) = '13' or
+	substr(`customer`.`c_phone`, 1, 2) = '31' or
+	substr(`customer`.`c_phone`, 1, 2) = '23' or
+	substr(`customer`.`c_phone`, 1, 2) = '29' or
+	substr(`customer`.`c_phone`, 1, 2) = '30' or
+	substr(`customer`.`c_phone`, 1, 2) = '18' or
+	substr(`customer`.`c_phone`, 1, 2) = '17'
+	c_acctbal,
+	c_custkey,
+	substr(c_phone, 1, 2) as cntrycode
+from
+	customer
+where
+	substr(c_phone, 1, 2) = '13' or
+	substr(c_phone, 1, 2) = '31' or
+	substr(c_phone, 1, 2) = '23' or
+	substr(c_phone, 1, 2) = '29' or
+	substr(c_phone, 1, 2) = '30' or
+	substr(c_phone, 1, 2) = '18' or
+	substr(c_phone, 1, 2) = '17'
+
+@@@sample-queries-tpch/tpch_query2.sql
+STAGE DEPENDENCIES:
+  Stage-0 is a root stage
+
+STAGE PLANS:
+  Stage: Stage-0
+      Drop Table Operator:
+
+STAGE DEPENDENCIES:
+  Stage-1 is a root stage
+
+STAGE PLANS:
+  Stage: Stage-1
+      Create View Operator:
+	`part`.`p_partkey` as `min_p_partkey`,
+	min(`partsupp`.`ps_supplycost`) as `min_ps_supplycost`
+from
+	`tpch_flat_orc_2`.`part`,
+	`tpch_flat_orc_2`.`partsupp`,
+	`tpch_flat_orc_2`.`supplier`,
+	`tpch_flat_orc_2`.`nation`,
+	`tpch_flat_orc_2`.`region`
+where
+	`part`.`p_partkey` = `partsupp`.`ps_partkey`
+	and `supplier`.`s_suppkey` = `partsupp`.`ps_suppkey`
+	and `supplier`.`s_nationkey` = `nation`.`n_nationkey`
+	and `nation`.`n_regionkey` = `region`.`r_regionkey`
+	and `region`.`r_name` = 'EUROPE'
+group by
+	`part`.`p_partkey`
+	p_partkey as min_p_partkey,
+	min(ps_supplycost) as min_ps_supplycost
+from
+	part,
+	partsupp,
+	supplier,
+	nation,
+	region
+where
+	p_partkey = ps_partkey
+	and s_suppkey = ps_suppkey
+	and s_nationkey = n_nationkey
+	and n_regionkey = r_regionkey
+	and r_name = 'EUROPE'
+group by
+	p_partkey
+
+@@@sample-queries-tpch/tpch_query3.sql
+STAGE DEPENDENCIES:
+  Stage-11 is a root stage , consists of Stage-14, Stage-1
+  Stage-14 has a backup stage: Stage-1
+  Stage-10 depends on stages: Stage-14
+  Stage-9 depends on stages: Stage-1, Stage-10 , consists of Stage-12, Stage-13, Stage-2
+  Stage-12 has a backup stage: Stage-2
+  Stage-7 depends on stages: Stage-12
+  Stage-3 depends on stages: Stage-2, Stage-7, Stage-8
+  Stage-4 depends on stages: Stage-3
+  Stage-13 has a backup stage: Stage-2
+  Stage-8 depends on stages: Stage-13
+  Stage-2
+  Stage-1
+  Stage-0 depends on stages: Stage-4
+
+STAGE PLANS:
+  Stage: Stage-11
+    Conditional Operator
+
+  Stage: Stage-14
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 166
+              Data size: 83
+                Data size: 83
+
+  Stage: Stage-10
+    Map Reduce
+      Map Operator Tree:
+            Data size: 1516
+              Data size: 505
+                Data size: 505
+                  Data size: 555
+      Local Work:
+
+  Stage: Stage-9
+    Conditional Operator
+
+  Stage: Stage-12
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 9222
+              Data size: 3074
+                Data size: 3074
+
+  Stage: Stage-7
+    Map Reduce
+      Map Operator Tree:
+              Data size: 3381
+                Data size: 3381
+                  Data size: 3381
+      Local Work:
+
+  Stage: Stage-3
+    Map Reduce
+      Map Operator Tree:
+              Data size: 3381
+      Reduce Operator Tree:
+          Data size: 1690
+            Data size: 1690
+
+  Stage: Stage-4
+    Map Reduce
+      Map Operator Tree:
+              Data size: 1690
+      Reduce Operator Tree:
+          Data size: 1690
+            Data size: 0
+              Data size: 0
+
+  Stage: Stage-13
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-8
+    Map Reduce
+      Map Operator Tree:
+            Data size: 9222
+              Data size: 3074
+                Data size: 3074
+                  Data size: 3381
+                    Data size: 3381
+                      Data size: 3381
+      Local Work:
+
+  Stage: Stage-2
+    Map Reduce
+      Map Operator Tree:
+              Data size: 555
+            Data size: 9222
+              Data size: 3074
+                Data size: 3074
+                  Data size: 3074
+      Reduce Operator Tree:
+          Data size: 3381
+            Data size: 3381
+              Data size: 3381
+
+  Stage: Stage-1
+    Map Reduce
+      Map Operator Tree:
+            Data size: 1516
+              Data size: 505
+                Data size: 505
+                  Data size: 505
+            Data size: 166
+              Data size: 83
+                Data size: 83
+                  Data size: 83
+      Reduce Operator Tree:
+          Data size: 555
+
+  Stage: Stage-0
+    Fetch Operator
+      limit: 10
+      Processor Tree:
+
+@@@sample-queries-tpch/tpch_query4.sql
+STAGE DEPENDENCIES:
+  Stage-4 is a root stage
+  Stage-7 depends on stages: Stage-4 , consists of Stage-8, Stage-9, Stage-1
+  Stage-8 has a backup stage: Stage-1
+  Stage-5 depends on stages: Stage-8
+  Stage-2 depends on stages: Stage-1, Stage-5, Stage-6
+  Stage-3 depends on stages: Stage-2
+  Stage-9 has a backup stage: Stage-1
+  Stage-6 depends on stages: Stage-9
+  Stage-1
+  Stage-0 depends on stages: Stage-3
+
+STAGE PLANS:
+  Stage: Stage-4
+    Map Reduce
+      Map Operator Tree:
+            Data size: 9222
+              Data size: 1537
+                Data size: 1537
+                  Data size: 1537
+                    Data size: 1537
+      Reduce Operator Tree:
+          Data size: 768
+
+  Stage: Stage-7
+    Conditional Operator
+
+  Stage: Stage-8
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-5
+    Map Reduce
+      Map Operator Tree:
+            Data size: 1516
+              Data size: 168
+                Data size: 168
+                  Data size: 845
+                    Data size: 845
+      Local Work:
+
+  Stage: Stage-2
+    Map Reduce
+      Map Operator Tree:
+              Data size: 845
+      Reduce Operator Tree:
+          Data size: 422
+
+  Stage: Stage-3
+    Map Reduce
+      Map Operator Tree:
+              Data size: 422
+      Reduce Operator Tree:
+          Data size: 422
+            Data size: 422
+
+  Stage: Stage-9
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 1516
+              Data size: 168
+                Data size: 168
+
+  Stage: Stage-6
+    Map Reduce
+      Map Operator Tree:
+              Data size: 845
+                Data size: 845
+      Local Work:
+
+  Stage: Stage-1
+    Map Reduce
+      Map Operator Tree:
+            Data size: 1516
+              Data size: 168
+                Data size: 168
+                  Data size: 168
+              Data size: 768
+      Reduce Operator Tree:
+          Data size: 845
+            Data size: 845
+
+  Stage: Stage-0
+    Fetch Operator
+      limit: -1
+      Processor Tree:
+
+@@@sample-queries-tpch/tpch_query5.sql
+STAGE DEPENDENCIES:
+  Stage-30 is a root stage
+  Stage-22 depends on stages: Stage-30
+  Stage-21 depends on stages: Stage-22 , consists of Stage-28, Stage-29, Stage-3
+  Stage-28 has a backup stage: Stage-3
+  Stage-19 depends on stages: Stage-28
+  Stage-18 depends on stages: Stage-3, Stage-19, Stage-20 , consists of Stage-26, Stage-27, Stage-4
+  Stage-26 has a backup stage: Stage-4
+  Stage-16 depends on stages: Stage-26
+  Stage-15 depends on stages: Stage-4, Stage-16, Stage-17 , consists of Stage-24, Stage-25, Stage-5
+  Stage-24 has a backup stage: Stage-5
+  Stage-13 depends on stages: Stage-24
+  Stage-6 depends on stages: Stage-5, Stage-13, Stage-14
+  Stage-7 depends on stages: Stage-6
+  Stage-25 has a backup stage: Stage-5
+  Stage-14 depends on stages: Stage-25
+  Stage-5
+  Stage-27 has a backup stage: Stage-4
+  Stage-17 depends on stages: Stage-27
+  Stage-4
+  Stage-29 has a backup stage: Stage-3
+  Stage-20 depends on stages: Stage-29
+  Stage-3
+  Stage-0 depends on stages: Stage-7
+
+STAGE PLANS:
+  Stage: Stage-30
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 9
+              Data size: 9
+                Data size: 9
+            Data size: 0
+              Data size: 0
+                Data size: 0
+
+  Stage: Stage-22
+    Map Reduce
+      Map Operator Tree:
+            Data size: 0
+              Data size: 0
+                Data size: 0
+                  Data size: 0
+                    Data size: 10
+      Local Work:
+
+  Stage: Stage-21
+    Conditional Operator
+
+  Stage: Stage-28
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 9222
+              Data size: 9222
+                Data size: 9222
+
+  Stage: Stage-19
+    Map Reduce
+      Map Operator Tree:
+              Data size: 10144
+      Local Work:
+
+  Stage: Stage-18
+    Conditional Operator
+
+  Stage: Stage-26
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 1516
+              Data size: 168
+                Data size: 168
+
+  Stage: Stage-16
+    Map Reduce
+      Map Operator Tree:
+              Data size: 11159
+      Local Work:
+
+  Stage: Stage-15
+    Conditional Operator
+
+  Stage: Stage-24
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 166
+              Data size: 166
+                Data size: 166
+
+  Stage: Stage-13
+    Map Reduce
+      Map Operator Tree:
+              Data size: 12275
+                Data size: 12275
+                  Data size: 12275
+      Local Work:
+
+  Stage: Stage-6
+    Map Reduce
+      Map Operator Tree:
+              Data size: 12275
+      Reduce Operator Tree:
+          Data size: 6137
+
+  Stage: Stage-7
+    Map Reduce
+      Map Operator Tree:
+              Data size: 6137
+      Reduce Operator Tree:
+          Data size: 6137
+            Data size: 6137
+
+  Stage: Stage-25
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-14
+    Map Reduce
+      Map Operator Tree:
+            Data size: 166
+              Data size: 166
+                Data size: 166
+                  Data size: 12275
+                    Data size: 12275
+                      Data size: 12275
+      Local Work:
+
+  Stage: Stage-5
+    Map Reduce
+      Map Operator Tree:
+              Data size: 11159
+            Data size: 166
+              Data size: 166
+                Data size: 166
+                  Data size: 166
+      Reduce Operator Tree:
+          Data size: 12275
+            Data size: 12275
+              Data size: 12275
+
+  Stage: Stage-27
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-17
+    Map Reduce
+      Map Operator Tree:
+            Data size: 1516
+              Data size: 168
+                Data size: 168
+                  Data size: 11159
+      Local Work:
+
+  Stage: Stage-4
+    Map Reduce
+      Map Operator Tree:
+              Data size: 10144
+            Data size: 1516
+              Data size: 168
+                Data size: 168
+                  Data size: 168
+      Reduce Operator Tree:
+          Data size: 11159
+
+  Stage: Stage-29
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-20
+    Map Reduce
+      Map Operator Tree:
+            Data size: 9222
+              Data size: 9222
+                Data size: 9222
+                  Data size: 10144
+      Local Work:
+
+  Stage: Stage-3
+    Map Reduce
+      Map Operator Tree:
+              Data size: 10
+            Data size: 9222
+              Data size: 9222
+                Data size: 9222
+                  Data size: 9222
+      Reduce Operator Tree:
+          Data size: 10144
+
+  Stage: Stage-0
+    Fetch Operator
+      limit: -1
+      Processor Tree:
+
+@@@sample-queries-tpch/tpch_query6.sql
+STAGE DEPENDENCIES:
+  Stage-1 is a root stage
+  Stage-0 depends on stages: Stage-1
+
+STAGE PLANS:
+  Stage: Stage-1
+    Map Reduce
+      Map Operator Tree:
+            Data size: 9222
+              Data size: 37
+                Data size: 37
+                  Data size: 0
+                    Data size: 0
+      Reduce Operator Tree:
+          Data size: 0
+            Data size: 0
+
+  Stage: Stage-0
+    Fetch Operator
+      limit: -1
+      Processor Tree:
+
+@@@sample-queries-tpch/tpch_query7.sql
+STAGE DEPENDENCIES:
+  Stage-6 is a root stage
+  Stage-17 depends on stages: Stage-6, Stage-18 , consists of Stage-21, Stage-22, Stage-7
+  Stage-21 has a backup stage: Stage-7
+  Stage-15 depends on stages: Stage-21
+  Stage-13 depends on stages: Stage-7, Stage-14, Stage-15, Stage-16 , consists of Stage-19, Stage-20, Stage-2
+  Stage-19 has a backup stage: Stage-2
+  Stage-11 depends on stages: Stage-19
+  Stage-3 depends on stages: Stage-2, Stage-11, Stage-12
+  Stage-4 depends on stages: Stage-3
+  Stage-20 has a backup stage: Stage-2
+  Stage-12 depends on stages: Stage-20
+  Stage-2
+  Stage-22 has a backup stage: Stage-7
+  Stage-16 depends on stages: Stage-22
+  Stage-7
+  Stage-23 is a root stage
+  Stage-14 depends on stages: Stage-23
+  Stage-24 is a root stage
+  Stage-18 depends on stages: Stage-24
+  Stage-0 depends on stages: Stage-4
+
+STAGE PLANS:
+  Stage: Stage-6
+    Map Reduce
+      Map Operator Tree:
+            Data size: 1516
+              Data size: 1516
+                Data size: 1516
+                  Data size: 1516
+            Data size: 9222
+              Data size: 1024
+                Data size: 1024
+                  Data size: 1024
+      Reduce Operator Tree:
+          Data size: 1667
+
+  Stage: Stage-17
+    Conditional Operator
+
+  Stage: Stage-21
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-15
+    Map Reduce
+      Map Operator Tree:
+              Data size: 1834
+                Data size: 1834
+      Local Work:
+
+  Stage: Stage-13
+    Conditional Operator
+
+  Stage: Stage-19
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-11
+    Map Reduce
+      Map Operator Tree:
+              Data size: 2018
+                Data size: 2018
+                  Data size: 1009
+                    Data size: 1009
+                      Data size: 1009
+      Local Work:
+
+  Stage: Stage-3
+    Map Reduce
+      Map Operator Tree:
+              Data size: 1009
+      Reduce Operator Tree:
+          Data size: 504
+
+  Stage: Stage-4
+    Map Reduce
+      Map Operator Tree:
+              Data size: 504
+      Reduce Operator Tree:
+          Data size: 504
+            Data size: 504
+
+  Stage: Stage-20
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-12
+    Map Reduce
+      Map Operator Tree:
+              Data size: 2018
+                Data size: 2018
+                  Data size: 1009
+                    Data size: 1009
+                      Data size: 1009
+      Local Work:
+
+  Stage: Stage-2
+    Map Reduce
+      Map Operator Tree:
+              Data size: 183
+              Data size: 1834
+      Reduce Operator Tree:
+          Data size: 2018
+            Data size: 2018
+              Data size: 1009
+                Data size: 1009
+                  Data size: 1009
+
+  Stage: Stage-22
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-16
+    Map Reduce
+      Map Operator Tree:
+              Data size: 1834
+                Data size: 1834
+      Local Work:
+
+  Stage: Stage-7
+    Map Reduce
+      Map Operator Tree:
+              Data size: 1667
+              Data size: 10
+      Reduce Operator Tree:
+          Data size: 1834
+            Data size: 1834
+
+  Stage: Stage-23
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 0
+              Data size: 0
+                Data size: 0
+
+  Stage: Stage-14
+    Map Reduce
+      Map Operator Tree:
+            Data size: 166
+              Data size: 166
+                Data size: 166
+                  Data size: 183
+      Local Work:
+
+  Stage: Stage-24
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 0
+              Data size: 0
+                Data size: 0
+
+  Stage: Stage-18
+    Map Reduce
+      Map Operator Tree:
+            Data size: 9
+              Data size: 9
+                Data size: 9
+                  Data size: 10
+      Local Work:
+
+  Stage: Stage-0
+    Fetch Operator
+      limit: -1
+      Processor Tree:
+
+@@@sample-queries-tpch/tpch_query8.sql
+STAGE DEPENDENCIES:
+  Stage-26 is a root stage , consists of Stage-36, Stage-9
+  Stage-36 has a backup stage: Stage-9
+  Stage-25 depends on stages: Stage-36
+  Stage-24 depends on stages: Stage-9, Stage-25, Stage-27 , consists of Stage-34, Stage-35, Stage-10
+  Stage-34 has a backup stage: Stage-10
+  Stage-22 depends on stages: Stage-34
+  Stage-20 depends on stages: Stage-10, Stage-21, Stage-22, Stage-23 , consists of Stage-31, Stage-32, Stage-7
+  Stage-31 has a backup stage: Stage-7
+  Stage-18 depends on stages: Stage-31
+  Stage-16 depends on stages: Stage-7, Stage-17, Stage-18, Stage-19 , consists of Stage-28, Stage-29, Stage-2
+  Stage-28 has a backup stage: Stage-2
+  Stage-14 depends on stages: Stage-28
+  Stage-3 depends on stages: Stage-2, Stage-14, Stage-15
+  Stage-4 depends on stages: Stage-3
+  Stage-29 has a backup stage: Stage-2
+  Stage-15 depends on stages: Stage-29
+  Stage-2
+  Stage-32 has a backup stage: Stage-7
+  Stage-19 depends on stages: Stage-32
+  Stage-7
+  Stage-35 has a backup stage: Stage-10
+  Stage-23 depends on stages: Stage-35
+  Stage-10
+  Stage-9
+  Stage-30 is a root stage
+  Stage-17 depends on stages: Stage-30
+  Stage-33 is a root stage
+  Stage-21 depends on stages: Stage-33
+  Stage-37 is a root stage
+  Stage-27 depends on stages: Stage-37
+  Stage-0 depends on stages: Stage-4
+
+STAGE PLANS:
+  Stage: Stage-26
+    Conditional Operator
+
+  Stage: Stage-36
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 166
+              Data size: 166
+                Data size: 166
+
+  Stage: Stage-25
+    Map Reduce
+      Map Operator Tree:
+            Data size: 1516
+              Data size: 168
+                Data size: 168
+                  Data size: 185
+      Local Work:
+
+  Stage: Stage-24
+    Conditional Operator
+
+  Stage: Stage-34
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-22
+    Map Reduce
+      Map Operator Tree:
+              Data size: 203
+      Local Work:
+
+  Stage: Stage-20
+    Conditional Operator
+
+  Stage: Stage-31
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-18
+    Map Reduce
+      Map Operator Tree:
+              Data size: 11159
+                Data size: 11159
+      Local Work:
+
+  Stage: Stage-16
+    Conditional Operator
+
+  Stage: Stage-28
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-14
+    Map Reduce
+      Map Operator Tree:
+              Data size: 12275
+                Data size: 12275
+                  Data size: 12275
+      Local Work:
+
+  Stage: Stage-3
+    Map Reduce
+      Map Operator Tree:
+              Data size: 12275
+      Reduce Operator Tree:
+          Data size: 6137
+            Data size: 6137
+
+  Stage: Stage-4
+    Map Reduce
+      Map Operator Tree:
+              Data size: 6137
+      Reduce Operator Tree:
+          Data size: 6137
+            Data size: 6137
+
+  Stage: Stage-29
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-15
+    Map Reduce
+      Map Operator Tree:
+              Data size: 12275
+                Data size: 12275
+                  Data size: 12275
+      Local Work:
+
+  Stage: Stage-2
+    Map Reduce
+      Map Operator Tree:
+              Data size: 10
+              Data size: 11159
+      Reduce Operator Tree:
+          Data size: 12275
+            Data size: 12275
+              Data size: 12275
+
+  Stage: Stage-32
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-19
+    Map Reduce
+      Map Operator Tree:
+              Data size: 11159
+                Data size: 11159
+      Local Work:
+
+  Stage: Stage-7
+    Map Reduce
+      Map Operator Tree:
+              Data size: 10144
+              Data size: 203
+      Reduce Operator Tree:
+          Data size: 11159
+            Data size: 11159
+
+  Stage: Stage-35
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-23
+    Map Reduce
+      Map Operator Tree:
+              Data size: 203
+      Local Work:
+
+  Stage: Stage-10
+    Map Reduce
+      Map Operator Tree:
+              Data size: 185
+              Data size: 0
+      Reduce Operator Tree:
+          Data size: 203
+
+  Stage: Stage-9
+    Map Reduce
+      Map Operator Tree:
+            Data size: 166
+              Data size: 166
+                Data size: 166
+                  Data size: 166
+            Data size: 1516
+              Data size: 168
+                Data size: 168
+                  Data size: 168
+      Reduce Operator Tree:
+          Data size: 185
+
+  Stage: Stage-30
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 0
+              Data size: 0
+                Data size: 0
+
+  Stage: Stage-17
+    Map Reduce
+      Map Operator Tree:
+            Data size: 9
+              Data size: 9
+                Data size: 9
+                  Data size: 10
+      Local Work:
+
+  Stage: Stage-33
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 235
+              Data size: 117
+                Data size: 117
+
+  Stage: Stage-21
+    Map Reduce
+      Map Operator Tree:
+            Data size: 9222
+              Data size: 9222
+                Data size: 9222
+                  Data size: 10144
+      Local Work:
+
+  Stage: Stage-37
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 0
+              Data size: 0
+                Data size: 0
+
+  Stage: Stage-27
+    Map Reduce
+      Map Operator Tree:
+            Data size: 0
+              Data size: 0
+                Data size: 0
+                  Data size: 0
+      Local Work:
+
+  Stage: Stage-0
+    Fetch Operator
+      limit: -1
+      Processor Tree:
+
+@@@sample-queries-tpch/tpch_query9.sql
+STAGE DEPENDENCIES:
+  Stage-27 is a root stage
+  Stage-18 depends on stages: Stage-27
+  Stage-17 depends on stages: Stage-8, Stage-18, Stage-19, Stage-20 , consists of Stage-25, Stage-26, Stage-2
+  Stage-25 has a backup stage: Stage-2
+  Stage-15 depends on stages: Stage-25
+  Stage-14 depends on stages: Stage-2, Stage-15, Stage-16 , consists of Stage-23, Stage-24, Stage-3
+  Stage-23 has a backup stage: Stage-3
+  Stage-12 depends on stages: Stage-23
+  Stage-4 depends on stages: Stage-3, Stage-12, Stage-13
+  Stage-5 depends on stages: Stage-4
+  Stage-24 has a backup stage: Stage-3
+  Stage-13 depends on stages: Stage-24
+  Stage-3
+  Stage-26 has a backup stage: Stage-2
+  Stage-16 depends on stages: Stage-26
+  Stage-2
+  Stage-30 is a root stage
+  Stage-22 depends on stages: Stage-30
+  Stage-21 depends on stages: Stage-22 , consists of Stage-28, Stage-29, Stage-8
+  Stage-28 has a backup stage: Stage-8
+  Stage-19 depends on stages: Stage-28
+  Stage-29 has a backup stage: Stage-8
+  Stage-20 depends on stages: Stage-29
+  Stage-8
+  Stage-0 depends on stages: Stage-5
+
+STAGE PLANS:
+  Stage: Stage-27
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 0
+              Data size: 0
+                Data size: 0
+
+  Stage: Stage-18
+    Map Reduce
+      Map Operator Tree:
+            Data size: 9
+              Data size: 9
+                Data size: 9
+                  Data size: 10
+      Local Work:
+
+  Stage: Stage-17
+    Conditional Operator
+
+  Stage: Stage-25
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-15
+    Map Reduce
+      Map Operator Tree:
+              Data size: 12275
+      Local Work:
+
+  Stage: Stage-14
+    Conditional Operator
+
+  Stage: Stage-23
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 1516
+              Data size: 1516
+                Data size: 1516
+
+  Stage: Stage-12
+    Map Reduce
+      Map Operator Tree:
+              Data size: 13502
+                Data size: 13502
+                  Data size: 13502
+      Local Work:
+
+  Stage: Stage-4
+    Map Reduce
+      Map Operator Tree:
+              Data size: 13502
+      Reduce Operator Tree:
+          Data size: 6751
+
+  Stage: Stage-5
+    Map Reduce
+      Map Operator Tree:
+              Data size: 6751
+      Reduce Operator Tree:
+          Data size: 6751
+            Data size: 6751
+
+  Stage: Stage-24
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-13
+    Map Reduce
+      Map Operator Tree:
+            Data size: 1516
+              Data size: 1516
+                Data size: 1516
+                  Data size: 13502
+                    Data size: 13502
+                      Data size: 13502
+      Local Work:
+
+  Stage: Stage-3
+    Map Reduce
+      Map Operator Tree:
+              Data size: 12275
+            Data size: 1516
+              Data size: 1516
+                Data size: 1516
+                  Data size: 1516
+      Reduce Operator Tree:
+          Data size: 13502
+            Data size: 13502
+              Data size: 13502
+
+  Stage: Stage-26
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-16
+    Map Reduce
+      Map Operator Tree:
+              Data size: 12275
+      Local Work:
+
+  Stage: Stage-2
+    Map Reduce
+      Map Operator Tree:
+              Data size: 10
+              Data size: 11159
+      Reduce Operator Tree:
+          Data size: 12275
+
+  Stage: Stage-30
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 235
+              Data size: 117
+                Data size: 117
+
+  Stage: Stage-22
+    Map Reduce
+      Map Operator Tree:
+            Data size: 9222
+              Data size: 9222
+                Data size: 9222
+                  Data size: 10144
+      Local Work:
+
+  Stage: Stage-21
+    Conditional Operator
+
+  Stage: Stage-28
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 358
+              Data size: 358
+                Data size: 358
+
+  Stage: Stage-19
+    Map Reduce
+      Map Operator Tree:
+              Data size: 11159
+                Data size: 11159
+      Local Work:
+
+  Stage: Stage-29
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-20
+    Map Reduce
+      Map Operator Tree:
+            Data size: 358
+              Data size: 358
+                Data size: 358
+                  Data size: 11159
+                    Data size: 11159
+      Local Work:
+
+  Stage: Stage-8
+    Map Reduce
+      Map Operator Tree:
+              Data size: 10144
+            Data size: 358
+              Data size: 358
+                Data size: 358
+                  Data size: 358
+      Reduce Operator Tree:
+          Data size: 11159
+            Data size: 11159
+
+  Stage: Stage-0
+    Fetch Operator
+      limit: -1
+      Processor Tree:
+

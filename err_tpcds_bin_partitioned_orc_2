@@ -1,0 +1,2288 @@
+@@@sample-queries-tpcds/query12.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.263 seconds
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_item_sk, ws_ext_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_desc, i_item_id, i_class, i_category, i_current_price, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+OK
+Time taken: 6.183 seconds, Fetched: 192 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query13.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.955 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_cdemo_sk, ss_ext_sales_price, ss_net_profit, ss_ext_wholesale_cost, ss_addr_sk, ss_store_sk, ss_hdemo_sk, ss_quantity, ss_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer_demographics, Columns: cd_demo_sk, cd_education_status, cd_marital_status
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_demo_sk, hd_dep_count
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_state, ca_address_sk, ca_country
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+OK
+Time taken: 6.799 seconds, Fetched: 199 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query15.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.985 seconds
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_sales_price, cs_bill_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_current_addr_sk, c_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_zip, ca_state, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_qoy, d_year
+OK
+Time taken: 6.717 seconds, Fetched: 175 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query17.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.646 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_ticket_number, ss_item_sk, ss_store_sk, ss_quantity
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_ticket_number, sr_item_sk, sr_return_quantity, sr_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_item_sk, cs_quantity, cs_bill_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_quarter_name, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_quarter_name, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_quarter_name, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_state, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_desc, i_item_id, i_item_sk
+OK
+Time taken: 11.27 seconds, Fetched: 406 row(s)
+@@@sample-queries-tpcds/query18.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.646 seconds
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_net_profit, cs_bill_cdemo_sk, cs_item_sk, cs_quantity, cs_sales_price, cs_coupon_amt, cs_list_price, cs_bill_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@customer_demographics, Columns: cd_demo_sk, cd_education_status, cd_dep_count, cd_gender
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_current_addr_sk, c_customer_sk, c_current_cdemo_sk, c_birth_month, c_birth_year
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_county, ca_state, ca_address_sk, ca_country
+No Stats for tpcds_bin_partitioned_orc_2@customer_demographics, Columns: cd_demo_sk
+OK
+Time taken: 7.008 seconds, Fetched: 250 row(s)
+@@@sample-queries-tpcds/query19.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.769 seconds
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_ext_sales_price, ss_item_sk, ss_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_manager_id, i_brand, i_manufact_id, i_brand_id, i_manufact, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_current_addr_sk, c_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_zip, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_zip, s_store_sk
+OK
+Time taken: 6.676 seconds, Fetched: 225 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query20.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.571 seconds
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_ext_sales_price, cs_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_desc, i_item_id, i_class, i_category, i_current_price, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+OK
+Time taken: 6.209 seconds, Fetched: 192 row(s)
+@@@sample-queries-tpcds/query21.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.335 seconds
+No Stats for tpcds_bin_partitioned_orc_2@inventory, Columns: inv_quantity_on_hand, inv_warehouse_sk, inv_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@warehouse, Columns: w_warehouse_name, w_warehouse_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_current_price, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+OK
+Time taken: 4.305 seconds, Fetched: 170 row(s)
+@@@sample-queries-tpcds/query22.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.989 seconds
+No Stats for tpcds_bin_partitioned_orc_2@inventory, Columns: inv_quantity_on_hand, inv_warehouse_sk, inv_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_month_seq, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_class, i_category, i_brand, i_product_name, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@warehouse, Columns: w_warehouse_sk
+OK
+Time taken: 4.213 seconds, Fetched: 171 row(s)
+@@@sample-queries-tpcds/query24.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.288 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_ticket_number, ss_item_sk, ss_store_sk, ss_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_ticket_number, sr_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_zip, s_state, s_market_id, s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_manager_id, i_units, i_current_price, i_size, i_color, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_customer_sk, c_last_name, c_birth_country, c_first_name
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_zip, ca_state, ca_country
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_ticket_number, ss_item_sk, ss_store_sk, ss_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_ticket_number, sr_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_zip, s_state, s_market_id, s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_manager_id, i_units, i_current_price, i_size, i_color, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_customer_sk, c_last_name, c_birth_country, c_first_name
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_zip, ca_state, ca_country
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_ticket_number, ss_item_sk, ss_store_sk, ss_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_ticket_number, sr_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_zip, s_state, s_market_id, s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_manager_id, i_units, i_current_price, i_size, i_color, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_customer_sk, c_last_name, c_birth_country, c_first_name
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_zip, ca_state, ca_country
+Warning: Map Join MAPJOIN[201][bigTable=?] in task 'Stage-38:MAPRED' is a cross product
+Warning: Shuffle Join JOIN[137][tables = [$hdt$_0, $hdt$_1, $hdt$_2]] in Stage 'Stage-8:MAPRED' is a cross product
+Warning: Map Join MAPJOIN[202][bigTable=?] in task 'Stage-40:MAPRED' is a cross product
+Warning: Map Join MAPJOIN[203][bigTable=?] in task 'Stage-41:MAPRED' is a cross product
+Warning: Shuffle Join JOIN[134][tables = [$hdt$_0, $hdt$_1]] in Stage 'Stage-7:MAPRED' is a cross product
+OK
+Time taken: 9.609 seconds, Fetched: 874 row(s)
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_ticket_number, ss_item_sk, ss_store_sk, ss_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_ticket_number, sr_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_zip, s_state, s_market_id, s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_manager_id, i_units, i_current_price, i_size, i_color, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_customer_sk, c_last_name, c_birth_country, c_first_name
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_zip, ca_state, ca_country
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_ticket_number, ss_item_sk, ss_store_sk, ss_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_ticket_number, sr_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_zip, s_state, s_market_id, s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_manager_id, i_units, i_current_price, i_size, i_color, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_customer_sk, c_last_name, c_birth_country, c_first_name
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_zip, ca_state, ca_country
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_ticket_number, ss_item_sk, ss_store_sk, ss_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_ticket_number, sr_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_zip, s_state, s_market_id, s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_manager_id, i_units, i_current_price, i_size, i_color, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_customer_sk, c_last_name, c_birth_country, c_first_name
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_zip, ca_state, ca_country
+Warning: Map Join MAPJOIN[201][bigTable=?] in task 'Stage-38:MAPRED' is a cross product
+Warning: Shuffle Join JOIN[137][tables = [$hdt$_0, $hdt$_1, $hdt$_2]] in Stage 'Stage-8:MAPRED' is a cross product
+Warning: Map Join MAPJOIN[202][bigTable=?] in task 'Stage-40:MAPRED' is a cross product
+Warning: Map Join MAPJOIN[203][bigTable=?] in task 'Stage-41:MAPRED' is a cross product
+Warning: Shuffle Join JOIN[134][tables = [$hdt$_0, $hdt$_1]] in Stage 'Stage-7:MAPRED' is a cross product
+OK
+Time taken: 3.714 seconds, Fetched: 874 row(s)
+@@@sample-queries-tpcds/query25.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.106 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_net_profit, ss_ticket_number, ss_item_sk, ss_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_ticket_number, sr_net_loss, sr_item_sk, sr_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_net_profit, cs_item_sk, cs_bill_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_id, s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_desc, i_item_id, i_item_sk
+OK
+Time taken: 11.178 seconds, Fetched: 402 row(s)
+@@@sample-queries-tpcds/query26.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.494 seconds
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_bill_cdemo_sk, cs_item_sk, cs_quantity, cs_sales_price, cs_coupon_amt, cs_promo_sk, cs_list_price
+No Stats for tpcds_bin_partitioned_orc_2@customer_demographics, Columns: cd_demo_sk, cd_education_status, cd_marital_status, cd_gender
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@promotion, Columns: p_channel_event, p_channel_email, p_promo_sk
+OK
+Time taken: 6.108 seconds, Fetched: 194 row(s)
+@@@sample-queries-tpcds/query27.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.486 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_cdemo_sk, ss_item_sk, ss_coupon_amt, ss_store_sk, ss_quantity, ss_list_price, ss_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@customer_demographics, Columns: cd_demo_sk, cd_education_status, cd_marital_status, cd_gender
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_state, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+OK
+Time taken: 6.44 seconds, Fetched: 194 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query28.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.848 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_wholesale_cost, ss_coupon_amt, ss_quantity, ss_list_price
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_wholesale_cost, ss_coupon_amt, ss_quantity, ss_list_price
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_wholesale_cost, ss_coupon_amt, ss_quantity, ss_list_price
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_wholesale_cost, ss_coupon_amt, ss_quantity, ss_list_price
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_wholesale_cost, ss_coupon_amt, ss_quantity, ss_list_price
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_wholesale_cost, ss_coupon_amt, ss_quantity, ss_list_price
+Warning: Map Join MAPJOIN[70][bigTable=?] in task 'Stage-8:MAPRED' is a cross product
+Warning: Map Join MAPJOIN[73][bigTable=?] in task 'Stage-11:MAPRED' is a cross product
+Warning: Map Join MAPJOIN[71][bigTable=?] in task 'Stage-9:MAPRED' is a cross product
+Warning: Map Join MAPJOIN[75][bigTable=?] in task 'Stage-13:MAPRED' is a cross product
+Warning: Map Join MAPJOIN[72][bigTable=?] in task 'Stage-10:MAPRED' is a cross product
+Warning: Map Join MAPJOIN[74][bigTable=?] in task 'Stage-12:MAPRED' is a cross product
+Warning: Shuffle Join JOIN[48][tables = [$hdt$_0, $hdt$_1, $hdt$_2, $hdt$_3, $hdt$_4, $hdt$_5]] in Stage 'Stage-2:MAPRED' is a cross product
+OK
+Time taken: 6.168 seconds, Fetched: 962 row(s)
+@@@sample-queries-tpcds/query29.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.17 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_ticket_number, ss_item_sk, ss_store_sk, ss_quantity
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_ticket_number, sr_item_sk, sr_return_quantity, sr_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_item_sk, cs_quantity, cs_bill_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_id, s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_desc, i_item_id, i_item_sk
+OK
+Time taken: 11.416 seconds, Fetched: 402 row(s)
+@@@sample-queries-tpcds/query31.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.483 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_ext_sales_price, ss_addr_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_qoy, d_year
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_county, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_ext_sales_price, ss_addr_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_qoy, d_year
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_county, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_ext_sales_price, ss_addr_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_qoy, d_year
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_county, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_ext_sales_price, ws_bill_addr_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_qoy, d_year
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_county, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_ext_sales_price, ws_bill_addr_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_qoy, d_year
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_county, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_ext_sales_price, ws_bill_addr_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_qoy, d_year
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_county, ca_address_sk
+OK
+Time taken: 9.737 seconds, Fetched: 1283 row(s)
+@@@sample-queries-tpcds/query32.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.744 seconds
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_item_sk, cs_ext_discount_amt
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_manufact_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_item_sk, cs_ext_discount_amt
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+OK
+Time taken: 7.007 seconds, Fetched: 446 row(s)
+@@@sample-queries-tpcds/query34.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.656 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_ticket_number, ss_store_sk, ss_hdemo_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_dom, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_sk, s_county
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_buy_potential, hd_demo_sk, hd_dep_count, hd_vehicle_count
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_salutation, c_preferred_cust_flag, c_customer_sk, c_last_name, c_first_name
+OK
+Time taken: 6.166 seconds, Fetched: 204 row(s)
+@@@sample-queries-tpcds/query39.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.731 seconds
+No Stats for tpcds_bin_partitioned_orc_2@inventory, Columns: inv_quantity_on_hand, inv_warehouse_sk, inv_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@warehouse, Columns: w_warehouse_name, w_warehouse_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@inventory, Columns: inv_quantity_on_hand, inv_warehouse_sk, inv_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@warehouse, Columns: w_warehouse_name, w_warehouse_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+OK
+Time taken: 4.682 seconds, Fetched: 439 row(s)
+No Stats for tpcds_bin_partitioned_orc_2@inventory, Columns: inv_quantity_on_hand, inv_warehouse_sk, inv_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@warehouse, Columns: w_warehouse_name, w_warehouse_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@inventory, Columns: inv_quantity_on_hand, inv_warehouse_sk, inv_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@warehouse, Columns: w_warehouse_name, w_warehouse_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+OK
+Time taken: 1.275 seconds, Fetched: 439 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query3.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.666 seconds
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_ext_sales_price, ss_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_brand, i_manufact_id, i_brand_id, i_item_sk
+OK
+Time taken: 6.252 seconds, Fetched: 141 row(s)
+@@@sample-queries-tpcds/query40.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.778 seconds
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_warehouse_sk, cs_order_number, cs_item_sk, cs_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@catalog_returns, Columns: cr_refunded_cash, cr_order_number, cr_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@warehouse, Columns: w_state, w_warehouse_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_current_price, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+OK
+Time taken: 8.707 seconds, Fetched: 211 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query42.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.687 seconds
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_ext_sales_price, ss_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_manager_id, i_category, i_category_id, i_item_sk
+OK
+Time taken: 6.238 seconds, Fetched: 144 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query43.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.023 seconds
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_day_name, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_store_sk, ss_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_id, s_store_name, s_gmt_offset, s_store_sk
+OK
+Time taken: 5.989 seconds, Fetched: 141 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query45.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.801 seconds
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_item_sk, ws_bill_customer_sk, ws_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_current_addr_sk, c_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_county, ca_zip, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_qoy, d_year
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+OK
+Time taken: 6.805 seconds, Fetched: 374 row(s)
+@@@sample-queries-tpcds/query46.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.78 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_net_profit, ss_addr_sk, ss_ticket_number, ss_coupon_amt, ss_store_sk, ss_hdemo_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_dow, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_city, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_demo_sk, hd_dep_count, hd_vehicle_count
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_city, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_current_addr_sk, c_customer_sk, c_last_name, c_first_name
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_city, ca_address_sk
+OK
+Time taken: 6.895 seconds, Fetched: 264 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query48.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.599 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_cdemo_sk, ss_net_profit, ss_addr_sk, ss_store_sk, ss_quantity, ss_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer_demographics, Columns: cd_demo_sk, cd_education_status, cd_marital_status
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_state, ca_address_sk, ca_country
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+OK
+Time taken: 6.535 seconds, Fetched: 166 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query49.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.675 seconds
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_order_number, ws_item_sk, ws_quantity, ws_net_profit, ws_net_paid
+No Stats for tpcds_bin_partitioned_orc_2@web_returns, Columns: wr_order_number, wr_return_amt, wr_return_quantity, wr_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_order_number, cs_net_paid, cs_net_profit, cs_item_sk, cs_quantity
+No Stats for tpcds_bin_partitioned_orc_2@catalog_returns, Columns: cr_order_number, cr_return_quantity, cr_item_sk, cr_return_amount
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_net_profit, ss_ticket_number, ss_net_paid, ss_item_sk, ss_quantity
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_ticket_number, sr_return_amt, sr_item_sk, sr_return_quantity
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+OK
+Time taken: 15.714 seconds, Fetched: 776 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query50.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.734 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_ticket_number, ss_item_sk, ss_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_ticket_number, sr_item_sk, sr_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_city, s_street_number, s_zip, s_state, s_store_name, s_suite_number, s_street_name, s_company_id, s_store_sk, s_street_type, s_county
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+OK
+Time taken: 8.939 seconds, Fetched: 211 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query51.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.707 seconds
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_item_sk, ws_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_month_seq, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_item_sk, ss_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_month_seq, d_date_sk
+OK
+Time taken: 8.532 seconds, Fetched: 331 row(s)
+@@@sample-queries-tpcds/query52.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.046 seconds
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_ext_sales_price, ss_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_manager_id, i_brand, i_brand_id, i_item_sk
+OK
+Time taken: 6.335 seconds, Fetched: 145 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query54.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.578 seconds
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_item_sk, cs_bill_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_item_sk, ws_bill_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_class, i_category, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_current_addr_sk, c_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_ext_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_county, ca_state, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_state, s_county
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_month_seq, d_date_sk
+OK
+Time taken: 9.959 seconds, Fetched: 481 row(s)
+NoViableAltException(203@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1300)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:2 cannot recognize input near 'order' 'by' 'segment'
+@@@sample-queries-tpcds/query55.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.698 seconds
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_ext_sales_price, ss_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_manager_id, i_brand, i_brand_id, i_item_sk
+OK
+Time taken: 5.739 seconds, Fetched: 141 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query56.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.708 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_ext_sales_price, ss_addr_sk, ss_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_address_sk, ca_gmt_offset
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_color
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_ext_sales_price, cs_item_sk, cs_bill_addr_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_address_sk, ca_gmt_offset
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_color
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_item_sk, ws_ext_sales_price, ws_bill_addr_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_address_sk, ca_gmt_offset
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_color
+OK
+Time taken: 11.657 seconds, Fetched: 1030 row(s)
+@@@sample-queries-tpcds/query58.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.836 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_ext_sales_price, ss_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_week_seq
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_week_seq
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_ext_sales_price, cs_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_week_seq
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_week_seq
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_item_sk, ws_ext_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_week_seq
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_week_seq
+OK
+Time taken: 11.415 seconds, Fetched: 1197 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query60.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.692 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_ext_sales_price, ss_addr_sk, ss_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_address_sk, ca_gmt_offset
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_category
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_ext_sales_price, cs_item_sk, cs_bill_addr_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_address_sk, ca_gmt_offset
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_category
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_item_sk, ws_ext_sales_price, ws_bill_addr_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_address_sk, ca_gmt_offset
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_category
+OK
+Time taken: 11.658 seconds, Fetched: 1032 row(s)
+@@@sample-queries-tpcds/query64.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.574 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_cdemo_sk, ss_promo_sk, ss_addr_sk, ss_ticket_number, ss_wholesale_cost, ss_item_sk, ss_coupon_amt, ss_store_sk, ss_hdemo_sk, ss_list_price
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_ticket_number, sr_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_current_hdemo_sk, c_first_sales_date_sk, c_current_addr_sk, c_customer_sk, c_current_cdemo_sk, c_first_shipto_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_zip, s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer_demographics, Columns: cd_demo_sk, cd_marital_status
+No Stats for tpcds_bin_partitioned_orc_2@customer_demographics, Columns: cd_demo_sk, cd_marital_status
+No Stats for tpcds_bin_partitioned_orc_2@promotion, Columns: p_promo_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_income_band_sk, hd_demo_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_income_band_sk, hd_demo_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_street_number, ca_zip, ca_city, ca_street_name, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_street_number, ca_zip, ca_city, ca_street_name, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@income_band, Columns: ib_income_band_sk
+No Stats for tpcds_bin_partitioned_orc_2@income_band, Columns: ib_income_band_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_current_price, i_color, i_product_name, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_order_number, cs_item_sk, cs_ext_list_price
+No Stats for tpcds_bin_partitioned_orc_2@catalog_returns, Columns: cr_refunded_cash, cr_order_number, cr_reversed_charge, cr_item_sk, cr_store_credit
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_cdemo_sk, ss_promo_sk, ss_addr_sk, ss_ticket_number, ss_wholesale_cost, ss_item_sk, ss_coupon_amt, ss_store_sk, ss_hdemo_sk, ss_list_price
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_ticket_number, sr_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_current_hdemo_sk, c_first_sales_date_sk, c_current_addr_sk, c_customer_sk, c_current_cdemo_sk, c_first_shipto_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_zip, s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer_demographics, Columns: cd_demo_sk, cd_marital_status
+No Stats for tpcds_bin_partitioned_orc_2@customer_demographics, Columns: cd_demo_sk, cd_marital_status
+No Stats for tpcds_bin_partitioned_orc_2@promotion, Columns: p_promo_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_income_band_sk, hd_demo_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_income_band_sk, hd_demo_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_street_number, ca_zip, ca_city, ca_street_name, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_street_number, ca_zip, ca_city, ca_street_name, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@income_band, Columns: ib_income_band_sk
+No Stats for tpcds_bin_partitioned_orc_2@income_band, Columns: ib_income_band_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_current_price, i_color, i_product_name, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_order_number, cs_item_sk, cs_ext_list_price
+No Stats for tpcds_bin_partitioned_orc_2@catalog_returns, Columns: cr_refunded_cash, cr_order_number, cr_reversed_charge, cr_item_sk, cr_store_credit
+OK
+Time taken: 26.731 seconds, Fetched: 1840 row(s)
+@@@sample-queries-tpcds/query65.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.647 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_desc, i_brand, i_wholesale_cost, i_current_price, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_item_sk, ss_store_sk, ss_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_month_seq, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_item_sk, ss_store_sk, ss_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_month_seq, d_date_sk
+Warning: Map Join MAPJOIN[72][bigTable=?] in task 'Stage-14:MAPRED' is a cross product
+OK
+Time taken: 6.751 seconds, Fetched: 408 row(s)
+@@@sample-queries-tpcds/query66.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.884 seconds
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_warehouse_sk, ws_ship_mode_sk, ws_quantity, ws_sold_time_sk, ws_sales_price, ws_net_paid_inc_tax
+No Stats for tpcds_bin_partitioned_orc_2@warehouse, Columns: w_warehouse_name, w_warehouse_sq_ft, w_state, w_country, w_city, w_warehouse_sk, w_county
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@time_dim, Columns: t_time, t_time_sk
+No Stats for tpcds_bin_partitioned_orc_2@ship_mode, Columns: sm_ship_mode_sk, sm_carrier
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_warehouse_sk, cs_ext_sales_price, cs_ship_mode_sk, cs_quantity, cs_sold_time_sk, cs_net_paid_inc_ship_tax
+No Stats for tpcds_bin_partitioned_orc_2@warehouse, Columns: w_warehouse_name, w_warehouse_sq_ft, w_state, w_country, w_city, w_warehouse_sk, w_county
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@time_dim, Columns: t_time, t_time_sk
+No Stats for tpcds_bin_partitioned_orc_2@ship_mode, Columns: sm_ship_mode_sk, sm_carrier
+OK
+Time taken: 9.563 seconds, Fetched: 411 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query67.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.772 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_item_sk, ss_store_sk, ss_quantity, ss_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_month_seq, d_date_sk, d_qoy, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_id, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_class, i_category, i_brand, i_product_name, i_item_sk
+OK
+Time taken: 6.496 seconds, Fetched: 223 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query68.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.025 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_ext_sales_price, ss_addr_sk, ss_ticket_number, ss_ext_list_price, ss_ext_tax, ss_store_sk, ss_hdemo_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_dom, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_city, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_demo_sk, hd_dep_count, hd_vehicle_count
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_city, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_current_addr_sk, c_customer_sk, c_last_name, c_first_name
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_city, ca_address_sk
+OK
+Time taken: 7.208 seconds, Fetched: 264 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query70.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.058 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_net_profit, ss_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_month_seq, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_state, s_store_sk, s_county
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_net_profit, ss_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_state, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_month_seq, d_date_sk
+OK
+Time taken: 7.376 seconds, Fetched: 449 row(s)
+@@@sample-queries-tpcds/query71.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.648 seconds
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_manager_id, i_brand, i_brand_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_item_sk, ws_ext_sales_price, ws_sold_time_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_ext_sales_price, cs_item_sk, cs_sold_time_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_sold_time_sk, ss_ext_sales_price, ss_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@time_dim, Columns: t_hour, t_meal_time, t_minute, t_time_sk
+OK
+Time taken: 11.058 seconds, Fetched: 301 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query72.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.656 seconds
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_order_number, cs_ship_date_sk, cs_bill_cdemo_sk, cs_item_sk, cs_quantity, cs_bill_hdemo_sk, cs_promo_sk
+No Stats for tpcds_bin_partitioned_orc_2@inventory, Columns: inv_quantity_on_hand, inv_warehouse_sk, inv_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@warehouse, Columns: w_warehouse_name, w_warehouse_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_desc, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer_demographics, Columns: cd_demo_sk, cd_marital_status
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_buy_potential, hd_demo_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk, d_week_seq, d_year
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_week_seq
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@promotion, Columns: p_promo_sk
+No Stats for tpcds_bin_partitioned_orc_2@catalog_returns, Columns: cr_order_number, cr_item_sk
+OK
+Time taken: 9.61 seconds, Fetched: 465 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query73.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.77 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_ticket_number, ss_store_sk, ss_hdemo_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_dom, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_sk, s_county
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_buy_potential, hd_demo_sk, hd_dep_count, hd_vehicle_count
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_salutation, c_preferred_cust_flag, c_customer_sk, c_last_name, c_first_name
+OK
+Time taken: 6.507 seconds, Fetched: 204 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query75.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.871 seconds
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_order_number, cs_ext_sales_price, cs_item_sk, cs_quantity
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_class_id, i_category, i_category_id, i_manufact_id, i_brand_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@catalog_returns, Columns: cr_order_number, cr_return_quantity, cr_item_sk, cr_return_amount
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_ext_sales_price, ss_ticket_number, ss_item_sk, ss_quantity
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_class_id, i_category, i_category_id, i_manufact_id, i_brand_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_ticket_number, sr_return_amt, sr_item_sk, sr_return_quantity
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_order_number, ws_item_sk, ws_quantity, ws_ext_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_class_id, i_category, i_category_id, i_manufact_id, i_brand_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@web_returns, Columns: wr_order_number, wr_return_amt, wr_return_quantity, wr_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_order_number, cs_ext_sales_price, cs_item_sk, cs_quantity
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_class_id, i_category, i_category_id, i_manufact_id, i_brand_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@catalog_returns, Columns: cr_order_number, cr_return_quantity, cr_item_sk, cr_return_amount
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_ext_sales_price, ss_ticket_number, ss_item_sk, ss_quantity
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_class_id, i_category, i_category_id, i_manufact_id, i_brand_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_ticket_number, sr_return_amt, sr_item_sk, sr_return_quantity
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_order_number, ws_item_sk, ws_quantity, ws_ext_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_class_id, i_category, i_category_id, i_manufact_id, i_brand_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@web_returns, Columns: wr_order_number, wr_return_amt, wr_return_quantity, wr_item_sk
+OK
+Time taken: 18.996 seconds, Fetched: 1388 row(s)
+@@@sample-queries-tpcds/query76.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.785 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_ext_sales_price, ss_addr_sk, ss_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_category, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_qoy, d_year
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_item_sk, ws_ext_sales_price, ws_web_page_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_category, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_qoy, d_year
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_warehouse_sk, cs_ext_sales_price, cs_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_category, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_qoy, d_year
+OK
+Time taken: 10.472 seconds, Fetched: 306 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query79.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.278 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_net_profit, ss_addr_sk, ss_ticket_number, ss_coupon_amt, ss_store_sk, ss_hdemo_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_dow, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_city, s_number_employees, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_demo_sk, hd_dep_count, hd_vehicle_count
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_customer_sk, c_last_name, c_first_name
+OK
+Time taken: 6.606 seconds, Fetched: 209 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query7.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.664 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_cdemo_sk, ss_promo_sk, ss_item_sk, ss_coupon_amt, ss_quantity, ss_list_price, ss_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@customer_demographics, Columns: cd_demo_sk, cd_education_status, cd_marital_status, cd_gender
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@promotion, Columns: p_channel_event, p_channel_email, p_promo_sk
+OK
+Time taken: 6.364 seconds, Fetched: 194 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query80.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.839 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_promo_sk, ss_ext_sales_price, ss_net_profit, ss_ticket_number, ss_item_sk, ss_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_ticket_number, sr_return_amt, sr_net_loss, sr_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_id, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_current_price, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@promotion, Columns: p_promo_sk, p_channel_tv
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_catalog_page_sk, cs_order_number, cs_net_profit, cs_ext_sales_price, cs_item_sk, cs_promo_sk
+No Stats for tpcds_bin_partitioned_orc_2@catalog_returns, Columns: cr_order_number, cr_net_loss, cr_item_sk, cr_return_amount
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@catalog_page, Columns: cp_catalog_page_sk, cp_catalog_page_id
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_current_price, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@promotion, Columns: p_promo_sk, p_channel_tv
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_order_number, ws_item_sk, ws_promo_sk, ws_ext_sales_price, ws_web_site_sk, ws_net_profit
+No Stats for tpcds_bin_partitioned_orc_2@web_returns, Columns: wr_order_number, wr_net_loss, wr_return_amt, wr_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@web_site, Columns: web_site_sk, web_site_id
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_current_price, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@promotion, Columns: p_promo_sk, p_channel_tv
+OK
+Time taken: 16.164 seconds, Fetched: 776 row(s)
+@@@sample-queries-tpcds/query82.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.712 seconds
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_desc, i_item_id, i_manufact_id, i_current_price, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@inventory, Columns: inv_quantity_on_hand, inv_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_item_sk
+OK
+Time taken: 5.799 seconds, Fetched: 169 row(s)
+@@@sample-queries-tpcds/query83.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.514 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_item_sk, sr_return_quantity
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_week_seq
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_week_seq
+No Stats for tpcds_bin_partitioned_orc_2@catalog_returns, Columns: cr_return_quantity, cr_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_week_seq
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_week_seq
+No Stats for tpcds_bin_partitioned_orc_2@web_returns, Columns: wr_return_quantity, wr_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_id, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_week_seq
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_week_seq
+OK
+Time taken: 11.852 seconds, Fetched: 1288 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query84.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.964 seconds
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_current_hdemo_sk, c_current_addr_sk, c_last_name, c_customer_id, c_current_cdemo_sk, c_first_name
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_city, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer_demographics, Columns: cd_demo_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_income_band_sk, hd_demo_sk
+No Stats for tpcds_bin_partitioned_orc_2@income_band, Columns: ib_income_band_sk, ib_lower_bound, ib_upper_bound
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_cdemo_sk
+OK
+Time taken: 5.966 seconds, Fetched: 355 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query85.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.774 seconds
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_order_number, ws_item_sk, ws_quantity, ws_net_profit, ws_sales_price, ws_web_page_sk
+No Stats for tpcds_bin_partitioned_orc_2@web_returns, Columns: wr_order_number, wr_fee, wr_refunded_addr_sk, wr_returning_cdemo_sk, wr_refunded_cash, wr_reason_sk, wr_item_sk, wr_refunded_cdemo_sk
+No Stats for tpcds_bin_partitioned_orc_2@web_page, Columns: wp_web_page_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer_demographics, Columns: cd_demo_sk, cd_education_status, cd_marital_status
+No Stats for tpcds_bin_partitioned_orc_2@customer_demographics, Columns: cd_demo_sk, cd_education_status, cd_marital_status
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_state, ca_address_sk, ca_country
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@reason, Columns: r_reason_desc, r_reason_sk
+OK
+Time taken: 9.307 seconds, Fetched: 364 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query87.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.519 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_month_seq, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_customer_sk, c_last_name, c_first_name
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_bill_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_month_seq, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_customer_sk, c_last_name, c_first_name
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_bill_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_month_seq, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_customer_sk, c_last_name, c_first_name
+OK
+Time taken: 9.939 seconds, Fetched: 516 row(s)
+@@@sample-queries-tpcds/query88.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.728 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_sold_time_sk, ss_store_sk, ss_hdemo_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_demo_sk, hd_dep_count, hd_vehicle_count
+No Stats for tpcds_bin_partitioned_orc_2@time_dim, Columns: t_hour, t_minute, t_time_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_sold_time_sk, ss_store_sk, ss_hdemo_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_demo_sk, hd_dep_count, hd_vehicle_count
+No Stats for tpcds_bin_partitioned_orc_2@time_dim, Columns: t_hour, t_minute, t_time_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_sold_time_sk, ss_store_sk, ss_hdemo_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_demo_sk, hd_dep_count, hd_vehicle_count
+No Stats for tpcds_bin_partitioned_orc_2@time_dim, Columns: t_hour, t_minute, t_time_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_sold_time_sk, ss_store_sk, ss_hdemo_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_demo_sk, hd_dep_count, hd_vehicle_count
+No Stats for tpcds_bin_partitioned_orc_2@time_dim, Columns: t_hour, t_minute, t_time_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_sold_time_sk, ss_store_sk, ss_hdemo_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_demo_sk, hd_dep_count, hd_vehicle_count
+No Stats for tpcds_bin_partitioned_orc_2@time_dim, Columns: t_hour, t_minute, t_time_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_sold_time_sk, ss_store_sk, ss_hdemo_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_demo_sk, hd_dep_count, hd_vehicle_count
+No Stats for tpcds_bin_partitioned_orc_2@time_dim, Columns: t_hour, t_minute, t_time_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_sold_time_sk, ss_store_sk, ss_hdemo_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_demo_sk, hd_dep_count, hd_vehicle_count
+No Stats for tpcds_bin_partitioned_orc_2@time_dim, Columns: t_hour, t_minute, t_time_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_name, s_store_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_sold_time_sk, ss_store_sk, ss_hdemo_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_demo_sk, hd_dep_count, hd_vehicle_count
+No Stats for tpcds_bin_partitioned_orc_2@time_dim, Columns: t_hour, t_minute, t_time_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_name, s_store_sk
+Warning: Map Join MAPJOIN[317][bigTable=?] in task 'Stage-60:MAPRED' is a cross product
+Warning: Map Join MAPJOIN[318][bigTable=?] in task 'Stage-61:MAPRED' is a cross product
+Warning: Map Join MAPJOIN[319][bigTable=?] in task 'Stage-62:MAPRED' is a cross product
+Warning: Map Join MAPJOIN[315][bigTable=?] in task 'Stage-58:MAPRED' is a cross product
+Warning: Map Join MAPJOIN[316][bigTable=?] in task 'Stage-59:MAPRED' is a cross product
+Warning: Map Join MAPJOIN[322][bigTable=?] in task 'Stage-65:MAPRED' is a cross product
+Warning: Map Join MAPJOIN[320][bigTable=?] in task 'Stage-63:MAPRED' is a cross product
+Warning: Map Join MAPJOIN[321][bigTable=?] in task 'Stage-64:MAPRED' is a cross product
+Warning: Shuffle Join JOIN[216][tables = [$hdt$_0, $hdt$_1, $hdt$_2, $hdt$_3, $hdt$_4, $hdt$_5, $hdt$_6, $hdt$_7]] in Stage 'Stage-5:MAPRED' is a cross product
+OK
+Time taken: 9.909 seconds, Fetched: 2223 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query89.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.418 seconds
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_class, i_category, i_brand, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_item_sk, ss_store_sk, ss_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_company_name, s_store_name, s_store_sk
+OK
+Time taken: 6.388 seconds, Fetched: 225 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query90.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.449 seconds
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_ship_hdemo_sk, ws_sold_time_sk, ws_web_page_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_demo_sk, hd_dep_count
+No Stats for tpcds_bin_partitioned_orc_2@time_dim, Columns: t_hour, t_time_sk
+No Stats for tpcds_bin_partitioned_orc_2@web_page, Columns: wp_char_count, wp_web_page_sk
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_ship_hdemo_sk, ws_sold_time_sk, ws_web_page_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_demo_sk, hd_dep_count
+No Stats for tpcds_bin_partitioned_orc_2@time_dim, Columns: t_hour, t_time_sk
+No Stats for tpcds_bin_partitioned_orc_2@web_page, Columns: wp_char_count, wp_web_page_sk
+Warning: Map Join MAPJOIN[87][bigTable=?] in task 'Stage-18:MAPRED' is a cross product
+Warning: Map Join MAPJOIN[86][bigTable=?] in task 'Stage-17:MAPRED' is a cross product
+Warning: Shuffle Join JOIN[54][tables = [$hdt$_0, $hdt$_1]] in Stage 'Stage-5:MAPRED' is a cross product
+OK
+Time taken: 6.58 seconds, Fetched: 398 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query91.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.62 seconds
+No Stats for tpcds_bin_partitioned_orc_2@call_center, Columns: cc_call_center_sk, cc_call_center_id, cc_manager, cc_name
+No Stats for tpcds_bin_partitioned_orc_2@catalog_returns, Columns: cr_net_loss, cr_returning_customer_sk, cr_call_center_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_moy, d_date_sk, d_year
+No Stats for tpcds_bin_partitioned_orc_2@customer, Columns: c_current_hdemo_sk, c_current_addr_sk, c_customer_sk, c_current_cdemo_sk
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_address_sk, ca_gmt_offset
+No Stats for tpcds_bin_partitioned_orc_2@customer_demographics, Columns: cd_demo_sk, cd_education_status, cd_marital_status
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_buy_potential, hd_demo_sk
+OK
+Time taken: 6.939 seconds, Fetched: 245 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query92.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.995 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_month_seq, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_item_sk, cs_bill_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_month_seq, d_date_sk
+OK
+Time taken: 8.24 seconds, Fetched: 214 row(s)
+@@@sample-queries-tpcds/query93.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 6.081 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_ticket_number, ss_item_sk, ss_quantity, ss_sales_price
+No Stats for tpcds_bin_partitioned_orc_2@store_returns, Columns: sr_ticket_number, sr_reason_sk, sr_item_sk, sr_return_quantity
+No Stats for tpcds_bin_partitioned_orc_2@reason, Columns: r_reason_desc, r_reason_sk
+OK
+Time taken: 7.802 seconds, Fetched: 157 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query94.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.367 seconds
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_order_number, ws_ship_date_sk, ws_web_site_sk, ws_net_profit, ws_ship_addr_sk, ws_ext_ship_cost
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_warehouse_sk, ws_order_number
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_warehouse_sk, ws_order_number
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_state, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@web_site, Columns: web_site_sk, web_company_name
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@web_returns, Columns: wr_order_number
+OK
+Time taken: 8.777 seconds, Fetched: 410 row(s)
+@@@sample-queries-tpcds/query95.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.858 seconds
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_order_number, ws_ship_date_sk, ws_web_site_sk, ws_net_profit, ws_ship_addr_sk, ws_ext_ship_cost
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_warehouse_sk, ws_order_number
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_warehouse_sk, ws_order_number
+No Stats for tpcds_bin_partitioned_orc_2@web_returns, Columns: wr_order_number
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_warehouse_sk, ws_order_number
+No Stats for tpcds_bin_partitioned_orc_2@web_sales, Columns: ws_warehouse_sk, ws_order_number
+No Stats for tpcds_bin_partitioned_orc_2@customer_address, Columns: ca_state, ca_address_sk
+No Stats for tpcds_bin_partitioned_orc_2@web_site, Columns: web_site_sk, web_company_name
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+OK
+Time taken: 9.16 seconds, Fetched: 514 row(s)
+@@@sample-queries-tpcds/query96.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.422 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_sold_time_sk, ss_store_sk, ss_hdemo_sk
+No Stats for tpcds_bin_partitioned_orc_2@household_demographics, Columns: hd_demo_sk, hd_dep_count
+No Stats for tpcds_bin_partitioned_orc_2@time_dim, Columns: t_hour, t_minute, t_time_sk
+No Stats for tpcds_bin_partitioned_orc_2@store, Columns: s_store_name, s_store_sk
+OK
+Time taken: 5.672 seconds, Fetched: 157 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query97.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.946 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_customer_sk, ss_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_month_seq, d_date_sk
+No Stats for tpcds_bin_partitioned_orc_2@catalog_sales, Columns: cs_item_sk, cs_bill_customer_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_month_seq, d_date_sk
+OK
+Time taken: 8.141 seconds, Fetched: 218 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement
+@@@sample-queries-tpcds/query98.sql
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/users/wentingt/hadoop-3.0.0-beta1-src/hadoop-dist/target/hadoop-3.0.0-beta1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/users/wentingt/apache-hive-2.3.2-bin/lib/hive-common-2.3.2.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.558 seconds
+No Stats for tpcds_bin_partitioned_orc_2@store_sales, Columns: ss_ext_sales_price, ss_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@item, Columns: i_item_desc, i_item_id, i_class, i_category, i_current_price, i_item_sk
+No Stats for tpcds_bin_partitioned_orc_2@date_dim, Columns: d_date, d_date_sk
+OK
+Time taken: 6.625 seconds, Fetched: 188 row(s)
+NoViableAltException(-1@[])
+	at org.apache.hadoop.hive.ql.parse.HiveParser.explainStatement(HiveParser.java:1418)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1313)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:208)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:77)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:70)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:468)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1317)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1457)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1237)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1227)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:233)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:184)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:403)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:336)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:787)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:239)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+FAILED: ParseException line 1:8 cannot recognize input near '<EOF>' '<EOF>' '<EOF>' in explain statement

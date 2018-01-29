@@ -1,0 +1,2245 @@
+@@@/users/wentingt/Big-Data-Benchmark-for-Big-Bench/engines/hive/queryueries/query01/query01.sql
+STAGE DEPENDENCIES:
+  Stage-8 is a root stage
+  Stage-2 depends on stages: Stage-8
+  Stage-3 depends on stages: Stage-2
+  Stage-4 depends on stages: Stage-3
+  Stage-0 depends on stages: Stage-4
+  Stage-5 depends on stages: Stage-0
+
+STAGE PLANS:
+  Stage: Stage-8
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 29
+              Data size: 14
+
+  Stage: Stage-2
+    Map Reduce
+      Map Operator Tree:
+            Data size: 909
+              Data size: 454
+                Data size: 500
+                  Data size: 250
+                    Data size: 250
+                      Data size: 250
+                        Data size: 250
+      Local Work:
+      Reduce Operator Tree:
+          Data size: 125
+            Data size: 125
+              Data size: 125
+                Data size: 125
+
+  Stage: Stage-3
+    Map Reduce
+      Map Operator Tree:
+              Data size: 125
+      Reduce Operator Tree:
+          Data size: 62
+            Data size: 20
+
+  Stage: Stage-4
+    Map Reduce
+      Map Operator Tree:
+              Data size: 20
+      Reduce Operator Tree:
+          Data size: 20
+            Data size: 0
+              Data size: 0
+                Data size: 0
+
+  Stage: Stage-0
+    Move Operator
+      tables:
+
+  Stage: Stage-5
+    Stats-Aggr Operator
+
+Time taken: 1.683 seconds, Fetched: 163 row(s)
+
+@@@/users/wentingt/Big-Data-Benchmark-for-Big-Bench/engines/hive/queryueries/query02/query02.sql
+STAGE DEPENDENCIES:
+  Stage-1 is a root stage
+  Stage-2 depends on stages: Stage-1
+  Stage-3 depends on stages: Stage-2
+  Stage-4 depends on stages: Stage-3
+  Stage-0 depends on stages: Stage-4
+  Stage-5 depends on stages: Stage-0
+
+STAGE PLANS:
+  Stage: Stage-1
+    Map Reduce
+      Map Operator Tree:
+            Data size: 241
+              Data size: 241
+                Data size: 241
+                  Data size: 241
+      Reduce Operator Tree:
+          Data size: 241
+            Data size: 241
+              Data size: 241
+
+  Stage: Stage-2
+    Map Reduce
+      Map Operator Tree:
+              Data size: 241
+      Reduce Operator Tree:
+          Data size: 120
+            Data size: 60
+              Data size: 30
+                Data size: 30
+                  Data size: 30
+                    Data size: 30
+                      Data size: 30
+
+  Stage: Stage-3
+    Map Reduce
+      Map Operator Tree:
+              Data size: 30
+      Reduce Operator Tree:
+          Data size: 15
+            Data size: 15
+
+  Stage: Stage-4
+    Map Reduce
+      Map Operator Tree:
+              Data size: 15
+      Reduce Operator Tree:
+          Data size: 15
+            Data size: 0
+              Data size: 0
+                Data size: 0
+
+  Stage: Stage-0
+    Move Operator
+      tables:
+
+  Stage: Stage-5
+    Stats-Aggr Operator
+
+@@@/users/wentingt/Big-Data-Benchmark-for-Big-Bench/engines/hive/queryueries/query03/query03.sql
+STAGE DEPENDENCIES:
+  Stage-1 is a root stage
+  Stage-9 depends on stages: Stage-1
+  Stage-3 depends on stages: Stage-9
+  Stage-4 depends on stages: Stage-3
+  Stage-5 depends on stages: Stage-4
+  Stage-0 depends on stages: Stage-5
+  Stage-6 depends on stages: Stage-0
+
+STAGE PLANS:
+  Stage: Stage-1
+    Map Reduce
+      Map Operator Tree:
+            Data size: 241
+              Data size: 241
+                Data size: 241
+                  Data size: 241
+      Reduce Operator Tree:
+          Data size: 241
+            Data size: 241
+              Data size: 241
+
+  Stage: Stage-9
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 29
+              Data size: 14
+
+  Stage: Stage-3
+    Map Reduce
+      Map Operator Tree:
+              Data size: 265
+                Data size: 132
+                  Data size: 132
+                    Data size: 132
+      Local Work:
+      Reduce Operator Tree:
+          Data size: 132
+            Data size: 132
+
+  Stage: Stage-4
+    Map Reduce
+      Map Operator Tree:
+              Data size: 132
+      Reduce Operator Tree:
+          Data size: 66
+
+  Stage: Stage-5
+    Map Reduce
+      Map Operator Tree:
+              Data size: 66
+      Reduce Operator Tree:
+          Data size: 66
+            Data size: 0
+              Data size: 0
+
+  Stage: Stage-0
+    Move Operator
+      tables:
+
+  Stage: Stage-6
+    Stats-Aggr Operator
+
+@@@/users/wentingt/Big-Data-Benchmark-for-Big-Bench/engines/hive/queryueries/query05/query05.sql
+STAGE DEPENDENCIES:
+  Stage-14 is a root stage
+  Stage-2 depends on stages: Stage-14
+  Stage-13 depends on stages: Stage-2
+  Stage-10 depends on stages: Stage-13
+  Stage-12 depends on stages: Stage-10
+  Stage-9 depends on stages: Stage-12
+  Stage-0 depends on stages: Stage-9
+  Stage-5 depends on stages: Stage-0
+
+STAGE PLANS:
+  Stage: Stage-14
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 29
+              Data size: 29
+                Data size: 29
+
+  Stage: Stage-2
+    Map Reduce
+      Map Operator Tree:
+            Data size: 241
+              Data size: 241
+                Data size: 241
+                  Data size: 265
+                    Data size: 265
+                      Data size: 265
+                        Data size: 265
+      Local Work:
+      Reduce Operator Tree:
+          Data size: 132
+
+  Stage: Stage-13
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 83
+              Data size: 83
+                Data size: 83
+
+  Stage: Stage-10
+    Map Reduce
+      Map Operator Tree:
+              Data size: 146
+      Local Work:
+
+  Stage: Stage-12
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 685
+              Data size: 685
+                Data size: 685
+
+  Stage: Stage-9
+    Map Reduce
+      Map Operator Tree:
+              Data size: 160
+                Data size: 160
+                  Data size: 160
+      Local Work:
+
+  Stage: Stage-0
+    Move Operator
+      tables:
+
+  Stage: Stage-5
+    Stats-Aggr Operator
+
+@@@/users/wentingt/Big-Data-Benchmark-for-Big-Bench/engines/hive/queryueries/query06/query06.sql
+STAGE DEPENDENCIES:
+  Stage-20 is a root stage
+  Stage-2 depends on stages: Stage-20
+  Stage-14 depends on stages: Stage-2, Stage-8 , consists of Stage-17, Stage-18, Stage-19, Stage-3
+  Stage-17 has a backup stage: Stage-3
+  Stage-11 depends on stages: Stage-17
+  Stage-4 depends on stages: Stage-3, Stage-11, Stage-12, Stage-13
+  Stage-0 depends on stages: Stage-4
+  Stage-5 depends on stages: Stage-0
+  Stage-18 has a backup stage: Stage-3
+  Stage-12 depends on stages: Stage-18
+  Stage-19 has a backup stage: Stage-3
+  Stage-13 depends on stages: Stage-19
+  Stage-3
+  Stage-21 is a root stage
+  Stage-8 depends on stages: Stage-21
+
+STAGE PLANS:
+  Stage: Stage-20
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 117
+              Data size: 13
+
+  Stage: Stage-2
+    Map Reduce
+      Map Operator Tree:
+            Data size: 909
+              Data size: 909
+                Data size: 1000
+                  Data size: 500
+                    Data size: 500
+                      Data size: 500
+                        Data size: 500
+      Local Work:
+      Reduce Operator Tree:
+          Data size: 250
+            Data size: 83
+
+  Stage: Stage-14
+    Conditional Operator
+
+  Stage: Stage-17
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 83
+              Data size: 83
+
+  Stage: Stage-11
+    Map Reduce
+      Map Operator Tree:
+              Data size: 184
+                Data size: 15
+                  Data size: 15
+      Local Work:
+
+  Stage: Stage-4
+    Map Reduce
+      Map Operator Tree:
+              Data size: 15
+      Reduce Operator Tree:
+          Data size: 15
+            Data size: 0
+              Data size: 0
+                Data size: 0
+
+  Stage: Stage-0
+    Move Operator
+      tables:
+
+  Stage: Stage-5
+    Stats-Aggr Operator
+
+  Stage: Stage-18
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 83
+              Data size: 83
+
+  Stage: Stage-12
+    Map Reduce
+      Map Operator Tree:
+              Data size: 184
+                Data size: 15
+                  Data size: 15
+      Local Work:
+
+  Stage: Stage-19
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-13
+    Map Reduce
+      Map Operator Tree:
+            Data size: 83
+              Data size: 83
+                Data size: 184
+                  Data size: 15
+                    Data size: 15
+      Local Work:
+
+  Stage: Stage-3
+    Map Reduce
+      Map Operator Tree:
+              Data size: 83
+              Data size: 106
+            Data size: 83
+              Data size: 83
+                Data size: 83
+      Reduce Operator Tree:
+          Data size: 184
+            Data size: 15
+              Data size: 15
+
+  Stage: Stage-21
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 117
+              Data size: 13
+
+  Stage: Stage-8
+    Map Reduce
+      Map Operator Tree:
+            Data size: 1164
+              Data size: 1164
+                Data size: 1281
+                  Data size: 640
+                    Data size: 640
+                      Data size: 640
+                        Data size: 640
+      Local Work:
+      Reduce Operator Tree:
+          Data size: 320
+            Data size: 106
+
+@@@/users/wentingt/Big-Data-Benchmark-for-Big-Bench/engines/hive/queryueries/query07/query07.sql
+STAGE DEPENDENCIES:
+  Stage-21 is a root stage
+  Stage-17 depends on stages: Stage-21
+  Stage-16 depends on stages: Stage-17 , consists of Stage-19, Stage-20, Stage-2
+  Stage-19 has a backup stage: Stage-2
+  Stage-14 depends on stages: Stage-19
+  Stage-18 depends on stages: Stage-2, Stage-14, Stage-15
+  Stage-5 depends on stages: Stage-18
+  Stage-6 depends on stages: Stage-5
+  Stage-0 depends on stages: Stage-6
+  Stage-7 depends on stages: Stage-0
+  Stage-20 has a backup stage: Stage-2
+  Stage-15 depends on stages: Stage-20
+  Stage-2
+
+STAGE PLANS:
+  Stage: Stage-21
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 53
+              Data size: 53
+
+  Stage: Stage-17
+    Map Reduce
+      Map Operator Tree:
+            Data size: 83
+              Data size: 83
+                Data size: 92
+      Local Work:
+
+  Stage: Stage-16
+    Conditional Operator
+
+  Stage: Stage-19
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 909
+              Data size: 909
+
+  Stage: Stage-14
+    Map Reduce
+      Map Operator Tree:
+              Data size: 1000
+      Local Work:
+
+  Stage: Stage-18
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 0
+              Data size: 0
+            Data size: 117
+              Data size: 29
+                Data size: 29
+                  Data size: 29
+
+  Stage: Stage-5
+    Map Reduce
+      Map Operator Tree:
+              Data size: 1100
+                Data size: 1210
+                  Data size: 151
+                    Data size: 151
+                      Data size: 151
+                        Data size: 151
+      Local Work:
+      Reduce Operator Tree:
+          Data size: 75
+            Data size: 25
+
+  Stage: Stage-6
+    Map Reduce
+      Map Operator Tree:
+              Data size: 25
+      Reduce Operator Tree:
+          Data size: 25
+            Data size: 0
+              Data size: 0
+
+  Stage: Stage-0
+    Move Operator
+      tables:
+
+  Stage: Stage-7
+    Stats-Aggr Operator
+
+  Stage: Stage-20
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-15
+    Map Reduce
+      Map Operator Tree:
+            Data size: 909
+              Data size: 909
+                Data size: 1000
+      Local Work:
+
+  Stage: Stage-2
+    Map Reduce
+      Map Operator Tree:
+              Data size: 92
+            Data size: 909
+              Data size: 909
+                Data size: 909
+      Reduce Operator Tree:
+          Data size: 1000
+
+@@@/users/wentingt/Big-Data-Benchmark-for-Big-Bench/engines/hive/queryueries/query08/query08.sql
+STAGE DEPENDENCIES:
+  Stage-6 is a root stage
+  Stage-9 depends on stages: Stage-2, Stage-6 , consists of Stage-11, Stage-12, Stage-3
+  Stage-11 has a backup stage: Stage-3
+  Stage-7 depends on stages: Stage-11
+  Stage-0 depends on stages: Stage-3, Stage-7, Stage-8
+  Stage-4 depends on stages: Stage-0
+  Stage-12 has a backup stage: Stage-3
+  Stage-8 depends on stages: Stage-12
+  Stage-3
+  Stage-13 is a root stage
+  Stage-2 depends on stages: Stage-13
+
+STAGE PLANS:
+  Stage: Stage-6
+    Map Reduce
+      Map Operator Tree:
+            Data size: 1
+              Data size: 1
+                Data size: 0
+                  Data size: 0
+      Reduce Operator Tree:
+          Data size: 0
+
+  Stage: Stage-9
+    Conditional Operator
+
+  Stage: Stage-11
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-7
+    Map Reduce
+      Map Operator Tree:
+              Data size: 0
+                Data size: 0
+                  Data size: 0
+      Local Work:
+
+  Stage: Stage-0
+    Move Operator
+      tables:
+
+  Stage: Stage-4
+    Stats-Aggr Operator
+
+  Stage: Stage-12
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-8
+    Map Reduce
+      Map Operator Tree:
+              Data size: 0
+                Data size: 0
+                  Data size: 0
+      Local Work:
+
+  Stage: Stage-3
+    Map Reduce
+      Map Operator Tree:
+              Data size: 0
+              Data size: 0
+      Reduce Operator Tree:
+          Data size: 0
+            Data size: 0
+              Data size: 0
+
+  Stage: Stage-13
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 0
+              Data size: 0
+                Data size: 0
+                  Data size: 0
+
+  Stage: Stage-2
+    Map Reduce
+      Map Operator Tree:
+            Data size: 1
+              Data size: 1
+                Data size: 1
+                  Data size: 1
+                    Data size: 0
+                      Data size: 0
+      Local Work:
+      Reduce Operator Tree:
+          Data size: 0
+
+@@@/users/wentingt/Big-Data-Benchmark-for-Big-Bench/engines/hive/queryueries/query09/query09.sql
+STAGE DEPENDENCIES:
+  Stage-15 is a root stage
+  Stage-5 depends on stages: Stage-15
+  Stage-0 depends on stages: Stage-5
+  Stage-6 depends on stages: Stage-0
+
+STAGE PLANS:
+  Stage: Stage-15
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 117
+              Data size: 58
+                Data size: 58
+            Data size: 53
+              Data size: 26
+                Data size: 26
+            Data size: 0
+              Data size: 0
+                Data size: 0
+            Data size: 685
+              Data size: 171
+                Data size: 171
+
+  Stage: Stage-5
+    Map Reduce
+      Map Operator Tree:
+            Data size: 909
+              Data size: 303
+                Data size: 303
+                  Data size: 333
+                    Data size: 366
+                      Data size: 61
+                        Data size: 61
+                          Data size: 67
+                            Data size: 188
+                              Data size: 0
+                                Data size: 0
+      Local Work:
+      Reduce Operator Tree:
+          Data size: 0
+            Data size: 0
+              Data size: 0
+
+  Stage: Stage-0
+    Move Operator
+      tables:
+
+  Stage: Stage-6
+    Stats-Aggr Operator
+
+@@@/users/wentingt/Big-Data-Benchmark-for-Big-Bench/engines/hive/queryueries/query10/query10.sql
+STAGE DEPENDENCIES:
+  Stage-1 is a root stage
+  Stage-0 depends on stages: Stage-1
+  Stage-2 depends on stages: Stage-0
+
+STAGE PLANS:
+  Stage: Stage-1
+    Map Reduce
+      Map Operator Tree:
+            Data size: 75
+              Data size: 75
+                Data size: 75
+                  Data size: 75
+                    Data size: 75
+      Reduce Operator Tree:
+          Data size: 75
+            Data size: 75
+
+  Stage: Stage-0
+    Move Operator
+      tables:
+
+  Stage: Stage-2
+    Stats-Aggr Operator
+
+@@@/users/wentingt/Big-Data-Benchmark-for-Big-Bench/engines/hive/queryueries/query11/query11.sql
+STAGE DEPENDENCIES:
+  Stage-1 is a root stage
+  Stage-10 depends on stages: Stage-1, Stage-6 , consists of Stage-12, Stage-13, Stage-2
+  Stage-12 has a backup stage: Stage-2
+  Stage-8 depends on stages: Stage-12
+  Stage-3 depends on stages: Stage-2, Stage-8, Stage-9
+  Stage-0 depends on stages: Stage-3
+  Stage-4 depends on stages: Stage-0
+  Stage-13 has a backup stage: Stage-2
+  Stage-9 depends on stages: Stage-13
+  Stage-2
+  Stage-14 is a root stage
+  Stage-6 depends on stages: Stage-14
+
+STAGE PLANS:
+  Stage: Stage-1
+    Map Reduce
+      Map Operator Tree:
+            Data size: 75
+              Data size: 75
+                Data size: 75
+                  Data size: 75
+                    Data size: 75
+      Reduce Operator Tree:
+          Data size: 37
+
+  Stage: Stage-10
+    Conditional Operator
+
+  Stage: Stage-12
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-8
+    Map Reduce
+      Map Operator Tree:
+              Data size: 704
+                Data size: 0
+      Local Work:
+
+  Stage: Stage-3
+    Map Reduce
+      Map Operator Tree:
+              Data size: 0
+      Reduce Operator Tree:
+          Data size: 0
+            Data size: 0
+              Data size: 0
+
+  Stage: Stage-0
+    Move Operator
+      tables:
+
+  Stage: Stage-4
+    Stats-Aggr Operator
+
+  Stage: Stage-13
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-9
+    Map Reduce
+      Map Operator Tree:
+              Data size: 704
+                Data size: 0
+      Local Work:
+
+  Stage: Stage-2
+    Map Reduce
+      Map Operator Tree:
+              Data size: 37
+              Data size: 640
+      Reduce Operator Tree:
+          Data size: 704
+            Data size: 0
+
+  Stage: Stage-14
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 117
+              Data size: 13
+                Data size: 13
+                  Data size: 13
+
+  Stage: Stage-6
+    Map Reduce
+      Map Operator Tree:
+            Data size: 1164
+              Data size: 1164
+                Data size: 1164
+                  Data size: 1281
+                    Data size: 1281
+                      Data size: 1281
+      Local Work:
+      Reduce Operator Tree:
+          Data size: 640
+
+@@@/users/wentingt/Big-Data-Benchmark-for-Big-Bench/engines/hive/queryueries/query12/query12.sql
+STAGE PLANS:
+  Stage: Stage-16
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 29
+              Data size: 14
+                Data size: 14
+
+  Stage: Stage-12
+    Map Reduce
+      Map Operator Tree:
+            Data size: 241
+              Data size: 13
+                Data size: 13
+                  Data size: 14
+                    Data size: 14
+      Local Work:
+
+  Stage: Stage-11
+    Conditional Operator
+
+  Stage: Stage-14
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-9
+    Map Reduce
+      Map Operator Tree:
+              Data size: 16
+                Data size: 5
+                  Data size: 5
+                    Data size: 5
+      Local Work:
+
+  Stage: Stage-3
+    Map Reduce
+      Map Operator Tree:
+              Data size: 5
+      Reduce Operator Tree:
+          Data size: 2
+
+  Stage: Stage-4
+    Map Reduce
+      Map Operator Tree:
+              Data size: 2
+      Reduce Operator Tree:
+          Data size: 2
+            Data size: 2
+
+  Stage: Stage-0
+    Move Operator
+      tables:
+
+  Stage: Stage-5
+    Stats-Aggr Operator
+
+  Stage: Stage-15
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-10
+    Map Reduce
+      Map Operator Tree:
+              Data size: 16
+                Data size: 5
+                  Data size: 5
+                    Data size: 5
+      Local Work:
+
+  Stage: Stage-2
+    Map Reduce
+      Map Operator Tree:
+              Data size: 14
+              Data size: 111
+      Reduce Operator Tree:
+          Data size: 16
+            Data size: 5
+              Data size: 5
+                Data size: 5
+
+  Stage: Stage-17
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 29
+              Data size: 14
+                Data size: 14
+
+  Stage: Stage-13
+    Map Reduce
+      Map Operator Tree:
+            Data size: 909
+              Data size: 101
+                Data size: 101
+                  Data size: 111
+                    Data size: 111
+      Local Work:
+
+@@@/users/wentingt/Big-Data-Benchmark-for-Big-Bench/engines/hive/queryueries/query13/query13.sql
+STAGE DEPENDENCIES:
+  Stage-20 is a root stage
+  Stage-2 depends on stages: Stage-20
+  Stage-14 depends on stages: Stage-2, Stage-8 , consists of Stage-17, Stage-18, Stage-19, Stage-3
+  Stage-17 has a backup stage: Stage-3
+  Stage-11 depends on stages: Stage-17
+  Stage-4 depends on stages: Stage-3, Stage-11, Stage-12, Stage-13
+  Stage-0 depends on stages: Stage-4
+  Stage-5 depends on stages: Stage-0
+  Stage-18 has a backup stage: Stage-3
+  Stage-12 depends on stages: Stage-18
+  Stage-19 has a backup stage: Stage-3
+  Stage-13 depends on stages: Stage-19
+  Stage-3
+  Stage-21 is a root stage
+  Stage-8 depends on stages: Stage-21
+
+STAGE PLANS:
+  Stage: Stage-20
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 117
+              Data size: 58
+                Data size: 58
+
+  Stage: Stage-2
+    Map Reduce
+      Map Operator Tree:
+            Data size: 909
+              Data size: 909
+                Data size: 1000
+                  Data size: 1000
+                    Data size: 1000
+                      Data size: 1000
+      Local Work:
+      Reduce Operator Tree:
+          Data size: 500
+            Data size: 166
+
+  Stage: Stage-14
+    Conditional Operator
+
+  Stage: Stage-17
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 83
+              Data size: 83
+
+  Stage: Stage-11
+    Map Reduce
+      Map Operator Tree:
+              Data size: 469
+                Data size: 39
+                  Data size: 39
+      Local Work:
+
+  Stage: Stage-4
+    Map Reduce
+      Map Operator Tree:
+              Data size: 39
+      Reduce Operator Tree:
+          Data size: 39
+            Data size: 0
+              Data size: 0
+                Data size: 0
+
+  Stage: Stage-0
+    Move Operator
+      tables:
+
+  Stage: Stage-5
+    Stats-Aggr Operator
+
+  Stage: Stage-18
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 83
+              Data size: 83
+
+  Stage: Stage-12
+    Map Reduce
+      Map Operator Tree:
+              Data size: 469
+                Data size: 39
+                  Data size: 39
+      Local Work:
+
+  Stage: Stage-19
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-13
+    Map Reduce
+      Map Operator Tree:
+            Data size: 83
+              Data size: 83
+                Data size: 469
+                  Data size: 39
+                    Data size: 39
+      Local Work:
+
+  Stage: Stage-3
+    Map Reduce
+      Map Operator Tree:
+              Data size: 166
+              Data size: 213
+            Data size: 83
+              Data size: 83
+                Data size: 83
+      Reduce Operator Tree:
+          Data size: 469
+            Data size: 39
+              Data size: 39
+
+  Stage: Stage-21
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 117
+              Data size: 58
+                Data size: 58
+
+  Stage: Stage-8
+    Map Reduce
+      Map Operator Tree:
+            Data size: 1164
+              Data size: 1164
+                Data size: 1281
+                  Data size: 1281
+                    Data size: 1281
+                      Data size: 1281
+      Local Work:
+      Reduce Operator Tree:
+          Data size: 640
+            Data size: 213
+
+@@@/users/wentingt/Big-Data-Benchmark-for-Big-Bench/engines/hive/queryueries/query14/query14.sql
+STAGE PLANS:
+  Stage: Stage-28
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 0
+              Data size: 0
+                Data size: 0
+            Data size: 39
+              Data size: 4
+                Data size: 4
+            Data size: 0
+              Data size: 0
+                Data size: 0
+
+  Stage: Stage-4
+    Map Reduce
+      Map Operator Tree:
+            Data size: 1164
+              Data size: 1164
+                Data size: 1164
+                  Data size: 1281
+                    Data size: 1409
+                      Data size: 1550
+                        Data size: 0
+                          Data size: 0
+      Local Work:
+      Reduce Operator Tree:
+          Data size: 0
+
+  Stage: Stage-19
+    Conditional Operator
+
+  Stage: Stage-26
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-17
+    Map Reduce
+      Map Operator Tree:
+              Data size: 0
+                Data size: 0
+                  Data size: 0
+      Local Work:
+
+  Stage: Stage-0
+    Move Operator
+      tables:
+
+  Stage: Stage-6
+    Stats-Aggr Operator
+
+  Stage: Stage-27
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-18
+    Map Reduce
+      Map Operator Tree:
+              Data size: 0
+                Data size: 0
+                  Data size: 0
+      Local Work:
+
+  Stage: Stage-5
+    Map Reduce
+      Map Operator Tree:
+              Data size: 0
+              Data size: 0
+      Reduce Operator Tree:
+          Data size: 0
+            Data size: 0
+              Data size: 0
+
+  Stage: Stage-29
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 0
+              Data size: 0
+                Data size: 0
+            Data size: 39
+              Data size: 4
+                Data size: 4
+            Data size: 0
+              Data size: 0
+                Data size: 0
+
+  Stage: Stage-13
+    Map Reduce
+      Map Operator Tree:
+            Data size: 1164
+              Data size: 1164
+                Data size: 1164
+                  Data size: 1281
+                    Data size: 1409
+                      Data size: 1550
+                        Data size: 0
+                          Data size: 0
+      Local Work:
+      Reduce Operator Tree:
+          Data size: 0
+
+@@@/users/wentingt/Big-Data-Benchmark-for-Big-Bench/engines/hive/queryueries/query15/query15.sql
+STAGE DEPENDENCIES:
+  Stage-10 is a root stage
+  Stage-3 depends on stages: Stage-10
+  Stage-4 depends on stages: Stage-3
+  Stage-0 depends on stages: Stage-4
+  Stage-5 depends on stages: Stage-0
+
+STAGE PLANS:
+  Stage: Stage-10
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 117
+              Data size: 13
+                Data size: 13
+                  Data size: 13
+            Data size: 29
+              Data size: 29
+                Data size: 29
+
+  Stage: Stage-3
+    Map Reduce
+      Map Operator Tree:
+            Data size: 909
+              Data size: 454
+                Data size: 454
+                  Data size: 500
+                    Data size: 550
+                      Data size: 550
+                        Data size: 550
+                          Data size: 550
+      Local Work:
+      Reduce Operator Tree:
+          Data size: 275
+            Data size: 275
+              Data size: 137
+                Data size: 45
+                  Data size: 45
+
+  Stage: Stage-4
+    Map Reduce
+      Map Operator Tree:
+              Data size: 45
+      Reduce Operator Tree:
+          Data size: 45
+            Data size: 45
+
+  Stage: Stage-0
+    Move Operator
+      tables:
+
+  Stage: Stage-5
+    Stats-Aggr Operator
+
+@@@/users/wentingt/Big-Data-Benchmark-for-Big-Bench/engines/hive/queryueries/query16/query16.sql
+STAGE DEPENDENCIES:
+  Stage-16 is a root stage
+  Stage-5 depends on stages: Stage-16
+  Stage-6 depends on stages: Stage-5
+  Stage-0 depends on stages: Stage-6
+  Stage-7 depends on stages: Stage-0
+
+STAGE PLANS:
+  Stage: Stage-16
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 41
+              Data size: 41
+                Data size: 41
+            Data size: 29
+              Data size: 29
+                Data size: 29
+            Data size: 0
+              Data size: 0
+                Data size: 0
+            Data size: 117
+              Data size: 13
+                Data size: 13
+
+  Stage: Stage-5
+    Map Reduce
+      Map Operator Tree:
+            Data size: 1164
+              Data size: 1164
+                Data size: 1164
+                  Data size: 1281
+                    Data size: 1281
+                      Data size: 1409
+                        Data size: 1550
+                          Data size: 1705
+                            Data size: 1705
+                              Data size: 1705
+                                Data size: 1705
+      Local Work:
+      Reduce Operator Tree:
+          Data size: 852
+
+  Stage: Stage-6
+    Map Reduce
+      Map Operator Tree:
+              Data size: 852
+      Reduce Operator Tree:
+          Data size: 852
+            Data size: 0
+              Data size: 0
+                Data size: 0
+
+  Stage: Stage-0
+    Move Operator
+      tables:
+
+  Stage: Stage-7
+    Stats-Aggr Operator
+
+@@@/users/wentingt/Big-Data-Benchmark-for-Big-Bench/engines/hive/queryueries/query17/query17.sql
+STAGE PLANS:
+  Stage: Stage-47
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 117
+              Data size: 29
+                Data size: 29
+            Data size: 29
+              Data size: 14
+                Data size: 14
+            Data size: 0
+              Data size: 0
+                Data size: 0
+            Data size: 0
+              Data size: 0
+                Data size: 0
+            Data size: 83
+              Data size: 83
+                Data size: 83
+            Data size: 53
+              Data size: 26
+                Data size: 26
+
+  Stage: Stage-7
+    Map Reduce
+      Map Operator Tree:
+            Data size: 909
+              Data size: 909
+                Data size: 909
+                  Data size: 1000
+                    Data size: 1100
+                      Data size: 1210
+                        Data size: 1331
+                          Data size: 1464
+                            Data size: 1610
+                              Data size: 0
+                                Data size: 0
+      Local Work:
+      Reduce Operator Tree:
+          Data size: 0
+
+  Stage: Stage-32
+    Conditional Operator
+
+  Stage: Stage-45
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-30
+    Map Reduce
+      Map Operator Tree:
+              Data size: 0
+                Data size: 0
+      Local Work:
+
+  Stage: Stage-9
+    Map Reduce
+      Map Operator Tree:
+              Data size: 0
+      Reduce Operator Tree:
+          Data size: 0
+            Data size: 0
+              Data size: 0
+                Data size: 0
+
+  Stage: Stage-0
+    Move Operator
+      tables:
+
+  Stage: Stage-10
+    Stats-Aggr Operator
+
+  Stage: Stage-46
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-31
+    Map Reduce
+      Map Operator Tree:
+              Data size: 0
+                Data size: 0
+      Local Work:
+
+  Stage: Stage-8
+    Map Reduce
+      Map Operator Tree:
+              Data size: 0
+              Data size: 0
+      Reduce Operator Tree:
+          Data size: 0
+            Data size: 0
+
+  Stage: Stage-48
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 117
+              Data size: 29
+                Data size: 29
+            Data size: 29
+              Data size: 14
+                Data size: 14
+            Data size: 0
+              Data size: 0
+                Data size: 0
+            Data size: 0
+              Data size: 0
+                Data size: 0
+            Data size: 83
+              Data size: 83
+                Data size: 83
+            Data size: 53
+              Data size: 26
+                Data size: 26
+
+  Stage: Stage-23
+    Map Reduce
+      Map Operator Tree:
+            Data size: 909
+              Data size: 909
+                Data size: 909
+                  Data size: 1000
+                    Data size: 1100
+                      Data size: 1210
+                        Data size: 1331
+                          Data size: 1464
+                            Data size: 1610
+                              Data size: 0
+                                Data size: 0
+      Local Work:
+      Reduce Operator Tree:
+          Data size: 0
+
+@@@/users/wentingt/Big-Data-Benchmark-for-Big-Bench/engines/hive/queryueries/query19/query19.sql
+STAGE DEPENDENCIES:
+  Stage-26 is a root stage
+  Stage-3 depends on stages: Stage-26
+  Stage-18 depends on stages: Stage-3, Stage-11 , consists of Stage-23, Stage-24, Stage-25, Stage-4
+  Stage-23 has a backup stage: Stage-4
+  Stage-15 depends on stages: Stage-23
+  Stage-5 depends on stages: Stage-4, Stage-15, Stage-16, Stage-17
+  Stage-0 depends on stages: Stage-5
+  Stage-6 depends on stages: Stage-0
+  Stage-24 has a backup stage: Stage-4
+  Stage-16 depends on stages: Stage-24
+  Stage-25 has a backup stage: Stage-4
+  Stage-17 depends on stages: Stage-25
+  Stage-4
+  Stage-27 is a root stage
+  Stage-11 depends on stages: Stage-27
+
+STAGE PLANS:
+  Stage: Stage-26
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 39
+              Data size: 39
+            Data size: 117
+              Data size: 117
+
+  Stage: Stage-3
+    Map Reduce
+      Map Operator Tree:
+            Data size: 117
+              Data size: 58
+                Data size: 129
+                  Data size: 64
+                    Data size: 64
+                      Data size: 70
+                        Data size: 35
+                          Data size: 35
+                            Data size: 35
+                              Data size: 35
+      Local Work:
+      Reduce Operator Tree:
+          Data size: 17
+            Data size: 5
+
+  Stage: Stage-18
+    Conditional Operator
+
+  Stage: Stage-23
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-15
+    Map Reduce
+      Map Operator Tree:
+            Data size: 75
+              Data size: 75
+                Data size: 167
+                  Data size: 13
+                    Data size: 13
+                      Data size: 13
+                        Data size: 6
+                          Data size: 6
+      Local Work:
+
+  Stage: Stage-5
+    Map Reduce
+      Map Operator Tree:
+              Data size: 6
+      Reduce Operator Tree:
+          Data size: 6
+            Data size: 6
+
+  Stage: Stage-0
+    Move Operator
+      tables:
+
+  Stage: Stage-6
+    Stats-Aggr Operator
+
+  Stage: Stage-24
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 75
+              Data size: 75
+
+  Stage: Stage-16
+    Map Reduce
+      Map Operator Tree:
+              Data size: 167
+                Data size: 13
+                  Data size: 13
+                    Data size: 13
+                      Data size: 6
+                        Data size: 6
+      Local Work:
+
+  Stage: Stage-25
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 75
+              Data size: 75
+
+  Stage: Stage-17
+    Map Reduce
+      Map Operator Tree:
+              Data size: 167
+                Data size: 13
+                  Data size: 13
+                    Data size: 13
+                      Data size: 6
+                        Data size: 6
+      Local Work:
+
+  Stage: Stage-4
+    Map Reduce
+      Map Operator Tree:
+              Data size: 5
+              Data size: 5
+            Data size: 75
+              Data size: 75
+                Data size: 75
+      Reduce Operator Tree:
+          Data size: 167
+            Data size: 13
+              Data size: 13
+                Data size: 13
+                  Data size: 6
+                    Data size: 6
+
+  Stage: Stage-27
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 41
+              Data size: 41
+            Data size: 117
+              Data size: 117
+
+  Stage: Stage-11
+    Map Reduce
+      Map Operator Tree:
+            Data size: 117
+              Data size: 58
+                Data size: 129
+                  Data size: 64
+                    Data size: 64
+                      Data size: 70
+                        Data size: 35
+                          Data size: 35
+                            Data size: 35
+                              Data size: 35
+      Local Work:
+      Reduce Operator Tree:
+          Data size: 17
+            Data size: 5
+
+@@@/users/wentingt/Big-Data-Benchmark-for-Big-Bench/engines/hive/queryueries/query20/query20.sql
+STAGE DEPENDENCIES:
+  Stage-1 is a root stage
+  Stage-7 depends on stages: Stage-1, Stage-5 , consists of Stage-8, Stage-2
+  Stage-8 has a backup stage: Stage-2
+  Stage-6 depends on stages: Stage-8
+  Stage-3 depends on stages: Stage-2, Stage-6
+  Stage-0 depends on stages: Stage-3
+  Stage-4 depends on stages: Stage-0
+  Stage-2
+  Stage-5 is a root stage
+
+STAGE PLANS:
+  Stage: Stage-1
+    Map Reduce
+      Map Operator Tree:
+            Data size: 909
+              Data size: 909
+                Data size: 909
+                  Data size: 909
+      Reduce Operator Tree:
+          Data size: 454
+
+  Stage: Stage-7
+    Conditional Operator
+
+  Stage: Stage-8
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-6
+    Map Reduce
+      Map Operator Tree:
+              Data size: 500
+                Data size: 500
+      Local Work:
+
+  Stage: Stage-3
+    Map Reduce
+      Map Operator Tree:
+              Data size: 500
+      Reduce Operator Tree:
+          Data size: 500
+            Data size: 500
+
+  Stage: Stage-0
+    Move Operator
+      tables:
+
+  Stage: Stage-4
+    Stats-Aggr Operator
+
+  Stage: Stage-2
+    Map Reduce
+      Map Operator Tree:
+              Data size: 454
+              Data size: 19
+      Reduce Operator Tree:
+          Data size: 500
+            Data size: 500
+
+  Stage: Stage-5
+    Map Reduce
+      Map Operator Tree:
+            Data size: 39
+              Data size: 39
+                Data size: 39
+                  Data size: 39
+      Reduce Operator Tree:
+          Data size: 19
+
+@@@/users/wentingt/Big-Data-Benchmark-for-Big-Bench/engines/hive/queryueries/query21/query21.sql
+STAGE DEPENDENCIES:
+  Stage-32 is a root stage
+  Stage-24 depends on stages: Stage-32
+  Stage-23 depends on stages: Stage-24, Stage-25 , consists of Stage-30, Stage-31, Stage-2
+  Stage-30 has a backup stage: Stage-2
+  Stage-21 depends on stages: Stage-30
+  Stage-20 depends on stages: Stage-2, Stage-21, Stage-22, Stage-26 , consists of Stage-28, Stage-29, Stage-3
+  Stage-28 has a backup stage: Stage-3
+  Stage-18 depends on stages: Stage-28
+  Stage-27 depends on stages: Stage-3, Stage-18, Stage-19
+  Stage-6 depends on stages: Stage-27
+  Stage-7 depends on stages: Stage-6
+  Stage-0 depends on stages: Stage-7
+  Stage-8 depends on stages: Stage-0
+  Stage-29 has a backup stage: Stage-3
+  Stage-19 depends on stages: Stage-29
+  Stage-3
+  Stage-31 has a backup stage: Stage-2
+  Stage-22 depends on stages: Stage-31
+  Stage-2
+  Stage-33 is a root stage
+  Stage-25 depends on stages: Stage-33
+  Stage-34 is a root stage
+  Stage-26 depends on stages: Stage-34
+
+STAGE PLANS:
+  Stage: Stage-32
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 39
+              Data size: 39
+                Data size: 39
+
+  Stage: Stage-24
+    Map Reduce
+      Map Operator Tree:
+            Data size: 117
+              Data size: 6
+                Data size: 6
+                  Data size: 43
+                    Data size: 43
+      Local Work:
+
+  Stage: Stage-23
+    Conditional Operator
+
+  Stage: Stage-30
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-21
+    Map Reduce
+      Map Operator Tree:
+              Data size: 1409
+      Local Work:
+
+  Stage: Stage-20
+    Conditional Operator
+
+  Stage: Stage-28
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-18
+    Map Reduce
+      Map Operator Tree:
+              Data size: 1550
+      Local Work:
+
+  Stage: Stage-27
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 0
+              Data size: 0
+                Data size: 0
+            Data size: 29
+              Data size: 29
+                Data size: 29
+
+  Stage: Stage-6
+    Map Reduce
+      Map Operator Tree:
+              Data size: 1705
+                Data size: 1875
+                  Data size: 1875
+                    Data size: 1875
+                      Data size: 1875
+      Local Work:
+      Reduce Operator Tree:
+          Data size: 937
+
+  Stage: Stage-7
+    Map Reduce
+      Map Operator Tree:
+              Data size: 937
+      Reduce Operator Tree:
+          Data size: 937
+            Data size: 0
+              Data size: 0
+
+  Stage: Stage-0
+    Move Operator
+      tables:
+
+  Stage: Stage-8
+    Stats-Aggr Operator
+
+  Stage: Stage-29
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-19
+    Map Reduce
+      Map Operator Tree:
+              Data size: 1550
+      Local Work:
+
+  Stage: Stage-3
+    Map Reduce
+      Map Operator Tree:
+              Data size: 1409
+              Data size: 1000
+      Reduce Operator Tree:
+          Data size: 1550
+
+  Stage: Stage-31
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-22
+    Map Reduce
+      Map Operator Tree:
+              Data size: 1409
+      Local Work:
+
+  Stage: Stage-2
+    Map Reduce
+      Map Operator Tree:
+              Data size: 43
+              Data size: 1281
+      Reduce Operator Tree:
+          Data size: 1409
+
+  Stage: Stage-33
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 117
+              Data size: 13
+                Data size: 13
+
+  Stage: Stage-25
+    Map Reduce
+      Map Operator Tree:
+            Data size: 1164
+              Data size: 1164
+                Data size: 1164
+                  Data size: 1281
+                    Data size: 1281
+      Local Work:
+
+  Stage: Stage-34
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 117
+              Data size: 29
+                Data size: 29
+
+  Stage: Stage-26
+    Map Reduce
+      Map Operator Tree:
+            Data size: 909
+              Data size: 909
+                Data size: 909
+                  Data size: 1000
+                    Data size: 1000
+      Local Work:
+
+@@@/users/wentingt/Big-Data-Benchmark-for-Big-Bench/engines/hive/queryueries/query22/query22.sql
+STAGE DEPENDENCIES:
+  Stage-13 is a root stage
+  Stage-4 depends on stages: Stage-13
+  Stage-5 depends on stages: Stage-4
+  Stage-0 depends on stages: Stage-5
+  Stage-6 depends on stages: Stage-0
+
+STAGE PLANS:
+  Stage: Stage-13
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 117
+              Data size: 13
+            Data size: 29
+              Data size: 3
+            Data size: 0
+              Data size: 0
+
+  Stage: Stage-4
+    Map Reduce
+      Map Operator Tree:
+            Data size: 620
+              Data size: 620
+                Data size: 683
+                  Data size: 751
+                    Data size: 826
+                      Data size: 103
+                        Data size: 103
+                          Data size: 103
+                            Data size: 103
+      Local Work:
+      Reduce Operator Tree:
+          Data size: 51
+            Data size: 1
+
+  Stage: Stage-5
+    Map Reduce
+      Map Operator Tree:
+              Data size: 1
+      Reduce Operator Tree:
+          Data size: 1
+            Data size: 0
+              Data size: 0
+
+  Stage: Stage-0
+    Move Operator
+      tables:
+
+  Stage: Stage-6
+    Stats-Aggr Operator
+
+@@@/users/wentingt/Big-Data-Benchmark-for-Big-Bench/engines/hive/queryueries/query24/query24.sql
+STAGE DEPENDENCIES:
+  Stage-17 is a root stage
+  Stage-2 depends on stages: Stage-17
+  Stage-12 depends on stages: Stage-2, Stage-8 , consists of Stage-15, Stage-16, Stage-3
+  Stage-15 has a backup stage: Stage-3
+  Stage-10 depends on stages: Stage-15
+  Stage-4 depends on stages: Stage-3, Stage-10, Stage-11
+  Stage-0 depends on stages: Stage-4
+  Stage-5 depends on stages: Stage-0
+  Stage-16 has a backup stage: Stage-3
+  Stage-11 depends on stages: Stage-16
+  Stage-3
+  Stage-18 is a root stage
+  Stage-8 depends on stages: Stage-18
+
+STAGE PLANS:
+  Stage: Stage-17
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 0
+              Data size: 0
+                Data size: 0
+
+  Stage: Stage-2
+    Map Reduce
+      Map Operator Tree:
+            Data size: 1164
+              Data size: 1164
+                Data size: 1164
+                  Data size: 1281
+                    Data size: 1281
+                      Data size: 1281
+                        Data size: 1281
+      Local Work:
+      Reduce Operator Tree:
+          Data size: 640
+
+  Stage: Stage-12
+    Conditional Operator
+
+  Stage: Stage-15
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-10
+    Map Reduce
+      Map Operator Tree:
+              Data size: 704
+                Data size: 704
+                  Data size: 704
+      Local Work:
+
+  Stage: Stage-4
+    Map Reduce
+      Map Operator Tree:
+              Data size: 704
+      Reduce Operator Tree:
+          Data size: 352
+            Data size: 352
+              Data size: 352
+
+  Stage: Stage-0
+    Move Operator
+      tables:
+
+  Stage: Stage-5
+    Stats-Aggr Operator
+
+  Stage: Stage-16
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+
+  Stage: Stage-11
+    Map Reduce
+      Map Operator Tree:
+              Data size: 704
+                Data size: 704
+                  Data size: 704
+      Local Work:
+
+  Stage: Stage-3
+    Map Reduce
+      Map Operator Tree:
+              Data size: 640
+              Data size: 500
+      Reduce Operator Tree:
+          Data size: 704
+            Data size: 704
+              Data size: 704
+
+  Stage: Stage-18
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 0
+              Data size: 0
+                Data size: 0
+
+  Stage: Stage-8
+    Map Reduce
+      Map Operator Tree:
+            Data size: 909
+              Data size: 909
+                Data size: 909
+                  Data size: 1000
+                    Data size: 1000
+                      Data size: 1000
+                        Data size: 1000
+      Local Work:
+      Reduce Operator Tree:
+          Data size: 500
+            Data size: 500
+
+@@@/users/wentingt/Big-Data-Benchmark-for-Big-Bench/engines/hive/queryueries/query25/query25.sql
+STAGE DEPENDENCIES:
+  Stage-1 is a root stage
+  Stage-2 depends on stages: Stage-1
+  Stage-0 depends on stages: Stage-2
+  Stage-3 depends on stages: Stage-0
+
+STAGE PLANS:
+  Stage: Stage-1
+    Map Reduce
+      Map Operator Tree:
+            Data size: 1
+              Data size: 1
+                Data size: 1
+                  Data size: 1
+      Reduce Operator Tree:
+          Data size: 0
+            Data size: 0
+
+  Stage: Stage-2
+    Map Reduce
+      Map Operator Tree:
+              Data size: 0
+      Reduce Operator Tree:
+          Data size: 0
+            Data size: 0
+
+  Stage: Stage-0
+    Move Operator
+      tables:
+
+  Stage: Stage-3
+    Stats-Aggr Operator
+
+@@@/users/wentingt/Big-Data-Benchmark-for-Big-Bench/engines/hive/queryueries/query26/query26.sql
+STAGE DEPENDENCIES:
+  Stage-7 is a root stage
+  Stage-2 depends on stages: Stage-7
+  Stage-3 depends on stages: Stage-2
+  Stage-0 depends on stages: Stage-3
+  Stage-4 depends on stages: Stage-0
+
+STAGE PLANS:
+  Stage: Stage-7
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 29
+              Data size: 29
+                Data size: 29
+                  Data size: 14
+
+  Stage: Stage-2
+    Map Reduce
+      Map Operator Tree:
+            Data size: 909
+              Data size: 909
+                Data size: 909
+                  Data size: 909
+                    Data size: 1000
+                      Data size: 1000
+                        Data size: 1000
+                          Data size: 1000
+      Local Work:
+      Reduce Operator Tree:
+          Data size: 500
+            Data size: 166
+              Data size: 166
+
+  Stage: Stage-3
+    Map Reduce
+      Map Operator Tree:
+              Data size: 166
+      Reduce Operator Tree:
+          Data size: 166
+            Data size: 166
+
+  Stage: Stage-0
+    Move Operator
+      tables:
+
+  Stage: Stage-4
+    Stats-Aggr Operator
+
+@@@/users/wentingt/Big-Data-Benchmark-for-Big-Bench/engines/hive/queryueries/query27/query27.sql
+STAGE DEPENDENCIES:
+  Stage-1 is a root stage
+  Stage-0 depends on stages: Stage-1
+  Stage-2 depends on stages: Stage-0
+
+STAGE PLANS:
+  Stage: Stage-1
+    Map Reduce
+      Map Operator Tree:
+            Data size: 75
+              Data size: 37
+                Data size: 37
+                  Data size: 37
+                    Data size: 37
+                      Data size: 37
+      Reduce Operator Tree:
+          Data size: 37
+            Data size: 37
+
+  Stage: Stage-0
+    Move Operator
+      tables:
+
+  Stage: Stage-2
+    Stats-Aggr Operator
+
+@@@/users/wentingt/Big-Data-Benchmark-for-Big-Bench/engines/hive/queryueries/query28/query28.sql
+STAGE DEPENDENCIES:
+  Stage-2 is a root stage
+  Stage-0 depends on stages: Stage-2
+  Stage-3 depends on stages: Stage-0
+  Stage-1 depends on stages: Stage-2
+  Stage-4 depends on stages: Stage-1
+
+STAGE PLANS:
+  Stage: Stage-2
+    Map Reduce
+      Map Operator Tree:
+            Data size: 75
+              Data size: 75
+                Data size: 75
+      Reduce Operator Tree:
+          Data size: 75
+            Data size: 37
+              Data size: 37
+            Data size: 37
+              Data size: 37
+
+  Stage: Stage-0
+    Move Operator
+      tables:
+
+  Stage: Stage-3
+    Stats-Aggr Operator
+
+  Stage: Stage-1
+    Move Operator
+      tables:
+
+  Stage: Stage-4
+    Stats-Aggr Operator
+
+@@@/users/wentingt/Big-Data-Benchmark-for-Big-Bench/engines/hive/queryueries/query29/query29.sql
+STAGE DEPENDENCIES:
+  Stage-8 is a root stage
+  Stage-2 depends on stages: Stage-8
+  Stage-3 depends on stages: Stage-2
+  Stage-4 depends on stages: Stage-3
+  Stage-0 depends on stages: Stage-4
+  Stage-5 depends on stages: Stage-0
+
+STAGE PLANS:
+  Stage: Stage-8
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 29
+              Data size: 29
+                Data size: 29
+
+  Stage: Stage-2
+    Map Reduce
+      Map Operator Tree:
+            Data size: 1164
+              Data size: 1164
+                Data size: 1164
+                  Data size: 1281
+                    Data size: 1281
+                      Data size: 1281
+      Local Work:
+      Reduce Operator Tree:
+          Data size: 640
+            Data size: 640
+              Data size: 640
+                Data size: 640
+
+  Stage: Stage-3
+    Map Reduce
+      Map Operator Tree:
+              Data size: 640
+      Reduce Operator Tree:
+          Data size: 320
+
+  Stage: Stage-4
+    Map Reduce
+      Map Operator Tree:
+              Data size: 320
+      Reduce Operator Tree:
+          Data size: 320
+            Data size: 0
+              Data size: 0
+                Data size: 0
+
+  Stage: Stage-0
+    Move Operator
+      tables:
+
+  Stage: Stage-5
+    Stats-Aggr Operator
+
+@@@/users/wentingt/Big-Data-Benchmark-for-Big-Bench/engines/hive/queryueries/query30/query30.sql
+STAGE DEPENDENCIES:
+  Stage-9 is a root stage
+  Stage-2 depends on stages: Stage-9
+  Stage-3 depends on stages: Stage-2
+  Stage-4 depends on stages: Stage-3
+  Stage-5 depends on stages: Stage-4
+  Stage-0 depends on stages: Stage-5
+  Stage-6 depends on stages: Stage-0
+
+STAGE PLANS:
+  Stage: Stage-9
+    Map Reduce Local Work
+      Alias -> Map Local Tables:
+      Alias -> Map Local Operator Tree:
+            Data size: 29
+              Data size: 29
+
+  Stage: Stage-2
+    Map Reduce
+      Map Operator Tree:
+            Data size: 241
+              Data size: 241
+                Data size: 265
+                  Data size: 132
+                    Data size: 132
+                      Data size: 132
+      Local Work:
+      Reduce Operator Tree:
+          Data size: 132
+            Data size: 132
+
+  Stage: Stage-3
+    Map Reduce
+      Map Operator Tree:
+              Data size: 132
+      Reduce Operator Tree:
+          Data size: 132
+            Data size: 66
+              Data size: 66
+                Data size: 66
+                  Data size: 66
+
+  Stage: Stage-4
+    Map Reduce
+      Map Operator Tree:
+              Data size: 66
+      Reduce Operator Tree:
+          Data size: 33
+
+  Stage: Stage-5
+    Map Reduce
+      Map Operator Tree:
+              Data size: 33
+      Reduce Operator Tree:
+          Data size: 33
+            Data size: 0
+              Data size: 0
+                Data size: 0
+
+  Stage: Stage-0
+    Move Operator
+      tables:
+
+  Stage: Stage-6
+    Stats-Aggr Operator
+

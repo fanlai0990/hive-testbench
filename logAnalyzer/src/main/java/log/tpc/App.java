@@ -9,8 +9,9 @@ import java.nio.file.*;
 public class App {
     public static void main( String[] args ) {
 
-//        Path fin = Paths.get("../log_tpcds_bin_partitioned_orc_2");
-        Path fin = Paths.get("../log_tpch_flat_orc_2");
+        Path fin = Paths.get("../../Big-Data-Benchmark-for-Big-Bench/log_bb_1g");
+        // Path fin = Paths.get("../log_tpcds_bin_partitioned_orc_2");
+        // Path fin = Paths.get("../log_tpch_flat_orc_2");
 
         Path fout;
         if (fin.toString().contains("tpcds")) {

@@ -15,8 +15,8 @@ for filename in $DIR/*.sql; do
 	if $explain; then
 		filename_=${filename}_
                 cp $filename $filename_
-		awk '/^$/ {nlstack=nlstack "\n";next;} {printf "%s",nlstack; nlstack=""; print;}' $filename | tac | sed 's/\;/\; explain/g' |  sed '1 s/explain//' | tac > $filename_
-    		hive --database $database -e "explain $(<$filename_)" 1>>$log_database 2>>$err_database
+		awk '/^$/ {nlstack=nlstack "\n";next;} {printf "%s",nlstack; nlstack=""; print;}' $filename | tac | sed 's/\;/\; explain FORMATTED/g' |  sed '1 s/explain FORMATTED//' | tac > $filename_
+    		hive --database $database -e "set hive.execution.engine=tez; explain FORMATTED $(<$filename_)" 1>>$log_database 2>>$err_database
                 rm $filename_             
 	else 
         	hive --database $database -f $filename 1>>$log_database 2>>$err_database

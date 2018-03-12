@@ -1,0 +1,18 @@
+{"queryId":"wentingt_20180312144603_b6ab44c7-4b6c-4711-9792-b4f32f39d8d9","queryType":null,"queryAttributes":{"queryString":" explain FORMATTED select  dt.d_year 
+       ,item.i_brand_id brand_id 
+       ,item.i_brand brand
+       ,sum(ss_ext_sales_price) sum_agg
+ from  date_dim dt 
+      ,store_sales
+      ,item
+ where dt.d_date_sk = store_sales.ss_sold_date_sk
+   and store_sales.ss_item_sk = item.i_item_sk
+   and item.i_manufact_id = 436
+   and dt.d_moy=12
+ group by dt.d_year
+      ,item.i_brand
+      ,item.i_brand_id
+ order by dt.d_year
+         ,sum_agg desc
+         ,brand_id
+ limit 100"},"queryCounters":"null","stageGraph":{"nodeType":"STAGE","roots":"null","adjacencyList":"]"},"stageList":[{"stageId":"Stage-3","stageType":"EXPLAIN","stageAttributes":"null","stageCounters":"}","taskList":[{"taskId":"Stage-3_OTHER","taskType":"OTHER","taskAttributes":"null","taskCounters":"null","operatorGraph":"null","operatorList":"]","done":"false","started":"false"}],"done":"false","started":"false"}],"done":"false","started":"false"}

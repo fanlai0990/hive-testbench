@@ -1,0 +1,34 @@
+HiveSortLimit(fetch=[100]): rowcount = 1.0, cumulative cost = {7891533.321637427 rows, 0.0 cpu, 0.0 io}, id = 1329
+  HiveSortLimit(sort0=[$0], dir0=[ASC]): rowcount = 1.0, cumulative cost = {7891533.321637427 rows, 0.0 cpu, 0.0 io}, id = 1327
+    HiveProject(am_pm_ratio=[/(CAST($0):DECIMAL(15, 4), CAST($1):DECIMAL(15, 4))]): rowcount = 1.0, cumulative cost = {7891533.321637427 rows, 0.0 cpu, 0.0 io}, id = 1325
+      HiveJoin(condition=[true], joinType=[inner], algorithm=[none], cost=[{2.0 rows, 0.0 cpu, 0.0 io}]): rowcount = 1.0, cumulative cost = {7891533.321637427 rows, 0.0 cpu, 0.0 io}, id = 1323
+        HiveAggregate(group=[{}], agg#0=[count()]): rowcount = 1.0, cumulative cost = {7891531.321637427 rows, 0.0 cpu, 0.0 io}, id = 1299
+          HiveJoin(condition=[=($2, $7)], joinType=[inner], algorithm=[none], cost=[{34439.225943647 rows, 0.0 cpu, 0.0 io}]): rowcount = 191.32286018075493, cumulative cost = {7891531.321637427 rows, 0.0 cpu, 0.0 io}, id = 1297
+            HiveJoin(condition=[=($0, $5)], joinType=[inner], algorithm=[none], cost=[{658871.5502392345 rows, 0.0 cpu, 0.0 io}]): rowcount = 34438.11483253589, cumulative cost = {7857092.09569378 rows, 0.0 cpu, 0.0 io}, id = 1290
+              HiveJoin(condition=[=($1, $3)], joinType=[inner], algorithm=[none], cost=[{7198220.545454546 rows, 0.0 cpu, 0.0 io}]): rowcount = 654324.1818181819, cumulative cost = {7198220.545454546 rows, 0.0 cpu, 0.0 io}, id = 1283
+                HiveProject(ws_sold_time_sk=[$1], ws_ship_hdemo_sk=[$10], ws_web_page_sk=[$12]): rowcount = 7197566.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 1276
+                  HiveTableScan(table=[[tpcds_text_10.web_sales]]): rowcount = 7197566.0, cumulative cost = {0}, id = 236
+                HiveProject(hd_demo_sk=[$0], hd_dep_count=[$3]): rowcount = 654.5454545454546, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 1281
+                  HiveFilter(condition=[=($3, 8)]): rowcount = 654.5454545454546, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 1279
+                    HiveTableScan(table=[[tpcds_text_10.household_demographics]]): rowcount = 7200.0, cumulative cost = {0}, id = 238
+              HiveProject(t_time_sk=[$0], t_hour=[$3]): rowcount = 4547.368421052632, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 1288
+                HiveFilter(condition=[BETWEEN(false, $3, 6, +(6, 1))]): rowcount = 4547.368421052632, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 1286
+                  HiveTableScan(table=[[tpcds_text_10.time_dim]]): rowcount = 86400.0, cumulative cost = {0}, id = 242
+            HiveProject(wp_web_page_sk=[$0], wp_char_count=[$10]): rowcount = 1.1111111111111112, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 1295
+              HiveFilter(condition=[BETWEEN(false, $10, 5000, 5200)]): rowcount = 1.1111111111111112, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 1293
+                HiveTableScan(table=[[tpcds_text_10.web_page]]): rowcount = 200.0, cumulative cost = {0}, id = 246
+        HiveAggregate(group=[{}], agg#0=[count()]): rowcount = 1.0, cumulative cost = {7891531.321637427 rows, 0.0 cpu, 0.0 io}, id = 1321
+          HiveJoin(condition=[=($2, $7)], joinType=[inner], algorithm=[none], cost=[{34439.225943647 rows, 0.0 cpu, 0.0 io}]): rowcount = 191.32286018075493, cumulative cost = {7891531.321637427 rows, 0.0 cpu, 0.0 io}, id = 1319
+            HiveJoin(condition=[=($0, $5)], joinType=[inner], algorithm=[none], cost=[{658871.5502392345 rows, 0.0 cpu, 0.0 io}]): rowcount = 34438.11483253589, cumulative cost = {7857092.09569378 rows, 0.0 cpu, 0.0 io}, id = 1313
+              HiveJoin(condition=[=($1, $3)], joinType=[inner], algorithm=[none], cost=[{7198220.545454546 rows, 0.0 cpu, 0.0 io}]): rowcount = 654324.1818181819, cumulative cost = {7198220.545454546 rows, 0.0 cpu, 0.0 io}, id = 1307
+                HiveProject(ws_sold_time_sk=[$1], ws_ship_hdemo_sk=[$10], ws_web_page_sk=[$12]): rowcount = 7197566.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 1301
+                  HiveTableScan(table=[[tpcds_text_10.web_sales]]): rowcount = 7197566.0, cumulative cost = {0}, id = 236
+                HiveProject(hd_demo_sk=[$0], hd_dep_count=[$3]): rowcount = 654.5454545454546, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 1305
+                  HiveFilter(condition=[=($3, 8)]): rowcount = 654.5454545454546, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 1303
+                    HiveTableScan(table=[[tpcds_text_10.household_demographics]]): rowcount = 7200.0, cumulative cost = {0}, id = 238
+              HiveProject(t_time_sk=[$0], t_hour=[$3]): rowcount = 4547.368421052632, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 1311
+                HiveFilter(condition=[BETWEEN(false, $3, 14, +(14, 1))]): rowcount = 4547.368421052632, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 1309
+                  HiveTableScan(table=[[tpcds_text_10.time_dim]]): rowcount = 86400.0, cumulative cost = {0}, id = 242
+            HiveProject(wp_web_page_sk=[$0], wp_char_count=[$10]): rowcount = 1.1111111111111112, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 1317
+              HiveFilter(condition=[BETWEEN(false, $10, 5000, 5200)]): rowcount = 1.1111111111111112, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 1315
+                HiveTableScan(table=[[tpcds_text_10.web_page]]): rowcount = 200.0, cumulative cost = {0}, id = 246

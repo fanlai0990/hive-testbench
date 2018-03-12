@@ -1,0 +1,19 @@
+# Distinct costs = 1
+# Total dags = 1
+# Cost = 2147483647 ; count = 1
+### 0
+HiveSortLimit(fetch=[100]): rowcount = 479279.0, cumulative cost = {8.2815322829536E13 rows, 0.0 cpu, 0.0 io}, 
+  HiveSortLimit(sort0=[$1], sort1=[$0], dir0=[ASC], dir1=[ASC]): rowcount = 479279.0, cumulative cost = {8.2815322829536E13 rows, 0.0 cpu, 0.0 io}, 
+    HiveAggregate(group=[{0}], agg#0=[sum($1)]): rowcount = 479279.0, cumulative cost = {8.2815322829536E13 rows, 0.0 cpu, 0.0 io}, 
+      HiveProject(ss_customer_sk=[$1], act_sales=[when(isnotnull($8), *(CAST(-($3, $8)):FLOAT, $4), *(CAST($3):FLOAT, $4))]): rowcount = 1.840339803402489E12, cumulative cost = {8.2815322829536E13 rows, 0.0 cpu, 0.0 io}, 
+        HiveJoin(condition=[=($6, $9)], joinType=[inner], algorithm=[none], cost=[{8.2815291153113E13 rows, 0.0 cpu, 0.0 io}]): rowcount = 1.840339803402489E12, cumulative cost = {8.2815322829536E13 rows, 0.0 cpu, 0.0 io}, 
+          HiveJoin(condition=[AND(=($5, $0), =($7, $2))], joinType=[left], algorithm=[none], cost=[{3.1676423E7 rows, 0.0 cpu, 0.0 io}]): rowcount = 8.2815291153112E13, cumulative cost = {3.1676423E7 rows, 0.0 cpu, 0.0 io}, 
+            HiveProject(ss_item_sk=[$2], ss_customer_sk=[$3], ss_ticket_number=[$9], ss_quantity=[$10], ss_sales_price=[$13]): rowcount = 2.8800991E7, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+              HiveTableScan(table=[[tpcds_text_10.store_sales]]): rowcount = 2.8800991E7, cumulative cost = {0}, 
+            HiveProject(sr_item_sk=[$2], sr_reason_sk=[$8], sr_ticket_number=[$9], sr_return_quantity=[$10]): rowcount = 2875432.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+              HiveTableScan(table=[[tpcds_text_10.store_returns]]): rowcount = 2875432.0, cumulative cost = {0}, 
+          HiveProject(r_reason_sk=[$0], r_reason_desc=[$2]): rowcount = 1.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+            HiveFilter(condition=[=($2, 'Did not like the warranty')]): rowcount = 1.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+              HiveTableScan(table=[[tpcds_text_10.reason]]): rowcount = 45.0, cumulative cost = {0}, 
+
+

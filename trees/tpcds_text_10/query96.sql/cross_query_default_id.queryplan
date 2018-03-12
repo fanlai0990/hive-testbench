@@ -1,0 +1,14 @@
+{"queryId":"wentingt_20180312113321_04616edf-c30e-4745-9aa7-8401afb59f0b","queryType":null,"queryAttributes":{"queryString":" explain FORMATTED 
+select  count(*) as c
+from store_sales
+    ,household_demographics 
+    ,time_dim, store
+where store_sales.ss_sold_time_sk = time_dim.t_time_sk   
+    and store_sales.ss_hdemo_sk = household_demographics.hd_demo_sk 
+    and store_sales.ss_store_sk = store.s_store_sk
+    and time_dim.t_hour = 8
+    and time_dim.t_minute >= 30
+    and household_demographics.hd_dep_count = 5
+    and store.s_store_name = 'ese'
+order by c
+limit 100"},"queryCounters":"null","stageGraph":{"nodeType":"STAGE","roots":"null","adjacencyList":"]"},"stageList":[{"stageId":"Stage-3","stageType":"EXPLAIN","stageAttributes":"null","stageCounters":"}","taskList":[{"taskId":"Stage-3_OTHER","taskType":"OTHER","taskAttributes":"null","taskCounters":"null","operatorGraph":"null","operatorList":"]","done":"false","started":"false"}],"done":"false","started":"false"}],"done":"false","started":"false"}

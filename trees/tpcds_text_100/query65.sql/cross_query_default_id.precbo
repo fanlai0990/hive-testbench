@@ -1,0 +1,29 @@
+HiveSortLimit(fetch=[100]): rowcount = 4.579568975042797E7, cumulative cost = {1.513154931573788E10 rows, 0.0 cpu, 0.0 io}, id = 298
+  HiveSortLimit(sort0=[$0], sort1=[$1], dir0=[ASC], dir1=[ASC]): rowcount = 4.579568975042797E7, cumulative cost = {1.513154931573788E10 rows, 0.0 cpu, 0.0 io}, id = 296
+    HiveProject(s_store_name=[$1], i_item_desc=[$3], revenue=[$11], i_current_price=[$4], i_wholesale_cost=[$5], i_brand=[$6]): rowcount = 4.579568975042797E7, cumulative cost = {1.513154931573788E10 rows, 0.0 cpu, 0.0 io}, id = 294
+      HiveFilter(condition=[<=($11, *(1.0000000000000000555E-1, $8))]): rowcount = 4.579568975042797E7, cumulative cost = {1.513154931573788E10 rows, 0.0 cpu, 0.0 io}, id = 292
+        HiveJoin(condition=[AND(=($7, $9), =($0, $9), =($2, $10))], joinType=[inner], algorithm=[none], cost=[{1.4761544085309155E10 rows, 0.0 cpu, 0.0 io}]): rowcount = 1.373870692512839E8, cumulative cost = {1.513154931573788E10 rows, 0.0 cpu, 0.0 io}, id = 290
+          HiveJoin(condition=[true], joinType=[inner], algorithm=[none], cost=[{8.200818E7 rows, 0.0 cpu, 0.0 io}]): rowcount = 1.476144E10, cumulative cost = {3.700052304287265E8 rows, 0.0 cpu, 0.0 io}, id = 274
+            HiveJoin(condition=[true], joinType=[inner], algorithm=[none], cost=[{204402.0 rows, 0.0 cpu, 0.0 io}]): rowcount = 8.2008E7, cumulative cost = {204402.0 rows, 0.0 cpu, 0.0 io}, id = 254
+              HiveProject(s_store_sk=[$0], s_store_name=[$5]): rowcount = 402.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 249
+                HiveTableScan(table=[[tpcds_text_100.store]]): rowcount = 402.0, cumulative cost = {0}, id = 219
+              HiveProject(i_item_sk=[$0], i_item_desc=[$4], i_current_price=[$5], i_wholesale_cost=[$6], i_brand=[$8]): rowcount = 204000.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 252
+                HiveTableScan(table=[[tpcds_text_100.item]]): rowcount = 204000.0, cumulative cost = {0}, id = 221
+            HiveAggregate(group=[{0}], agg#0=[avg($1)]): rowcount = 180.0, cumulative cost = {2.879970504287265E8 rows, 0.0 cpu, 0.0 io}, id = 272
+              HiveProject($f0=[$0], $f1=[$2]): rowcount = 104085.3091547975, cumulative cost = {2.879970504287265E8 rows, 0.0 cpu, 0.0 io}, id = 270
+                HiveAggregate(group=[{0, 1}], agg#0=[sum($2)]): rowcount = 104085.3091547975, cumulative cost = {2.879970504287265E8 rows, 0.0 cpu, 0.0 io}, id = 268
+                  HiveProject($f0=[$2], $f1=[$1], $f2=[$3]): rowcount = 104195.73950795947, cumulative cost = {2.879970504287265E8 rows, 0.0 cpu, 0.0 io}, id = 266
+                    HiveJoin(condition=[=($0, $4)], joinType=[inner], algorithm=[none], cost=[{2.879970504287265E8 rows, 0.0 cpu, 0.0 io}]): rowcount = 104195.73950795947, cumulative cost = {2.879970504287265E8 rows, 0.0 cpu, 0.0 io}, id = 264
+                      HiveProject(ss_sold_date_sk=[$0], ss_item_sk=[$2], ss_store_sk=[$7], ss_sales_price=[$13]): rowcount = 2.87997024E8, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 257
+                        HiveTableScan(table=[[tpcds_text_100.store_sales]]): rowcount = 2.87997024E8, cumulative cost = {0}, id = 224
+                      HiveProject(d_date_sk=[$0], d_month_seq=[$3]): rowcount = 26.42872648335745, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 308
+                        HiveFilter(condition=[BETWEEN(false, $3, 1212, +(1212, 11))]): rowcount = 26.42872648335745, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 305
+                          HiveTableScan(table=[[tpcds_text_100.date_dim]]): rowcount = 73049.0, cumulative cost = {0}, id = 226
+          HiveAggregate(group=[{0, 1}], agg#0=[sum($2)]): rowcount = 104085.3091547975, cumulative cost = {2.879970504287265E8 rows, 0.0 cpu, 0.0 io}, id = 288
+            HiveProject($f0=[$2], $f1=[$1], $f2=[$3]): rowcount = 104195.73950795947, cumulative cost = {2.879970504287265E8 rows, 0.0 cpu, 0.0 io}, id = 286
+              HiveJoin(condition=[=($0, $4)], joinType=[inner], algorithm=[none], cost=[{2.879970504287265E8 rows, 0.0 cpu, 0.0 io}]): rowcount = 104195.73950795947, cumulative cost = {2.879970504287265E8 rows, 0.0 cpu, 0.0 io}, id = 284
+                HiveProject(ss_sold_date_sk=[$0], ss_item_sk=[$2], ss_store_sk=[$7], ss_sales_price=[$13]): rowcount = 2.87997024E8, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 277
+                  HiveTableScan(table=[[tpcds_text_100.store_sales]]): rowcount = 2.87997024E8, cumulative cost = {0}, id = 235
+                HiveProject(d_date_sk=[$0], d_month_seq=[$3]): rowcount = 26.42872648335745, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 303
+                  HiveFilter(condition=[BETWEEN(false, $3, 1212, +(1212, 11))]): rowcount = 26.42872648335745, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 300
+                    HiveTableScan(table=[[tpcds_text_100.date_dim]]): rowcount = 73049.0, cumulative cost = {0}, id = 237

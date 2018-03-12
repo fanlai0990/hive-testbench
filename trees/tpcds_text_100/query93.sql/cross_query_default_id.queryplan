@@ -1,0 +1,16 @@
+{"queryId":"wentingt_20180312122218_23720404-da3a-4350-8438-32b66769fadd","queryType":null,"queryAttributes":{"queryString":" explain FORMATTED 
+select  ss_customer_sk
+            ,sum(act_sales) sumsales
+      from (select ss_item_sk
+                  ,ss_ticket_number
+                  ,ss_customer_sk
+                  ,case when sr_return_quantity is not null then (ss_quantity-sr_return_quantity)*ss_sales_price
+                                                            else (ss_quantity*ss_sales_price) end act_sales
+            from store_sales left outer join store_returns on (store_returns.sr_item_sk = store_sales.ss_item_sk
+                                                               and store_returns.sr_ticket_number = store_sales.ss_ticket_number)
+                ,reason
+            where store_returns.sr_reason_sk = reason.r_reason_sk
+              and r_reason_desc = 'Did not like the warranty') t
+      group by ss_customer_sk
+      order by sumsales, ss_customer_sk
+limit 100"},"queryCounters":"null","stageGraph":{"nodeType":"STAGE","roots":"null","adjacencyList":"]"},"stageList":[{"stageId":"Stage-3","stageType":"EXPLAIN","stageAttributes":"null","stageCounters":"}","taskList":[{"taskId":"Stage-3_OTHER","taskType":"OTHER","taskAttributes":"null","taskCounters":"null","operatorGraph":"null","operatorList":"]","done":"false","started":"false"}],"done":"false","started":"false"}],"done":"false","started":"false"}

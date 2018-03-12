@@ -1,0 +1,18 @@
+HiveSortLimit(fetch=[100]): rowcount = 1.0, cumulative cost = {1.1328985834910734E8 rows, 0.0 cpu, 0.0 io}, id = 558
+  HiveSortLimit(sort0=[$0], sort1=[$1], dir0=[ASC], dir1=[ASC]): rowcount = 1.0, cumulative cost = {1.1328985834910734E8 rows, 0.0 cpu, 0.0 io}, id = 556
+    HiveFilter(condition=[BETWEEN(false, when(>($2, 0), /(CAST($3):DOUBLE, CAST($2):DOUBLE), null), /(2E0, 3E0), /(3E0, 2E0))]): rowcount = 1.0, cumulative cost = {1.1328985834910734E8 rows, 0.0 cpu, 0.0 io}, id = 554
+      HiveAggregate(group=[{0, 1}], agg#0=[sum($2)], agg#1=[sum($3)]): rowcount = 1.0, cumulative cost = {1.1328985834910734E8 rows, 0.0 cpu, 0.0 io}, id = 552
+        HiveProject($f0=[$5], $f1=[$7], $f2=[when(<(CAST($10):DATE, CAST('1998-04-08'):DATE), $3, 0)], $f3=[when(>=(CAST($10):DATE, CAST('1998-04-08'):DATE), $3, 0)]): rowcount = 1.0, cumulative cost = {1.1328985834910734E8 rows, 0.0 cpu, 0.0 io}, id = 550
+          HiveJoin(condition=[=($0, $9)], joinType=[inner], algorithm=[none], cost=[{12184.012906001293 rows, 0.0 cpu, 0.0 io}]): rowcount = 1.0, cumulative cost = {1.1328985834910734E8 rows, 0.0 cpu, 0.0 io}, id = 548
+            HiveJoin(condition=[=($6, $1)], joinType=[inner], algorithm=[none], cost=[{5.663884033620133E7 rows, 0.0 cpu, 0.0 io}]): rowcount = 12183.012906001293, cumulative cost = {1.1327767433620134E8 rows, 0.0 cpu, 0.0 io}, id = 541
+              HiveJoin(condition=[=($2, $4)], joinType=[inner], algorithm=[none], cost=[{5.6638834E7 rows, 0.0 cpu, 0.0 io}]): rowcount = 5.6638827E7, cumulative cost = {5.6638834E7 rows, 0.0 cpu, 0.0 io}, id = 534
+                HiveProject(inv_date_sk=[$0], inv_item_sk=[$1], inv_warehouse_sk=[$2], inv_quantity_on_hand=[$3]): rowcount = 5.6638827E7, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 529
+                  HiveTableScan(table=[[tpcds_text_50.inventory]]): rowcount = 5.6638827E7, cumulative cost = {0}, id = 142
+                HiveProject(w_warehouse_sk=[$0], w_warehouse_name=[$2]): rowcount = 7.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 532
+                  HiveTableScan(table=[[tpcds_text_50.warehouse]]): rowcount = 7.0, cumulative cost = {0}, id = 144
+              HiveProject(i_item_sk=[$0], i_item_id=[$1], i_current_price=[$5]): rowcount = 13.336201333620135, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 539
+                HiveFilter(condition=[BETWEEN(false, $5, 9.8999999999999999111E-1, 1.4899999999999999911E0)]): rowcount = 13.336201333620135, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 537
+                  HiveTableScan(table=[[tpcds_text_50.item]]): rowcount = 62000.0, cumulative cost = {0}, id = 147
+            HiveProject(d_date_sk=[$0], d_date=[$2]): rowcount = 1.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 546
+              HiveFilter(condition=[BETWEEN(false, $2, '1998-03-09', '1998-05-07')]): rowcount = 1.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 544
+                HiveTableScan(table=[[tpcds_text_50.date_dim]]): rowcount = 73049.0, cumulative cost = {0}, id = 151

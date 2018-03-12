@@ -1,0 +1,13 @@
+HiveSortLimit(fetch=[100]): rowcount = 62.29323313384162, cumulative cost = {5765168.427808302 rows, 0.0 cpu, 0.0 io}, id = 342
+  HiveSortLimit(sort0=[$3], sort1=[$0], sort2=[$1], sort3=[$2], dir0=[DESC], dir1=[ASC], dir2=[ASC], dir3=[ASC]): rowcount = 62.29323313384162, cumulative cost = {5765168.427808302 rows, 0.0 cpu, 0.0 io}, id = 340
+    HiveAggregate(group=[{1, 7, 8}], agg#0=[sum($5)]): rowcount = 62.29323313384162, cumulative cost = {5765168.427808302 rows, 0.0 cpu, 0.0 io}, id = 338
+      HiveJoin(condition=[=($4, $6)], joinType=[inner], algorithm=[none], cost=[{4369.256791819293 rows, 0.0 cpu, 0.0 io}]): rowcount = 62.80251395429967, cumulative cost = {5765168.427808302 rows, 0.0 cpu, 0.0 io}, id = 336
+        HiveJoin(condition=[=($0, $3)], joinType=[inner], algorithm=[none], cost=[{5760799.171016484 rows, 0.0 cpu, 0.0 io}]): rowcount = 3956.5583791208796, cumulative cost = {5760799.171016484 rows, 0.0 cpu, 0.0 io}, id = 329
+          HiveProject(d_date_sk=[$0], d_year=[$6], d_moy=[$8]): rowcount = 50.17101648351649, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 324
+            HiveFilter(condition=[AND(=($8, 12), =($6, 1998))]): rowcount = 50.17101648351649, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 322
+              HiveTableScan(table=[[tpcds_text_2.date_dim]]): rowcount = 73049.0, cumulative cost = {0}, id = 101
+          HiveProject(ss_sold_date_sk=[$0], ss_item_sk=[$2], ss_ext_sales_price=[$15]): rowcount = 5760749.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 327
+            HiveTableScan(table=[[tpcds_text_2.store_sales]]): rowcount = 5760749.0, cumulative cost = {0}, id = 104
+        HiveProject(i_item_sk=[$0], i_category_id=[$11], i_category=[$12], i_manager_id=[$20]): rowcount = 412.69841269841265, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 334
+          HiveFilter(condition=[=($20, 1)]): rowcount = 412.69841269841265, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 332
+            HiveTableScan(table=[[tpcds_text_2.item]]): rowcount = 26000.0, cumulative cost = {0}, id = 107

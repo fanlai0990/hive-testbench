@@ -1,0 +1,32 @@
+# Distinct costs = 1
+# Total dags = 1
+# Cost = 2880176 ; count = 1
+### 0
+HiveAggregate(group=[{}], agg#0=[sum($0)]): rowcount = 1.0, cumulative cost = {2880176.4632916655 rows, 0.0 cpu, 0.0 io}, 
+  HiveProject($f0=[$1]): rowcount = 1.0, cumulative cost = {2880176.4632916655 rows, 0.0 cpu, 0.0 io}, 
+    HiveFilter(condition=[>(CAST($1):DOUBLE, $5)]): rowcount = 1.0, cumulative cost = {2880176.4632916655 rows, 0.0 cpu, 0.0 io}, 
+      HiveProject(cs_item_sk0=[$4], cs_ext_discount_amt=[$5], i_item_sk=[$2], i_manufact_id=[$3], cs_item_sk=[$0], avg_cs_ext_discount_amt=[$1]): rowcount = 1.0, cumulative cost = {2880176.4632916655 rows, 0.0 cpu, 0.0 io}, 
+        HiveProject(cs_item_sk0=[$4], avg_cs_ext_discount_amt=[$5], i_item_sk=[$2], i_manufact_id=[$3], cs_item_sk=[$0], cs_ext_discount_amt=[$1]): rowcount = 1.0, cumulative cost = {2880176.4632916655 rows, 0.0 cpu, 0.0 io}, 
+          HiveJoin(condition=[=($2, $4)], joinType=[inner], algorithm=[none], cost=[{40.41027856120052 rows, 0.0 cpu, 0.0 io}]): rowcount = 1.0, cumulative cost = {2880176.4632916655 rows, 0.0 cpu, 0.0 io}, 
+            HiveJoin(condition=[=($2, $0)], joinType=[inner], algorithm=[none], cost=[{77.05301310448021 rows, 0.0 cpu, 0.0 io}]): rowcount = 1.0, cumulative cost = {2880136.0530131045 rows, 0.0 cpu, 0.0 io}, 
+              HiveProject(cs_item_sk=[$1], cs_ext_discount_amt=[$2]): rowcount = 39.42638502922696, cumulative cost = {2880059.0 rows, 0.0 cpu, 0.0 io}, 
+                HiveJoin(condition=[=($3, $0)], joinType=[inner], algorithm=[none], cost=[{2880059.0 rows, 0.0 cpu, 0.0 io}]): rowcount = 39.42638502922696, cumulative cost = {2880059.0 rows, 0.0 cpu, 0.0 io}, 
+                  HiveProject(cs_sold_date_sk=[$0], cs_item_sk=[$15], cs_ext_discount_amt=[$22]): rowcount = 2880058.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+                    HiveTableScan(table=[[tpcds_text_2.catalog_sales]]): rowcount = 2880058.0, cumulative cost = {0}, 
+                  HiveProject(d_date_sk=[$0], d_date=[$2]): rowcount = 1.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+                    HiveFilter(condition=[BETWEEN(false, $2, '2000-01-27', '2000-04-27')]): rowcount = 1.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+                      HiveTableScan(table=[[tpcds_text_2.date_dim]]): rowcount = 73049.0, cumulative cost = {0}, 
+              HiveProject(i_item_sk=[$0], i_manufact_id=[$13]): rowcount = 37.62662807525325, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+                HiveFilter(condition=[=($13, 436)]): rowcount = 37.62662807525325, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+                  HiveTableScan(table=[[tpcds_text_2.item]]): rowcount = 26000.0, cumulative cost = {0}, 
+            HiveProject(cs_item_sk=[$0], avg_cs_ext_discount_amt=[*(1.3000000000000000444E0, $1)]): rowcount = 39.41027856120052, cumulative cost = {2880059.0 rows, 0.0 cpu, 0.0 io}, 
+              HiveAggregate(group=[{0}], agg#0=[avg($1)]): rowcount = 39.41027856120052, cumulative cost = {2880059.0 rows, 0.0 cpu, 0.0 io}, 
+                HiveProject(cs_item_sk=[$1], cs_ext_discount_amt=[$2]): rowcount = 39.42638502922696, cumulative cost = {2880059.0 rows, 0.0 cpu, 0.0 io}, 
+                  HiveJoin(condition=[=($3, $0)], joinType=[inner], algorithm=[none], cost=[{2880059.0 rows, 0.0 cpu, 0.0 io}]): rowcount = 39.42638502922696, cumulative cost = {2880059.0 rows, 0.0 cpu, 0.0 io}, 
+                    HiveProject(cs_sold_date_sk=[$0], cs_item_sk=[$15], cs_ext_discount_amt=[$22]): rowcount = 2880058.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+                      HiveTableScan(table=[[tpcds_text_2.catalog_sales]]): rowcount = 2880058.0, cumulative cost = {0}, 
+                    HiveProject(d_date_sk=[$0], d_date=[$2]): rowcount = 1.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+                      HiveFilter(condition=[BETWEEN(false, $2, '2000-01-27', '2000-04-27')]): rowcount = 1.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+                        HiveTableScan(table=[[tpcds_text_2.date_dim]]): rowcount = 73049.0, cumulative cost = {0}, 
+
+

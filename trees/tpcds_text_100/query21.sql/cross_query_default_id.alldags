@@ -1,0 +1,96 @@
+# Distinct costs = 4
+# Total dags = 4
+# Cost = 399340968 ; count = 1
+### 0
+HiveSortLimit(fetch=[100]): rowcount = 1.0, cumulative cost = {3.9934096847267187E8 rows, 0.0 cpu, 0.0 io}, 
+  HiveSortLimit(sort0=[$0], sort1=[$1], dir0=[ASC], dir1=[ASC]): rowcount = 1.0, cumulative cost = {3.9934096847267187E8 rows, 0.0 cpu, 0.0 io}, 
+    HiveFilter(condition=[BETWEEN(false, when(>($2, 0), /(CAST($3):DOUBLE, CAST($2):DOUBLE), null), /(2E0, 3E0), /(3E0, 2E0))]): rowcount = 1.0, cumulative cost = {3.9934096847267187E8 rows, 0.0 cpu, 0.0 io}, 
+      HiveAggregate(group=[{0, 1}], agg#0=[sum($2)], agg#1=[sum($3)]): rowcount = 1.0, cumulative cost = {3.9934096847267187E8 rows, 0.0 cpu, 0.0 io}, 
+        HiveProject($f0=[$5], $f1=[$7], $f2=[when(<(CAST($10):DATE, CAST('1998-04-08'):DATE), $3, 0)], $f3=[when(>=(CAST($10):DATE, CAST('1998-04-08'):DATE), $3, 0)]): rowcount = 1.0, cumulative cost = {3.9934096847267187E8 rows, 0.0 cpu, 0.0 io}, 
+          HiveProject(inv_date_sk=[$0], inv_item_sk=[$1], inv_warehouse_sk=[$2], inv_quantity_on_hand=[$3], w_warehouse_sk=[$4], w_warehouse_name=[$5], i_item_sk=[$8], i_item_id=[$9], i_current_price=[$10], d_date_sk=[$6], d_date=[$7]): rowcount = 1.0, cumulative cost = {3.9934096847267187E8 rows, 0.0 cpu, 0.0 io}, 
+            HiveJoin(condition=[=($8, $1)], joinType=[inner], algorithm=[none], cost=[{5485.868063956605 rows, 0.0 cpu, 0.0 io}]): rowcount = 1.0, cumulative cost = {3.9934096847267187E8 rows, 0.0 cpu, 0.0 io}, 
+              HiveProject(inv_date_sk=[$0], inv_item_sk=[$1], inv_warehouse_sk=[$2], inv_quantity_on_hand=[$3], w_warehouse_sk=[$6], w_warehouse_name=[$7], d_date_sk=[$4], d_date=[$5]): rowcount = 5466.604607865953, cumulative cost = {3.993354826046079E8 rows, 0.0 cpu, 0.0 io}, 
+                HiveJoin(condition=[=($2, $6)], joinType=[inner], algorithm=[none], cost=[{5481.604607865953 rows, 0.0 cpu, 0.0 io}]): rowcount = 5466.604607865953, cumulative cost = {3.993354826046079E8 rows, 0.0 cpu, 0.0 io}, 
+                  HiveJoin(condition=[=($0, $4)], joinType=[inner], algorithm=[none], cost=[{3.99330001E8 rows, 0.0 cpu, 0.0 io}]): rowcount = 5466.604607865953, cumulative cost = {3.99330001E8 rows, 0.0 cpu, 0.0 io}, 
+                    HiveProject(inv_date_sk=[$0], inv_item_sk=[$1], inv_warehouse_sk=[$2], inv_quantity_on_hand=[$3]): rowcount = 3.9933E8, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+                      HiveTableScan(table=[[tpcds_text_100.inventory]]): rowcount = 3.9933E8, cumulative cost = {0}, 
+                    HiveProject(d_date_sk=[$0], d_date=[$2]): rowcount = 1.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+                      HiveFilter(condition=[BETWEEN(false, $2, '1998-03-09', '1998-05-07')]): rowcount = 1.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+                        HiveTableScan(table=[[tpcds_text_100.date_dim]]): rowcount = 73049.0, cumulative cost = {0}, 
+                  HiveProject(w_warehouse_sk=[$0], w_warehouse_name=[$2]): rowcount = 15.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+                    HiveTableScan(table=[[tpcds_text_100.warehouse]]): rowcount = 15.0, cumulative cost = {0}, 
+              HiveProject(i_item_sk=[$0], i_item_id=[$1], i_current_price=[$5]): rowcount = 19.263456090651555, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+                HiveFilter(condition=[BETWEEN(false, $5, 9.8999999999999999111E-1, 1.4899999999999999911E0)]): rowcount = 19.263456090651555, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+                  HiveTableScan(table=[[tpcds_text_100.item]]): rowcount = 204000.0, cumulative cost = {0}, 
+
+
+# Cost = 399405451 ; count = 1
+### 1
+HiveSortLimit(fetch=[100]): rowcount = 1.0, cumulative cost = {3.99405451694051E8 rows, 0.0 cpu, 0.0 io}, 
+  HiveSortLimit(sort0=[$0], sort1=[$1], dir0=[ASC], dir1=[ASC]): rowcount = 1.0, cumulative cost = {3.99405451694051E8 rows, 0.0 cpu, 0.0 io}, 
+    HiveFilter(condition=[BETWEEN(false, when(>($2, 0), /(CAST($3):DOUBLE, CAST($2):DOUBLE), null), /(2E0, 3E0), /(3E0, 2E0))]): rowcount = 1.0, cumulative cost = {3.99405451694051E8 rows, 0.0 cpu, 0.0 io}, 
+      HiveAggregate(group=[{0, 1}], agg#0=[sum($2)], agg#1=[sum($3)]): rowcount = 1.0, cumulative cost = {3.99405451694051E8 rows, 0.0 cpu, 0.0 io}, 
+        HiveProject($f0=[$5], $f1=[$7], $f2=[when(<(CAST($10):DATE, CAST('1998-04-08'):DATE), $3, 0)], $f3=[when(>=(CAST($10):DATE, CAST('1998-04-08'):DATE), $3, 0)]): rowcount = 1.0, cumulative cost = {3.99405451694051E8 rows, 0.0 cpu, 0.0 io}, 
+          HiveJoin(condition=[=($0, $9)], joinType=[inner], algorithm=[none], cost=[{37709.21529745041 rows, 0.0 cpu, 0.0 io}]): rowcount = 1.0, cumulative cost = {3.99405451694051E8 rows, 0.0 cpu, 0.0 io}, 
+            HiveProject(inv_date_sk=[$0], inv_item_sk=[$1], inv_warehouse_sk=[$2], inv_quantity_on_hand=[$3], w_warehouse_sk=[$7], w_warehouse_name=[$8], i_item_sk=[$4], i_item_id=[$5], i_current_price=[$6]): rowcount = 37708.21529745041, cumulative cost = {3.9936774247875357E8 rows, 0.0 cpu, 0.0 io}, 
+              HiveJoin(condition=[=($2, $7)], joinType=[inner], algorithm=[none], cost=[{37723.21529745041 rows, 0.0 cpu, 0.0 io}]): rowcount = 37708.21529745041, cumulative cost = {3.9936774247875357E8 rows, 0.0 cpu, 0.0 io}, 
+                HiveJoin(condition=[=($4, $1)], joinType=[inner], algorithm=[none], cost=[{3.993300192634561E8 rows, 0.0 cpu, 0.0 io}]): rowcount = 37708.21529745041, cumulative cost = {3.993300192634561E8 rows, 0.0 cpu, 0.0 io}, 
+                  HiveProject(inv_date_sk=[$0], inv_item_sk=[$1], inv_warehouse_sk=[$2], inv_quantity_on_hand=[$3]): rowcount = 3.9933E8, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+                    HiveTableScan(table=[[tpcds_text_100.inventory]]): rowcount = 3.9933E8, cumulative cost = {0}, 
+                  HiveProject(i_item_sk=[$0], i_item_id=[$1], i_current_price=[$5]): rowcount = 19.263456090651555, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+                    HiveFilter(condition=[BETWEEN(false, $5, 9.8999999999999999111E-1, 1.4899999999999999911E0)]): rowcount = 19.263456090651555, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+                      HiveTableScan(table=[[tpcds_text_100.item]]): rowcount = 204000.0, cumulative cost = {0}, 
+                HiveProject(w_warehouse_sk=[$0], w_warehouse_name=[$2]): rowcount = 15.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+                  HiveTableScan(table=[[tpcds_text_100.warehouse]]): rowcount = 15.0, cumulative cost = {0}, 
+            HiveProject(d_date_sk=[$0], d_date=[$2]): rowcount = 1.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+              HiveFilter(condition=[BETWEEN(false, $2, '1998-03-09', '1998-05-07')]): rowcount = 1.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+                HiveTableScan(table=[[tpcds_text_100.date_dim]]): rowcount = 73049.0, cumulative cost = {0}, 
+
+
+# Cost = 798665501 ; count = 1
+### 2
+HiveSortLimit(fetch=[100]): rowcount = 1.0, cumulative cost = {7.986655018680639E8 rows, 0.0 cpu, 0.0 io}, 
+  HiveSortLimit(sort0=[$0], sort1=[$1], dir0=[ASC], dir1=[ASC]): rowcount = 1.0, cumulative cost = {7.986655018680639E8 rows, 0.0 cpu, 0.0 io}, 
+    HiveFilter(condition=[BETWEEN(false, when(>($2, 0), /(CAST($3):DOUBLE, CAST($2):DOUBLE), null), /(2E0, 3E0), /(3E0, 2E0))]): rowcount = 1.0, cumulative cost = {7.986655018680639E8 rows, 0.0 cpu, 0.0 io}, 
+      HiveAggregate(group=[{0, 1}], agg#0=[sum($2)], agg#1=[sum($3)]): rowcount = 1.0, cumulative cost = {7.986655018680639E8 rows, 0.0 cpu, 0.0 io}, 
+        HiveProject($f0=[$5], $f1=[$7], $f2=[when(<(CAST($10):DATE, CAST('1998-04-08'):DATE), $3, 0)], $f3=[when(>=(CAST($10):DATE, CAST('1998-04-08'):DATE), $3, 0)]): rowcount = 1.0, cumulative cost = {7.986655018680639E8 rows, 0.0 cpu, 0.0 io}, 
+          HiveProject(inv_date_sk=[$0], inv_item_sk=[$1], inv_warehouse_sk=[$2], inv_quantity_on_hand=[$3], w_warehouse_sk=[$4], w_warehouse_name=[$5], i_item_sk=[$8], i_item_id=[$9], i_current_price=[$10], d_date_sk=[$6], d_date=[$7]): rowcount = 1.0, cumulative cost = {7.986655018680639E8 rows, 0.0 cpu, 0.0 io}, 
+            HiveJoin(condition=[=($8, $1)], joinType=[inner], algorithm=[none], cost=[{5485.868063956605 rows, 0.0 cpu, 0.0 io}]): rowcount = 1.0, cumulative cost = {7.986655018680639E8 rows, 0.0 cpu, 0.0 io}, 
+              HiveJoin(condition=[=($0, $6)], joinType=[inner], algorithm=[none], cost=[{3.99330001E8 rows, 0.0 cpu, 0.0 io}]): rowcount = 5466.604607865953, cumulative cost = {7.98660016E8 rows, 0.0 cpu, 0.0 io}, 
+                HiveJoin(condition=[=($2, $4)], joinType=[inner], algorithm=[none], cost=[{3.99330015E8 rows, 0.0 cpu, 0.0 io}]): rowcount = 3.9933E8, cumulative cost = {3.99330015E8 rows, 0.0 cpu, 0.0 io}, 
+                  HiveProject(inv_date_sk=[$0], inv_item_sk=[$1], inv_warehouse_sk=[$2], inv_quantity_on_hand=[$3]): rowcount = 3.9933E8, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+                    HiveTableScan(table=[[tpcds_text_100.inventory]]): rowcount = 3.9933E8, cumulative cost = {0}, 
+                  HiveProject(w_warehouse_sk=[$0], w_warehouse_name=[$2]): rowcount = 15.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+                    HiveTableScan(table=[[tpcds_text_100.warehouse]]): rowcount = 15.0, cumulative cost = {0}, 
+                HiveProject(d_date_sk=[$0], d_date=[$2]): rowcount = 1.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+                  HiveFilter(condition=[BETWEEN(false, $2, '1998-03-09', '1998-05-07')]): rowcount = 1.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+                    HiveTableScan(table=[[tpcds_text_100.date_dim]]): rowcount = 73049.0, cumulative cost = {0}, 
+              HiveProject(i_item_sk=[$0], i_item_id=[$1], i_current_price=[$5]): rowcount = 19.263456090651555, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+                HiveFilter(condition=[BETWEEN(false, $5, 9.8999999999999999111E-1, 1.4899999999999999911E0)]): rowcount = 19.263456090651555, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+                  HiveTableScan(table=[[tpcds_text_100.item]]): rowcount = 204000.0, cumulative cost = {0}, 
+
+
+# Cost = 798697743 ; count = 1
+### 3
+HiveSortLimit(fetch=[100]): rowcount = 1.0, cumulative cost = {7.986977434787536E8 rows, 0.0 cpu, 0.0 io}, 
+  HiveSortLimit(sort0=[$0], sort1=[$1], dir0=[ASC], dir1=[ASC]): rowcount = 1.0, cumulative cost = {7.986977434787536E8 rows, 0.0 cpu, 0.0 io}, 
+    HiveFilter(condition=[BETWEEN(false, when(>($2, 0), /(CAST($3):DOUBLE, CAST($2):DOUBLE), null), /(2E0, 3E0), /(3E0, 2E0))]): rowcount = 1.0, cumulative cost = {7.986977434787536E8 rows, 0.0 cpu, 0.0 io}, 
+      HiveAggregate(group=[{0, 1}], agg#0=[sum($2)], agg#1=[sum($3)]): rowcount = 1.0, cumulative cost = {7.986977434787536E8 rows, 0.0 cpu, 0.0 io}, 
+        HiveProject($f0=[$5], $f1=[$7], $f2=[when(<(CAST($10):DATE, CAST('1998-04-08'):DATE), $3, 0)], $f3=[when(>=(CAST($10):DATE, CAST('1998-04-08'):DATE), $3, 0)]): rowcount = 1.0, cumulative cost = {7.986977434787536E8 rows, 0.0 cpu, 0.0 io}, 
+          HiveProject(inv_date_sk=[$0], inv_item_sk=[$1], inv_warehouse_sk=[$2], inv_quantity_on_hand=[$3], w_warehouse_sk=[$4], w_warehouse_name=[$5], i_item_sk=[$8], i_item_id=[$9], i_current_price=[$10], d_date_sk=[$6], d_date=[$7]): rowcount = 1.0, cumulative cost = {7.986977434787536E8 rows, 0.0 cpu, 0.0 io}, 
+            HiveProject(inv_date_sk=[$0], inv_item_sk=[$1], inv_warehouse_sk=[$2], inv_quantity_on_hand=[$3], w_warehouse_sk=[$4], w_warehouse_name=[$5], d_date_sk=[$9], d_date=[$10], i_item_sk=[$6], i_item_id=[$7], i_current_price=[$8]): rowcount = 1.0, cumulative cost = {7.986977434787536E8 rows, 0.0 cpu, 0.0 io}, 
+              HiveJoin(condition=[=($0, $9)], joinType=[inner], algorithm=[none], cost=[{37709.21529745041 rows, 0.0 cpu, 0.0 io}]): rowcount = 1.0, cumulative cost = {7.986977434787536E8 rows, 0.0 cpu, 0.0 io}, 
+                HiveJoin(condition=[=($6, $1)], joinType=[inner], algorithm=[none], cost=[{3.993300192634561E8 rows, 0.0 cpu, 0.0 io}]): rowcount = 37708.21529745041, cumulative cost = {7.986600342634561E8 rows, 0.0 cpu, 0.0 io}, 
+                  HiveJoin(condition=[=($2, $4)], joinType=[inner], algorithm=[none], cost=[{3.99330015E8 rows, 0.0 cpu, 0.0 io}]): rowcount = 3.9933E8, cumulative cost = {3.99330015E8 rows, 0.0 cpu, 0.0 io}, 
+                    HiveProject(inv_date_sk=[$0], inv_item_sk=[$1], inv_warehouse_sk=[$2], inv_quantity_on_hand=[$3]): rowcount = 3.9933E8, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+                      HiveTableScan(table=[[tpcds_text_100.inventory]]): rowcount = 3.9933E8, cumulative cost = {0}, 
+                    HiveProject(w_warehouse_sk=[$0], w_warehouse_name=[$2]): rowcount = 15.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+                      HiveTableScan(table=[[tpcds_text_100.warehouse]]): rowcount = 15.0, cumulative cost = {0}, 
+                  HiveProject(i_item_sk=[$0], i_item_id=[$1], i_current_price=[$5]): rowcount = 19.263456090651555, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+                    HiveFilter(condition=[BETWEEN(false, $5, 9.8999999999999999111E-1, 1.4899999999999999911E0)]): rowcount = 19.263456090651555, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+                      HiveTableScan(table=[[tpcds_text_100.item]]): rowcount = 204000.0, cumulative cost = {0}, 
+                HiveProject(d_date_sk=[$0], d_date=[$2]): rowcount = 1.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+                  HiveFilter(condition=[BETWEEN(false, $2, '1998-03-09', '1998-05-07')]): rowcount = 1.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, 
+                    HiveTableScan(table=[[tpcds_text_100.date_dim]]): rowcount = 73049.0, cumulative cost = {0}, 
+
+

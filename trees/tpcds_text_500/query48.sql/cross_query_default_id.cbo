@@ -1,0 +1,26 @@
+HiveAggregate(group=[{}], agg#0=[sum($4)]): rowcount = 1.0, cumulative cost = {118517.20328982227 rows, 0.0 cpu, 0.0 io}, id = 848
+  HiveJoin(condition=[=($0, $14)], joinType=[inner], algorithm=[none], cost=[{653.2232142857142 rows, 0.0 cpu, 0.0 io}]): rowcount = 1.0, cumulative cost = {118517.20328982227 rows, 0.0 cpu, 0.0 io}, id = 846
+    HiveFilter(condition=[OR(AND(IN($12, 'KY', 'GA', 'NM'), BETWEEN(false, $6, 0, 2000)), AND(IN($12, 'MT', 'OR', 'IN'), BETWEEN(false, $6, 150, 3000)), AND(IN($12, 'WI', 'MO', 'WV'), BETWEEN(false, $6, 50, 25000)))]): rowcount = 1.0, cumulative cost = {117863.98007553656 rows, 0.0 cpu, 0.0 io}, id = 839
+      HiveJoin(condition=[=($2, $11)], joinType=[inner], algorithm=[none], cost=[{87305.09118664767 rows, 0.0 cpu, 0.0 io}]): rowcount = 1.0, cumulative cost = {117863.98007553656 rows, 0.0 cpu, 0.0 io}, id = 837
+        HiveJoin(condition=[=($8, $1)], joinType=[inner], algorithm=[none], cost=[{30489.888888888887 rows, 0.0 cpu, 0.0 io}]): rowcount = 1.0, cumulative cost = {30558.888888888887 rows, 0.0 cpu, 0.0 io}, id = 826
+          HiveJoin(condition=[=($7, $3)], joinType=[inner], algorithm=[none], cost=[{69.0 rows, 0.0 cpu, 0.0 io}]): rowcount = 1.0, cumulative cost = {69.0 rows, 0.0 cpu, 0.0 io}, id = 819
+            HiveProject(ss_sold_date_sk=[$0], ss_cdemo_sk=[$4], ss_addr_sk=[$6], ss_store_sk=[$7], ss_quantity=[$10], ss_sales_price=[$13], ss_net_profit=[$22]): rowcount = 1.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 814
+              HiveFilter(condition=[OR(BETWEEN(false, $13, 1E2, 1.5E2), BETWEEN(false, $13, 5E1, 1E2), BETWEEN(false, $13, 1.5E2, 2E2))]): rowcount = 1.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 812
+                HiveFilter(condition=[AND(OR(BETWEEN(false, $13, 1E2, 1.5E2), BETWEEN(false, $13, 5E1, 1E2), BETWEEN(false, $13, 1.5E2, 2E2)), OR(BETWEEN(false, $22, 0, 2000), BETWEEN(false, $22, 150, 3000), BETWEEN(false, $22, 50, 25000)))]): rowcount = 1.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 810
+                  HiveFilter(condition=[AND(OR(BETWEEN(false, $13, 1E2, 1.5E2), BETWEEN(false, $13, 5E1, 1E2), BETWEEN(false, $13, 1.5E2, 2E2)), OR(BETWEEN(false, $22, 0, 2000), BETWEEN(false, $22, 150, 3000), BETWEEN(false, $22, 50, 25000)))]): rowcount = 1.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 808
+                    HiveFilter(condition=[AND(OR(BETWEEN(false, $13, 1E2, 1.5E2), BETWEEN(false, $13, 5E1, 1E2), BETWEEN(false, $13, 1.5E2, 2E2)), OR(BETWEEN(false, $22, 0, 2000), BETWEEN(false, $22, 150, 3000), BETWEEN(false, $22, 50, 25000)))]): rowcount = 1.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 806
+                      HiveFilter(condition=[AND(OR(BETWEEN(false, $13, 1E2, 1.5E2), BETWEEN(false, $13, 5E1, 1E2), BETWEEN(false, $13, 1.5E2, 2E2)), OR(BETWEEN(false, $22, 0, 2000), BETWEEN(false, $22, 150, 3000), BETWEEN(false, $22, 50, 25000)))]): rowcount = 1.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 804
+                        HiveTableScan(table=[[tpcds_text_500.store_sales]]): rowcount = 1.439977468E9, cumulative cost = {0}, id = 220
+            HiveProject(s_store_sk=[$0]): rowcount = 68.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 817
+              HiveTableScan(table=[[tpcds_text_500.store]]): rowcount = 68.0, cumulative cost = {0}, id = 227
+          HiveProject(cd_demo_sk=[$0], cd_marital_status=[$2], cd_education_status=[$3]): rowcount = 30488.888888888887, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 824
+            HiveFilter(condition=[AND(=($2, 'M'), =($3, '4 yr Degree'))]): rowcount = 30488.888888888887, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 822
+              HiveTableScan(table=[[tpcds_text_500.customer_demographics]]): rowcount = 1920800.0, cumulative cost = {0}, id = 230
+        HiveProject(ca_address_sk=[$0], ca_state=[$8], ca_country=[$10]): rowcount = 87304.09118664767, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 835
+          HiveFilter(condition=[=($10, 'United States')]): rowcount = 87304.09118664767, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 833
+            HiveFilter(condition=[OR(IN($8, 'KY', 'GA', 'NM'), IN($8, 'MT', 'OR', 'IN'), IN($8, 'WI', 'MO', 'WV'))]): rowcount = 174608.18237329533, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 831
+              HiveFilter(condition=[OR(IN($8, 'KY', 'GA', 'NM'), IN($8, 'MT', 'OR', 'IN'), IN($8, 'WI', 'MO', 'WV'))]): rowcount = 174608.18237329533, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 829
+                HiveTableScan(table=[[tpcds_text_500.customer_address]]): rowcount = 1050000.0, cumulative cost = {0}, id = 234
+    HiveProject(d_date_sk=[$0], d_year=[$6]): rowcount = 652.2232142857142, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 844
+      HiveFilter(condition=[=($6, 1998)]): rowcount = 652.2232142857142, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 842
+        HiveTableScan(table=[[tpcds_text_500.date_dim]]): rowcount = 73049.0, cumulative cost = {0}, id = 241

@@ -1,0 +1,25 @@
+HiveSortLimit(fetch=[100]): rowcount = 271.7668205251457, cumulative cost = {5.803991411703079E7 rows, 0.0 cpu, 0.0 io}, id = 230
+  HiveSortLimit(sort0=[$4], sort1=[$1], sort2=[$0], sort3=[$2], sort4=[$3], dir0=[DESC], dir1=[ASC], dir2=[ASC], dir3=[ASC], dir4=[ASC]): rowcount = 271.7668205251457, cumulative cost = {5.803991411703079E7 rows, 0.0 cpu, 0.0 io}, id = 228
+    HiveProject(brand_id=[$1], brand=[$0], i_manufact_id=[$2], i_manufact=[$3], ext_price=[$4]): rowcount = 271.7668205251457, cumulative cost = {5.803991411703079E7 rows, 0.0 cpu, 0.0 io}, id = 226
+      HiveAggregate(group=[{0, 1, 2, 3}], agg#0=[sum($4)]): rowcount = 271.7668205251457, cumulative cost = {5.803991411703079E7 rows, 0.0 cpu, 0.0 io}, id = 224
+        HiveProject($f0=[$10], $f1=[$9], $f2=[$11], $f3=[$12], $f4=[$7]): rowcount = 626.3077679038869, cumulative cost = {5.803991411703079E7 rows, 0.0 cpu, 0.0 io}, id = 222
+          HiveFilter(condition=[<>(substr($17, 1, 5), substr($19, 1, 5))]): rowcount = 626.3077679038869, cumulative cost = {5.803991411703079E7 rows, 0.0 cpu, 0.0 io}, id = 220
+            HiveJoin(condition=[=($6, $18)], joinType=[inner], algorithm=[none], cost=[{671.9318419675562 rows, 0.0 cpu, 0.0 io}]): rowcount = 627.9318419675562, cumulative cost = {5.803991411703079E7 rows, 0.0 cpu, 0.0 io}, id = 218
+              HiveJoin(condition=[=($15, $16)], joinType=[inner], algorithm=[none], cost=[{133627.93184196757 rows, 0.0 cpu, 0.0 io}]): rowcount = 627.9318419675562, cumulative cost = {5.803924218518882E7 rows, 0.0 cpu, 0.0 io}, id = 213
+                HiveJoin(condition=[=($5, $14)], joinType=[inner], algorithm=[none], cost=[{266627.93184196757 rows, 0.0 cpu, 0.0 io}]): rowcount = 627.9318419675562, cumulative cost = {5.790561425334685E7 rows, 0.0 cpu, 0.0 io}, id = 208
+                  HiveJoin(condition=[=($4, $8)], joinType=[inner], algorithm=[none], cost=[{40004.15048840049 rows, 0.0 cpu, 0.0 io}]): rowcount = 627.9318419675562, cumulative cost = {5.763898632150488E7 rows, 0.0 cpu, 0.0 io}, id = 203
+                    HiveJoin(condition=[=($0, $3)], joinType=[inner], algorithm=[none], cost=[{5.7598982171016484E7 rows, 0.0 cpu, 0.0 io}]): rowcount = 39559.706043956045, cumulative cost = {5.7598982171016484E7 rows, 0.0 cpu, 0.0 io}, id = 196
+                      HiveProject(d_date_sk=[$0], d_year=[$6], d_moy=[$8]): rowcount = 50.17101648351649, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 240
+                        HiveFilter(condition=[AND(=($8, 11), =($6, 1999))]): rowcount = 50.17101648351649, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 237
+                          HiveTableScan(table=[[tpcds_text_20.date_dim]]): rowcount = 73049.0, cumulative cost = {0}, id = 163
+                      HiveProject(ss_sold_date_sk=[$0], ss_item_sk=[$2], ss_customer_sk=[$3], ss_store_sk=[$7], ss_ext_sales_price=[$15]): rowcount = 5.7598932E7, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 194
+                        HiveTableScan(table=[[tpcds_text_20.store_sales]]): rowcount = 5.7598932E7, cumulative cost = {0}, id = 166
+                    HiveProject(i_item_sk=[$0], i_brand_id=[$7], i_brand=[$8], i_manufact_id=[$13], i_manufact=[$14], i_manager_id=[$20]): rowcount = 444.4444444444444, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 235
+                      HiveFilter(condition=[=($20, 7)]): rowcount = 444.4444444444444, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 232
+                        HiveTableScan(table=[[tpcds_text_20.item]]): rowcount = 28000.0, cumulative cost = {0}, id = 169
+                  HiveProject(c_customer_sk=[$0], c_current_addr_sk=[$4]): rowcount = 266000.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 206
+                    HiveTableScan(table=[[tpcds_text_20.customer]]): rowcount = 266000.0, cumulative cost = {0}, id = 173
+                HiveProject(ca_address_sk=[$0], ca_zip=[$9]): rowcount = 133000.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 211
+                  HiveTableScan(table=[[tpcds_text_20.customer_address]]): rowcount = 133000.0, cumulative cost = {0}, id = 176
+              HiveProject(s_store_sk=[$0], s_zip=[$25]): rowcount = 44.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 216
+                HiveTableScan(table=[[tpcds_text_20.store]]): rowcount = 44.0, cumulative cost = {0}, id = 179

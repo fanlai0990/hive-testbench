@@ -1,0 +1,13 @@
+HiveSortLimit(fetch=[100]): rowcount = 201512.0, cumulative cost = {3.3140788245E12 rows, 0.0 cpu, 0.0 io}, id = 135
+  HiveSortLimit(sort0=[$1], sort1=[$0], dir0=[ASC], dir1=[ASC]): rowcount = 201512.0, cumulative cost = {3.3140788245E12 rows, 0.0 cpu, 0.0 io}, id = 133
+    HiveAggregate(group=[{0}], agg#0=[sum($1)]): rowcount = 201512.0, cumulative cost = {3.3140788245E12 rows, 0.0 cpu, 0.0 io}, id = 131
+      HiveProject(ss_customer_sk=[$1], act_sales=[when(isnotnull($8), *(CAST(-($3, $8)):FLOAT, $4), *(CAST($3):FLOAT, $4))]): rowcount = 9.205756912402777E10, cumulative cost = {3.3140788245E12 rows, 0.0 cpu, 0.0 io}, id = 129
+        HiveJoin(condition=[=($6, $9)], joinType=[inner], algorithm=[none], cost=[{3.314072488466E12 rows, 0.0 cpu, 0.0 io}]): rowcount = 9.205756912402777E10, cumulative cost = {3.3140788245E12 rows, 0.0 cpu, 0.0 io}, id = 127
+          HiveJoin(condition=[AND(=($5, $0), =($7, $2))], joinType=[left], algorithm=[none], cost=[{6336034.0 rows, 0.0 cpu, 0.0 io}]): rowcount = 3.314072488465E12, cumulative cost = {6336034.0 rows, 0.0 cpu, 0.0 io}, id = 120
+            HiveProject(ss_item_sk=[$2], ss_customer_sk=[$3], ss_ticket_number=[$9], ss_quantity=[$10], ss_sales_price=[$13]): rowcount = 5760749.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 115
+              HiveTableScan(table=[[tpcds_text_2.store_sales]]): rowcount = 5760749.0, cumulative cost = {0}, id = 101
+            HiveProject(sr_item_sk=[$2], sr_reason_sk=[$8], sr_ticket_number=[$9], sr_return_quantity=[$10]): rowcount = 575285.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 118
+              HiveTableScan(table=[[tpcds_text_2.store_returns]]): rowcount = 575285.0, cumulative cost = {0}, id = 103
+          HiveProject(r_reason_sk=[$0], r_reason_desc=[$2]): rowcount = 1.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 140
+            HiveFilter(condition=[=($2, 'Did not like the warranty')]): rowcount = 1.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io}, id = 137
+              HiveTableScan(table=[[tpcds_text_2.reason]]): rowcount = 36.0, cumulative cost = {0}, id = 106

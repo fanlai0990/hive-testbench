@@ -1,0 +1,221 @@
+18/06/26 03:33:15 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+18/06/26 03:33:15 INFO metastore.HiveMetaStore: 0: Opening raw store with implemenation class:org.apache.hadoop.hive.metastore.ObjectStore
+18/06/26 03:33:15 INFO metastore.ObjectStore: ObjectStore, initialize called
+18/06/26 03:33:15 INFO DataNucleus.Persistence: Property hive.metastore.integral.jdo.pushdown unknown - will be ignored
+18/06/26 03:33:15 INFO DataNucleus.Persistence: Property datanucleus.cache.level2 unknown - will be ignored
+18/06/26 03:33:17 INFO metastore.ObjectStore: Setting MetaStore object pin classes with hive.metastore.cache.pinobjtypes="Table,StorageDescriptor,SerDeInfo,Partition,Database,Type,FieldSchema,Order"
+18/06/26 03:33:19 INFO DataNucleus.Datastore: The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+18/06/26 03:33:19 INFO DataNucleus.Datastore: The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+18/06/26 03:33:19 INFO DataNucleus.Datastore: The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+18/06/26 03:33:19 INFO DataNucleus.Datastore: The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+18/06/26 03:33:19 INFO DataNucleus.Query: Reading in results for query "org.datanucleus.store.rdbms.query.SQLQuery@0" since the connection used is closing
+18/06/26 03:33:19 INFO metastore.MetaStoreDirectSql: Using direct SQL, underlying DB is DERBY
+18/06/26 03:33:19 INFO metastore.ObjectStore: Initialized ObjectStore
+18/06/26 03:33:19 INFO metastore.HiveMetaStore: Added admin role in metastore
+18/06/26 03:33:19 INFO metastore.HiveMetaStore: Added public role in metastore
+18/06/26 03:33:19 INFO metastore.HiveMetaStore: No user is added in admin role, since config is empty
+18/06/26 03:33:19 INFO metastore.HiveMetaStore: 0: get_all_databases
+18/06/26 03:33:19 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_all_databases	
+18/06/26 03:33:19 INFO metastore.HiveMetaStore: 0: get_functions: db=default pat=*
+18/06/26 03:33:19 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_functions: db=default pat=*	
+18/06/26 03:33:19 INFO DataNucleus.Datastore: The class "org.apache.hadoop.hive.metastore.model.MResourceUri" is tagged as "embedded-only" so does not have its own datastore table.
+18/06/26 03:33:19 INFO metastore.HiveMetaStore: 0: get_functions: db=tpcds_text_2 pat=*
+18/06/26 03:33:19 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_functions: db=tpcds_text_2 pat=*	
+18/06/26 03:33:20 INFO session.SessionState: Created local directory: /tmp/b1b2ce7d-aa9e-4cf9-9c67-ad51353977e7_resources
+18/06/26 03:33:20 INFO session.SessionState: Created HDFS directory: /tmp/hive/wentingt/b1b2ce7d-aa9e-4cf9-9c67-ad51353977e7
+18/06/26 03:33:20 INFO session.SessionState: Created local directory: /tmp/wentingt/b1b2ce7d-aa9e-4cf9-9c67-ad51353977e7
+18/06/26 03:33:20 INFO session.SessionState: Created HDFS directory: /tmp/hive/wentingt/b1b2ce7d-aa9e-4cf9-9c67-ad51353977e7/_tmp_space.db
+18/06/26 03:33:20 INFO spark.SparkContext: Running Spark version 2.4.0-SNAPSHOT
+18/06/26 03:33:20 INFO spark.SparkContext: Submitted application: SparkSQL::10.0.1.253
+18/06/26 03:33:20 INFO spark.SecurityManager: Changing view acls to: wentingt
+18/06/26 03:33:20 INFO spark.SecurityManager: Changing modify acls to: wentingt
+18/06/26 03:33:20 INFO spark.SecurityManager: Changing view acls groups to: 
+18/06/26 03:33:20 INFO spark.SecurityManager: Changing modify acls groups to: 
+18/06/26 03:33:20 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(wentingt); groups with view permissions: Set(); users  with modify permissions: Set(wentingt); groups with modify permissions: Set()
+18/06/26 03:33:20 INFO util.Utils: Successfully started service 'sparkDriver' on port 32831.
+18/06/26 03:33:20 INFO spark.SparkEnv: Registering MapOutputTracker
+18/06/26 03:33:21 INFO spark.SparkEnv: Registering BlockManagerMaster
+18/06/26 03:33:21 INFO storage.BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+18/06/26 03:33:21 INFO storage.BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+18/06/26 03:33:21 INFO storage.DiskBlockManager: Created local directory at /tmp/blockmgr-b7215ac3-a3e0-46e9-a2c6-46a450725444
+18/06/26 03:33:21 INFO memory.MemoryStore: MemoryStore started with capacity 408.9 MB
+18/06/26 03:33:21 INFO spark.SparkEnv: Registering OutputCommitCoordinator
+18/06/26 03:33:21 INFO util.log: Logging initialized @7411ms
+18/06/26 03:33:21 INFO server.Server: jetty-9.3.z-SNAPSHOT
+18/06/26 03:33:21 INFO server.Server: Started @7514ms
+18/06/26 03:33:21 INFO server.AbstractConnector: Started ServerConnector@32e5af53{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+18/06/26 03:33:21 INFO util.Utils: Successfully started service 'SparkUI' on port 4040.
+18/06/26 03:33:21 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@722787b5{/jobs,null,AVAILABLE,@Spark}
+18/06/26 03:33:21 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6e807e2{/jobs/json,null,AVAILABLE,@Spark}
+18/06/26 03:33:21 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6c995c5d{/jobs/job,null,AVAILABLE,@Spark}
+18/06/26 03:33:21 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@730bea0{/jobs/job/json,null,AVAILABLE,@Spark}
+18/06/26 03:33:21 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@41a16eb3{/stages,null,AVAILABLE,@Spark}
+18/06/26 03:33:21 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@677cb96e{/stages/json,null,AVAILABLE,@Spark}
+18/06/26 03:33:21 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1b1252c8{/stages/stage,null,AVAILABLE,@Spark}
+18/06/26 03:33:21 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@51fe7f15{/stages/stage/json,null,AVAILABLE,@Spark}
+18/06/26 03:33:21 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5873f3f0{/stages/pool,null,AVAILABLE,@Spark}
+18/06/26 03:33:21 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@684372d0{/stages/pool/json,null,AVAILABLE,@Spark}
+18/06/26 03:33:21 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@63dda940{/storage,null,AVAILABLE,@Spark}
+18/06/26 03:33:21 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@41f964f9{/storage/json,null,AVAILABLE,@Spark}
+18/06/26 03:33:21 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@652e345{/storage/rdd,null,AVAILABLE,@Spark}
+18/06/26 03:33:21 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7574d4ad{/storage/rdd/json,null,AVAILABLE,@Spark}
+18/06/26 03:33:21 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7bede4ea{/environment,null,AVAILABLE,@Spark}
+18/06/26 03:33:21 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@713999c2{/environment/json,null,AVAILABLE,@Spark}
+18/06/26 03:33:21 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6060146b{/executors,null,AVAILABLE,@Spark}
+18/06/26 03:33:21 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@33627576{/executors/json,null,AVAILABLE,@Spark}
+18/06/26 03:33:21 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@27bc1d44{/executors/threadDump,null,AVAILABLE,@Spark}
+18/06/26 03:33:21 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1af677f8{/executors/threadDump/json,null,AVAILABLE,@Spark}
+18/06/26 03:33:21 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7a55fb81{/static,null,AVAILABLE,@Spark}
+18/06/26 03:33:21 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@52f9e8bb{/,null,AVAILABLE,@Spark}
+18/06/26 03:33:21 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2035d65b{/api,null,AVAILABLE,@Spark}
+18/06/26 03:33:21 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5d1a859c{/jobs/job/kill,null,AVAILABLE,@Spark}
+18/06/26 03:33:21 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@28554ac8{/stages/stage/kill,null,AVAILABLE,@Spark}
+18/06/26 03:33:21 INFO ui.SparkUI: Bound SparkUI to 0.0.0.0, and started at http://dc1master-lan1:4040
+18/06/26 03:33:21 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 0
+18/06/26 03:33:21 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 03:33:21 INFO client.StandaloneAppClient$ClientEndpoint: Connecting to master spark://dc1master-lan1:7077...
+18/06/26 03:33:21 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 0
+18/06/26 03:33:21 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 03:33:21 INFO client.TransportClientFactory: Successfully created connection to dc1master-lan1/10.0.1.253:7077 after 43 ms (0 ms spent in bootstraps)
+18/06/26 03:33:21 INFO cluster.StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20180626033321-0077
+18/06/26 03:33:21 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20180626033321-0077/0 on worker-20180626004527-10.0.1.2-38332 (10.0.1.2:38332) with 10 core(s)
+18/06/26 03:33:21 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20180626033321-0077/0 on hostPort 10.0.1.2:38332 with 10 core(s), 2.0 GB RAM
+18/06/26 03:33:21 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20180626033321-0077/1 on worker-20180626004527-10.0.1.1-34053 (10.0.1.1:34053) with 10 core(s)
+18/06/26 03:33:21 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20180626033321-0077/1 on hostPort 10.0.1.1:34053 with 10 core(s), 2.0 GB RAM
+18/06/26 03:33:21 INFO util.Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 37890.
+18/06/26 03:33:21 INFO netty.NettyBlockTransferService: Server created on dc1master-lan1:37890
+18/06/26 03:33:21 INFO storage.BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+18/06/26 03:33:21 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20180626033321-0077/0 is now RUNNING
+18/06/26 03:33:21 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20180626033321-0077/1 is now RUNNING
+18/06/26 03:33:21 INFO storage.BlockManagerMaster: Registering BlockManager BlockManagerId(driver, dc1master-lan1, 37890, None)
+18/06/26 03:33:21 INFO storage.BlockManagerMasterEndpoint: Registering block manager dc1master-lan1:37890 with 408.9 MB RAM, BlockManagerId(driver, dc1master-lan1, 37890, None)
+18/06/26 03:33:21 INFO storage.BlockManagerMaster: Registered BlockManager BlockManagerId(driver, dc1master-lan1, 37890, None)
+18/06/26 03:33:21 INFO storage.BlockManager: external shuffle service port = 7337
+18/06/26 03:33:21 INFO storage.BlockManager: Initialized BlockManager: BlockManagerId(driver, dc1master-lan1, 37890, None)
+18/06/26 03:33:22 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@774f2992{/metrics/json,null,AVAILABLE,@Spark}
+18/06/26 03:33:22 INFO scheduler.EventLoggingListener: Logging events to hdfs://dc1master:9000/user/wentingt/spark-logs/app-20180626033321-0077
+18/06/26 03:33:22 INFO cluster.StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+18/06/26 03:33:22 INFO internal.SharedState: loading hive config file: file:/users/wentingt/spark-terra/conf/hive-site.xml
+18/06/26 03:33:22 INFO internal.SharedState: spark.sql.warehouse.dir is not set, but hive.metastore.warehouse.dir is set. Setting spark.sql.warehouse.dir to the value of hive.metastore.warehouse.dir ('/user/hive/warehouse').
+18/06/26 03:33:22 INFO internal.SharedState: Warehouse path is '/user/hive/warehouse'.
+18/06/26 03:33:22 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2a631049{/SQL,null,AVAILABLE,@Spark}
+18/06/26 03:33:22 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@425b5fe2{/SQL/json,null,AVAILABLE,@Spark}
+18/06/26 03:33:22 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2c815fdc{/SQL/execution,null,AVAILABLE,@Spark}
+18/06/26 03:33:22 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@769b0752{/SQL/execution/json,null,AVAILABLE,@Spark}
+18/06/26 03:33:22 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@65db548{/static/sql,null,AVAILABLE,@Spark}
+18/06/26 03:33:22 INFO hive.HiveUtils: Initializing HiveMetastoreConnection version 1.2.1 using Spark classes.
+18/06/26 03:33:22 INFO client.HiveClientImpl: Warehouse location for Hive client (version 1.2.2) is /user/hive/warehouse
+18/06/26 03:33:22 INFO metastore.HiveMetaStore: 0: get_database: default
+18/06/26 03:33:22 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_database: default	
+18/06/26 03:33:22 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 0
+18/06/26 03:33:22 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 03:33:22 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 0
+18/06/26 03:33:22 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 03:33:23 INFO state.StateStoreCoordinatorRef: Registered StateStoreCoordinator endpoint
+18/06/26 03:33:23 INFO metastore.HiveMetaStore: 0: get_database: global_temp
+18/06/26 03:33:23 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_database: global_temp	
+18/06/26 03:33:23 WARN metastore.ObjectStore: Failed to get database global_temp, returning NoSuchObjectException
+18/06/26 03:33:23 INFO metastore.HiveMetaStore: 0: get_database: tpcds_text_2
+18/06/26 03:33:23 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_database: tpcds_text_2	
+18/06/26 03:33:23 INFO metastore.HiveMetaStore: 0: get_database: tpcds_text_2
+18/06/26 03:33:23 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_database: tpcds_text_2	
+18/06/26 03:33:23 INFO metastore.HiveMetaStore: 0: get_database: tpcds_text_2
+18/06/26 03:33:23 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_database: tpcds_text_2	
+18/06/26 03:33:23 INFO metastore.HiveMetaStore: 0: get_table : db=tpcds_text_2 tbl=web_sales
+18/06/26 03:33:23 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_table : db=tpcds_text_2 tbl=web_sales	
+18/06/26 03:33:23 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 0
+18/06/26 03:33:23 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 03:33:23 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 0
+18/06/26 03:33:23 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 03:33:23 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.1.2:51228) with ID 0
+18/06/26 03:33:23 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 1
+18/06/26 03:33:23 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 03:33:23 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 1
+18/06/26 03:33:23 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 03:33:23 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.1.1:55488) with ID 1
+18/06/26 03:33:23 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 2
+18/06/26 03:33:23 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 03:33:23 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 2
+18/06/26 03:33:23 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 03:33:23 INFO metastore.HiveMetaStore: 0: get_table : db=tpcds_text_2 tbl=household_demographics
+18/06/26 03:33:23 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_table : db=tpcds_text_2 tbl=household_demographics	
+18/06/26 03:33:23 INFO metastore.HiveMetaStore: 0: get_table : db=tpcds_text_2 tbl=time_dim
+18/06/26 03:33:23 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_table : db=tpcds_text_2 tbl=time_dim	
+18/06/26 03:33:23 INFO storage.BlockManagerMasterEndpoint: Registering block manager 10.0.1.2:39906 with 912.3 MB RAM, BlockManagerId(0, 10.0.1.2, 39906, None)
+18/06/26 03:33:23 INFO storage.BlockManagerMasterEndpoint: Registering block manager 10.0.1.1:35792 with 912.3 MB RAM, BlockManagerId(1, 10.0.1.1, 35792, None)
+18/06/26 03:33:23 INFO metastore.HiveMetaStore: 0: get_table : db=tpcds_text_2 tbl=web_page
+18/06/26 03:33:23 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_table : db=tpcds_text_2 tbl=web_page	
+18/06/26 03:33:23 INFO metastore.HiveMetaStore: 0: get_table : db=tpcds_text_2 tbl=web_sales
+18/06/26 03:33:23 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_table : db=tpcds_text_2 tbl=web_sales	
+18/06/26 03:33:23 INFO metastore.HiveMetaStore: 0: get_table : db=tpcds_text_2 tbl=household_demographics
+18/06/26 03:33:23 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_table : db=tpcds_text_2 tbl=household_demographics	
+18/06/26 03:33:23 INFO metastore.HiveMetaStore: 0: get_table : db=tpcds_text_2 tbl=time_dim
+18/06/26 03:33:23 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_table : db=tpcds_text_2 tbl=time_dim	
+18/06/26 03:33:24 INFO metastore.HiveMetaStore: 0: get_table : db=tpcds_text_2 tbl=web_page
+18/06/26 03:33:24 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_table : db=tpcds_text_2 tbl=web_page	
+18/06/26 03:33:24 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 2
+18/06/26 03:33:24 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 03:33:24 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 2
+18/06/26 03:33:24 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 03:33:25 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 2
+18/06/26 03:33:25 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 03:33:25 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 2
+18/06/26 03:33:25 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 03:33:25 WARN util.Utils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.debug.maxToStringFields' in SparkEnv.conf.
+Error in query: Detected implicit cartesian product for INNER join between logical plans
+Aggregate [count(1) AS amc#0L]
++- Project
+   +- Join Inner, (ws_web_page_sk#17 = wp_web_page_sk#54)
+      :- Project [ws_web_page_sk#17]
+      :  +- Join Inner, (ws_sold_time_sk#6 = t_time_sk#44)
+      :     :- Project [ws_sold_time_sk#6, ws_web_page_sk#17]
+      :     :  +- Join Inner, (ws_ship_hdemo_sk#15 = hd_demo_sk#39)
+      :     :     :- Project [ws_sold_time_sk#6, ws_ship_hdemo_sk#15, ws_web_page_sk#17]
+      :     :     :  +- Filter ((isnotnull(ws_ship_hdemo_sk#15) && isnotnull(ws_sold_time_sk#6)) && isnotnull(ws_web_page_sk#17))
+      :     :     :     +- HiveTableRelation `tpcds_text_2`.`web_sales`, org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe, [ws_sold_date_sk#5, ws_sold_time_sk#6, ws_ship_date_sk#7, ws_item_sk#8, ws_bill_customer_sk#9, ws_bill_cdemo_sk#10, ws_bill_hdemo_sk#11, ws_bill_addr_sk#12, ws_ship_customer_sk#13, ws_ship_cdemo_sk#14, ws_ship_hdemo_sk#15, ws_ship_addr_sk#16, ws_web_page_sk#17, ws_web_site_sk#18, ws_ship_mode_sk#19, ws_warehouse_sk#20, ws_promo_sk#21, ws_order_number#22L, ws_quantity#23, ws_wholesale_cost#24, ws_list_price#25, ws_sales_price#26, ws_ext_discount_amt#27, ws_ext_sales_price#28, ... 10 more fields]
+      :     :     +- Project [hd_demo_sk#39]
+      :     :        +- Filter ((isnotnull(hd_dep_count#42) && (hd_dep_count#42 = 8)) && isnotnull(hd_demo_sk#39))
+      :     :           +- HiveTableRelation `tpcds_text_2`.`household_demographics`, org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe, [hd_demo_sk#39, hd_income_band_sk#40, hd_buy_potential#41, hd_dep_count#42, hd_vehicle_count#43]
+      :     +- Project [t_time_sk#44]
+      :        +- Filter ((isnotnull(t_hour#47) && ((t_hour#47 >= 6) && (t_hour#47 <= 7))) && isnotnull(t_time_sk#44))
+      :           +- HiveTableRelation `tpcds_text_2`.`time_dim`, org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe, [t_time_sk#44, t_time_id#45, t_time#46, t_hour#47, t_minute#48, t_second#49, t_am_pm#50, t_shift#51, t_sub_shift#52, t_meal_time#53]
+      +- Project [wp_web_page_sk#54]
+         +- Filter ((isnotnull(wp_char_count#64) && ((wp_char_count#64 >= 5000) && (wp_char_count#64 <= 5200))) && isnotnull(wp_web_page_sk#54))
+            +- HiveTableRelation `tpcds_text_2`.`web_page`, org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe, [wp_web_page_sk#54, wp_web_page_id#55, wp_rec_start_date#56, wp_rec_end_date#57, wp_creation_date_sk#58, wp_access_date_sk#59, wp_autogen_flag#60, wp_customer_sk#61, wp_url#62, wp_type#63, wp_char_count#64, wp_link_count#65, wp_image_count#66, wp_max_ad_count#67]
+and
+Aggregate [count(1) AS pmc#1L]
++- Project
+   +- Join Inner, (ws_web_page_sk#80 = wp_web_page_sk#117)
+      :- Project [ws_web_page_sk#80]
+      :  +- Join Inner, (ws_sold_time_sk#69 = t_time_sk#107)
+      :     :- Project [ws_sold_time_sk#69, ws_web_page_sk#80]
+      :     :  +- Join Inner, (ws_ship_hdemo_sk#78 = hd_demo_sk#102)
+      :     :     :- Project [ws_sold_time_sk#69, ws_ship_hdemo_sk#78, ws_web_page_sk#80]
+      :     :     :  +- Filter ((isnotnull(ws_ship_hdemo_sk#78) && isnotnull(ws_sold_time_sk#69)) && isnotnull(ws_web_page_sk#80))
+      :     :     :     +- HiveTableRelation `tpcds_text_2`.`web_sales`, org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe, [ws_sold_date_sk#68, ws_sold_time_sk#69, ws_ship_date_sk#70, ws_item_sk#71, ws_bill_customer_sk#72, ws_bill_cdemo_sk#73, ws_bill_hdemo_sk#74, ws_bill_addr_sk#75, ws_ship_customer_sk#76, ws_ship_cdemo_sk#77, ws_ship_hdemo_sk#78, ws_ship_addr_sk#79, ws_web_page_sk#80, ws_web_site_sk#81, ws_ship_mode_sk#82, ws_warehouse_sk#83, ws_promo_sk#84, ws_order_number#85L, ws_quantity#86, ws_wholesale_cost#87, ws_list_price#88, ws_sales_price#89, ws_ext_discount_amt#90, ws_ext_sales_price#91, ... 10 more fields]
+      :     :     +- Project [hd_demo_sk#102]
+      :     :        +- Filter ((isnotnull(hd_dep_count#105) && (hd_dep_count#105 = 8)) && isnotnull(hd_demo_sk#102))
+      :     :           +- HiveTableRelation `tpcds_text_2`.`household_demographics`, org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe, [hd_demo_sk#102, hd_income_band_sk#103, hd_buy_potential#104, hd_dep_count#105, hd_vehicle_count#106]
+      :     +- Project [t_time_sk#107]
+      :        +- Filter ((isnotnull(t_hour#110) && ((t_hour#110 >= 14) && (t_hour#110 <= 15))) && isnotnull(t_time_sk#107))
+      :           +- HiveTableRelation `tpcds_text_2`.`time_dim`, org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe, [t_time_sk#107, t_time_id#108, t_time#109, t_hour#110, t_minute#111, t_second#112, t_am_pm#113, t_shift#114, t_sub_shift#115, t_meal_time#116]
+      +- Project [wp_web_page_sk#117]
+         +- Filter ((isnotnull(wp_char_count#127) && ((wp_char_count#127 >= 5000) && (wp_char_count#127 <= 5200))) && isnotnull(wp_web_page_sk#117))
+            +- HiveTableRelation `tpcds_text_2`.`web_page`, org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe, [wp_web_page_sk#117, wp_web_page_id#118, wp_rec_start_date#119, wp_rec_end_date#120, wp_creation_date_sk#121, wp_access_date_sk#122, wp_autogen_flag#123, wp_customer_sk#124, wp_url#125, wp_type#126, wp_char_count#127, wp_link_count#128, wp_image_count#129, wp_max_ad_count#130]
+Join condition is missing or trivial.
+Either: use the CROSS JOIN syntax to allow cartesian products between these
+relations, or: enable implicit cartesian products by setting the configuration
+variable spark.sql.crossJoin.enabled=true;
+18/06/26 03:33:26 INFO server.AbstractConnector: Stopped Spark@32e5af53{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+18/06/26 03:33:26 INFO ui.SparkUI: Stopped Spark web UI at http://dc1master-lan1:4040
+18/06/26 03:33:26 INFO cluster.StandaloneSchedulerBackend: Shutting down all executors
+18/06/26 03:33:26 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Asking each executor to shut down
+18/06/26 03:33:26 INFO spark.MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+18/06/26 03:33:26 INFO memory.MemoryStore: MemoryStore cleared
+18/06/26 03:33:26 INFO storage.BlockManager: BlockManager stopped
+18/06/26 03:33:26 INFO storage.BlockManagerMaster: BlockManagerMaster stopped
+18/06/26 03:33:26 INFO scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+18/06/26 03:33:26 INFO spark.SparkContext: Successfully stopped SparkContext
+18/06/26 03:33:26 INFO util.ShutdownHookManager: Shutdown hook called
+18/06/26 03:33:26 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-f976e223-b9e9-4cc8-8aa4-7c92b6599bcc
+18/06/26 03:33:26 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-10147b9a-6186-4641-b0aa-c5d658de8f9c

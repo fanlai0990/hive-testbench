@@ -1,0 +1,161 @@
+18/06/26 09:22:36 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+18/06/26 09:22:37 INFO metastore.HiveMetaStore: 0: Opening raw store with implemenation class:org.apache.hadoop.hive.metastore.ObjectStore
+18/06/26 09:22:37 INFO metastore.ObjectStore: ObjectStore, initialize called
+18/06/26 09:22:37 INFO DataNucleus.Persistence: Property hive.metastore.integral.jdo.pushdown unknown - will be ignored
+18/06/26 09:22:37 INFO DataNucleus.Persistence: Property datanucleus.cache.level2 unknown - will be ignored
+18/06/26 09:22:39 INFO metastore.ObjectStore: Setting MetaStore object pin classes with hive.metastore.cache.pinobjtypes="Table,StorageDescriptor,SerDeInfo,Partition,Database,Type,FieldSchema,Order"
+18/06/26 09:22:40 INFO DataNucleus.Datastore: The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+18/06/26 09:22:40 INFO DataNucleus.Datastore: The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+18/06/26 09:22:40 INFO DataNucleus.Datastore: The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+18/06/26 09:22:40 INFO DataNucleus.Datastore: The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+18/06/26 09:22:40 INFO DataNucleus.Query: Reading in results for query "org.datanucleus.store.rdbms.query.SQLQuery@0" since the connection used is closing
+18/06/26 09:22:40 INFO metastore.MetaStoreDirectSql: Using direct SQL, underlying DB is DERBY
+18/06/26 09:22:40 INFO metastore.ObjectStore: Initialized ObjectStore
+18/06/26 09:22:41 INFO metastore.HiveMetaStore: Added admin role in metastore
+18/06/26 09:22:41 INFO metastore.HiveMetaStore: Added public role in metastore
+18/06/26 09:22:41 INFO metastore.HiveMetaStore: No user is added in admin role, since config is empty
+18/06/26 09:22:41 INFO metastore.HiveMetaStore: 0: get_all_databases
+18/06/26 09:22:41 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_all_databases	
+18/06/26 09:22:41 INFO metastore.HiveMetaStore: 0: get_functions: db=default pat=*
+18/06/26 09:22:41 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_functions: db=default pat=*	
+18/06/26 09:22:41 INFO DataNucleus.Datastore: The class "org.apache.hadoop.hive.metastore.model.MResourceUri" is tagged as "embedded-only" so does not have its own datastore table.
+18/06/26 09:22:41 INFO metastore.HiveMetaStore: 0: get_functions: db=tpcds_text_2 pat=*
+18/06/26 09:22:41 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_functions: db=tpcds_text_2 pat=*	
+18/06/26 09:22:41 INFO metastore.HiveMetaStore: 0: get_functions: db=tpch_flat_orc_2 pat=*
+18/06/26 09:22:41 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_functions: db=tpch_flat_orc_2 pat=*	
+18/06/26 09:22:41 INFO metastore.HiveMetaStore: 0: get_functions: db=tpch_text_2 pat=*
+18/06/26 09:22:41 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_functions: db=tpch_text_2 pat=*	
+18/06/26 09:22:41 INFO session.SessionState: Created local directory: /tmp/9f3fb1d0-1f7d-4be7-998b-00ec992e4fd8_resources
+18/06/26 09:22:41 INFO session.SessionState: Created HDFS directory: /tmp/hive/wentingt/9f3fb1d0-1f7d-4be7-998b-00ec992e4fd8
+18/06/26 09:22:41 INFO session.SessionState: Created local directory: /tmp/wentingt/9f3fb1d0-1f7d-4be7-998b-00ec992e4fd8
+18/06/26 09:22:41 INFO session.SessionState: Created HDFS directory: /tmp/hive/wentingt/9f3fb1d0-1f7d-4be7-998b-00ec992e4fd8/_tmp_space.db
+18/06/26 09:22:41 INFO spark.SparkContext: Running Spark version 2.4.0-SNAPSHOT
+18/06/26 09:22:41 INFO spark.SparkContext: Submitted application: SparkSQL::10.0.1.253
+18/06/26 09:22:42 INFO spark.SecurityManager: Changing view acls to: wentingt
+18/06/26 09:22:42 INFO spark.SecurityManager: Changing modify acls to: wentingt
+18/06/26 09:22:42 INFO spark.SecurityManager: Changing view acls groups to: 
+18/06/26 09:22:42 INFO spark.SecurityManager: Changing modify acls groups to: 
+18/06/26 09:22:42 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(wentingt); groups with view permissions: Set(); users  with modify permissions: Set(wentingt); groups with modify permissions: Set()
+18/06/26 09:22:42 INFO util.Utils: Successfully started service 'sparkDriver' on port 42692.
+18/06/26 09:22:42 INFO spark.SparkEnv: Registering MapOutputTracker
+18/06/26 09:22:42 INFO spark.SparkEnv: Registering BlockManagerMaster
+18/06/26 09:22:42 INFO storage.BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+18/06/26 09:22:42 INFO storage.BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+18/06/26 09:22:42 INFO storage.DiskBlockManager: Created local directory at /tmp/blockmgr-f6d632fb-b885-4007-a13d-005b89df2f49
+18/06/26 09:22:42 INFO memory.MemoryStore: MemoryStore started with capacity 408.9 MB
+18/06/26 09:22:42 INFO spark.SparkEnv: Registering OutputCommitCoordinator
+18/06/26 09:22:42 INFO util.log: Logging initialized @7268ms
+18/06/26 09:22:42 INFO server.Server: jetty-9.3.z-SNAPSHOT
+18/06/26 09:22:42 INFO server.Server: Started @7351ms
+18/06/26 09:22:42 INFO server.AbstractConnector: Started ServerConnector@5323999f{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+18/06/26 09:22:42 INFO util.Utils: Successfully started service 'SparkUI' on port 4040.
+18/06/26 09:22:43 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@389a5022{/jobs,null,AVAILABLE,@Spark}
+18/06/26 09:22:43 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6060146b{/jobs/json,null,AVAILABLE,@Spark}
+18/06/26 09:22:43 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@33627576{/jobs/job,null,AVAILABLE,@Spark}
+18/06/26 09:22:43 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1af677f8{/jobs/job/json,null,AVAILABLE,@Spark}
+18/06/26 09:22:43 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7a55fb81{/stages,null,AVAILABLE,@Spark}
+18/06/26 09:22:43 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5a3cf878{/stages/json,null,AVAILABLE,@Spark}
+18/06/26 09:22:43 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1d2d8846{/stages/stage,null,AVAILABLE,@Spark}
+18/06/26 09:22:43 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5c53c235{/stages/stage/json,null,AVAILABLE,@Spark}
+18/06/26 09:22:43 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2dcd0e41{/stages/pool,null,AVAILABLE,@Spark}
+18/06/26 09:22:43 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7272ee51{/stages/pool/json,null,AVAILABLE,@Spark}
+18/06/26 09:22:43 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1b409a79{/storage,null,AVAILABLE,@Spark}
+18/06/26 09:22:43 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5940b14e{/storage/json,null,AVAILABLE,@Spark}
+18/06/26 09:22:43 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1cba0321{/storage/rdd,null,AVAILABLE,@Spark}
+18/06/26 09:22:43 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@795f6681{/storage/rdd/json,null,AVAILABLE,@Spark}
+18/06/26 09:22:43 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@66d3b881{/environment,null,AVAILABLE,@Spark}
+18/06/26 09:22:43 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3a45afd4{/environment/json,null,AVAILABLE,@Spark}
+18/06/26 09:22:43 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@762a10b6{/executors,null,AVAILABLE,@Spark}
+18/06/26 09:22:43 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@74431b9c{/executors/json,null,AVAILABLE,@Spark}
+18/06/26 09:22:43 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@f2fb225{/executors/threadDump,null,AVAILABLE,@Spark}
+18/06/26 09:22:43 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1883871b{/executors/threadDump/json,null,AVAILABLE,@Spark}
+18/06/26 09:22:43 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3e0a9b1d{/static,null,AVAILABLE,@Spark}
+18/06/26 09:22:43 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1f7e52d1{/,null,AVAILABLE,@Spark}
+18/06/26 09:22:43 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@e01a26b{/api,null,AVAILABLE,@Spark}
+18/06/26 09:22:43 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@32da97fd{/jobs/job/kill,null,AVAILABLE,@Spark}
+18/06/26 09:22:43 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@64440065{/stages/stage/kill,null,AVAILABLE,@Spark}
+18/06/26 09:22:43 INFO ui.SparkUI: Bound SparkUI to 0.0.0.0, and started at http://dc1master-lan1:4040
+18/06/26 09:22:43 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 0
+18/06/26 09:22:43 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:22:43 INFO client.StandaloneAppClient$ClientEndpoint: Connecting to master spark://dc1master-lan1:7077...
+18/06/26 09:22:43 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 0
+18/06/26 09:22:43 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:22:43 INFO client.TransportClientFactory: Successfully created connection to dc1master-lan1/10.0.1.253:7077 after 46 ms (0 ms spent in bootstraps)
+18/06/26 09:22:43 INFO cluster.StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20180626092243-0101
+18/06/26 09:22:43 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20180626092243-0101/0 on worker-20180626004527-10.0.1.2-38332 (10.0.1.2:38332) with 10 core(s)
+18/06/26 09:22:43 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20180626092243-0101/0 on hostPort 10.0.1.2:38332 with 10 core(s), 2.0 GB RAM
+18/06/26 09:22:43 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20180626092243-0101/1 on worker-20180626004527-10.0.1.1-34053 (10.0.1.1:34053) with 10 core(s)
+18/06/26 09:22:43 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20180626092243-0101/1 on hostPort 10.0.1.1:34053 with 10 core(s), 2.0 GB RAM
+18/06/26 09:22:43 INFO util.Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 46563.
+18/06/26 09:22:43 INFO netty.NettyBlockTransferService: Server created on dc1master-lan1:46563
+18/06/26 09:22:43 INFO storage.BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+18/06/26 09:22:43 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20180626092243-0101/0 is now RUNNING
+18/06/26 09:22:43 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20180626092243-0101/1 is now RUNNING
+18/06/26 09:22:43 INFO storage.BlockManagerMaster: Registering BlockManager BlockManagerId(driver, dc1master-lan1, 46563, None)
+18/06/26 09:22:43 INFO storage.BlockManagerMasterEndpoint: Registering block manager dc1master-lan1:46563 with 408.9 MB RAM, BlockManagerId(driver, dc1master-lan1, 46563, None)
+18/06/26 09:22:43 INFO storage.BlockManagerMaster: Registered BlockManager BlockManagerId(driver, dc1master-lan1, 46563, None)
+18/06/26 09:22:43 INFO storage.BlockManager: external shuffle service port = 7337
+18/06/26 09:22:43 INFO storage.BlockManager: Initialized BlockManager: BlockManagerId(driver, dc1master-lan1, 46563, None)
+18/06/26 09:22:43 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@274bae2c{/metrics/json,null,AVAILABLE,@Spark}
+18/06/26 09:22:43 INFO scheduler.EventLoggingListener: Logging events to hdfs://dc1master:9000/user/wentingt/spark-logs/app-20180626092243-0101
+18/06/26 09:22:43 INFO cluster.StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+18/06/26 09:22:43 INFO internal.SharedState: loading hive config file: file:/users/wentingt/spark-terra/conf/hive-site.xml
+18/06/26 09:22:43 INFO internal.SharedState: spark.sql.warehouse.dir is not set, but hive.metastore.warehouse.dir is set. Setting spark.sql.warehouse.dir to the value of hive.metastore.warehouse.dir ('/user/hive/warehouse').
+18/06/26 09:22:43 INFO internal.SharedState: Warehouse path is '/user/hive/warehouse'.
+18/06/26 09:22:43 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2b1a901d{/SQL,null,AVAILABLE,@Spark}
+18/06/26 09:22:43 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@11bdab37{/SQL/json,null,AVAILABLE,@Spark}
+18/06/26 09:22:43 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@59127611{/SQL/execution,null,AVAILABLE,@Spark}
+18/06/26 09:22:43 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@553ce348{/SQL/execution/json,null,AVAILABLE,@Spark}
+18/06/26 09:22:43 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@369ad7da{/static/sql,null,AVAILABLE,@Spark}
+18/06/26 09:22:43 INFO hive.HiveUtils: Initializing HiveMetastoreConnection version 1.2.1 using Spark classes.
+18/06/26 09:22:44 INFO client.HiveClientImpl: Warehouse location for Hive client (version 1.2.2) is /user/hive/warehouse
+18/06/26 09:22:44 INFO metastore.HiveMetaStore: 0: get_database: default
+18/06/26 09:22:44 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_database: default	
+18/06/26 09:22:44 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 0
+18/06/26 09:22:44 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:22:44 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 0
+18/06/26 09:22:44 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:22:44 INFO state.StateStoreCoordinatorRef: Registered StateStoreCoordinator endpoint
+18/06/26 09:22:44 INFO metastore.HiveMetaStore: 0: get_database: global_temp
+18/06/26 09:22:44 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_database: global_temp	
+18/06/26 09:22:44 WARN metastore.ObjectStore: Failed to get database global_temp, returning NoSuchObjectException
+18/06/26 09:22:44 INFO metastore.HiveMetaStore: 0: get_database: tpch_text_2
+18/06/26 09:22:44 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_database: tpch_text_2	
+18/06/26 09:22:45 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 0
+18/06/26 09:22:45 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:22:45 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 0
+18/06/26 09:22:45 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:22:45 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.1.2:46788) with ID 0
+18/06/26 09:22:45 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 1
+18/06/26 09:22:45 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:22:45 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 1
+18/06/26 09:22:45 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:22:45 INFO storage.BlockManagerMasterEndpoint: Registering block manager 10.0.1.2:33171 with 912.3 MB RAM, BlockManagerId(0, 10.0.1.2, 33171, None)
+18/06/26 09:22:45 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.1.1:38898) with ID 1
+18/06/26 09:22:45 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 2
+18/06/26 09:22:45 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:22:45 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 2
+18/06/26 09:22:45 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:22:45 INFO storage.BlockManagerMasterEndpoint: Registering block manager 10.0.1.1:36749 with 912.3 MB RAM, BlockManagerId(1, 10.0.1.1, 36749, None)
+18/06/26 09:22:46 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 2
+18/06/26 09:22:46 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:22:46 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 2
+18/06/26 09:22:46 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:22:46 INFO metastore.HiveMetaStore: 0: get_table : db=tpch_text_2 tbl=q2_min_ps_supplycost
+18/06/26 09:22:46 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_table : db=tpch_text_2 tbl=q2_min_ps_supplycost	
+18/06/26 09:22:46 INFO metastore.HiveMetaStore: 0: get_table : db=tpch_text_2 tbl=q2_min_ps_supplycost
+18/06/26 09:22:46 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_table : db=tpch_text_2 tbl=q2_min_ps_supplycost	
+Error in query: Table or view not found: q2_min_ps_supplycost;
+18/06/26 09:22:46 INFO server.AbstractConnector: Stopped Spark@5323999f{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+18/06/26 09:22:46 INFO ui.SparkUI: Stopped Spark web UI at http://dc1master-lan1:4040
+18/06/26 09:22:46 INFO cluster.StandaloneSchedulerBackend: Shutting down all executors
+18/06/26 09:22:46 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Asking each executor to shut down
+18/06/26 09:22:46 INFO spark.MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+18/06/26 09:22:46 INFO memory.MemoryStore: MemoryStore cleared
+18/06/26 09:22:46 INFO storage.BlockManager: BlockManager stopped
+18/06/26 09:22:46 INFO storage.BlockManagerMaster: BlockManagerMaster stopped
+18/06/26 09:22:46 INFO scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+18/06/26 09:22:46 INFO spark.SparkContext: Successfully stopped SparkContext
+18/06/26 09:22:46 INFO util.ShutdownHookManager: Shutdown hook called
+18/06/26 09:22:46 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-09dfba93-a005-4445-afed-73d08403e04f
+18/06/26 09:22:46 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-08165086-1f28-41ab-8ad8-7a29cb6f4eac

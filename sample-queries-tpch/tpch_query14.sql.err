@@ -1,0 +1,504 @@
+18/06/26 09:13:31 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+18/06/26 09:13:31 INFO metastore.HiveMetaStore: 0: Opening raw store with implemenation class:org.apache.hadoop.hive.metastore.ObjectStore
+18/06/26 09:13:31 INFO metastore.ObjectStore: ObjectStore, initialize called
+18/06/26 09:13:32 INFO DataNucleus.Persistence: Property hive.metastore.integral.jdo.pushdown unknown - will be ignored
+18/06/26 09:13:32 INFO DataNucleus.Persistence: Property datanucleus.cache.level2 unknown - will be ignored
+18/06/26 09:13:33 INFO metastore.ObjectStore: Setting MetaStore object pin classes with hive.metastore.cache.pinobjtypes="Table,StorageDescriptor,SerDeInfo,Partition,Database,Type,FieldSchema,Order"
+18/06/26 09:13:35 INFO DataNucleus.Datastore: The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+18/06/26 09:13:35 INFO DataNucleus.Datastore: The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+18/06/26 09:13:35 INFO DataNucleus.Datastore: The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+18/06/26 09:13:35 INFO DataNucleus.Datastore: The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+18/06/26 09:13:35 INFO DataNucleus.Query: Reading in results for query "org.datanucleus.store.rdbms.query.SQLQuery@0" since the connection used is closing
+18/06/26 09:13:35 INFO metastore.MetaStoreDirectSql: Using direct SQL, underlying DB is DERBY
+18/06/26 09:13:35 INFO metastore.ObjectStore: Initialized ObjectStore
+18/06/26 09:13:35 INFO metastore.HiveMetaStore: Added admin role in metastore
+18/06/26 09:13:35 INFO metastore.HiveMetaStore: Added public role in metastore
+18/06/26 09:13:35 INFO metastore.HiveMetaStore: No user is added in admin role, since config is empty
+18/06/26 09:13:35 INFO metastore.HiveMetaStore: 0: get_all_databases
+18/06/26 09:13:35 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_all_databases	
+18/06/26 09:13:35 INFO metastore.HiveMetaStore: 0: get_functions: db=default pat=*
+18/06/26 09:13:35 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_functions: db=default pat=*	
+18/06/26 09:13:35 INFO DataNucleus.Datastore: The class "org.apache.hadoop.hive.metastore.model.MResourceUri" is tagged as "embedded-only" so does not have its own datastore table.
+18/06/26 09:13:35 INFO metastore.HiveMetaStore: 0: get_functions: db=tpcds_text_2 pat=*
+18/06/26 09:13:35 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_functions: db=tpcds_text_2 pat=*	
+18/06/26 09:13:35 INFO metastore.HiveMetaStore: 0: get_functions: db=tpch_flat_orc_2 pat=*
+18/06/26 09:13:35 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_functions: db=tpch_flat_orc_2 pat=*	
+18/06/26 09:13:35 INFO metastore.HiveMetaStore: 0: get_functions: db=tpch_text_2 pat=*
+18/06/26 09:13:35 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_functions: db=tpch_text_2 pat=*	
+18/06/26 09:13:36 INFO session.SessionState: Created local directory: /tmp/d538ea38-4311-4ae2-a400-8e11210b5230_resources
+18/06/26 09:13:36 INFO session.SessionState: Created HDFS directory: /tmp/hive/wentingt/d538ea38-4311-4ae2-a400-8e11210b5230
+18/06/26 09:13:36 INFO session.SessionState: Created local directory: /tmp/wentingt/d538ea38-4311-4ae2-a400-8e11210b5230
+18/06/26 09:13:36 INFO session.SessionState: Created HDFS directory: /tmp/hive/wentingt/d538ea38-4311-4ae2-a400-8e11210b5230/_tmp_space.db
+18/06/26 09:13:36 INFO spark.SparkContext: Running Spark version 2.4.0-SNAPSHOT
+18/06/26 09:13:36 INFO spark.SparkContext: Submitted application: SparkSQL::10.0.1.253
+18/06/26 09:13:36 INFO spark.SecurityManager: Changing view acls to: wentingt
+18/06/26 09:13:36 INFO spark.SecurityManager: Changing modify acls to: wentingt
+18/06/26 09:13:36 INFO spark.SecurityManager: Changing view acls groups to: 
+18/06/26 09:13:36 INFO spark.SecurityManager: Changing modify acls groups to: 
+18/06/26 09:13:36 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(wentingt); groups with view permissions: Set(); users  with modify permissions: Set(wentingt); groups with modify permissions: Set()
+18/06/26 09:13:36 INFO util.Utils: Successfully started service 'sparkDriver' on port 38764.
+18/06/26 09:13:37 INFO spark.SparkEnv: Registering MapOutputTracker
+18/06/26 09:13:37 INFO spark.SparkEnv: Registering BlockManagerMaster
+18/06/26 09:13:37 INFO storage.BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+18/06/26 09:13:37 INFO storage.BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+18/06/26 09:13:37 INFO storage.DiskBlockManager: Created local directory at /tmp/blockmgr-39d5898b-9a70-4127-970a-e892cda6031a
+18/06/26 09:13:37 INFO memory.MemoryStore: MemoryStore started with capacity 408.9 MB
+18/06/26 09:13:37 INFO spark.SparkEnv: Registering OutputCommitCoordinator
+18/06/26 09:13:37 INFO util.log: Logging initialized @7232ms
+18/06/26 09:13:37 INFO server.Server: jetty-9.3.z-SNAPSHOT
+18/06/26 09:13:37 INFO server.Server: Started @7302ms
+18/06/26 09:13:37 INFO server.AbstractConnector: Started ServerConnector@5f3b84bd{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+18/06/26 09:13:37 INFO util.Utils: Successfully started service 'SparkUI' on port 4040.
+18/06/26 09:13:37 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@77fc19cf{/jobs,null,AVAILABLE,@Spark}
+18/06/26 09:13:37 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@63dda940{/jobs/json,null,AVAILABLE,@Spark}
+18/06/26 09:13:37 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@41f964f9{/jobs/job,null,AVAILABLE,@Spark}
+18/06/26 09:13:37 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7574d4ad{/jobs/job/json,null,AVAILABLE,@Spark}
+18/06/26 09:13:37 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7bede4ea{/stages,null,AVAILABLE,@Spark}
+18/06/26 09:13:37 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@713999c2{/stages/json,null,AVAILABLE,@Spark}
+18/06/26 09:13:37 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6060146b{/stages/stage,null,AVAILABLE,@Spark}
+18/06/26 09:13:37 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1af677f8{/stages/stage/json,null,AVAILABLE,@Spark}
+18/06/26 09:13:37 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7a55fb81{/stages/pool,null,AVAILABLE,@Spark}
+18/06/26 09:13:37 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5a3cf878{/stages/pool/json,null,AVAILABLE,@Spark}
+18/06/26 09:13:37 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1d2d8846{/storage,null,AVAILABLE,@Spark}
+18/06/26 09:13:37 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@34cd65ac{/storage/json,null,AVAILABLE,@Spark}
+18/06/26 09:13:37 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@61911947{/storage/rdd,null,AVAILABLE,@Spark}
+18/06/26 09:13:37 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5c53c235{/storage/rdd/json,null,AVAILABLE,@Spark}
+18/06/26 09:13:37 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2dcd0e41{/environment,null,AVAILABLE,@Spark}
+18/06/26 09:13:37 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7272ee51{/environment/json,null,AVAILABLE,@Spark}
+18/06/26 09:13:37 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1b409a79{/executors,null,AVAILABLE,@Spark}
+18/06/26 09:13:37 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5940b14e{/executors/json,null,AVAILABLE,@Spark}
+18/06/26 09:13:37 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1cba0321{/executors/threadDump,null,AVAILABLE,@Spark}
+18/06/26 09:13:37 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@795f6681{/executors/threadDump/json,null,AVAILABLE,@Spark}
+18/06/26 09:13:37 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@66d3b881{/static,null,AVAILABLE,@Spark}
+18/06/26 09:13:37 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1689527c{/,null,AVAILABLE,@Spark}
+18/06/26 09:13:37 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@21516c88{/api,null,AVAILABLE,@Spark}
+18/06/26 09:13:37 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@65d9e72a{/jobs/job/kill,null,AVAILABLE,@Spark}
+18/06/26 09:13:37 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1f7e52d1{/stages/stage/kill,null,AVAILABLE,@Spark}
+18/06/26 09:13:37 INFO ui.SparkUI: Bound SparkUI to 0.0.0.0, and started at http://dc1master-lan1:4040
+18/06/26 09:13:37 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 0
+18/06/26 09:13:37 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:13:37 INFO client.StandaloneAppClient$ClientEndpoint: Connecting to master spark://dc1master-lan1:7077...
+18/06/26 09:13:37 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 0
+18/06/26 09:13:37 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:13:37 INFO client.TransportClientFactory: Successfully created connection to dc1master-lan1/10.0.1.253:7077 after 47 ms (0 ms spent in bootstraps)
+18/06/26 09:13:37 INFO cluster.StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20180626091337-0091
+18/06/26 09:13:37 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20180626091337-0091/0 on worker-20180626004527-10.0.1.2-38332 (10.0.1.2:38332) with 10 core(s)
+18/06/26 09:13:37 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20180626091337-0091/0 on hostPort 10.0.1.2:38332 with 10 core(s), 2.0 GB RAM
+18/06/26 09:13:37 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20180626091337-0091/1 on worker-20180626004527-10.0.1.1-34053 (10.0.1.1:34053) with 10 core(s)
+18/06/26 09:13:37 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20180626091337-0091/1 on hostPort 10.0.1.1:34053 with 10 core(s), 2.0 GB RAM
+18/06/26 09:13:37 INFO util.Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 39669.
+18/06/26 09:13:37 INFO netty.NettyBlockTransferService: Server created on dc1master-lan1:39669
+18/06/26 09:13:37 INFO storage.BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+18/06/26 09:13:37 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20180626091337-0091/0 is now RUNNING
+18/06/26 09:13:37 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20180626091337-0091/1 is now RUNNING
+18/06/26 09:13:37 INFO storage.BlockManagerMaster: Registering BlockManager BlockManagerId(driver, dc1master-lan1, 39669, None)
+18/06/26 09:13:37 INFO storage.BlockManagerMasterEndpoint: Registering block manager dc1master-lan1:39669 with 408.9 MB RAM, BlockManagerId(driver, dc1master-lan1, 39669, None)
+18/06/26 09:13:37 INFO storage.BlockManagerMaster: Registered BlockManager BlockManagerId(driver, dc1master-lan1, 39669, None)
+18/06/26 09:13:37 INFO storage.BlockManager: external shuffle service port = 7337
+18/06/26 09:13:37 INFO storage.BlockManager: Initialized BlockManager: BlockManagerId(driver, dc1master-lan1, 39669, None)
+18/06/26 09:13:38 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5238896f{/metrics/json,null,AVAILABLE,@Spark}
+18/06/26 09:13:38 INFO scheduler.EventLoggingListener: Logging events to hdfs://dc1master:9000/user/wentingt/spark-logs/app-20180626091337-0091
+18/06/26 09:13:38 INFO cluster.StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+18/06/26 09:13:38 INFO internal.SharedState: loading hive config file: file:/users/wentingt/spark-terra/conf/hive-site.xml
+18/06/26 09:13:38 INFO internal.SharedState: spark.sql.warehouse.dir is not set, but hive.metastore.warehouse.dir is set. Setting spark.sql.warehouse.dir to the value of hive.metastore.warehouse.dir ('/user/hive/warehouse').
+18/06/26 09:13:38 INFO internal.SharedState: Warehouse path is '/user/hive/warehouse'.
+18/06/26 09:13:38 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@150f41b9{/SQL,null,AVAILABLE,@Spark}
+18/06/26 09:13:38 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6e364f1f{/SQL/json,null,AVAILABLE,@Spark}
+18/06/26 09:13:38 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1a7d0c9f{/SQL/execution,null,AVAILABLE,@Spark}
+18/06/26 09:13:38 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2b1a901d{/SQL/execution/json,null,AVAILABLE,@Spark}
+18/06/26 09:13:38 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@59127611{/static/sql,null,AVAILABLE,@Spark}
+18/06/26 09:13:38 INFO hive.HiveUtils: Initializing HiveMetastoreConnection version 1.2.1 using Spark classes.
+18/06/26 09:13:38 INFO client.HiveClientImpl: Warehouse location for Hive client (version 1.2.2) is /user/hive/warehouse
+18/06/26 09:13:38 INFO metastore.HiveMetaStore: 0: get_database: default
+18/06/26 09:13:38 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_database: default	
+18/06/26 09:13:38 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 0
+18/06/26 09:13:38 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:13:38 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 0
+18/06/26 09:13:38 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:13:38 INFO state.StateStoreCoordinatorRef: Registered StateStoreCoordinator endpoint
+18/06/26 09:13:38 INFO metastore.HiveMetaStore: 0: get_database: global_temp
+18/06/26 09:13:38 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_database: global_temp	
+18/06/26 09:13:38 WARN metastore.ObjectStore: Failed to get database global_temp, returning NoSuchObjectException
+18/06/26 09:13:38 INFO metastore.HiveMetaStore: 0: get_database: tpch_text_2
+18/06/26 09:13:38 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_database: tpch_text_2	
+18/06/26 09:13:39 INFO metastore.HiveMetaStore: 0: get_database: tpch_text_2
+18/06/26 09:13:39 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_database: tpch_text_2	
+18/06/26 09:13:39 INFO metastore.HiveMetaStore: 0: get_database: tpch_text_2
+18/06/26 09:13:39 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_database: tpch_text_2	
+18/06/26 09:13:39 INFO metastore.HiveMetaStore: 0: get_table : db=tpch_text_2 tbl=lineitem
+18/06/26 09:13:39 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_table : db=tpch_text_2 tbl=lineitem	
+18/06/26 09:13:39 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 0
+18/06/26 09:13:39 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:13:39 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 0
+18/06/26 09:13:39 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:13:39 INFO metastore.HiveMetaStore: 0: get_table : db=tpch_text_2 tbl=part
+18/06/26 09:13:39 INFO HiveMetaStore.audit: ugi=wentingt	ip=unknown-ip-addr	cmd=get_table : db=tpch_text_2 tbl=part	
+18/06/26 09:13:39 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.1.1:56080) with ID 1
+18/06/26 09:13:39 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 1
+18/06/26 09:13:39 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:13:39 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 1
+18/06/26 09:13:39 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:13:39 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.1.2:42408) with ID 0
+18/06/26 09:13:39 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 2
+18/06/26 09:13:39 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:13:39 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 2
+18/06/26 09:13:39 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:13:40 INFO storage.BlockManagerMasterEndpoint: Registering block manager 10.0.1.1:33681 with 912.3 MB RAM, BlockManagerId(1, 10.0.1.1, 33681, None)
+18/06/26 09:13:40 INFO storage.BlockManagerMasterEndpoint: Registering block manager 10.0.1.2:44406 with 912.3 MB RAM, BlockManagerId(0, 10.0.1.2, 44406, None)
+18/06/26 09:13:40 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 2
+18/06/26 09:13:40 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:13:40 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 2
+18/06/26 09:13:40 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:13:41 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 2
+18/06/26 09:13:41 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:13:41 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 2
+18/06/26 09:13:41 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:13:42 INFO spark.ContextCleaner: Cleaned accumulator 0
+18/06/26 09:13:42 INFO codegen.CodeGenerator: Code generated in 208.748649 ms
+18/06/26 09:13:42 INFO codegen.CodeGenerator: Code generated in 221.921567 ms
+18/06/26 09:13:42 INFO memory.MemoryStore: Block broadcast_0 stored as values in memory (estimated size 290.4 KB, free 408.6 MB)
+18/06/26 09:13:42 INFO memory.MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 24.8 KB, free 408.6 MB)
+18/06/26 09:13:42 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on dc1master-lan1:39669 (size: 24.8 KB, free: 408.9 MB)
+18/06/26 09:13:42 INFO spark.SparkContext: Created broadcast 0 from 
+18/06/26 09:13:42 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 2
+18/06/26 09:13:42 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:13:42 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 2
+18/06/26 09:13:42 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:13:42 INFO mapred.FileInputFormat: Total input paths to process : 2
+18/06/26 09:13:42 INFO spark.SparkContext: Starting job: run at ThreadPoolExecutor.java:1142
+18/06/26 09:13:42 INFO scheduler.DAGScheduler: Got job 0 (run at ThreadPoolExecutor.java:1142) with 2 output partitions
+18/06/26 09:13:42 INFO scheduler.DAGScheduler: Final stage: ResultStage 0 (run at ThreadPoolExecutor.java:1142)
+18/06/26 09:13:42 INFO scheduler.DAGScheduler: Parents of final stage: List()
+18/06/26 09:13:42 INFO scheduler.DAGScheduler: Missing parents: List()
+18/06/26 09:13:42 INFO scheduler.DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[5] at run at ThreadPoolExecutor.java:1142), which has no missing parents
+18/06/26 09:13:42 INFO memory.MemoryStore: Block broadcast_1 stored as values in memory (estimated size 11.0 KB, free 408.6 MB)
+18/06/26 09:13:42 INFO memory.MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 5.6 KB, free 408.6 MB)
+18/06/26 09:13:42 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on dc1master-lan1:39669 (size: 5.6 KB, free: 408.9 MB)
+18/06/26 09:13:42 INFO spark.SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1074
+18/06/26 09:13:43 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ResultStage 0 (MapPartitionsRDD[5] at run at ThreadPoolExecutor.java:1142) (first 15 tasks are for partitions Vector(0, 1))
+18/06/26 09:13:43 INFO scheduler.TaskSchedulerImpl: Adding task set 0.0 with 2 tasks
+18/06/26 09:13:43 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 2
+18/06/26 09:13:43 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:13:43 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, 10.0.1.2, executor 0, partition 0, ANY, 7918 bytes)
+18/06/26 09:13:43 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1, 10.0.1.1, executor 1, partition 1, ANY, 7918 bytes)
+18/06/26 09:13:43 INFO scheduler.DAGScheduler: handleBeginEvent::stageId: 0
+18/06/26 09:13:43 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 2
+18/06/26 09:13:43 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 2
+18/06/26 09:13:43 INFO scheduler.DAGScheduler: handleBeginEvent::stageId: 0
+18/06/26 09:13:43 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.0.1.2:44406 (size: 5.6 KB, free: 912.3 MB)
+18/06/26 09:13:43 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.0.1.1:33681 (size: 5.6 KB, free: 912.3 MB)
+18/06/26 09:13:43 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.0.1.1:33681 (size: 24.8 KB, free: 912.3 MB)
+18/06/26 09:13:43 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.0.1.2:44406 (size: 24.8 KB, free: 912.3 MB)
+18/06/26 09:13:43 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 2
+18/06/26 09:13:43 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:13:43 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 2
+18/06/26 09:13:43 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:13:44 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 2
+18/06/26 09:13:44 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:13:44 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 2
+18/06/26 09:13:44 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:13:45 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 2
+18/06/26 09:13:45 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:13:45 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 2
+18/06/26 09:13:45 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:13:45 INFO storage.BlockManagerInfo: Added taskresult_1 in memory on 10.0.1.1:33681 (size: 3.2 MB, free: 909.1 MB)
+18/06/26 09:13:45 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 1
+18/06/26 09:13:45 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:13:45 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 1
+18/06/26 09:13:45 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:13:45 INFO client.TransportClientFactory: Successfully created connection to /10.0.1.1:33681 after 2 ms (0 ms spent in bootstraps)
+18/06/26 09:13:45 INFO storage.BlockManagerInfo: Added taskresult_0 in memory on 10.0.1.2:44406 (size: 3.2 MB, free: 909.1 MB)
+18/06/26 09:13:45 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 1
+18/06/26 09:13:45 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:13:45 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 1
+18/06/26 09:13:45 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:13:45 INFO client.TransportClientFactory: Successfully created connection to /10.0.1.2:44406 after 2 ms (0 ms spent in bootstraps)
+18/06/26 09:13:45 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 2853 ms on 10.0.1.1 (executor 1) (1/2)
+18/06/26 09:13:45 INFO storage.BlockManagerInfo: Removed taskresult_1 on 10.0.1.1:33681 in memory (size: 3.2 MB, free: 912.3 MB)
+18/06/26 09:13:45 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 2966 ms on 10.0.1.2 (executor 0) (2/2)
+18/06/26 09:13:45 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+18/06/26 09:13:46 INFO scheduler.DAGScheduler: ResultStage 0 (run at ThreadPoolExecutor.java:1142) finished in 3.030 s
+18/06/26 09:13:46 INFO scheduler.DAGScheduler: Job 0 finished: run at ThreadPoolExecutor.java:1142, took 3.098121 s
+18/06/26 09:13:46 INFO storage.BlockManagerInfo: Removed taskresult_0 on 10.0.1.2:44406 in memory (size: 3.2 MB, free: 912.3 MB)
+18/06/26 09:13:46 INFO codegen.CodeGenerator: Code generated in 12.756904 ms
+18/06/26 09:13:46 INFO spark.ContextCleaner: Cleaned accumulator 31
+18/06/26 09:13:46 INFO spark.ContextCleaner: Cleaned accumulator 35
+18/06/26 09:13:46 INFO spark.ContextCleaner: Cleaned accumulator 40
+18/06/26 09:13:46 INFO spark.ContextCleaner: Cleaned accumulator 43
+18/06/26 09:13:46 INFO spark.ContextCleaner: Cleaned accumulator 28
+18/06/26 09:13:46 INFO spark.ContextCleaner: Cleaned accumulator 47
+18/06/26 09:13:46 INFO spark.ContextCleaner: Cleaned accumulator 41
+18/06/26 09:13:46 INFO spark.ContextCleaner: Cleaned accumulator 33
+18/06/26 09:13:46 INFO spark.ContextCleaner: Cleaned accumulator 30
+18/06/26 09:13:46 INFO spark.ContextCleaner: Cleaned accumulator 29
+18/06/26 09:13:46 INFO spark.ContextCleaner: Cleaned accumulator 39
+18/06/26 09:13:46 INFO spark.ContextCleaner: Cleaned accumulator 26
+18/06/26 09:13:46 INFO spark.ContextCleaner: Cleaned accumulator 27
+18/06/26 09:13:46 INFO spark.ContextCleaner: Cleaned accumulator 34
+18/06/26 09:13:46 INFO storage.BlockManagerInfo: Removed broadcast_1_piece0 on dc1master-lan1:39669 in memory (size: 5.6 KB, free: 408.9 MB)
+18/06/26 09:13:46 INFO storage.BlockManagerInfo: Removed broadcast_1_piece0 on 10.0.1.1:33681 in memory (size: 5.6 KB, free: 912.3 MB)
+18/06/26 09:13:46 INFO storage.BlockManagerInfo: Removed broadcast_1_piece0 on 10.0.1.2:44406 in memory (size: 5.6 KB, free: 912.3 MB)
+18/06/26 09:13:46 INFO spark.ContextCleaner: Cleaned accumulator 36
+18/06/26 09:13:46 INFO spark.ContextCleaner: Cleaned accumulator 49
+18/06/26 09:13:46 INFO spark.ContextCleaner: Cleaned accumulator 44
+18/06/26 09:13:46 INFO spark.ContextCleaner: Cleaned accumulator 48
+18/06/26 09:13:46 INFO spark.ContextCleaner: Cleaned accumulator 25
+18/06/26 09:13:46 INFO spark.ContextCleaner: Cleaned accumulator 32
+18/06/26 09:13:46 INFO spark.ContextCleaner: Cleaned accumulator 42
+18/06/26 09:13:46 INFO spark.ContextCleaner: Cleaned accumulator 46
+18/06/26 09:13:46 INFO spark.ContextCleaner: Cleaned accumulator 38
+18/06/26 09:13:46 INFO spark.ContextCleaner: Cleaned accumulator 37
+18/06/26 09:13:46 INFO spark.ContextCleaner: Cleaned accumulator 45
+18/06/26 09:13:46 INFO memory.MemoryStore: Block broadcast_2 stored as values in memory (estimated size 35.1 MB, free 373.5 MB)
+18/06/26 09:13:46 INFO memory.MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 4.0 MB, free 369.5 MB)
+18/06/26 09:13:46 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on dc1master-lan1:39669 (size: 4.0 MB, free: 404.9 MB)
+18/06/26 09:13:46 INFO memory.MemoryStore: Block broadcast_2_piece1 stored as bytes in memory (estimated size 4.0 MB, free 365.6 MB)
+18/06/26 09:13:46 INFO storage.BlockManagerInfo: Added broadcast_2_piece1 in memory on dc1master-lan1:39669 (size: 4.0 MB, free: 400.9 MB)
+18/06/26 09:13:46 INFO spark.SparkContext: Created broadcast 2 from run at ThreadPoolExecutor.java:1142
+18/06/26 09:13:46 INFO codegen.CodeGenerator: Code generated in 60.315626 ms
+18/06/26 09:13:46 INFO memory.MemoryStore: Block broadcast_3 stored as values in memory (estimated size 290.8 KB, free 365.3 MB)
+18/06/26 09:13:46 INFO memory.MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 24.9 KB, free 365.3 MB)
+18/06/26 09:13:46 INFO storage.BlockManagerInfo: Added broadcast_3_piece0 in memory on dc1master-lan1:39669 (size: 24.9 KB, free: 400.9 MB)
+18/06/26 09:13:46 INFO spark.SparkContext: Created broadcast 3 from 
+18/06/26 09:13:46 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 2
+18/06/26 09:13:46 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:13:46 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 2
+18/06/26 09:13:46 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:13:46 INFO mapred.FileInputFormat: Total input paths to process : 2
+18/06/26 09:13:46 INFO net.NetworkTopology: Adding a new node: /default/rack_01/10.0.1.1:50010
+18/06/26 09:13:46 INFO net.NetworkTopology: Adding a new node: /default/rack_01/10.0.1.2:50010
+18/06/26 09:13:46 INFO spark.SparkContext: Starting job: processCmd at CliDriver.java:376
+18/06/26 09:13:46 INFO scheduler.DAGScheduler: Registering RDD 11 (processCmd at CliDriver.java:376)
+18/06/26 09:13:46 INFO spark.MapOutputTrackerMaster: MapOutputTracker.registerShuffle id:0
+18/06/26 09:13:46 INFO scheduler.DAGScheduler: Got job 1 (processCmd at CliDriver.java:376) with 1 output partitions
+18/06/26 09:13:46 INFO scheduler.DAGScheduler: Final stage: ResultStage 2 (processCmd at CliDriver.java:376)
+18/06/26 09:13:46 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 1)
+18/06/26 09:13:46 INFO scheduler.DAGScheduler: Missing parents: List(ShuffleMapStage 1)
+18/06/26 09:13:46 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 1 (MapPartitionsRDD[11] at processCmd at CliDriver.java:376), which has no missing parents
+18/06/26 09:13:46 INFO memory.MemoryStore: Block broadcast_4 stored as values in memory (estimated size 20.8 KB, free 365.2 MB)
+18/06/26 09:13:46 INFO memory.MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 9.4 KB, free 365.2 MB)
+18/06/26 09:13:46 INFO storage.BlockManagerInfo: Added broadcast_4_piece0 in memory on dc1master-lan1:39669 (size: 9.4 KB, free: 400.9 MB)
+18/06/26 09:13:46 INFO spark.SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:1074
+18/06/26 09:13:46 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 1 (MapPartitionsRDD[11] at processCmd at CliDriver.java:376) (first 15 tasks are for partitions Vector(0, 1))
+18/06/26 09:13:46 INFO scheduler.TaskSchedulerImpl: Adding task set 1.0 with 2 tasks
+18/06/26 09:13:46 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 2
+18/06/26 09:13:46 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:13:46 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 1.0 (TID 2, 10.0.1.1, executor 1, partition 0, NODE_LOCAL, 7911 bytes)
+18/06/26 09:13:46 INFO scheduler.DAGScheduler: handleBeginEvent::stageId: 1
+18/06/26 09:13:46 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 1.0 (TID 3, 10.0.1.2, executor 0, partition 1, NODE_LOCAL, 7911 bytes)
+18/06/26 09:13:46 INFO scheduler.DAGScheduler: handleBeginEvent::stageId: 1
+18/06/26 09:13:46 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 2
+18/06/26 09:13:46 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 2
+18/06/26 09:13:46 INFO storage.BlockManagerInfo: Added broadcast_4_piece0 in memory on 10.0.1.1:33681 (size: 9.4 KB, free: 912.3 MB)
+18/06/26 09:13:46 INFO storage.BlockManagerInfo: Added broadcast_4_piece0 in memory on 10.0.1.2:44406 (size: 9.4 KB, free: 912.3 MB)
+18/06/26 09:13:46 INFO storage.BlockManagerInfo: Added broadcast_3_piece0 in memory on 10.0.1.1:33681 (size: 24.9 KB, free: 912.2 MB)
+18/06/26 09:13:46 INFO storage.BlockManagerInfo: Added broadcast_3_piece0 in memory on 10.0.1.2:44406 (size: 24.9 KB, free: 912.2 MB)
+18/06/26 09:13:47 INFO storage.BlockManagerInfo: Added broadcast_2_piece1 in memory on 10.0.1.2:44406 (size: 4.0 MB, free: 908.3 MB)
+18/06/26 09:13:47 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.0.1.1:33681 (size: 4.0 MB, free: 908.2 MB)
+18/06/26 09:13:47 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.0.1.2:44406 (size: 4.0 MB, free: 904.3 MB)
+18/06/26 09:13:47 INFO storage.BlockManagerInfo: Added broadcast_2_piece1 in memory on 10.0.1.1:33681 (size: 4.0 MB, free: 904.3 MB)
+18/06/26 09:13:47 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 2
+18/06/26 09:13:47 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:13:47 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 2
+18/06/26 09:13:47 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:13:48 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 2
+18/06/26 09:13:48 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:13:48 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 2
+18/06/26 09:13:48 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:13:49 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 2
+18/06/26 09:13:49 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:13:49 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 2
+18/06/26 09:13:49 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:13:50 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 2
+18/06/26 09:13:50 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:13:50 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 2
+18/06/26 09:13:50 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:13:51 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 2
+18/06/26 09:13:51 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:13:51 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 2
+18/06/26 09:13:51 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:13:52 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 2
+18/06/26 09:13:52 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:13:52 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 2
+18/06/26 09:13:52 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:13:53 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 2
+18/06/26 09:13:53 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:13:53 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 2
+18/06/26 09:13:53 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:13:54 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 2
+18/06/26 09:13:54 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:13:54 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 2
+18/06/26 09:13:54 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:13:55 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 2
+18/06/26 09:13:55 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:13:55 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 2
+18/06/26 09:13:55 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:13:56 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 2
+18/06/26 09:13:56 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:13:56 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 2
+18/06/26 09:13:56 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:13:57 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 2
+18/06/26 09:13:57 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:13:57 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 2
+18/06/26 09:13:57 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:13:58 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 2
+18/06/26 09:13:58 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:13:58 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 2
+18/06/26 09:13:58 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:13:59 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 2
+18/06/26 09:13:59 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:13:59 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 2
+18/06/26 09:13:59 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:14:00 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 2
+18/06/26 09:14:00 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:14:00 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 2
+18/06/26 09:14:00 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:14:00 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 1
+18/06/26 09:14:00 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:14:00 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 1
+18/06/26 09:14:00 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:14:00 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 1.0 (TID 3) in 14139 ms on 10.0.1.2 (executor 0) (1/2)
+18/06/26 09:14:00 INFO spark.MapOutputTrackerMaster: MapOutputTracker.registerMapOutput status.location.toString: BlockManagerId(0, 10.0.1.2, 7337, None)
+18/06/26 09:14:00 INFO spark.MapOutputTrackerMaster: MapOutputTracker.registerMapOutput status.getDataFile: /tmp/spark-6e3b625e-cea2-4464-8d6f-907283947a20/executor-d73f0488-14f2-4f34-9196-c68981567235/blockmgr-164c535e-c960-440b-85d7-ed594c87162d/15/shuffle_0_1_0.data
+18/06/26 09:14:00 INFO spark.MapOutputTrackerMaster: MapOutputTracker.registerMapOutput status.getIndexFile: /tmp/spark-6e3b625e-cea2-4464-8d6f-907283947a20/executor-d73f0488-14f2-4f34-9196-c68981567235/blockmgr-164c535e-c960-440b-85d7-ed594c87162d/0f/shuffle_0_1_0.index
+18/06/26 09:14:01 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 1
+18/06/26 09:14:01 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:14:01 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 1
+18/06/26 09:14:01 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:14:01 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 1.0 (TID 2) in 14299 ms on 10.0.1.1 (executor 1) (2/2)
+18/06/26 09:14:01 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: MapOutputTracker.registerMapOutput status.location.toString: BlockManagerId(1, 10.0.1.1, 7337, None)
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: MapOutputTracker.registerMapOutput status.getDataFile: /tmp/spark-70f7e7c2-3be3-4eeb-8a73-612cf7e61654/executor-11ba3f31-a12b-4c4a-869e-8f1063727dfb/blockmgr-4465797d-8baa-4d86-8958-3bbc4c08ca17/0c/shuffle_0_0_0.data
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: MapOutputTracker.registerMapOutput status.getIndexFile: /tmp/spark-70f7e7c2-3be3-4eeb-8a73-612cf7e61654/executor-11ba3f31-a12b-4c4a-869e-8f1063727dfb/blockmgr-4465797d-8baa-4d86-8958-3bbc4c08ca17/30/shuffle_0_0_0.index
+18/06/26 09:14:01 INFO scheduler.DAGScheduler: ShuffleMapStage 1 (processCmd at CliDriver.java:376) finished in 14.314 s
+18/06/26 09:14:01 INFO scheduler.DAGScheduler: looking for newly runnable stages
+18/06/26 09:14:01 INFO scheduler.DAGScheduler: running: Set()
+18/06/26 09:14:01 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 2)
+18/06/26 09:14:01 INFO scheduler.DAGScheduler: failed: Set()
+18/06/26 09:14:01 INFO scheduler.DAGScheduler: Submitting ResultStage 2 (MapPartitionsRDD[14] at processCmd at CliDriver.java:376), which has no missing parents
+18/06/26 09:14:01 INFO scheduler.RawMapStatus: getSizeForBlock reduceId: 0
+18/06/26 09:14:01 INFO scheduler.RawMapStatus: getSizeForBlock compressedSizes(reduceId): 68
+18/06/26 09:14:01 INFO scheduler.RawMapStatus: getSizeForBlock MapStatus.decompressSize(compressedSizes(reduceId)): 68
+18/06/26 09:14:01 INFO scheduler.RawMapStatus: getSizeForBlock reduceId: 0
+18/06/26 09:14:01 INFO scheduler.RawMapStatus: getSizeForBlock compressedSizes(reduceId): 68
+18/06/26 09:14:01 INFO scheduler.RawMapStatus: getSizeForBlock MapStatus.decompressSize(compressedSizes(reduceId)): 68
+18/06/26 09:14:01 INFO memory.MemoryStore: Block broadcast_5 stored as values in memory (estimated size 9.9 KB, free 365.2 MB)
+18/06/26 09:14:01 INFO memory.MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 4.7 KB, free 365.2 MB)
+18/06/26 09:14:01 INFO storage.BlockManagerInfo: Added broadcast_5_piece0 in memory on dc1master-lan1:39669 (size: 4.7 KB, free: 400.9 MB)
+18/06/26 09:14:01 INFO spark.SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:1074
+18/06/26 09:14:01 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ResultStage 2 (MapPartitionsRDD[14] at processCmd at CliDriver.java:376) (first 15 tasks are for partitions Vector(0))
+18/06/26 09:14:01 INFO scheduler.TaskSchedulerImpl: Adding task set 2.0 with 1 tasks
+18/06/26 09:14:01 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 2
+18/06/26 09:14:01 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:14:01 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 2.0 (TID 4, 10.0.1.1, executor 1, partition 0, NODE_LOCAL, 7758 bytes)
+18/06/26 09:14:01 INFO scheduler.DAGScheduler: handleBeginEvent::stageId: 2
+18/06/26 09:14:01 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 2
+18/06/26 09:14:01 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 1
+18/06/26 09:14:01 INFO scheduler.DAGScheduler: handleBeginEvent::parentStageId: 1
+18/06/26 09:14:01 INFO scheduler.DAGScheduler: handleBeginEvent::parentShuffleMapStage
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: onTaskStart.shuffleId: 0
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: onTaskStart.numReduces: 1
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: onTaskStart.reduceId: 0
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: onTaskStart.reduceHost: 10.0.1.1
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: onTaskStart.reduceExecutorId: 1
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: onTaskStart.appId: app-20180626091337-0091
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: TerraLoop take shuffleId: 0
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: TerraLoop reduceId: 0
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: TerraLoop shuffle finished !!!
+18/06/26 09:14:01 INFO scheduler.RawMapStatus: getSizeForBlock reduceId: 0
+18/06/26 09:14:01 INFO scheduler.RawMapStatus: getSizeForBlock compressedSizes(reduceId): 68
+18/06/26 09:14:01 INFO scheduler.RawMapStatus: getSizeForBlock MapStatus.decompressSize(compressedSizes(reduceId)): 68
+18/06/26 09:14:01 INFO scheduler.RawMapStatus: getSizeForBlock reduceId: 0
+18/06/26 09:14:01 INFO scheduler.RawMapStatus: getSizeForBlock compressedSizes(reduceId): 68
+18/06/26 09:14:01 INFO storage.BlockManagerInfo: Added broadcast_5_piece0 in memory on 10.0.1.1:33681 (size: 4.7 KB, free: 904.3 MB)
+18/06/26 09:14:01 INFO scheduler.RawMapStatus: getSizeForBlock MapStatus.decompressSize(compressedSizes(reduceId)): 68
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: $$$ terraClient.submitShuffleInfo $$$
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: $$$ appId: app-20180626091337-0091
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: $$$ shuffleId: 0
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: $$$ mappersIP: Map(0 -> 10.0.1.1, 1 -> 10.0.1.2)
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: $$$ reducersIP: Map(0 -> 10.0.1.1)
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: $$$ filename: 1_0
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: $$$ flowInfo.getMapID: 1
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: $$$ flowInfo.getReduceAttemptID: 0
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: $$$ flowInfo.getDataFilename: /tmp/spark-6e3b625e-cea2-4464-8d6f-907283947a20/executor-d73f0488-14f2-4f34-9196-c68981567235/blockmgr-164c535e-c960-440b-85d7-ed594c87162d/15/shuffle_0_1_0.data
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: $$$ flowInfo.getStartOffset: 0
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: $$$ flowInfo.getShuffleSize_byte: 68
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: $$$ flowInfo.getMapIP: 10.0.1.2
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: $$$ flowInfo.getReduceIP: 10.0.1.1
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: $$$
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: $$$ filename: 1_0_redundant
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: $$$ flowInfo.getMapID: 1
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: $$$ flowInfo.getReduceAttemptID: 0
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: $$$ flowInfo.getDataFilename: /tmp/spark-6e3b625e-cea2-4464-8d6f-907283947a20/executor-d73f0488-14f2-4f34-9196-c68981567235/blockmgr-164c535e-c960-440b-85d7-ed594c87162d/0f/shuffle_0_1_0.index
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: $$$ flowInfo.getStartOffset: 0
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: $$$ flowInfo.getShuffleSize_byte: 9223372036854775807
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: $$$ flowInfo.getMapIP: 10.0.1.2
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: $$$ flowInfo.getReduceIP: 10.0.1.1
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: $$$
+18/06/26 09:14:01 INFO gaialib.GaiaClient: NEW! Try to submit ShuffleInfo to controller
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send terra finished for shuffle 0 to 10.0.1.1:56080
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: Handling request to send terra finished for shuffle 0 to 10.0.1.1:56080
+18/06/26 09:14:01 INFO spark.MapOutputTrackerMaster: MessageLoop reply ### false
+18/06/26 09:14:01 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 2
+18/06/26 09:14:01 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:14:01 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 2
+18/06/26 09:14:01 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:14:02 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send terra finished for shuffle 0 to 10.0.1.1:56080
+18/06/26 09:14:02 INFO spark.MapOutputTrackerMaster: Handling request to send terra finished for shuffle 0 to 10.0.1.1:56080
+18/06/26 09:14:02 INFO spark.MapOutputTrackerMaster: MessageLoop reply ### false
+18/06/26 09:14:02 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 2
+18/06/26 09:14:02 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:14:02 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 2
+18/06/26 09:14:02 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:14:02 INFO gaialib.GaiaClient: Gaia controller returned: Request Complete
+18/06/26 09:14:02 INFO scheduler.RawMapStatus: getSizeForBlock reduceId: 0
+18/06/26 09:14:02 INFO scheduler.RawMapStatus: getSizeForBlock compressedSizes(reduceId): 68
+18/06/26 09:14:02 INFO scheduler.RawMapStatus: getSizeForBlock MapStatus.decompressSize(compressedSizes(reduceId)): 68
+18/06/26 09:14:02 INFO scheduler.RawMapStatus: getSizeForBlock reduceId: 0
+18/06/26 09:14:02 INFO scheduler.RawMapStatus: getSizeForBlock compressedSizes(reduceId): 68
+18/06/26 09:14:02 INFO scheduler.RawMapStatus: getSizeForBlock MapStatus.decompressSize(compressedSizes(reduceId)): 68
+18/06/26 09:14:02 INFO spark.MapOutputTrackerMaster: @@@ totalSize @@@ 136
+18/06/26 09:14:03 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send terra finished for shuffle 0 to 10.0.1.1:56080
+18/06/26 09:14:03 INFO spark.MapOutputTrackerMaster: Handling request to send terra finished for shuffle 0 to 10.0.1.1:56080
+18/06/26 09:14:03 INFO spark.MapOutputTrackerMaster: MessageLoop reply ### true
+18/06/26 09:14:03 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 2
+18/06/26 09:14:03 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:14:03 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 2
+18/06/26 09:14:03 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:14:04 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.0.1.1:56080
+18/06/26 09:14:04 INFO scheduler.RawMapStatus: WriteExternal compressedSizes
+18/06/26 09:14:04 INFO scheduler.RawMapStatus: 68
+18/06/26 09:14:04 INFO scheduler.RawMapStatus: WriteExternal compressedSizes
+18/06/26 09:14:04 INFO scheduler.RawMapStatus: 68
+18/06/26 09:14:04 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.size ### 1
+18/06/26 09:14:04 INFO scheduler.TaskSchedulerImpl: resourceOffers initialized tasks.flatten.size ### 0
+18/06/26 09:14:04 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.size ### 1
+18/06/26 09:14:04 INFO scheduler.TaskSchedulerImpl: resourceOffers returned tasks.flatten.size ### 0
+18/06/26 09:14:04 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 2.0 (TID 4) in 3149 ms on 10.0.1.1 (executor 1) (1/1)
+18/06/26 09:14:04 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+18/06/26 09:14:04 INFO scheduler.DAGScheduler: ResultStage 2 (processCmd at CliDriver.java:376) finished in 3.157 s
+18/06/26 09:14:04 INFO scheduler.DAGScheduler: Job 1 finished: processCmd at CliDriver.java:376, took 17.500230 s
+Time taken: 25.284 seconds, Fetched 1 row(s)
+18/06/26 09:14:04 INFO thriftserver.SparkSQLCLIDriver: Time taken: 25.284 seconds, Fetched 1 row(s)
+18/06/26 09:14:04 INFO server.AbstractConnector: Stopped Spark@5f3b84bd{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+18/06/26 09:14:04 INFO ui.SparkUI: Stopped Spark web UI at http://dc1master-lan1:4040
+18/06/26 09:14:04 INFO spark.ContextCleaner: Cleaned accumulator 62
+18/06/26 09:14:04 INFO spark.ContextCleaner: Cleaned accumulator 73
+18/06/26 09:14:04 INFO spark.ContextCleaner: Cleaned accumulator 74
+18/06/26 09:14:04 INFO spark.ContextCleaner: Cleaned accumulator 66
+18/06/26 09:14:04 INFO spark.ContextCleaner: Cleaned accumulator 51
+18/06/26 09:14:04 INFO spark.ContextCleaner: Cleaned accumulator 53
+18/06/26 09:14:04 INFO storage.BlockManagerInfo: Removed broadcast_4_piece0 on dc1master-lan1:39669 in memory (size: 9.4 KB, free: 400.9 MB)
+18/06/26 09:14:04 INFO storage.BlockManagerInfo: Removed broadcast_4_piece0 on 10.0.1.1:33681 in memory (size: 9.4 KB, free: 904.3 MB)
+18/06/26 09:14:04 INFO storage.BlockManagerInfo: Removed broadcast_4_piece0 on 10.0.1.2:44406 in memory (size: 9.4 KB, free: 904.3 MB)
+18/06/26 09:14:04 INFO cluster.StandaloneSchedulerBackend: Shutting down all executors
+18/06/26 09:14:04 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Asking each executor to shut down
+18/06/26 09:14:04 INFO spark.MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+18/06/26 09:14:04 INFO memory.MemoryStore: MemoryStore cleared
+18/06/26 09:14:04 INFO storage.BlockManager: BlockManager stopped
+18/06/26 09:14:04 INFO storage.BlockManagerMaster: BlockManagerMaster stopped
+18/06/26 09:14:04 INFO scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+18/06/26 09:14:04 INFO spark.SparkContext: Successfully stopped SparkContext
+18/06/26 09:14:04 INFO util.ShutdownHookManager: Shutdown hook called
+18/06/26 09:14:04 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-c494da06-80cf-44ad-8054-4248052b0513
+18/06/26 09:14:04 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-52666b71-eeda-4f8d-886d-8c8dae47897b

@@ -1,4 +1,5 @@
 version=${1:-spark}
+seq=${2:-0}
 
 SPARK_CORES_MAX=80
 SPARK_SQL_SHUFFLE_PARTITIONS=40
@@ -15,6 +16,6 @@ for filename in sample-queries-tpcds/*.sql; do
 		--conf spark.sql.shuffle.partitions=$SPARK_SQL_SHUFFLE_PARTITIONS \
 		--database tpcds_text_10 \
 		-f $filename \
-		1>${filename}.${version}.log 2>${filename}.${version}.err
+		1>${filename}.${version}.${seq}.log 2>${filename}.${version}.${seq}.err
 	#break 
 done 

@@ -1,0 +1,180 @@
+2018-06-28 15:28:55 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-06-28 15:28:56 INFO  HiveMetaStore:589 - 0: Opening raw store with implemenation class:org.apache.hadoop.hive.metastore.ObjectStore
+2018-06-28 15:28:56 INFO  ObjectStore:289 - ObjectStore, initialize called
+2018-06-28 15:28:56 INFO  Persistence:77 - Property hive.metastore.integral.jdo.pushdown unknown - will be ignored
+2018-06-28 15:28:56 INFO  Persistence:77 - Property datanucleus.cache.level2 unknown - will be ignored
+2018-06-28 15:28:57 INFO  ObjectStore:370 - Setting MetaStore object pin classes with hive.metastore.cache.pinobjtypes="Table,StorageDescriptor,SerDeInfo,Partition,Database,Type,FieldSchema,Order"
+2018-06-28 15:28:58 INFO  Datastore:77 - The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+2018-06-28 15:28:58 INFO  Datastore:77 - The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+2018-06-28 15:28:58 INFO  Datastore:77 - The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+2018-06-28 15:28:58 INFO  Datastore:77 - The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+2018-06-28 15:28:58 INFO  Query:77 - Reading in results for query "org.datanucleus.store.rdbms.query.SQLQuery@0" since the connection used is closing
+2018-06-28 15:28:58 INFO  MetaStoreDirectSql:139 - Using direct SQL, underlying DB is DERBY
+2018-06-28 15:28:58 INFO  ObjectStore:272 - Initialized ObjectStore
+2018-06-28 15:28:58 INFO  HiveMetaStore:663 - Added admin role in metastore
+2018-06-28 15:28:58 INFO  HiveMetaStore:672 - Added public role in metastore
+2018-06-28 15:28:58 INFO  HiveMetaStore:712 - No user is added in admin role, since config is empty
+2018-06-28 15:28:58 INFO  HiveMetaStore:746 - 0: get_all_databases
+2018-06-28 15:28:58 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_all_databases	
+2018-06-28 15:28:58 INFO  HiveMetaStore:746 - 0: get_functions: db=default pat=*
+2018-06-28 15:28:58 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_functions: db=default pat=*	
+2018-06-28 15:28:58 INFO  Datastore:77 - The class "org.apache.hadoop.hive.metastore.model.MResourceUri" is tagged as "embedded-only" so does not have its own datastore table.
+2018-06-28 15:28:58 INFO  HiveMetaStore:746 - 0: get_functions: db=tpcds_text_10 pat=*
+2018-06-28 15:28:58 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_functions: db=tpcds_text_10 pat=*	
+2018-06-28 15:28:58 INFO  HiveMetaStore:746 - 0: get_functions: db=tpcds_text_20 pat=*
+2018-06-28 15:28:58 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_functions: db=tpcds_text_20 pat=*	
+2018-06-28 15:28:58 INFO  HiveMetaStore:746 - 0: get_functions: db=tpch_flat_orc_10 pat=*
+2018-06-28 15:28:58 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_functions: db=tpch_flat_orc_10 pat=*	
+2018-06-28 15:28:58 INFO  HiveMetaStore:746 - 0: get_functions: db=tpch_flat_orc_20 pat=*
+2018-06-28 15:28:58 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_functions: db=tpch_flat_orc_20 pat=*	
+2018-06-28 15:28:58 INFO  HiveMetaStore:746 - 0: get_functions: db=tpch_text_10 pat=*
+2018-06-28 15:28:58 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_functions: db=tpch_text_10 pat=*	
+2018-06-28 15:28:58 INFO  HiveMetaStore:746 - 0: get_functions: db=tpch_text_20 pat=*
+2018-06-28 15:28:58 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_functions: db=tpch_text_20 pat=*	
+2018-06-28 15:28:59 INFO  SessionState:641 - Created local directory: /tmp/90b2b2f4-2537-4c86-b103-a9d92bb0b30e_resources
+2018-06-28 15:28:59 INFO  SessionState:641 - Created HDFS directory: /tmp/hive/jimmyyou/90b2b2f4-2537-4c86-b103-a9d92bb0b30e
+2018-06-28 15:28:59 INFO  SessionState:641 - Created local directory: /tmp/jimmyyou/90b2b2f4-2537-4c86-b103-a9d92bb0b30e
+2018-06-28 15:28:59 INFO  SessionState:641 - Created HDFS directory: /tmp/hive/jimmyyou/90b2b2f4-2537-4c86-b103-a9d92bb0b30e/_tmp_space.db
+2018-06-28 15:28:59 INFO  SparkContext:54 - Running Spark version 2.3.1
+2018-06-28 15:28:59 INFO  SparkContext:54 - Submitted application: SparkSQL::10.0.1.253
+2018-06-28 15:28:59 INFO  SecurityManager:54 - Changing view acls to: jimmyyou
+2018-06-28 15:28:59 INFO  SecurityManager:54 - Changing modify acls to: jimmyyou
+2018-06-28 15:28:59 INFO  SecurityManager:54 - Changing view acls groups to: 
+2018-06-28 15:28:59 INFO  SecurityManager:54 - Changing modify acls groups to: 
+2018-06-28 15:28:59 INFO  SecurityManager:54 - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(jimmyyou); groups with view permissions: Set(); users  with modify permissions: Set(jimmyyou); groups with modify permissions: Set()
+2018-06-28 15:28:59 INFO  Utils:54 - Successfully started service 'sparkDriver' on port 46403.
+2018-06-28 15:28:59 INFO  SparkEnv:54 - Registering MapOutputTracker
+2018-06-28 15:28:59 INFO  SparkEnv:54 - Registering BlockManagerMaster
+2018-06-28 15:28:59 INFO  BlockManagerMasterEndpoint:54 - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2018-06-28 15:28:59 INFO  BlockManagerMasterEndpoint:54 - BlockManagerMasterEndpoint up
+2018-06-28 15:28:59 INFO  DiskBlockManager:54 - Created local directory at /tmp/blockmgr-705fe6ce-4072-4a82-8986-6e7b6f4fce47
+2018-06-28 15:28:59 INFO  MemoryStore:54 - MemoryStore started with capacity 2004.6 MB
+2018-06-28 15:28:59 INFO  SparkEnv:54 - Registering OutputCommitCoordinator
+2018-06-28 15:28:59 INFO  log:192 - Logging initialized @4510ms
+2018-06-28 15:28:59 INFO  Server:346 - jetty-9.3.z-SNAPSHOT
+2018-06-28 15:28:59 INFO  Server:414 - Started @4567ms
+2018-06-28 15:28:59 INFO  AbstractConnector:278 - Started ServerConnector@e35164e{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2018-06-28 15:28:59 INFO  Utils:54 - Successfully started service 'SparkUI' on port 4040.
+2018-06-28 15:28:59 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1ec88aa1{/jobs,null,AVAILABLE,@Spark}
+2018-06-28 15:28:59 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@44fd7ba4{/jobs/json,null,AVAILABLE,@Spark}
+2018-06-28 15:28:59 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@22f8adc2{/jobs/job,null,AVAILABLE,@Spark}
+2018-06-28 15:28:59 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5b742bc8{/jobs/job/json,null,AVAILABLE,@Spark}
+2018-06-28 15:28:59 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@74fb5b59{/stages,null,AVAILABLE,@Spark}
+2018-06-28 15:28:59 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@130a6eb9{/stages/json,null,AVAILABLE,@Spark}
+2018-06-28 15:28:59 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@722531ab{/stages/stage,null,AVAILABLE,@Spark}
+2018-06-28 15:28:59 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@66451058{/stages/stage/json,null,AVAILABLE,@Spark}
+2018-06-28 15:28:59 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@3db6dd52{/stages/pool,null,AVAILABLE,@Spark}
+2018-06-28 15:28:59 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1e92c3b6{/stages/pool/json,null,AVAILABLE,@Spark}
+2018-06-28 15:28:59 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6ef4cbe1{/storage,null,AVAILABLE,@Spark}
+2018-06-28 15:28:59 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@207dd1b7{/storage/json,null,AVAILABLE,@Spark}
+2018-06-28 15:28:59 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@2baac4a7{/storage/rdd,null,AVAILABLE,@Spark}
+2018-06-28 15:28:59 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@23ad2d17{/storage/rdd/json,null,AVAILABLE,@Spark}
+2018-06-28 15:28:59 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6bce4140{/environment,null,AVAILABLE,@Spark}
+2018-06-28 15:28:59 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@25f0c5e7{/environment/json,null,AVAILABLE,@Spark}
+2018-06-28 15:28:59 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5882b202{/executors,null,AVAILABLE,@Spark}
+2018-06-28 15:28:59 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@120df990{/executors/json,null,AVAILABLE,@Spark}
+2018-06-28 15:28:59 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@b506ed0{/executors/threadDump,null,AVAILABLE,@Spark}
+2018-06-28 15:28:59 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@282c4da0{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2018-06-28 15:28:59 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@65f3e805{/static,null,AVAILABLE,@Spark}
+2018-06-28 15:28:59 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@2c60ce47{/,null,AVAILABLE,@Spark}
+2018-06-28 15:28:59 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@2450256f{/api,null,AVAILABLE,@Spark}
+2018-06-28 15:28:59 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@24197b13{/jobs/job/kill,null,AVAILABLE,@Spark}
+2018-06-28 15:28:59 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@71b97eeb{/stages/stage/kill,null,AVAILABLE,@Spark}
+2018-06-28 15:28:59 INFO  SparkUI:54 - Bound SparkUI to 0.0.0.0, and started at http://dc1master-lan1:4040
+2018-06-28 15:28:59 INFO  StandaloneAppClient$ClientEndpoint:54 - Connecting to master spark://dc1master-lan1:7077...
+2018-06-28 15:28:59 INFO  TransportClientFactory:267 - Successfully created connection to dc1master-lan1/10.0.1.253:7077 after 20 ms (0 ms spent in bootstraps)
+2018-06-28 15:28:59 INFO  StandaloneSchedulerBackend:54 - Connected to Spark cluster with app ID app-20180628152859-0035
+2018-06-28 15:28:59 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20180628152859-0035/0 on worker-20180628145923-10.0.3.1-41167 (10.0.3.1:41167) with 8 core(s)
+2018-06-28 15:28:59 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20180628152859-0035/0 on hostPort 10.0.3.1:41167 with 8 core(s), 4.0 GB RAM
+2018-06-28 15:28:59 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20180628152859-0035/1 on worker-20180628145924-10.0.5.2-41712 (10.0.5.2:41712) with 8 core(s)
+2018-06-28 15:28:59 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20180628152859-0035/1 on hostPort 10.0.5.2:41712 with 8 core(s), 4.0 GB RAM
+2018-06-28 15:28:59 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20180628152859-0035/2 on worker-20180628145923-10.0.4.1-44588 (10.0.4.1:44588) with 8 core(s)
+2018-06-28 15:28:59 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20180628152859-0035/2 on hostPort 10.0.4.1:44588 with 8 core(s), 4.0 GB RAM
+2018-06-28 15:28:59 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20180628152859-0035/3 on worker-20180628145922-10.0.2.2-37805 (10.0.2.2:37805) with 8 core(s)
+2018-06-28 15:28:59 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20180628152859-0035/3 on hostPort 10.0.2.2:37805 with 8 core(s), 4.0 GB RAM
+2018-06-28 15:28:59 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20180628152859-0035/4 on worker-20180628145921-10.0.1.2-46089 (10.0.1.2:46089) with 8 core(s)
+2018-06-28 15:28:59 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20180628152859-0035/4 on hostPort 10.0.1.2:46089 with 8 core(s), 4.0 GB RAM
+2018-06-28 15:28:59 INFO  Utils:54 - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 35318.
+2018-06-28 15:28:59 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20180628152859-0035/5 on worker-20180628145921-10.0.1.1-42255 (10.0.1.1:42255) with 8 core(s)
+2018-06-28 15:28:59 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20180628152859-0035/5 on hostPort 10.0.1.1:42255 with 8 core(s), 4.0 GB RAM
+2018-06-28 15:28:59 INFO  NettyBlockTransferService:54 - Server created on dc1master-lan1:35318
+2018-06-28 15:28:59 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20180628152859-0035/6 on worker-20180628145923-10.0.4.2-42825 (10.0.4.2:42825) with 8 core(s)
+2018-06-28 15:28:59 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20180628152859-0035/6 on hostPort 10.0.4.2:42825 with 8 core(s), 4.0 GB RAM
+2018-06-28 15:28:59 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20180628152859-0035/7 on worker-20180628145924-10.0.5.1-38406 (10.0.5.1:38406) with 8 core(s)
+2018-06-28 15:28:59 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20180628152859-0035/7 on hostPort 10.0.5.1:38406 with 8 core(s), 4.0 GB RAM
+2018-06-28 15:28:59 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20180628152859-0035/8 on worker-20180628145923-10.0.3.2-40827 (10.0.3.2:40827) with 8 core(s)
+2018-06-28 15:28:59 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20180628152859-0035/8 on hostPort 10.0.3.2:40827 with 8 core(s), 4.0 GB RAM
+2018-06-28 15:28:59 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20180628152859-0035/9 on worker-20180628145922-10.0.2.1-44777 (10.0.2.1:44777) with 8 core(s)
+2018-06-28 15:28:59 INFO  BlockManager:54 - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2018-06-28 15:28:59 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20180628152859-0035/9 on hostPort 10.0.2.1:44777 with 8 core(s), 4.0 GB RAM
+2018-06-28 15:28:59 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20180628152859-0035/4 is now RUNNING
+2018-06-28 15:28:59 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20180628152859-0035/5 is now RUNNING
+2018-06-28 15:28:59 INFO  BlockManagerMaster:54 - Registering BlockManager BlockManagerId(driver, dc1master-lan1, 35318, None)
+2018-06-28 15:28:59 INFO  BlockManagerMasterEndpoint:54 - Registering block manager dc1master-lan1:35318 with 2004.6 MB RAM, BlockManagerId(driver, dc1master-lan1, 35318, None)
+2018-06-28 15:28:59 INFO  BlockManagerMaster:54 - Registered BlockManager BlockManagerId(driver, dc1master-lan1, 35318, None)
+2018-06-28 15:28:59 INFO  BlockManager:54 - external shuffle service port = 7337
+2018-06-28 15:28:59 INFO  BlockManager:54 - Initialized BlockManager: BlockManagerId(driver, dc1master-lan1, 35318, None)
+2018-06-28 15:28:59 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@76828577{/metrics/json,null,AVAILABLE,@Spark}
+2018-06-28 15:29:00 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20180628152859-0035/3 is now RUNNING
+2018-06-28 15:29:00 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20180628152859-0035/9 is now RUNNING
+2018-06-28 15:29:00 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20180628152859-0035/0 is now RUNNING
+2018-06-28 15:29:00 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20180628152859-0035/8 is now RUNNING
+2018-06-28 15:29:00 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20180628152859-0035/2 is now RUNNING
+2018-06-28 15:29:00 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20180628152859-0035/6 is now RUNNING
+2018-06-28 15:29:00 INFO  EventLoggingListener:54 - Logging events to hdfs://dc1master:9000/user/jimmyyou/spark-logs/app-20180628152859-0035
+2018-06-28 15:29:00 INFO  StandaloneSchedulerBackend:54 - SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+2018-06-28 15:29:00 INFO  SharedState:54 - loading hive config file: file:/users/jimmyyou/spark-2.3.1-bin-hadoop2.7/conf/hive-site.xml
+2018-06-28 15:29:00 INFO  SharedState:54 - spark.sql.warehouse.dir is not set, but hive.metastore.warehouse.dir is set. Setting spark.sql.warehouse.dir to the value of hive.metastore.warehouse.dir ('/user/hive/warehouse').
+2018-06-28 15:29:00 INFO  SharedState:54 - Warehouse path is '/user/hive/warehouse'.
+2018-06-28 15:29:00 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5834198f{/SQL,null,AVAILABLE,@Spark}
+2018-06-28 15:29:00 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@4eb63dc8{/SQL/json,null,AVAILABLE,@Spark}
+2018-06-28 15:29:00 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@3e753289{/SQL/execution,null,AVAILABLE,@Spark}
+2018-06-28 15:29:00 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1573e8a5{/SQL/execution/json,null,AVAILABLE,@Spark}
+2018-06-28 15:29:00 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5d221b20{/static/sql,null,AVAILABLE,@Spark}
+2018-06-28 15:29:00 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20180628152859-0035/1 is now RUNNING
+2018-06-28 15:29:00 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20180628152859-0035/7 is now RUNNING
+2018-06-28 15:29:00 INFO  HiveUtils:54 - Initializing HiveMetastoreConnection version 1.2.1 using Spark classes.
+2018-06-28 15:29:00 INFO  HiveClientImpl:54 - Warehouse location for Hive client (version 1.2.2) is /user/hive/warehouse
+2018-06-28 15:29:00 INFO  HiveMetaStore:746 - 0: get_database: default
+2018-06-28 15:29:00 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_database: default	
+2018-06-28 15:29:00 INFO  StateStoreCoordinatorRef:54 - Registered StateStoreCoordinator endpoint
+2018-06-28 15:29:00 INFO  HiveMetaStore:746 - 0: get_database: global_temp
+2018-06-28 15:29:00 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_database: global_temp	
+2018-06-28 15:29:00 WARN  ObjectStore:568 - Failed to get database global_temp, returning NoSuchObjectException
+2018-06-28 15:29:00 INFO  HiveMetaStore:746 - 0: get_database: tpch_text_20
+2018-06-28 15:29:00 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_database: tpch_text_20	
+2018-06-28 15:29:01 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.1.1:41550) with ID 5
+2018-06-28 15:29:01 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.1.2:48172) with ID 4
+2018-06-28 15:29:01 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.0.1.1:37952 with 2004.6 MB RAM, BlockManagerId(5, 10.0.1.1, 37952, None)
+2018-06-28 15:29:01 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.0.1.2:33435 with 2004.6 MB RAM, BlockManagerId(4, 10.0.1.2, 33435, None)
+2018-06-28 15:29:01 INFO  HiveMetaStore:746 - 0: get_table : db=tpch_text_20 tbl=q22_customer_tmp_cached
+2018-06-28 15:29:01 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_table : db=tpch_text_20 tbl=q22_customer_tmp_cached	
+2018-06-28 15:29:01 INFO  HiveMetaStore:746 - 0: get_table : db=tpch_text_20 tbl=q22_customer_tmp_cached
+2018-06-28 15:29:01 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_table : db=tpch_text_20 tbl=q22_customer_tmp_cached	
+2018-06-28 15:29:01 INFO  AbstractConnector:318 - Stopped Spark@e35164e{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2018-06-28 15:29:01 INFO  SparkUI:54 - Stopped Spark web UI at http://dc1master-lan1:4040
+2018-06-28 15:29:02 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.2.1:59194) with ID 9
+2018-06-28 15:29:02 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.2.2:40752) with ID 3
+2018-06-28 15:29:02 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.0.2.1:39421 with 2004.6 MB RAM, BlockManagerId(9, 10.0.2.1, 39421, None)
+2018-06-28 15:29:02 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.0.2.2:40408 with 2004.6 MB RAM, BlockManagerId(3, 10.0.2.2, 40408, None)
+2018-06-28 15:29:02 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.3.1:48006) with ID 0
+2018-06-28 15:29:02 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.3.2:37364) with ID 8
+2018-06-28 15:29:03 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.4.1:41138) with ID 2
+2018-06-28 15:29:03 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.4.2:42720) with ID 6
+2018-06-28 15:29:03 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.0.3.1:35583 with 2004.6 MB RAM, BlockManagerId(0, 10.0.3.1, 35583, None)
+2018-06-28 15:29:03 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.0.3.2:46673 with 2004.6 MB RAM, BlockManagerId(8, 10.0.3.2, 46673, None)
+2018-06-28 15:29:03 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.0.4.1:35362 with 2004.6 MB RAM, BlockManagerId(2, 10.0.4.1, 35362, None)
+2018-06-28 15:29:03 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.0.4.2:43456 with 2004.6 MB RAM, BlockManagerId(6, 10.0.4.2, 43456, None)
+2018-06-28 15:29:04 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.5.2:53932) with ID 1
+2018-06-28 15:29:04 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.5.1:54844) with ID 7
+2018-06-28 15:29:04 INFO  StandaloneSchedulerBackend:54 - Shutting down all executors
+2018-06-28 15:29:04 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asking each executor to shut down
+2018-06-28 15:29:04 INFO  MapOutputTrackerMasterEndpoint:54 - MapOutputTrackerMasterEndpoint stopped!
+2018-06-28 15:29:04 INFO  MemoryStore:54 - MemoryStore cleared
+2018-06-28 15:29:04 INFO  BlockManager:54 - BlockManager stopped
+2018-06-28 15:29:04 INFO  BlockManagerMaster:54 - BlockManagerMaster stopped
+2018-06-28 15:29:04 INFO  OutputCommitCoordinator$OutputCommitCoordinatorEndpoint:54 - OutputCommitCoordinator stopped!
+2018-06-28 15:29:04 INFO  SparkContext:54 - Successfully stopped SparkContext
+2018-06-28 15:29:04 INFO  ShutdownHookManager:54 - Shutdown hook called
+2018-06-28 15:29:04 INFO  ShutdownHookManager:54 - Deleting directory /tmp/spark-9e41cc29-62fc-4976-b9b2-8657e66192f0
+2018-06-28 15:29:04 INFO  ShutdownHookManager:54 - Deleting directory /tmp/spark-bdeb7596-fe2b-4e35-9597-7fa9ffee00a6

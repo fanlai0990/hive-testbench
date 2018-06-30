@@ -1,583 +1,653 @@
-2018-06-28 02:51:45 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-2018-06-28 02:51:45 INFO  HiveMetaStore:589 - 0: Opening raw store with implemenation class:org.apache.hadoop.hive.metastore.ObjectStore
-2018-06-28 02:51:45 INFO  ObjectStore:289 - ObjectStore, initialize called
-2018-06-28 02:51:45 INFO  Persistence:77 - Property hive.metastore.integral.jdo.pushdown unknown - will be ignored
-2018-06-28 02:51:45 INFO  Persistence:77 - Property datanucleus.cache.level2 unknown - will be ignored
-2018-06-28 02:51:47 INFO  ObjectStore:370 - Setting MetaStore object pin classes with hive.metastore.cache.pinobjtypes="Table,StorageDescriptor,SerDeInfo,Partition,Database,Type,FieldSchema,Order"
-2018-06-28 02:51:47 INFO  Datastore:77 - The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
-2018-06-28 02:51:47 INFO  Datastore:77 - The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
-2018-06-28 02:51:47 INFO  Datastore:77 - The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
-2018-06-28 02:51:47 INFO  Datastore:77 - The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
-2018-06-28 02:51:48 INFO  Query:77 - Reading in results for query "org.datanucleus.store.rdbms.query.SQLQuery@0" since the connection used is closing
-2018-06-28 02:51:48 INFO  MetaStoreDirectSql:139 - Using direct SQL, underlying DB is DERBY
-2018-06-28 02:51:48 INFO  ObjectStore:272 - Initialized ObjectStore
-2018-06-28 02:51:48 INFO  HiveMetaStore:663 - Added admin role in metastore
-2018-06-28 02:51:48 INFO  HiveMetaStore:672 - Added public role in metastore
-2018-06-28 02:51:48 INFO  HiveMetaStore:712 - No user is added in admin role, since config is empty
-2018-06-28 02:51:48 INFO  HiveMetaStore:746 - 0: get_all_databases
-2018-06-28 02:51:48 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_all_databases	
-2018-06-28 02:51:48 INFO  HiveMetaStore:746 - 0: get_functions: db=default pat=*
-2018-06-28 02:51:48 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_functions: db=default pat=*	
-2018-06-28 02:51:48 INFO  Datastore:77 - The class "org.apache.hadoop.hive.metastore.model.MResourceUri" is tagged as "embedded-only" so does not have its own datastore table.
-2018-06-28 02:51:48 INFO  HiveMetaStore:746 - 0: get_functions: db=tpcds_text_10 pat=*
-2018-06-28 02:51:48 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_functions: db=tpcds_text_10 pat=*	
-2018-06-28 02:51:48 INFO  SessionState:641 - Created local directory: /tmp/fdc5ebb0-1d74-4adb-88bf-e9bec010aed5_resources
-2018-06-28 02:51:48 INFO  SessionState:641 - Created HDFS directory: /tmp/hive/jimmyyou/fdc5ebb0-1d74-4adb-88bf-e9bec010aed5
-2018-06-28 02:51:48 INFO  SessionState:641 - Created local directory: /tmp/jimmyyou/fdc5ebb0-1d74-4adb-88bf-e9bec010aed5
-2018-06-28 02:51:48 INFO  SessionState:641 - Created HDFS directory: /tmp/hive/jimmyyou/fdc5ebb0-1d74-4adb-88bf-e9bec010aed5/_tmp_space.db
-2018-06-28 02:51:48 INFO  SparkContext:54 - Running Spark version 2.3.1
-2018-06-28 02:51:48 INFO  SparkContext:54 - Submitted application: SparkSQL::10.0.1.253
-2018-06-28 02:51:48 INFO  SecurityManager:54 - Changing view acls to: jimmyyou
-2018-06-28 02:51:48 INFO  SecurityManager:54 - Changing modify acls to: jimmyyou
-2018-06-28 02:51:48 INFO  SecurityManager:54 - Changing view acls groups to: 
-2018-06-28 02:51:48 INFO  SecurityManager:54 - Changing modify acls groups to: 
-2018-06-28 02:51:48 INFO  SecurityManager:54 - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(jimmyyou); groups with view permissions: Set(); users  with modify permissions: Set(jimmyyou); groups with modify permissions: Set()
-2018-06-28 02:51:48 INFO  Utils:54 - Successfully started service 'sparkDriver' on port 38284.
-2018-06-28 02:51:48 INFO  SparkEnv:54 - Registering MapOutputTracker
-2018-06-28 02:51:48 INFO  SparkEnv:54 - Registering BlockManagerMaster
-2018-06-28 02:51:48 INFO  BlockManagerMasterEndpoint:54 - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
-2018-06-28 02:51:48 INFO  BlockManagerMasterEndpoint:54 - BlockManagerMasterEndpoint up
-2018-06-28 02:51:48 INFO  DiskBlockManager:54 - Created local directory at /tmp/blockmgr-cf22683c-cca9-47d6-b499-135007af4247
-2018-06-28 02:51:49 INFO  MemoryStore:54 - MemoryStore started with capacity 2004.6 MB
-2018-06-28 02:51:49 INFO  SparkEnv:54 - Registering OutputCommitCoordinator
-2018-06-28 02:51:49 INFO  log:192 - Logging initialized @4549ms
-2018-06-28 02:51:49 INFO  Server:346 - jetty-9.3.z-SNAPSHOT
-2018-06-28 02:51:49 INFO  Server:414 - Started @4604ms
-2018-06-28 02:51:49 INFO  AbstractConnector:278 - Started ServerConnector@6e685e6c{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
-2018-06-28 02:51:49 INFO  Utils:54 - Successfully started service 'SparkUI' on port 4040.
-2018-06-28 02:51:49 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@414b2df5{/jobs,null,AVAILABLE,@Spark}
-2018-06-28 02:51:49 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@2aa5bd48{/jobs/json,null,AVAILABLE,@Spark}
-2018-06-28 02:51:49 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@7cfb8e98{/jobs/job,null,AVAILABLE,@Spark}
-2018-06-28 02:51:49 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@19002b34{/jobs/job/json,null,AVAILABLE,@Spark}
-2018-06-28 02:51:49 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1ec88aa1{/stages,null,AVAILABLE,@Spark}
-2018-06-28 02:51:49 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@3e6748ae{/stages/json,null,AVAILABLE,@Spark}
-2018-06-28 02:51:49 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@28f154cc{/stages/stage,null,AVAILABLE,@Spark}
-2018-06-28 02:51:49 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6ed18d80{/stages/stage/json,null,AVAILABLE,@Spark}
-2018-06-28 02:51:49 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@4c24f3a2{/stages/pool,null,AVAILABLE,@Spark}
-2018-06-28 02:51:49 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@783b3aa0{/stages/pool/json,null,AVAILABLE,@Spark}
-2018-06-28 02:51:49 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@2ec85a25{/storage,null,AVAILABLE,@Spark}
-2018-06-28 02:51:49 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@4c176ff1{/storage/json,null,AVAILABLE,@Spark}
-2018-06-28 02:51:49 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@27c53c32{/storage/rdd,null,AVAILABLE,@Spark}
-2018-06-28 02:51:49 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@68aec50{/storage/rdd/json,null,AVAILABLE,@Spark}
-2018-06-28 02:51:49 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6aff97d6{/environment,null,AVAILABLE,@Spark}
-2018-06-28 02:51:49 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1d60059f{/environment/json,null,AVAILABLE,@Spark}
-2018-06-28 02:51:49 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@134a8ead{/executors,null,AVAILABLE,@Spark}
-2018-06-28 02:51:49 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@427308f8{/executors/json,null,AVAILABLE,@Spark}
-2018-06-28 02:51:49 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@54247647{/executors/threadDump,null,AVAILABLE,@Spark}
-2018-06-28 02:51:49 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@4975dda1{/executors/threadDump/json,null,AVAILABLE,@Spark}
-2018-06-28 02:51:49 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@e0d1dc4{/static,null,AVAILABLE,@Spark}
-2018-06-28 02:51:49 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6bce4140{/,null,AVAILABLE,@Spark}
-2018-06-28 02:51:49 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@25f0c5e7{/api,null,AVAILABLE,@Spark}
-2018-06-28 02:51:49 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@282c4da0{/jobs/job/kill,null,AVAILABLE,@Spark}
-2018-06-28 02:51:49 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@65f3e805{/stages/stage/kill,null,AVAILABLE,@Spark}
-2018-06-28 02:51:49 INFO  SparkUI:54 - Bound SparkUI to 0.0.0.0, and started at http://dc1master-lan1:4040
-2018-06-28 02:51:49 INFO  StandaloneAppClient$ClientEndpoint:54 - Connecting to master spark://dc1master-lan1:7077...
-2018-06-28 02:51:49 INFO  TransportClientFactory:267 - Successfully created connection to dc1master-lan1/10.0.1.253:7077 after 20 ms (0 ms spent in bootstraps)
-2018-06-28 02:51:49 INFO  StandaloneSchedulerBackend:54 - Connected to Spark cluster with app ID app-20180628025149-0161
-2018-06-28 02:51:49 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20180628025149-0161/0 on worker-20180627230351-10.0.4.2-42804 (10.0.4.2:42804) with 8 core(s)
-2018-06-28 02:51:49 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20180628025149-0161/0 on hostPort 10.0.4.2:42804 with 8 core(s), 4.0 GB RAM
-2018-06-28 02:51:49 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20180628025149-0161/1 on worker-20180627230351-10.0.4.1-36248 (10.0.4.1:36248) with 8 core(s)
-2018-06-28 02:51:49 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20180628025149-0161/1 on hostPort 10.0.4.1:36248 with 8 core(s), 4.0 GB RAM
-2018-06-28 02:51:49 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20180628025149-0161/2 on worker-20180627230351-10.0.3.1-35641 (10.0.3.1:35641) with 8 core(s)
-2018-06-28 02:51:49 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20180628025149-0161/2 on hostPort 10.0.3.1:35641 with 8 core(s), 4.0 GB RAM
-2018-06-28 02:51:49 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20180628025149-0161/3 on worker-20180627230352-10.0.5.2-35644 (10.0.5.2:35644) with 8 core(s)
-2018-06-28 02:51:49 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20180628025149-0161/3 on hostPort 10.0.5.2:35644 with 8 core(s), 4.0 GB RAM
-2018-06-28 02:51:49 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20180628025149-0161/4 on worker-20180627230351-10.0.2.2-40231 (10.0.2.2:40231) with 8 core(s)
-2018-06-28 02:51:49 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20180628025149-0161/4 on hostPort 10.0.2.2:40231 with 8 core(s), 4.0 GB RAM
-2018-06-28 02:51:49 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20180628025149-0161/5 on worker-20180627230349-10.0.1.1-35767 (10.0.1.1:35767) with 8 core(s)
-2018-06-28 02:51:49 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20180628025149-0161/5 on hostPort 10.0.1.1:35767 with 8 core(s), 4.0 GB RAM
-2018-06-28 02:51:49 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20180628025149-0161/6 on worker-20180627230349-10.0.1.2-36007 (10.0.1.2:36007) with 8 core(s)
-2018-06-28 02:51:49 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20180628025149-0161/6 on hostPort 10.0.1.2:36007 with 8 core(s), 4.0 GB RAM
-2018-06-28 02:51:49 INFO  Utils:54 - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 33406.
-2018-06-28 02:51:49 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20180628025149-0161/7 on worker-20180627230352-10.0.5.1-44187 (10.0.5.1:44187) with 8 core(s)
-2018-06-28 02:51:49 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20180628025149-0161/7 on hostPort 10.0.5.1:44187 with 8 core(s), 4.0 GB RAM
-2018-06-28 02:51:49 INFO  NettyBlockTransferService:54 - Server created on dc1master-lan1:33406
-2018-06-28 02:51:49 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20180628025149-0161/8 on worker-20180627230351-10.0.3.2-46862 (10.0.3.2:46862) with 8 core(s)
-2018-06-28 02:51:49 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20180628025149-0161/8 on hostPort 10.0.3.2:46862 with 8 core(s), 4.0 GB RAM
-2018-06-28 02:51:49 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20180628025149-0161/9 on worker-20180627230351-10.0.2.1-35513 (10.0.2.1:35513) with 8 core(s)
-2018-06-28 02:51:49 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20180628025149-0161/9 on hostPort 10.0.2.1:35513 with 8 core(s), 4.0 GB RAM
-2018-06-28 02:51:49 INFO  BlockManager:54 - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
-2018-06-28 02:51:49 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20180628025149-0161/6 is now RUNNING
-2018-06-28 02:51:49 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20180628025149-0161/5 is now RUNNING
-2018-06-28 02:51:49 INFO  BlockManagerMaster:54 - Registering BlockManager BlockManagerId(driver, dc1master-lan1, 33406, None)
-2018-06-28 02:51:49 INFO  BlockManagerMasterEndpoint:54 - Registering block manager dc1master-lan1:33406 with 2004.6 MB RAM, BlockManagerId(driver, dc1master-lan1, 33406, None)
-2018-06-28 02:51:49 INFO  BlockManagerMaster:54 - Registered BlockManager BlockManagerId(driver, dc1master-lan1, 33406, None)
-2018-06-28 02:51:49 INFO  BlockManager:54 - external shuffle service port = 7337
-2018-06-28 02:51:49 INFO  BlockManager:54 - Initialized BlockManager: BlockManagerId(driver, dc1master-lan1, 33406, None)
-2018-06-28 02:51:49 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@14ed7ddf{/metrics/json,null,AVAILABLE,@Spark}
-2018-06-28 02:51:49 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20180628025149-0161/4 is now RUNNING
-2018-06-28 02:51:49 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20180628025149-0161/9 is now RUNNING
-2018-06-28 02:51:49 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20180628025149-0161/2 is now RUNNING
-2018-06-28 02:51:49 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20180628025149-0161/8 is now RUNNING
-2018-06-28 02:51:49 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20180628025149-0161/0 is now RUNNING
-2018-06-28 02:51:49 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20180628025149-0161/1 is now RUNNING
-2018-06-28 02:51:49 INFO  EventLoggingListener:54 - Logging events to hdfs://dc1master:9000/user/jimmyyou/spark-logs/app-20180628025149-0161
-2018-06-28 02:51:49 INFO  StandaloneSchedulerBackend:54 - SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
-2018-06-28 02:51:49 INFO  SharedState:54 - loading hive config file: file:/users/jimmyyou/spark-2.3.1-bin-hadoop2.7/conf/hive-site.xml
-2018-06-28 02:51:49 INFO  SharedState:54 - spark.sql.warehouse.dir is not set, but hive.metastore.warehouse.dir is set. Setting spark.sql.warehouse.dir to the value of hive.metastore.warehouse.dir ('/user/hive/warehouse').
-2018-06-28 02:51:49 INFO  SharedState:54 - Warehouse path is '/user/hive/warehouse'.
-2018-06-28 02:51:49 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6b126187{/SQL,null,AVAILABLE,@Spark}
-2018-06-28 02:51:49 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@2b6262bc{/SQL/json,null,AVAILABLE,@Spark}
-2018-06-28 02:51:49 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@3e28dc96{/SQL/execution,null,AVAILABLE,@Spark}
-2018-06-28 02:51:49 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@44eb2452{/SQL/execution/json,null,AVAILABLE,@Spark}
-2018-06-28 02:51:49 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@7adae08e{/static/sql,null,AVAILABLE,@Spark}
-2018-06-28 02:51:49 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20180628025149-0161/3 is now RUNNING
-2018-06-28 02:51:49 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20180628025149-0161/7 is now RUNNING
-2018-06-28 02:51:49 INFO  HiveUtils:54 - Initializing HiveMetastoreConnection version 1.2.1 using Spark classes.
-2018-06-28 02:51:49 INFO  HiveClientImpl:54 - Warehouse location for Hive client (version 1.2.2) is /user/hive/warehouse
-2018-06-28 02:51:49 INFO  HiveMetaStore:746 - 0: get_database: default
-2018-06-28 02:51:49 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_database: default	
-2018-06-28 02:51:50 INFO  StateStoreCoordinatorRef:54 - Registered StateStoreCoordinator endpoint
-2018-06-28 02:51:50 INFO  HiveMetaStore:746 - 0: get_database: global_temp
-2018-06-28 02:51:50 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_database: global_temp	
-2018-06-28 02:51:50 WARN  ObjectStore:568 - Failed to get database global_temp, returning NoSuchObjectException
-2018-06-28 02:51:50 INFO  HiveMetaStore:746 - 0: get_database: tpcds_text_10
-2018-06-28 02:51:50 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_database: tpcds_text_10	
-2018-06-28 02:51:50 INFO  HiveMetaStore:746 - 0: get_database: tpcds_text_10
-2018-06-28 02:51:50 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_database: tpcds_text_10	
-2018-06-28 02:51:50 INFO  HiveMetaStore:746 - 0: get_table : db=tpcds_text_10 tbl=date_dim
-2018-06-28 02:51:50 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_table : db=tpcds_text_10 tbl=date_dim	
-2018-06-28 02:51:50 INFO  HiveMetaStore:746 - 0: get_table : db=tpcds_text_10 tbl=store_sales
-2018-06-28 02:51:50 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_table : db=tpcds_text_10 tbl=store_sales	
-2018-06-28 02:51:50 INFO  HiveMetaStore:746 - 0: get_table : db=tpcds_text_10 tbl=item
-2018-06-28 02:51:50 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_table : db=tpcds_text_10 tbl=item	
-2018-06-28 02:51:50 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.1.2:39844) with ID 6
-2018-06-28 02:51:50 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.1.1:57632) with ID 5
-2018-06-28 02:51:50 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.0.1.2:42227 with 2004.6 MB RAM, BlockManagerId(6, 10.0.1.2, 42227, None)
-2018-06-28 02:51:50 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.0.1.1:45356 with 2004.6 MB RAM, BlockManagerId(5, 10.0.1.1, 45356, None)
-2018-06-28 02:51:51 WARN  Utils:66 - Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.debug.maxToStringFields' in SparkEnv.conf.
-2018-06-28 02:51:52 INFO  ContextCleaner:54 - Cleaned accumulator 0
-2018-06-28 02:51:52 INFO  CodeGenerator:54 - Code generated in 275.655412 ms
-2018-06-28 02:51:52 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.2.1:43026) with ID 9
-2018-06-28 02:51:52 INFO  CodeGenerator:54 - Code generated in 18.929304 ms
-2018-06-28 02:51:52 INFO  CodeGenerator:54 - Code generated in 20.967492 ms
-2018-06-28 02:51:52 INFO  CodeGenerator:54 - Code generated in 29.352165 ms
-2018-06-28 02:51:52 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.2.2:41448) with ID 4
-2018-06-28 02:51:52 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.0.2.1:38877 with 2004.6 MB RAM, BlockManagerId(9, 10.0.2.1, 38877, None)
-2018-06-28 02:51:52 INFO  MemoryStore:54 - Block broadcast_1 stored as values in memory (estimated size 291.2 KB, free 2004.0 MB)
-2018-06-28 02:51:52 INFO  MemoryStore:54 - Block broadcast_0 stored as values in memory (estimated size 291.3 KB, free 2004.0 MB)
-2018-06-28 02:51:52 INFO  MemoryStore:54 - Block broadcast_0_piece0 stored as bytes in memory (estimated size 25.1 KB, free 2004.0 MB)
-2018-06-28 02:51:52 INFO  MemoryStore:54 - Block broadcast_1_piece0 stored as bytes in memory (estimated size 25.1 KB, free 2004.0 MB)
-2018-06-28 02:51:52 INFO  BlockManagerInfo:54 - Added broadcast_1_piece0 in memory on dc1master-lan1:33406 (size: 25.1 KB, free: 2004.6 MB)
-2018-06-28 02:51:52 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on dc1master-lan1:33406 (size: 25.1 KB, free: 2004.6 MB)
-2018-06-28 02:51:52 INFO  SparkContext:54 - Created broadcast 1 from 
-2018-06-28 02:51:52 INFO  SparkContext:54 - Created broadcast 0 from 
-2018-06-28 02:51:52 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.0.2.2:35814 with 2004.6 MB RAM, BlockManagerId(4, 10.0.2.2, 35814, None)
-2018-06-28 02:51:52 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.3.2:59334) with ID 8
-2018-06-28 02:51:52 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.3.1:32894) with ID 2
-2018-06-28 02:51:52 INFO  FileInputFormat:249 - Total input paths to process : 1
-2018-06-28 02:51:52 INFO  FileInputFormat:249 - Total input paths to process : 1
-2018-06-28 02:51:52 INFO  SparkContext:54 - Starting job: run at ThreadPoolExecutor.java:1142
-2018-06-28 02:51:52 INFO  SparkContext:54 - Starting job: run at ThreadPoolExecutor.java:1142
-2018-06-28 02:51:52 INFO  DAGScheduler:54 - Got job 1 (run at ThreadPoolExecutor.java:1142) with 2 output partitions
-2018-06-28 02:51:52 INFO  DAGScheduler:54 - Final stage: ResultStage 0 (run at ThreadPoolExecutor.java:1142)
-2018-06-28 02:51:52 INFO  DAGScheduler:54 - Parents of final stage: List()
-2018-06-28 02:51:52 INFO  DAGScheduler:54 - Missing parents: List()
-2018-06-28 02:51:52 INFO  DAGScheduler:54 - Submitting ResultStage 0 (MapPartitionsRDD[10] at run at ThreadPoolExecutor.java:1142), which has no missing parents
-2018-06-28 02:51:52 INFO  MemoryStore:54 - Block broadcast_2 stored as values in memory (estimated size 13.1 KB, free 2004.0 MB)
-2018-06-28 02:51:52 INFO  MemoryStore:54 - Block broadcast_2_piece0 stored as bytes in memory (estimated size 6.3 KB, free 2004.0 MB)
-2018-06-28 02:51:52 INFO  BlockManagerInfo:54 - Added broadcast_2_piece0 in memory on dc1master-lan1:33406 (size: 6.3 KB, free: 2004.5 MB)
-2018-06-28 02:51:52 INFO  SparkContext:54 - Created broadcast 2 from broadcast at DAGScheduler.scala:1039
-2018-06-28 02:51:52 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 0 (MapPartitionsRDD[10] at run at ThreadPoolExecutor.java:1142) (first 15 tasks are for partitions Vector(0, 1))
-2018-06-28 02:51:52 INFO  TaskSchedulerImpl:54 - Adding task set 0.0 with 2 tasks
-2018-06-28 02:51:52 INFO  DAGScheduler:54 - Got job 0 (run at ThreadPoolExecutor.java:1142) with 2 output partitions
-2018-06-28 02:51:52 INFO  DAGScheduler:54 - Final stage: ResultStage 1 (run at ThreadPoolExecutor.java:1142)
-2018-06-28 02:51:52 INFO  DAGScheduler:54 - Parents of final stage: List()
-2018-06-28 02:51:52 INFO  DAGScheduler:54 - Missing parents: List()
-2018-06-28 02:51:52 INFO  DAGScheduler:54 - Submitting ResultStage 1 (MapPartitionsRDD[11] at run at ThreadPoolExecutor.java:1142), which has no missing parents
-2018-06-28 02:51:52 INFO  MemoryStore:54 - Block broadcast_3 stored as values in memory (estimated size 12.7 KB, free 2004.0 MB)
-2018-06-28 02:51:52 INFO  MemoryStore:54 - Block broadcast_3_piece0 stored as bytes in memory (estimated size 6.1 KB, free 2003.9 MB)
-2018-06-28 02:51:52 INFO  BlockManagerInfo:54 - Added broadcast_3_piece0 in memory on dc1master-lan1:33406 (size: 6.1 KB, free: 2004.5 MB)
-2018-06-28 02:51:52 INFO  SparkContext:54 - Created broadcast 3 from broadcast at DAGScheduler.scala:1039
-2018-06-28 02:51:52 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 1 (MapPartitionsRDD[11] at run at ThreadPoolExecutor.java:1142) (first 15 tasks are for partitions Vector(0, 1))
-2018-06-28 02:51:52 INFO  TaskSchedulerImpl:54 - Adding task set 1.0 with 2 tasks
-2018-06-28 02:51:52 INFO  TaskSetManager:54 - Starting task 0.0 in stage 0.0 (TID 0, 10.0.1.2, executor 6, partition 0, ANY, 7912 bytes)
-2018-06-28 02:51:52 INFO  TaskSetManager:54 - Starting task 1.0 in stage 0.0 (TID 1, 10.0.2.1, executor 9, partition 1, ANY, 7912 bytes)
-2018-06-28 02:51:52 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.4.2:34570) with ID 0
-2018-06-28 02:51:52 INFO  TaskSetManager:54 - Starting task 0.0 in stage 1.0 (TID 2, 10.0.2.2, executor 4, partition 0, ANY, 7916 bytes)
-2018-06-28 02:51:52 INFO  TaskSetManager:54 - Starting task 1.0 in stage 1.0 (TID 3, 10.0.1.1, executor 5, partition 1, ANY, 7916 bytes)
-2018-06-28 02:51:52 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.4.1:54174) with ID 1
-2018-06-28 02:51:52 INFO  BlockManagerInfo:54 - Added broadcast_3_piece0 in memory on 10.0.1.1:45356 (size: 6.1 KB, free: 2004.6 MB)
-2018-06-28 02:51:52 INFO  BlockManagerInfo:54 - Added broadcast_2_piece0 in memory on 10.0.1.2:42227 (size: 6.3 KB, free: 2004.6 MB)
-2018-06-28 02:51:52 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.0.3.2:37113 with 2004.6 MB RAM, BlockManagerId(8, 10.0.3.2, 37113, None)
-2018-06-28 02:51:52 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.0.3.1:38219 with 2004.6 MB RAM, BlockManagerId(2, 10.0.3.1, 38219, None)
-2018-06-28 02:51:52 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on 10.0.1.1:45356 (size: 25.1 KB, free: 2004.6 MB)
-2018-06-28 02:51:52 INFO  BlockManagerInfo:54 - Added broadcast_1_piece0 in memory on 10.0.1.2:42227 (size: 25.1 KB, free: 2004.6 MB)
-2018-06-28 02:51:52 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.0.4.2:39234 with 2004.6 MB RAM, BlockManagerId(0, 10.0.4.2, 39234, None)
-2018-06-28 02:51:52 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.0.4.1:42863 with 2004.6 MB RAM, BlockManagerId(1, 10.0.4.1, 42863, None)
-2018-06-28 02:51:53 INFO  BlockManagerInfo:54 - Added broadcast_3_piece0 in memory on 10.0.2.2:35814 (size: 6.1 KB, free: 2004.6 MB)
-2018-06-28 02:51:53 INFO  BlockManagerInfo:54 - Added broadcast_2_piece0 in memory on 10.0.2.1:38877 (size: 6.3 KB, free: 2004.6 MB)
-2018-06-28 02:51:53 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.5.1:34642) with ID 7
-2018-06-28 02:51:53 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.5.2:49510) with ID 3
-2018-06-28 02:51:54 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.0.5.1:44760 with 2004.6 MB RAM, BlockManagerId(7, 10.0.5.1, 44760, None)
-2018-06-28 02:51:54 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.0.5.2:33840 with 2004.6 MB RAM, BlockManagerId(3, 10.0.5.2, 33840, None)
-2018-06-28 02:51:54 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on 10.0.2.2:35814 (size: 25.1 KB, free: 2004.6 MB)
-2018-06-28 02:51:54 INFO  BlockManagerInfo:54 - Added broadcast_1_piece0 in memory on 10.0.2.1:38877 (size: 25.1 KB, free: 2004.6 MB)
-2018-06-28 02:51:55 INFO  TaskSetManager:54 - Finished task 1.0 in stage 1.0 (TID 3) in 3287 ms on 10.0.1.1 (executor 5) (1/2)
-2018-06-28 02:51:56 INFO  TaskSetManager:54 - Finished task 0.0 in stage 0.0 (TID 0) in 4285 ms on 10.0.1.2 (executor 6) (1/2)
-2018-06-28 02:51:56 INFO  TaskSetManager:54 - Finished task 0.0 in stage 1.0 (TID 2) in 4300 ms on 10.0.2.2 (executor 4) (2/2)
-2018-06-28 02:51:56 INFO  TaskSchedulerImpl:54 - Removed TaskSet 1.0, whose tasks have all completed, from pool 
-2018-06-28 02:51:56 INFO  DAGScheduler:54 - ResultStage 1 (run at ThreadPoolExecutor.java:1142) finished in 4.316 s
-2018-06-28 02:51:56 INFO  DAGScheduler:54 - Job 0 finished: run at ThreadPoolExecutor.java:1142, took 4.368026 s
-2018-06-28 02:51:56 INFO  CodeGenerator:54 - Code generated in 6.694394 ms
-2018-06-28 02:51:56 INFO  MemoryStore:54 - Block broadcast_4 stored as values in memory (estimated size 1024.3 KB, free 2002.9 MB)
-2018-06-28 02:51:56 INFO  MemoryStore:54 - Block broadcast_4_piece0 stored as bytes in memory (estimated size 544.0 B, free 2002.9 MB)
-2018-06-28 02:51:56 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on dc1master-lan1:33406 (size: 544.0 B, free: 2004.5 MB)
-2018-06-28 02:51:56 INFO  SparkContext:54 - Created broadcast 4 from run at ThreadPoolExecutor.java:1142
-2018-06-28 02:51:58 INFO  TaskSetManager:54 - Finished task 1.0 in stage 0.0 (TID 1) in 5589 ms on 10.0.2.1 (executor 9) (2/2)
-2018-06-28 02:51:58 INFO  TaskSchedulerImpl:54 - Removed TaskSet 0.0, whose tasks have all completed, from pool 
-2018-06-28 02:51:58 INFO  DAGScheduler:54 - ResultStage 0 (run at ThreadPoolExecutor.java:1142) finished in 5.625 s
-2018-06-28 02:51:58 INFO  DAGScheduler:54 - Job 1 finished: run at ThreadPoolExecutor.java:1142, took 5.648838 s
-2018-06-28 02:51:58 INFO  MemoryStore:54 - Block broadcast_5 stored as values in memory (estimated size 1056.0 KB, free 2001.9 MB)
-2018-06-28 02:51:58 INFO  MemoryStore:54 - Block broadcast_5_piece0 stored as bytes in memory (estimated size 26.8 KB, free 2001.9 MB)
-2018-06-28 02:51:58 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on dc1master-lan1:33406 (size: 26.8 KB, free: 2004.5 MB)
-2018-06-28 02:51:58 INFO  SparkContext:54 - Created broadcast 5 from run at ThreadPoolExecutor.java:1142
-2018-06-28 02:51:58 INFO  CodeGenerator:54 - Code generated in 42.233231 ms
-2018-06-28 02:51:58 INFO  MemoryStore:54 - Block broadcast_6 stored as values in memory (estimated size 291.3 KB, free 2001.6 MB)
-2018-06-28 02:51:58 INFO  MemoryStore:54 - Block broadcast_6_piece0 stored as bytes in memory (estimated size 25.1 KB, free 2001.6 MB)
-2018-06-28 02:51:58 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on dc1master-lan1:33406 (size: 25.1 KB, free: 2004.5 MB)
-2018-06-28 02:51:58 INFO  SparkContext:54 - Created broadcast 6 from 
-2018-06-28 02:51:58 INFO  FileInputFormat:249 - Total input paths to process : 10
-2018-06-28 02:51:58 INFO  SparkContext:54 - Starting job: processCmd at CliDriver.java:376
-2018-06-28 02:51:58 INFO  DAGScheduler:54 - Registering RDD 17 (processCmd at CliDriver.java:376)
-2018-06-28 02:51:58 INFO  DAGScheduler:54 - Got job 2 (processCmd at CliDriver.java:376) with 40 output partitions
-2018-06-28 02:51:58 INFO  DAGScheduler:54 - Final stage: ResultStage 3 (processCmd at CliDriver.java:376)
-2018-06-28 02:51:58 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 2)
-2018-06-28 02:51:58 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 2)
-2018-06-28 02:51:58 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 2 (MapPartitionsRDD[17] at processCmd at CliDriver.java:376), which has no missing parents
-2018-06-28 02:51:58 INFO  MemoryStore:54 - Block broadcast_7 stored as values in memory (estimated size 52.1 KB, free 2001.5 MB)
-2018-06-28 02:51:58 INFO  MemoryStore:54 - Block broadcast_7_piece0 stored as bytes in memory (estimated size 22.2 KB, free 2001.5 MB)
-2018-06-28 02:51:58 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on dc1master-lan1:33406 (size: 22.2 KB, free: 2004.5 MB)
-2018-06-28 02:51:58 INFO  SparkContext:54 - Created broadcast 7 from broadcast at DAGScheduler.scala:1039
-2018-06-28 02:51:58 INFO  DAGScheduler:54 - Submitting 30 missing tasks from ShuffleMapStage 2 (MapPartitionsRDD[17] at processCmd at CliDriver.java:376) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14))
-2018-06-28 02:51:58 INFO  TaskSchedulerImpl:54 - Adding task set 2.0 with 30 tasks
-2018-06-28 02:51:58 INFO  TaskSetManager:54 - Starting task 0.0 in stage 2.0 (TID 4, 10.0.5.1, executor 7, partition 0, ANY, 7908 bytes)
-2018-06-28 02:51:58 INFO  TaskSetManager:54 - Starting task 1.0 in stage 2.0 (TID 5, 10.0.2.2, executor 4, partition 1, ANY, 7908 bytes)
-2018-06-28 02:51:58 INFO  TaskSetManager:54 - Starting task 2.0 in stage 2.0 (TID 6, 10.0.3.2, executor 8, partition 2, ANY, 7908 bytes)
-2018-06-28 02:51:58 INFO  TaskSetManager:54 - Starting task 3.0 in stage 2.0 (TID 7, 10.0.5.2, executor 3, partition 3, ANY, 7908 bytes)
-2018-06-28 02:51:58 INFO  TaskSetManager:54 - Starting task 4.0 in stage 2.0 (TID 8, 10.0.4.2, executor 0, partition 4, ANY, 7908 bytes)
-2018-06-28 02:51:58 INFO  TaskSetManager:54 - Starting task 5.0 in stage 2.0 (TID 9, 10.0.4.1, executor 1, partition 5, ANY, 7908 bytes)
-2018-06-28 02:51:58 INFO  TaskSetManager:54 - Starting task 6.0 in stage 2.0 (TID 10, 10.0.2.1, executor 9, partition 6, ANY, 7908 bytes)
-2018-06-28 02:51:58 INFO  TaskSetManager:54 - Starting task 7.0 in stage 2.0 (TID 11, 10.0.1.2, executor 6, partition 7, ANY, 7908 bytes)
-2018-06-28 02:51:58 INFO  TaskSetManager:54 - Starting task 8.0 in stage 2.0 (TID 12, 10.0.1.1, executor 5, partition 8, ANY, 7908 bytes)
-2018-06-28 02:51:58 INFO  TaskSetManager:54 - Starting task 9.0 in stage 2.0 (TID 13, 10.0.3.1, executor 2, partition 9, ANY, 7908 bytes)
-2018-06-28 02:51:58 INFO  TaskSetManager:54 - Starting task 10.0 in stage 2.0 (TID 14, 10.0.5.1, executor 7, partition 10, ANY, 7908 bytes)
-2018-06-28 02:51:58 INFO  TaskSetManager:54 - Starting task 11.0 in stage 2.0 (TID 15, 10.0.2.2, executor 4, partition 11, ANY, 7908 bytes)
-2018-06-28 02:51:58 INFO  TaskSetManager:54 - Starting task 12.0 in stage 2.0 (TID 16, 10.0.3.2, executor 8, partition 12, ANY, 7908 bytes)
-2018-06-28 02:51:58 INFO  TaskSetManager:54 - Starting task 13.0 in stage 2.0 (TID 17, 10.0.5.2, executor 3, partition 13, ANY, 7908 bytes)
-2018-06-28 02:51:58 INFO  TaskSetManager:54 - Starting task 14.0 in stage 2.0 (TID 18, 10.0.4.2, executor 0, partition 14, ANY, 7908 bytes)
-2018-06-28 02:51:58 INFO  TaskSetManager:54 - Starting task 15.0 in stage 2.0 (TID 19, 10.0.4.1, executor 1, partition 15, ANY, 7908 bytes)
-2018-06-28 02:51:58 INFO  TaskSetManager:54 - Starting task 16.0 in stage 2.0 (TID 20, 10.0.2.1, executor 9, partition 16, ANY, 7908 bytes)
-2018-06-28 02:51:58 INFO  TaskSetManager:54 - Starting task 17.0 in stage 2.0 (TID 21, 10.0.1.2, executor 6, partition 17, ANY, 7908 bytes)
-2018-06-28 02:51:58 INFO  TaskSetManager:54 - Starting task 18.0 in stage 2.0 (TID 22, 10.0.1.1, executor 5, partition 18, ANY, 7908 bytes)
-2018-06-28 02:51:58 INFO  TaskSetManager:54 - Starting task 19.0 in stage 2.0 (TID 23, 10.0.3.1, executor 2, partition 19, ANY, 7908 bytes)
-2018-06-28 02:51:58 INFO  TaskSetManager:54 - Starting task 20.0 in stage 2.0 (TID 24, 10.0.5.1, executor 7, partition 20, ANY, 7908 bytes)
-2018-06-28 02:51:58 INFO  TaskSetManager:54 - Starting task 21.0 in stage 2.0 (TID 25, 10.0.2.2, executor 4, partition 21, ANY, 7908 bytes)
-2018-06-28 02:51:58 INFO  TaskSetManager:54 - Starting task 22.0 in stage 2.0 (TID 26, 10.0.3.2, executor 8, partition 22, ANY, 7908 bytes)
-2018-06-28 02:51:58 INFO  TaskSetManager:54 - Starting task 23.0 in stage 2.0 (TID 27, 10.0.5.2, executor 3, partition 23, ANY, 7908 bytes)
-2018-06-28 02:51:58 INFO  TaskSetManager:54 - Starting task 24.0 in stage 2.0 (TID 28, 10.0.4.2, executor 0, partition 24, ANY, 7908 bytes)
-2018-06-28 02:51:58 INFO  TaskSetManager:54 - Starting task 25.0 in stage 2.0 (TID 29, 10.0.4.1, executor 1, partition 25, ANY, 7908 bytes)
-2018-06-28 02:51:58 INFO  TaskSetManager:54 - Starting task 26.0 in stage 2.0 (TID 30, 10.0.2.1, executor 9, partition 26, ANY, 7908 bytes)
-2018-06-28 02:51:58 INFO  TaskSetManager:54 - Starting task 27.0 in stage 2.0 (TID 31, 10.0.1.2, executor 6, partition 27, ANY, 7908 bytes)
-2018-06-28 02:51:58 INFO  TaskSetManager:54 - Starting task 28.0 in stage 2.0 (TID 32, 10.0.1.1, executor 5, partition 28, ANY, 7908 bytes)
-2018-06-28 02:51:58 INFO  TaskSetManager:54 - Starting task 29.0 in stage 2.0 (TID 33, 10.0.3.1, executor 2, partition 29, ANY, 7908 bytes)
-2018-06-28 02:51:58 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on 10.0.1.1:45356 (size: 22.2 KB, free: 2004.5 MB)
-2018-06-28 02:51:58 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on 10.0.1.2:42227 (size: 22.2 KB, free: 2004.5 MB)
-2018-06-28 02:51:58 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on 10.0.1.2:42227 (size: 25.1 KB, free: 2004.5 MB)
-2018-06-28 02:51:58 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on 10.0.1.1:45356 (size: 25.1 KB, free: 2004.5 MB)
-2018-06-28 02:51:58 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on 10.0.1.2:42227 (size: 544.0 B, free: 2004.5 MB)
-2018-06-28 02:51:58 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on 10.0.1.1:45356 (size: 544.0 B, free: 2004.5 MB)
-2018-06-28 02:51:58 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on 10.0.1.2:42227 (size: 26.8 KB, free: 2004.5 MB)
-2018-06-28 02:51:58 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on 10.0.1.1:45356 (size: 26.8 KB, free: 2004.5 MB)
-2018-06-28 02:51:59 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on 10.0.2.2:35814 (size: 22.2 KB, free: 2004.5 MB)
-2018-06-28 02:51:59 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on 10.0.2.1:38877 (size: 22.2 KB, free: 2004.5 MB)
-2018-06-28 02:51:59 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on 10.0.3.1:38219 (size: 22.2 KB, free: 2004.6 MB)
-2018-06-28 02:51:59 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on 10.0.3.2:37113 (size: 22.2 KB, free: 2004.6 MB)
-2018-06-28 02:51:59 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on 10.0.4.2:39234 (size: 22.2 KB, free: 2004.6 MB)
-2018-06-28 02:51:59 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on 10.0.4.1:42863 (size: 22.2 KB, free: 2004.6 MB)
-2018-06-28 02:51:59 INFO  TaskSetManager:54 - Finished task 8.0 in stage 2.0 (TID 12) in 1584 ms on 10.0.1.1 (executor 5) (1/30)
-2018-06-28 02:52:00 INFO  TaskSetManager:54 - Finished task 7.0 in stage 2.0 (TID 11) in 1734 ms on 10.0.1.2 (executor 6) (2/30)
-2018-06-28 02:52:00 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on 10.0.2.1:38877 (size: 25.1 KB, free: 2004.5 MB)
-2018-06-28 02:52:00 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on 10.0.2.2:35814 (size: 25.1 KB, free: 2004.5 MB)
-2018-06-28 02:52:00 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on 10.0.5.1:44760 (size: 22.2 KB, free: 2004.6 MB)
-2018-06-28 02:52:00 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on 10.0.5.2:33840 (size: 22.2 KB, free: 2004.6 MB)
-2018-06-28 02:52:00 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on 10.0.3.1:38219 (size: 25.1 KB, free: 2004.6 MB)
-2018-06-28 02:52:00 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on 10.0.3.2:37113 (size: 25.1 KB, free: 2004.6 MB)
-2018-06-28 02:52:01 INFO  TaskSetManager:54 - Finished task 27.0 in stage 2.0 (TID 31) in 2726 ms on 10.0.1.2 (executor 6) (3/30)
-2018-06-28 02:52:01 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on 10.0.4.2:39234 (size: 25.1 KB, free: 2004.6 MB)
-2018-06-28 02:52:01 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on 10.0.2.1:38877 (size: 544.0 B, free: 2004.5 MB)
-2018-06-28 02:52:01 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on 10.0.4.1:42863 (size: 25.1 KB, free: 2004.6 MB)
-2018-06-28 02:52:01 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on 10.0.2.2:35814 (size: 544.0 B, free: 2004.5 MB)
-2018-06-28 02:52:02 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on 10.0.5.2:33840 (size: 25.1 KB, free: 2004.6 MB)
-2018-06-28 02:52:02 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on 10.0.2.1:38877 (size: 26.8 KB, free: 2004.5 MB)
-2018-06-28 02:52:02 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on 10.0.2.2:35814 (size: 26.8 KB, free: 2004.5 MB)
-2018-06-28 02:52:02 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on 10.0.5.1:44760 (size: 25.1 KB, free: 2004.6 MB)
-2018-06-28 02:52:02 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on 10.0.3.2:37113 (size: 544.0 B, free: 2004.6 MB)
-2018-06-28 02:52:03 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on 10.0.3.1:38219 (size: 544.0 B, free: 2004.6 MB)
-2018-06-28 02:52:03 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on 10.0.3.2:37113 (size: 26.8 KB, free: 2004.5 MB)
-2018-06-28 02:52:03 INFO  TaskSetManager:54 - Finished task 21.0 in stage 2.0 (TID 25) in 5522 ms on 10.0.2.2 (executor 4) (4/30)
-2018-06-28 02:52:04 INFO  TaskSetManager:54 - Finished task 1.0 in stage 2.0 (TID 5) in 5723 ms on 10.0.2.2 (executor 4) (5/30)
-2018-06-28 02:52:04 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on 10.0.4.2:39234 (size: 544.0 B, free: 2004.6 MB)
-2018-06-28 02:52:04 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on 10.0.3.1:38219 (size: 26.8 KB, free: 2004.5 MB)
-2018-06-28 02:52:04 INFO  TaskSetManager:54 - Finished task 6.0 in stage 2.0 (TID 10) in 5939 ms on 10.0.2.1 (executor 9) (6/30)
-2018-06-28 02:52:04 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on 10.0.4.1:42863 (size: 544.0 B, free: 2004.6 MB)
-2018-06-28 02:52:04 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on 10.0.5.2:33840 (size: 544.0 B, free: 2004.6 MB)
-2018-06-28 02:52:05 INFO  TaskSetManager:54 - Finished task 2.0 in stage 2.0 (TID 6) in 6678 ms on 10.0.3.2 (executor 8) (7/30)
-2018-06-28 02:52:05 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on 10.0.5.1:44760 (size: 544.0 B, free: 2004.6 MB)
-2018-06-28 02:52:05 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on 10.0.4.2:39234 (size: 26.8 KB, free: 2004.5 MB)
-2018-06-28 02:52:05 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on 10.0.4.1:42863 (size: 26.8 KB, free: 2004.5 MB)
-2018-06-28 02:52:06 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on 10.0.5.2:33840 (size: 26.8 KB, free: 2004.5 MB)
-2018-06-28 02:52:06 INFO  TaskSetManager:54 - Finished task 9.0 in stage 2.0 (TID 13) in 8287 ms on 10.0.3.1 (executor 2) (8/30)
-2018-06-28 02:52:07 INFO  TaskSetManager:54 - Finished task 16.0 in stage 2.0 (TID 20) in 9044 ms on 10.0.2.1 (executor 9) (9/30)
-2018-06-28 02:52:07 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on 10.0.5.1:44760 (size: 26.8 KB, free: 2004.5 MB)
-2018-06-28 02:52:07 INFO  TaskSetManager:54 - Finished task 24.0 in stage 2.0 (TID 28) in 9144 ms on 10.0.4.2 (executor 0) (10/30)
-2018-06-28 02:52:07 INFO  TaskSetManager:54 - Finished task 25.0 in stage 2.0 (TID 29) in 9273 ms on 10.0.4.1 (executor 1) (11/30)
-2018-06-28 02:52:09 INFO  TaskSetManager:54 - Finished task 20.0 in stage 2.0 (TID 24) in 10819 ms on 10.0.5.1 (executor 7) (12/30)
-2018-06-28 02:52:10 INFO  TaskSetManager:54 - Finished task 11.0 in stage 2.0 (TID 15) in 11685 ms on 10.0.2.2 (executor 4) (13/30)
-2018-06-28 02:52:10 INFO  TaskSetManager:54 - Finished task 0.0 in stage 2.0 (TID 4) in 11983 ms on 10.0.5.1 (executor 7) (14/30)
-2018-06-28 02:52:11 INFO  TaskSetManager:54 - Finished task 26.0 in stage 2.0 (TID 30) in 13112 ms on 10.0.2.1 (executor 9) (15/30)
-2018-06-28 02:52:12 INFO  TaskSetManager:54 - Finished task 29.0 in stage 2.0 (TID 33) in 13760 ms on 10.0.3.1 (executor 2) (16/30)
-2018-06-28 02:52:12 INFO  TaskSetManager:54 - Finished task 22.0 in stage 2.0 (TID 26) in 13897 ms on 10.0.3.2 (executor 8) (17/30)
-2018-06-28 02:52:12 INFO  TaskSetManager:54 - Finished task 12.0 in stage 2.0 (TID 16) in 14368 ms on 10.0.3.2 (executor 8) (18/30)
-2018-06-28 02:52:13 INFO  TaskSetManager:54 - Finished task 19.0 in stage 2.0 (TID 23) in 15164 ms on 10.0.3.1 (executor 2) (19/30)
-2018-06-28 02:52:15 INFO  TaskSetManager:54 - Finished task 15.0 in stage 2.0 (TID 19) in 16679 ms on 10.0.4.1 (executor 1) (20/30)
-2018-06-28 02:52:15 INFO  TaskSetManager:54 - Finished task 3.0 in stage 2.0 (TID 7) in 17440 ms on 10.0.5.2 (executor 3) (21/30)
-2018-06-28 02:52:16 INFO  TaskSetManager:54 - Finished task 10.0 in stage 2.0 (TID 14) in 17938 ms on 10.0.5.1 (executor 7) (22/30)
-2018-06-28 02:52:17 INFO  TaskSetManager:54 - Finished task 28.0 in stage 2.0 (TID 32) in 19360 ms on 10.0.1.1 (executor 5) (23/30)
-2018-06-28 02:52:18 INFO  TaskSetManager:54 - Finished task 5.0 in stage 2.0 (TID 9) in 20014 ms on 10.0.4.1 (executor 1) (24/30)
-2018-06-28 02:52:20 INFO  TaskSetManager:54 - Finished task 17.0 in stage 2.0 (TID 21) in 22005 ms on 10.0.1.2 (executor 6) (25/30)
-2018-06-28 02:52:21 INFO  TaskSetManager:54 - Finished task 4.0 in stage 2.0 (TID 8) in 23485 ms on 10.0.4.2 (executor 0) (26/30)
-2018-06-28 02:52:21 INFO  TaskSetManager:54 - Finished task 14.0 in stage 2.0 (TID 18) in 23486 ms on 10.0.4.2 (executor 0) (27/30)
-2018-06-28 02:52:23 INFO  TaskSetManager:54 - Finished task 23.0 in stage 2.0 (TID 27) in 25151 ms on 10.0.5.2 (executor 3) (28/30)
-2018-06-28 02:52:23 INFO  TaskSetManager:54 - Finished task 18.0 in stage 2.0 (TID 22) in 25463 ms on 10.0.1.1 (executor 5) (29/30)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Finished task 13.0 in stage 2.0 (TID 17) in 29942 ms on 10.0.5.2 (executor 3) (30/30)
-2018-06-28 02:52:28 INFO  TaskSchedulerImpl:54 - Removed TaskSet 2.0, whose tasks have all completed, from pool 
-2018-06-28 02:52:28 INFO  DAGScheduler:54 - ShuffleMapStage 2 (processCmd at CliDriver.java:376) finished in 29.955 s
-2018-06-28 02:52:28 INFO  DAGScheduler:54 - looking for newly runnable stages
-2018-06-28 02:52:28 INFO  DAGScheduler:54 - running: Set()
-2018-06-28 02:52:28 INFO  DAGScheduler:54 - waiting: Set(ResultStage 3)
-2018-06-28 02:52:28 INFO  DAGScheduler:54 - failed: Set()
-2018-06-28 02:52:28 INFO  DAGScheduler:54 - Submitting ResultStage 3 (MapPartitionsRDD[21] at processCmd at CliDriver.java:376), which has no missing parents
-2018-06-28 02:52:28 INFO  MemoryStore:54 - Block broadcast_8 stored as values in memory (estimated size 38.5 KB, free 2001.5 MB)
-2018-06-28 02:52:28 INFO  MemoryStore:54 - Block broadcast_8_piece0 stored as bytes in memory (estimated size 17.6 KB, free 2001.5 MB)
-2018-06-28 02:52:28 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on dc1master-lan1:33406 (size: 17.6 KB, free: 2004.4 MB)
-2018-06-28 02:52:28 INFO  SparkContext:54 - Created broadcast 8 from broadcast at DAGScheduler.scala:1039
-2018-06-28 02:52:28 INFO  DAGScheduler:54 - Submitting 40 missing tasks from ResultStage 3 (MapPartitionsRDD[21] at processCmd at CliDriver.java:376) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14))
-2018-06-28 02:52:28 INFO  TaskSchedulerImpl:54 - Adding task set 3.0 with 40 tasks
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 0.0 in stage 3.0 (TID 34, 10.0.2.1, executor 9, partition 0, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 1.0 in stage 3.0 (TID 35, 10.0.3.1, executor 2, partition 1, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 2.0 in stage 3.0 (TID 36, 10.0.1.1, executor 5, partition 2, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 3.0 in stage 3.0 (TID 37, 10.0.4.2, executor 0, partition 3, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 4.0 in stage 3.0 (TID 38, 10.0.1.2, executor 6, partition 4, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 5.0 in stage 3.0 (TID 39, 10.0.4.1, executor 1, partition 5, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 6.0 in stage 3.0 (TID 40, 10.0.3.2, executor 8, partition 6, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 7.0 in stage 3.0 (TID 41, 10.0.5.2, executor 3, partition 7, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 8.0 in stage 3.0 (TID 42, 10.0.5.1, executor 7, partition 8, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 9.0 in stage 3.0 (TID 43, 10.0.2.2, executor 4, partition 9, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 10.0 in stage 3.0 (TID 44, 10.0.2.1, executor 9, partition 10, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 11.0 in stage 3.0 (TID 45, 10.0.3.1, executor 2, partition 11, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 12.0 in stage 3.0 (TID 46, 10.0.1.1, executor 5, partition 12, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 13.0 in stage 3.0 (TID 47, 10.0.4.2, executor 0, partition 13, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 14.0 in stage 3.0 (TID 48, 10.0.1.2, executor 6, partition 14, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 15.0 in stage 3.0 (TID 49, 10.0.4.1, executor 1, partition 15, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 16.0 in stage 3.0 (TID 50, 10.0.3.2, executor 8, partition 16, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 17.0 in stage 3.0 (TID 51, 10.0.5.2, executor 3, partition 17, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 18.0 in stage 3.0 (TID 52, 10.0.5.1, executor 7, partition 18, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 19.0 in stage 3.0 (TID 53, 10.0.2.2, executor 4, partition 19, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 20.0 in stage 3.0 (TID 54, 10.0.2.1, executor 9, partition 20, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 21.0 in stage 3.0 (TID 55, 10.0.3.1, executor 2, partition 21, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 22.0 in stage 3.0 (TID 56, 10.0.1.1, executor 5, partition 22, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 23.0 in stage 3.0 (TID 57, 10.0.4.2, executor 0, partition 23, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 24.0 in stage 3.0 (TID 58, 10.0.1.2, executor 6, partition 24, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 25.0 in stage 3.0 (TID 59, 10.0.4.1, executor 1, partition 25, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 26.0 in stage 3.0 (TID 60, 10.0.3.2, executor 8, partition 26, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 27.0 in stage 3.0 (TID 61, 10.0.5.2, executor 3, partition 27, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 28.0 in stage 3.0 (TID 62, 10.0.5.1, executor 7, partition 28, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 29.0 in stage 3.0 (TID 63, 10.0.2.2, executor 4, partition 29, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 30.0 in stage 3.0 (TID 64, 10.0.2.1, executor 9, partition 30, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 31.0 in stage 3.0 (TID 65, 10.0.3.1, executor 2, partition 31, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 32.0 in stage 3.0 (TID 66, 10.0.1.1, executor 5, partition 32, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 33.0 in stage 3.0 (TID 67, 10.0.4.2, executor 0, partition 33, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 34.0 in stage 3.0 (TID 68, 10.0.1.2, executor 6, partition 34, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 35.0 in stage 3.0 (TID 69, 10.0.4.1, executor 1, partition 35, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 36.0 in stage 3.0 (TID 70, 10.0.3.2, executor 8, partition 36, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 37.0 in stage 3.0 (TID 71, 10.0.5.2, executor 3, partition 37, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 38.0 in stage 3.0 (TID 72, 10.0.5.1, executor 7, partition 38, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  TaskSetManager:54 - Starting task 39.0 in stage 3.0 (TID 73, 10.0.2.2, executor 4, partition 39, PROCESS_LOCAL, 7758 bytes)
-2018-06-28 02:52:28 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on 10.0.1.1:45356 (size: 17.6 KB, free: 2004.5 MB)
-2018-06-28 02:52:28 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on 10.0.1.2:42227 (size: 17.6 KB, free: 2004.5 MB)
-2018-06-28 02:52:28 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 0 to 10.0.1.1:57632
-2018-06-28 02:52:28 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 0 to 10.0.1.2:39844
-2018-06-28 02:52:29 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on 10.0.2.1:38877 (size: 17.6 KB, free: 2004.5 MB)
-2018-06-28 02:52:29 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on 10.0.2.2:35814 (size: 17.6 KB, free: 2004.5 MB)
-2018-06-28 02:52:29 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 0 to 10.0.2.1:43026
-2018-06-28 02:52:29 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 0 to 10.0.2.2:41448
-2018-06-28 02:52:29 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on 10.0.3.1:38219 (size: 17.6 KB, free: 2004.5 MB)
-2018-06-28 02:52:29 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on 10.0.4.1:42863 (size: 17.6 KB, free: 2004.5 MB)
-2018-06-28 02:52:29 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on 10.0.4.2:39234 (size: 17.6 KB, free: 2004.5 MB)
-2018-06-28 02:52:29 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on 10.0.3.2:37113 (size: 17.6 KB, free: 2004.5 MB)
-2018-06-28 02:52:29 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 0 to 10.0.3.1:32894
-2018-06-28 02:52:29 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 0 to 10.0.4.1:54174
-2018-06-28 02:52:29 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 0 to 10.0.4.2:34570
-2018-06-28 02:52:29 INFO  TaskSetManager:54 - Finished task 2.0 in stage 3.0 (TID 36) in 1499 ms on 10.0.1.1 (executor 5) (1/40)
-2018-06-28 02:52:29 INFO  TaskSetManager:54 - Finished task 22.0 in stage 3.0 (TID 56) in 1497 ms on 10.0.1.1 (executor 5) (2/40)
-2018-06-28 02:52:29 INFO  TaskSetManager:54 - Finished task 32.0 in stage 3.0 (TID 66) in 1496 ms on 10.0.1.1 (executor 5) (3/40)
-2018-06-28 02:52:29 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 0 to 10.0.3.2:59334
-2018-06-28 02:52:30 INFO  TaskSetManager:54 - Finished task 34.0 in stage 3.0 (TID 68) in 1661 ms on 10.0.1.2 (executor 6) (4/40)
-2018-06-28 02:52:30 INFO  TaskSetManager:54 - Finished task 4.0 in stage 3.0 (TID 38) in 1665 ms on 10.0.1.2 (executor 6) (5/40)
-2018-06-28 02:52:30 INFO  TaskSetManager:54 - Finished task 14.0 in stage 3.0 (TID 48) in 1664 ms on 10.0.1.2 (executor 6) (6/40)
-2018-06-28 02:52:30 INFO  TaskSetManager:54 - Finished task 24.0 in stage 3.0 (TID 58) in 1663 ms on 10.0.1.2 (executor 6) (7/40)
-2018-06-28 02:52:30 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on 10.0.5.1:44760 (size: 17.6 KB, free: 2004.5 MB)
-2018-06-28 02:52:30 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on 10.0.5.2:33840 (size: 17.6 KB, free: 2004.5 MB)
-2018-06-28 02:52:30 INFO  TaskSetManager:54 - Finished task 12.0 in stage 3.0 (TID 46) in 1780 ms on 10.0.1.1 (executor 5) (8/40)
-2018-06-28 02:52:30 INFO  TaskSetManager:54 - Finished task 9.0 in stage 3.0 (TID 43) in 1995 ms on 10.0.2.2 (executor 4) (9/40)
-2018-06-28 02:52:30 INFO  TaskSetManager:54 - Finished task 30.0 in stage 3.0 (TID 64) in 1998 ms on 10.0.2.1 (executor 9) (10/40)
-2018-06-28 02:52:30 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 0 to 10.0.5.1:34642
-2018-06-28 02:52:30 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 0 to 10.0.5.2:49510
-2018-06-28 02:52:30 INFO  TaskSetManager:54 - Finished task 39.0 in stage 3.0 (TID 73) in 2156 ms on 10.0.2.2 (executor 4) (11/40)
-2018-06-28 02:52:30 INFO  TaskSetManager:54 - Finished task 19.0 in stage 3.0 (TID 53) in 2159 ms on 10.0.2.2 (executor 4) (12/40)
-2018-06-28 02:52:30 INFO  TaskSetManager:54 - Finished task 29.0 in stage 3.0 (TID 63) in 2158 ms on 10.0.2.2 (executor 4) (13/40)
-2018-06-28 02:52:30 INFO  TaskSetManager:54 - Finished task 0.0 in stage 3.0 (TID 34) in 2166 ms on 10.0.2.1 (executor 9) (14/40)
-2018-06-28 02:52:30 INFO  TaskSetManager:54 - Finished task 20.0 in stage 3.0 (TID 54) in 2163 ms on 10.0.2.1 (executor 9) (15/40)
-2018-06-28 02:52:30 INFO  TaskSetManager:54 - Finished task 10.0 in stage 3.0 (TID 44) in 2183 ms on 10.0.2.1 (executor 9) (16/40)
-2018-06-28 02:52:30 INFO  TaskSetManager:54 - Finished task 21.0 in stage 3.0 (TID 55) in 2337 ms on 10.0.3.1 (executor 2) (17/40)
-2018-06-28 02:52:30 INFO  TaskSetManager:54 - Finished task 13.0 in stage 3.0 (TID 47) in 2350 ms on 10.0.4.2 (executor 0) (18/40)
-2018-06-28 02:52:30 INFO  TaskSetManager:54 - Finished task 5.0 in stage 3.0 (TID 39) in 2480 ms on 10.0.4.1 (executor 1) (19/40)
-2018-06-28 02:52:30 INFO  TaskSetManager:54 - Finished task 31.0 in stage 3.0 (TID 65) in 2544 ms on 10.0.3.1 (executor 2) (20/40)
-2018-06-28 02:52:30 INFO  TaskSetManager:54 - Finished task 1.0 in stage 3.0 (TID 35) in 2547 ms on 10.0.3.1 (executor 2) (21/40)
-2018-06-28 02:52:30 INFO  TaskSetManager:54 - Finished task 11.0 in stage 3.0 (TID 45) in 2547 ms on 10.0.3.1 (executor 2) (22/40)
-2018-06-28 02:52:30 INFO  TaskSetManager:54 - Finished task 33.0 in stage 3.0 (TID 67) in 2569 ms on 10.0.4.2 (executor 0) (23/40)
-2018-06-28 02:52:30 INFO  TaskSetManager:54 - Finished task 3.0 in stage 3.0 (TID 37) in 2572 ms on 10.0.4.2 (executor 0) (24/40)
-2018-06-28 02:52:30 INFO  TaskSetManager:54 - Finished task 23.0 in stage 3.0 (TID 57) in 2571 ms on 10.0.4.2 (executor 0) (25/40)
-2018-06-28 02:52:31 INFO  TaskSetManager:54 - Finished task 6.0 in stage 3.0 (TID 40) in 2674 ms on 10.0.3.2 (executor 8) (26/40)
-2018-06-28 02:52:31 INFO  TaskSetManager:54 - Finished task 15.0 in stage 3.0 (TID 49) in 2701 ms on 10.0.4.1 (executor 1) (27/40)
-2018-06-28 02:52:31 INFO  TaskSetManager:54 - Finished task 35.0 in stage 3.0 (TID 69) in 2698 ms on 10.0.4.1 (executor 1) (28/40)
-2018-06-28 02:52:31 INFO  TaskSetManager:54 - Finished task 25.0 in stage 3.0 (TID 59) in 2699 ms on 10.0.4.1 (executor 1) (29/40)
-2018-06-28 02:52:31 INFO  TaskSetManager:54 - Finished task 26.0 in stage 3.0 (TID 60) in 2880 ms on 10.0.3.2 (executor 8) (30/40)
-2018-06-28 02:52:31 INFO  TaskSetManager:54 - Finished task 16.0 in stage 3.0 (TID 50) in 2882 ms on 10.0.3.2 (executor 8) (31/40)
-2018-06-28 02:52:31 INFO  TaskSetManager:54 - Finished task 36.0 in stage 3.0 (TID 70) in 2879 ms on 10.0.3.2 (executor 8) (32/40)
-2018-06-28 02:52:32 INFO  TaskSetManager:54 - Finished task 8.0 in stage 3.0 (TID 42) in 3671 ms on 10.0.5.1 (executor 7) (33/40)
-2018-06-28 02:52:32 INFO  TaskSetManager:54 - Finished task 27.0 in stage 3.0 (TID 61) in 3951 ms on 10.0.5.2 (executor 3) (34/40)
-2018-06-28 02:52:32 INFO  TaskSetManager:54 - Finished task 28.0 in stage 3.0 (TID 62) in 4006 ms on 10.0.5.1 (executor 7) (35/40)
-2018-06-28 02:52:32 INFO  TaskSetManager:54 - Finished task 38.0 in stage 3.0 (TID 72) in 4005 ms on 10.0.5.1 (executor 7) (36/40)
-2018-06-28 02:52:32 INFO  TaskSetManager:54 - Finished task 18.0 in stage 3.0 (TID 52) in 4008 ms on 10.0.5.1 (executor 7) (37/40)
-2018-06-28 02:52:32 INFO  TaskSetManager:54 - Finished task 37.0 in stage 3.0 (TID 71) in 4287 ms on 10.0.5.2 (executor 3) (38/40)
-2018-06-28 02:52:32 INFO  TaskSetManager:54 - Finished task 7.0 in stage 3.0 (TID 41) in 4291 ms on 10.0.5.2 (executor 3) (39/40)
-2018-06-28 02:52:32 INFO  TaskSetManager:54 - Finished task 17.0 in stage 3.0 (TID 51) in 4290 ms on 10.0.5.2 (executor 3) (40/40)
-2018-06-28 02:52:32 INFO  TaskSchedulerImpl:54 - Removed TaskSet 3.0, whose tasks have all completed, from pool 
-2018-06-28 02:52:32 INFO  DAGScheduler:54 - ResultStage 3 (processCmd at CliDriver.java:376) finished in 4.303 s
-2018-06-28 02:52:32 INFO  DAGScheduler:54 - Job 2 finished: processCmd at CliDriver.java:376, took 34.272840 s
-4004002	edu packedu pack #2	388447.2699828148
-3003002	exportiexporti #2	371707.3079957962
-3002002	importoexporti #2	351356.9293141365
-2004002	edu packimporto #2	324443.39864325523
-5004002	edu packscholar #2	321104.46993142366
-2002002	importoimporto #2	305278.62770336866
-2001002	amalgimporto #2	298805.6016073227
-5003002	exportischolar #2	287763.71158599854
-4003002	exportiedu pack #2	273593.8910946846
-3004002	edu packexporti #2	251187.31071335077
-1001002	amalgamalg #2	244020.57068920135
-5001002	amalgscholar #2	231253.74036979675
-2003002	exportiimporto #2	195652.39911699295
-1004002	edu packamalg #2	185663.00167274475
-1003002	exportiamalg #2	182308.8713054657
-4002002	importoedu pack #2	181570.33959960938
-5002002	importoscholar #2	170278.199051857
-4001002	amalgedu pack #2	165216.45971512794
-6012002	importobrand #2	142405.87017440796
-1002002	importoamalg #2	129530.85005378723
-3001002	amalgexporti #2	126218.03968000412
-6016004	corpbrand #4	120879.56052207947
-8013002	exportimaxi #2	117851.25024652481
-9016012	corpunivamalg #12	112009.99980545044
-6015006	scholarbrand #6	111525.52954268456
-8011006	amalgmaxi #6	96573.60959625244
-9010002	univunivamalg #2	86776.02954101562
-5002001	amalgexporti #2	85481.92010259628
-NULL		84286.97952651978
-8008006	namelessnameless #6	83964.9307397604
-7004004	edu packbrand #4	83200.16110229492
-7011004	amalgnameless #4	79121.27947998047
-8010006	univmaxi #6	77276.85020065308
-10004013	edu packunivamalg #13	75614.05955314636
-3001001	amalgexporti #2	75246.72998428345
-6010006	univbrand #6	75031.39026260376
-8016010	corpmaxi #10	74022.59990215302
-9015009	scholarnameless #2	70449.12992858887
-8008010	namelessnameless #10	70246.46918296814
-9007008	brandmaxi #8	62277.75982284546
-10010010	univamalgamalg #10	61611.78024291992
-8002004	importonameless #4	61591.799964904785
-1004001	importoexporti #2	61550.87023925781
-10009004	namelessbrand #6	61224.56912994385
-6008008	namelesscorp #8	60008.80031585693
-5001001	amalgimporto #2	59911.90982627869
-6010003	importounivamalg #6	59736.74011230469
-7015002	scholarnameless #2	59261.50981903076
-8003010	exportinameless #10	58994.37007904053
-8008004	namelessnameless #4	56655.11984825134
-2002001	importoexporti #2	56269.09962463379
-7014001	edu packcorp #4	56211.49025917053
-7013003	importoedu pack #2	55927.16021156311
-3001001	exportischolar #2	55397.32955169678
-4003001	importoexporti #2	55361.08034515381
-2001001	amalgbrand #2	54921.95002937317
-10007003	scholarbrand #6	54824.00038146973
-9002011	edu packcorp #8	54637.630279541016
-9007003	scholarunivamalg #12	54187.010177612305
-8015007	exportiamalg #2	54028.56038236618
-6011002	amalgbrand #2	53340.01982831955
-3004001	exportiedu pack #2	53156.99034118652
-9012005	maxiunivamalg #5	52636.13998413086
-8015002	scholarmaxi #2	52356.78980064392
-8013007	amalgcorp #4	51769.830078125
-10013017	exportiamalgamalg #17	51121.4306602478
-1003001	namelessbrand #8	50890.31985473633
-6010004	univbrand #4	50206.01094055176
-8014006	edu packmaxi #6	49897.091165065765
-9016010	corpunivamalg #10	49851.11988067627
-10010001	univamalgamalg #1	49825.37084197998
-9012002	importounivamalg #2	48584.18996500969
-6008003	importoedu pack #2	48455.22055053711
-7010004	univnameless #4	48321.729389190674
-9013010	exportiunivamalg #10	47613.320068359375
-9005004	scholarmaxi #4	46908.43014907837
-6006004	corpcorp #4	46314.33078765869
-3001001	edu packscholar #2	46245.94960594177
-3004001	edu packedu pack #2	46222.78993225098
-7013008	exportinameless #8	46073.5004196167
-10001014	amalgunivamalg #14	45623.0699672699
-4003001	amalgedu pack #2	45582.61986732483
-6009007	edu packamalg #2	45319.01985549927
-6011006	amalgbrand #6	45153.769441604614
-7012007	univamalgamalg #17	45151.430084228516
-6003008	exporticorp #8	45049.649846076965
-2003001	univnameless #4	45047.56969642639
-7014010	edu packnameless #10	44638.91987609863
-9015011	importoscholar #2	44452.18014335632
-10004016	edu packedu pack #2	43927.070457458496
-1003001	importomaxi #8	43776.63039493561
-7012004	importonameless #4	43517.94013214111
-8004004	edu packnameless #4	43484.35057449341
-8014005	amalgamalg #2	43365.3602104187
-8012002	importomaxi #2	43283.07015991211
-7004002	edu packbrand #2	43254.990463256836
-8014004	edu packmaxi #4	43031.239795684814
-10008004	edu packedu pack #2	42927.8299407959
-6015007	scholarunivamalg #16	42859.45975112915
-9016008	corpunivamalg #8	42553.97972869873
-2018-06-28 02:52:32 INFO  SparkSQLCLIDriver:951 - Time taken: 42.582 seconds, Fetched 100 row(s)
-2018-06-28 02:52:32 INFO  AbstractConnector:318 - Stopped Spark@6e685e6c{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
-2018-06-28 02:52:32 INFO  SparkUI:54 - Stopped Spark web UI at http://dc1master-lan1:4040
-2018-06-28 02:52:35 INFO  StandaloneSchedulerBackend:54 - Shutting down all executors
-2018-06-28 02:52:35 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asking each executor to shut down
-2018-06-28 02:52:35 INFO  MapOutputTrackerMasterEndpoint:54 - MapOutputTrackerMasterEndpoint stopped!
-2018-06-28 02:52:35 INFO  MemoryStore:54 - MemoryStore cleared
-2018-06-28 02:52:35 INFO  BlockManager:54 - BlockManager stopped
-2018-06-28 02:52:35 INFO  BlockManagerMaster:54 - BlockManagerMaster stopped
-2018-06-28 02:52:35 INFO  OutputCommitCoordinator$OutputCommitCoordinatorEndpoint:54 - OutputCommitCoordinator stopped!
-2018-06-28 02:52:35 INFO  SparkContext:54 - Successfully stopped SparkContext
-2018-06-28 02:52:35 INFO  ShutdownHookManager:54 - Shutdown hook called
-2018-06-28 02:52:35 INFO  ShutdownHookManager:54 - Deleting directory /tmp/spark-76b0e900-e985-4b83-bde4-93778a271517
-2018-06-28 02:52:35 INFO  ShutdownHookManager:54 - Deleting directory /tmp/spark-a4d431d6-ae01-40d6-9560-4748dad300f2
+2018-06-28 21:31:49 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-06-28 21:31:50 INFO  HiveMetaStore:589 - 0: Opening raw store with implemenation class:org.apache.hadoop.hive.metastore.ObjectStore
+2018-06-28 21:31:50 INFO  ObjectStore:289 - ObjectStore, initialize called
+2018-06-28 21:31:50 INFO  Persistence:77 - Property hive.metastore.integral.jdo.pushdown unknown - will be ignored
+2018-06-28 21:31:50 INFO  Persistence:77 - Property datanucleus.cache.level2 unknown - will be ignored
+2018-06-28 21:31:51 INFO  ObjectStore:370 - Setting MetaStore object pin classes with hive.metastore.cache.pinobjtypes="Table,StorageDescriptor,SerDeInfo,Partition,Database,Type,FieldSchema,Order"
+2018-06-28 21:31:52 INFO  Datastore:77 - The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+2018-06-28 21:31:52 INFO  Datastore:77 - The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+2018-06-28 21:31:52 INFO  Datastore:77 - The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+2018-06-28 21:31:52 INFO  Datastore:77 - The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+2018-06-28 21:31:52 INFO  Query:77 - Reading in results for query "org.datanucleus.store.rdbms.query.SQLQuery@0" since the connection used is closing
+2018-06-28 21:31:52 INFO  MetaStoreDirectSql:139 - Using direct SQL, underlying DB is DERBY
+2018-06-28 21:31:52 INFO  ObjectStore:272 - Initialized ObjectStore
+2018-06-28 21:31:52 INFO  HiveMetaStore:663 - Added admin role in metastore
+2018-06-28 21:31:52 INFO  HiveMetaStore:672 - Added public role in metastore
+2018-06-28 21:31:52 INFO  HiveMetaStore:712 - No user is added in admin role, since config is empty
+2018-06-28 21:31:52 INFO  HiveMetaStore:746 - 0: get_all_databases
+2018-06-28 21:31:52 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_all_databases	
+2018-06-28 21:31:52 INFO  HiveMetaStore:746 - 0: get_functions: db=default pat=*
+2018-06-28 21:31:52 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_functions: db=default pat=*	
+2018-06-28 21:31:52 INFO  Datastore:77 - The class "org.apache.hadoop.hive.metastore.model.MResourceUri" is tagged as "embedded-only" so does not have its own datastore table.
+2018-06-28 21:31:52 INFO  HiveMetaStore:746 - 0: get_functions: db=tpcds_text_10 pat=*
+2018-06-28 21:31:52 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_functions: db=tpcds_text_10 pat=*	
+2018-06-28 21:31:52 INFO  HiveMetaStore:746 - 0: get_functions: db=tpcds_text_20 pat=*
+2018-06-28 21:31:52 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_functions: db=tpcds_text_20 pat=*	
+2018-06-28 21:31:52 INFO  HiveMetaStore:746 - 0: get_functions: db=tpch_flat_orc_10 pat=*
+2018-06-28 21:31:52 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_functions: db=tpch_flat_orc_10 pat=*	
+2018-06-28 21:31:52 INFO  HiveMetaStore:746 - 0: get_functions: db=tpch_flat_orc_20 pat=*
+2018-06-28 21:31:52 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_functions: db=tpch_flat_orc_20 pat=*	
+2018-06-28 21:31:52 INFO  HiveMetaStore:746 - 0: get_functions: db=tpch_text_10 pat=*
+2018-06-28 21:31:52 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_functions: db=tpch_text_10 pat=*	
+2018-06-28 21:31:52 INFO  HiveMetaStore:746 - 0: get_functions: db=tpch_text_20 pat=*
+2018-06-28 21:31:52 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_functions: db=tpch_text_20 pat=*	
+2018-06-28 21:31:53 INFO  SessionState:641 - Created local directory: /tmp/9fd02f9d-6061-496a-ae22-c83a239bcf0c_resources
+2018-06-28 21:31:53 INFO  SessionState:641 - Created HDFS directory: /tmp/hive/jimmyyou/9fd02f9d-6061-496a-ae22-c83a239bcf0c
+2018-06-28 21:31:53 INFO  SessionState:641 - Created local directory: /tmp/jimmyyou/9fd02f9d-6061-496a-ae22-c83a239bcf0c
+2018-06-28 21:31:53 INFO  SessionState:641 - Created HDFS directory: /tmp/hive/jimmyyou/9fd02f9d-6061-496a-ae22-c83a239bcf0c/_tmp_space.db
+2018-06-28 21:31:53 INFO  SparkContext:54 - Running Spark version 2.3.1
+2018-06-28 21:31:53 INFO  SparkContext:54 - Submitted application: SparkSQL::10.0.1.253
+2018-06-28 21:31:53 INFO  SecurityManager:54 - Changing view acls to: jimmyyou
+2018-06-28 21:31:53 INFO  SecurityManager:54 - Changing modify acls to: jimmyyou
+2018-06-28 21:31:53 INFO  SecurityManager:54 - Changing view acls groups to: 
+2018-06-28 21:31:53 INFO  SecurityManager:54 - Changing modify acls groups to: 
+2018-06-28 21:31:53 INFO  SecurityManager:54 - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(jimmyyou); groups with view permissions: Set(); users  with modify permissions: Set(jimmyyou); groups with modify permissions: Set()
+2018-06-28 21:31:53 INFO  Utils:54 - Successfully started service 'sparkDriver' on port 45857.
+2018-06-28 21:31:53 INFO  SparkEnv:54 - Registering MapOutputTracker
+2018-06-28 21:31:53 INFO  SparkEnv:54 - Registering BlockManagerMaster
+2018-06-28 21:31:53 INFO  BlockManagerMasterEndpoint:54 - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2018-06-28 21:31:53 INFO  BlockManagerMasterEndpoint:54 - BlockManagerMasterEndpoint up
+2018-06-28 21:31:53 INFO  DiskBlockManager:54 - Created local directory at /tmp/blockmgr-ca6be193-9332-436e-bf94-9023e43a9e05
+2018-06-28 21:31:53 INFO  MemoryStore:54 - MemoryStore started with capacity 2004.6 MB
+2018-06-28 21:31:53 INFO  SparkEnv:54 - Registering OutputCommitCoordinator
+2018-06-28 21:31:53 INFO  log:192 - Logging initialized @4536ms
+2018-06-28 21:31:53 INFO  Server:346 - jetty-9.3.z-SNAPSHOT
+2018-06-28 21:31:53 INFO  Server:414 - Started @4592ms
+2018-06-28 21:31:53 INFO  AbstractConnector:278 - Started ServerConnector@9b3be1c{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2018-06-28 21:31:53 INFO  Utils:54 - Successfully started service 'SparkUI' on port 4040.
+2018-06-28 21:31:53 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@3030836d{/jobs,null,AVAILABLE,@Spark}
+2018-06-28 21:31:53 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5b742bc8{/jobs/json,null,AVAILABLE,@Spark}
+2018-06-28 21:31:53 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@74fb5b59{/jobs/job,null,AVAILABLE,@Spark}
+2018-06-28 21:31:53 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@722531ab{/jobs/job/json,null,AVAILABLE,@Spark}
+2018-06-28 21:31:53 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@8f57e4c{/stages,null,AVAILABLE,@Spark}
+2018-06-28 21:31:53 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@26fadd98{/stages/json,null,AVAILABLE,@Spark}
+2018-06-28 21:31:53 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@66451058{/stages/stage,null,AVAILABLE,@Spark}
+2018-06-28 21:31:53 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6ef4cbe1{/stages/stage/json,null,AVAILABLE,@Spark}
+2018-06-28 21:31:53 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@207dd1b7{/stages/pool,null,AVAILABLE,@Spark}
+2018-06-28 21:31:53 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@2baac4a7{/stages/pool/json,null,AVAILABLE,@Spark}
+2018-06-28 21:31:53 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@23ad2d17{/storage,null,AVAILABLE,@Spark}
+2018-06-28 21:31:53 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6bce4140{/storage/json,null,AVAILABLE,@Spark}
+2018-06-28 21:31:53 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@25f0c5e7{/storage/rdd,null,AVAILABLE,@Spark}
+2018-06-28 21:31:53 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5882b202{/storage/rdd/json,null,AVAILABLE,@Spark}
+2018-06-28 21:31:53 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@120df990{/environment,null,AVAILABLE,@Spark}
+2018-06-28 21:31:53 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@b506ed0{/environment/json,null,AVAILABLE,@Spark}
+2018-06-28 21:31:53 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@282c4da0{/executors,null,AVAILABLE,@Spark}
+2018-06-28 21:31:53 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@65f3e805{/executors/json,null,AVAILABLE,@Spark}
+2018-06-28 21:31:53 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@18cf5c52{/executors/threadDump,null,AVAILABLE,@Spark}
+2018-06-28 21:31:53 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@10618775{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2018-06-28 21:31:53 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5aea8994{/static,null,AVAILABLE,@Spark}
+2018-06-28 21:31:53 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@2b7facc7{/,null,AVAILABLE,@Spark}
+2018-06-28 21:31:53 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1c74d19{/api,null,AVAILABLE,@Spark}
+2018-06-28 21:31:53 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1c62c3fd{/jobs/job/kill,null,AVAILABLE,@Spark}
+2018-06-28 21:31:53 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@734ce281{/stages/stage/kill,null,AVAILABLE,@Spark}
+2018-06-28 21:31:53 INFO  SparkUI:54 - Bound SparkUI to 0.0.0.0, and started at http://dc1master-lan1:4040
+2018-06-28 21:31:53 INFO  StandaloneAppClient$ClientEndpoint:54 - Connecting to master spark://dc1master-lan1:7077...
+2018-06-28 21:31:53 INFO  TransportClientFactory:267 - Successfully created connection to dc1master-lan1/10.0.1.253:7077 after 22 ms (0 ms spent in bootstraps)
+2018-06-28 21:31:53 INFO  StandaloneSchedulerBackend:54 - Connected to Spark cluster with app ID app-20180628213153-0161
+2018-06-28 21:31:53 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20180628213153-0161/0 on worker-20180628164103-10.0.2.1-45032 (10.0.2.1:45032) with 8 core(s)
+2018-06-28 21:31:53 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20180628213153-0161/0 on hostPort 10.0.2.1:45032 with 8 core(s), 4.0 GB RAM
+2018-06-28 21:31:53 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20180628213153-0161/1 on worker-20180628164105-10.0.5.1-34262 (10.0.5.1:34262) with 8 core(s)
+2018-06-28 21:31:53 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20180628213153-0161/1 on hostPort 10.0.5.1:34262 with 8 core(s), 4.0 GB RAM
+2018-06-28 21:31:53 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20180628213153-0161/2 on worker-20180628164103-10.0.3.2-44865 (10.0.3.2:44865) with 8 core(s)
+2018-06-28 21:31:53 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20180628213153-0161/2 on hostPort 10.0.3.2:44865 with 8 core(s), 4.0 GB RAM
+2018-06-28 21:31:53 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20180628213153-0161/3 on worker-20180628164101-10.0.1.1-43445 (10.0.1.1:43445) with 8 core(s)
+2018-06-28 21:31:53 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20180628213153-0161/3 on hostPort 10.0.1.1:43445 with 8 core(s), 4.0 GB RAM
+2018-06-28 21:31:53 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20180628213153-0161/4 on worker-20180628164105-10.0.5.2-34633 (10.0.5.2:34633) with 8 core(s)
+2018-06-28 21:31:53 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20180628213153-0161/4 on hostPort 10.0.5.2:34633 with 8 core(s), 4.0 GB RAM
+2018-06-28 21:31:53 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20180628213153-0161/5 on worker-20180628164101-10.0.1.2-44652 (10.0.1.2:44652) with 8 core(s)
+2018-06-28 21:31:53 INFO  Utils:54 - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 34360.
+2018-06-28 21:31:53 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20180628213153-0161/5 on hostPort 10.0.1.2:44652 with 8 core(s), 4.0 GB RAM
+2018-06-28 21:31:53 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20180628213153-0161/6 on worker-20180628164103-10.0.3.1-36707 (10.0.3.1:36707) with 8 core(s)
+2018-06-28 21:31:53 INFO  NettyBlockTransferService:54 - Server created on dc1master-lan1:34360
+2018-06-28 21:31:53 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20180628213153-0161/6 on hostPort 10.0.3.1:36707 with 8 core(s), 4.0 GB RAM
+2018-06-28 21:31:53 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20180628213153-0161/7 on worker-20180628164103-10.0.4.1-44386 (10.0.4.1:44386) with 8 core(s)
+2018-06-28 21:31:53 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20180628213153-0161/7 on hostPort 10.0.4.1:44386 with 8 core(s), 4.0 GB RAM
+2018-06-28 21:31:53 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20180628213153-0161/8 on worker-20180628164103-10.0.2.2-43424 (10.0.2.2:43424) with 8 core(s)
+2018-06-28 21:31:53 INFO  BlockManager:54 - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2018-06-28 21:31:53 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20180628213153-0161/8 on hostPort 10.0.2.2:43424 with 8 core(s), 4.0 GB RAM
+2018-06-28 21:31:53 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20180628213153-0161/9 on worker-20180628164103-10.0.4.2-38139 (10.0.4.2:38139) with 8 core(s)
+2018-06-28 21:31:53 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20180628213153-0161/9 on hostPort 10.0.4.2:38139 with 8 core(s), 4.0 GB RAM
+2018-06-28 21:31:53 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20180628213153-0161/3 is now RUNNING
+2018-06-28 21:31:53 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20180628213153-0161/5 is now RUNNING
+2018-06-28 21:31:54 INFO  BlockManagerMaster:54 - Registering BlockManager BlockManagerId(driver, dc1master-lan1, 34360, None)
+2018-06-28 21:31:54 INFO  BlockManagerMasterEndpoint:54 - Registering block manager dc1master-lan1:34360 with 2004.6 MB RAM, BlockManagerId(driver, dc1master-lan1, 34360, None)
+2018-06-28 21:31:54 INFO  BlockManagerMaster:54 - Registered BlockManager BlockManagerId(driver, dc1master-lan1, 34360, None)
+2018-06-28 21:31:54 INFO  BlockManager:54 - external shuffle service port = 7337
+2018-06-28 21:31:54 INFO  BlockManager:54 - Initialized BlockManager: BlockManagerId(driver, dc1master-lan1, 34360, None)
+2018-06-28 21:31:54 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@2fee69a1{/metrics/json,null,AVAILABLE,@Spark}
+2018-06-28 21:31:54 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20180628213153-0161/0 is now RUNNING
+2018-06-28 21:31:54 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20180628213153-0161/8 is now RUNNING
+2018-06-28 21:31:54 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20180628213153-0161/2 is now RUNNING
+2018-06-28 21:31:54 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20180628213153-0161/6 is now RUNNING
+2018-06-28 21:31:54 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20180628213153-0161/9 is now RUNNING
+2018-06-28 21:31:54 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20180628213153-0161/7 is now RUNNING
+2018-06-28 21:31:54 INFO  EventLoggingListener:54 - Logging events to hdfs://dc1master:9000/user/jimmyyou/spark-logs/app-20180628213153-0161
+2018-06-28 21:31:54 INFO  StandaloneSchedulerBackend:54 - SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+2018-06-28 21:31:54 INFO  SharedState:54 - loading hive config file: file:/users/jimmyyou/spark-2.3.1-bin-hadoop2.7/conf/hive-site.xml
+2018-06-28 21:31:54 INFO  SharedState:54 - spark.sql.warehouse.dir is not set, but hive.metastore.warehouse.dir is set. Setting spark.sql.warehouse.dir to the value of hive.metastore.warehouse.dir ('/user/hive/warehouse').
+2018-06-28 21:31:54 INFO  SharedState:54 - Warehouse path is '/user/hive/warehouse'.
+2018-06-28 21:31:54 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@395281c2{/SQL,null,AVAILABLE,@Spark}
+2018-06-28 21:31:54 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@41d20f06{/SQL/json,null,AVAILABLE,@Spark}
+2018-06-28 21:31:54 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@69f9b561{/SQL/execution,null,AVAILABLE,@Spark}
+2018-06-28 21:31:54 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@7e8f23ad{/SQL/execution/json,null,AVAILABLE,@Spark}
+2018-06-28 21:31:54 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@14485747{/static/sql,null,AVAILABLE,@Spark}
+2018-06-28 21:31:54 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20180628213153-0161/1 is now RUNNING
+2018-06-28 21:31:54 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20180628213153-0161/4 is now RUNNING
+2018-06-28 21:31:54 INFO  HiveUtils:54 - Initializing HiveMetastoreConnection version 1.2.1 using Spark classes.
+2018-06-28 21:31:54 INFO  HiveClientImpl:54 - Warehouse location for Hive client (version 1.2.2) is /user/hive/warehouse
+2018-06-28 21:31:54 INFO  HiveMetaStore:746 - 0: get_database: default
+2018-06-28 21:31:54 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_database: default	
+2018-06-28 21:31:54 INFO  StateStoreCoordinatorRef:54 - Registered StateStoreCoordinator endpoint
+2018-06-28 21:31:54 INFO  HiveMetaStore:746 - 0: get_database: global_temp
+2018-06-28 21:31:54 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_database: global_temp	
+2018-06-28 21:31:54 WARN  ObjectStore:568 - Failed to get database global_temp, returning NoSuchObjectException
+2018-06-28 21:31:54 INFO  HiveMetaStore:746 - 0: get_database: tpcds_text_20
+2018-06-28 21:31:54 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_database: tpcds_text_20	
+2018-06-28 21:31:54 INFO  HiveMetaStore:746 - 0: get_database: tpcds_text_20
+2018-06-28 21:31:54 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_database: tpcds_text_20	
+2018-06-28 21:31:54 INFO  HiveMetaStore:746 - 0: get_table : db=tpcds_text_20 tbl=date_dim
+2018-06-28 21:31:54 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_table : db=tpcds_text_20 tbl=date_dim	
+2018-06-28 21:31:55 INFO  HiveMetaStore:746 - 0: get_table : db=tpcds_text_20 tbl=store_sales
+2018-06-28 21:31:55 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_table : db=tpcds_text_20 tbl=store_sales	
+2018-06-28 21:31:55 INFO  HiveMetaStore:746 - 0: get_table : db=tpcds_text_20 tbl=item
+2018-06-28 21:31:55 INFO  audit:371 - ugi=jimmyyou	ip=unknown-ip-addr	cmd=get_table : db=tpcds_text_20 tbl=item	
+2018-06-28 21:31:55 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.1.2:42114) with ID 5
+2018-06-28 21:31:55 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.1.1:55442) with ID 3
+2018-06-28 21:31:55 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.0.1.2:40048 with 2004.6 MB RAM, BlockManagerId(5, 10.0.1.2, 40048, None)
+2018-06-28 21:31:55 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.0.1.1:37150 with 2004.6 MB RAM, BlockManagerId(3, 10.0.1.1, 37150, None)
+2018-06-28 21:31:56 WARN  Utils:66 - Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.debug.maxToStringFields' in SparkEnv.conf.
+2018-06-28 21:31:56 INFO  CodeGenerator:54 - Code generated in 206.719844 ms
+2018-06-28 21:31:56 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.2.2:59296) with ID 8
+2018-06-28 21:31:56 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.2.1:59280) with ID 0
+2018-06-28 21:31:56 INFO  ContextCleaner:54 - Cleaned accumulator 0
+2018-06-28 21:31:56 INFO  CodeGenerator:54 - Code generated in 19.518169 ms
+2018-06-28 21:31:56 INFO  CodeGenerator:54 - Code generated in 22.134609 ms
+2018-06-28 21:31:56 INFO  CodeGenerator:54 - Code generated in 35.007741 ms
+2018-06-28 21:31:56 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.0.2.2:43408 with 2004.6 MB RAM, BlockManagerId(8, 10.0.2.2, 43408, None)
+2018-06-28 21:31:56 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.0.2.1:37178 with 2004.6 MB RAM, BlockManagerId(0, 10.0.2.1, 37178, None)
+2018-06-28 21:31:57 INFO  MemoryStore:54 - Block broadcast_1 stored as values in memory (estimated size 291.2 KB, free 2004.0 MB)
+2018-06-28 21:31:57 INFO  MemoryStore:54 - Block broadcast_0 stored as values in memory (estimated size 291.3 KB, free 2004.0 MB)
+2018-06-28 21:31:57 INFO  MemoryStore:54 - Block broadcast_0_piece0 stored as bytes in memory (estimated size 25.1 KB, free 2004.0 MB)
+2018-06-28 21:31:57 INFO  MemoryStore:54 - Block broadcast_1_piece0 stored as bytes in memory (estimated size 25.1 KB, free 2004.0 MB)
+2018-06-28 21:31:57 INFO  BlockManagerInfo:54 - Added broadcast_1_piece0 in memory on dc1master-lan1:34360 (size: 25.1 KB, free: 2004.6 MB)
+2018-06-28 21:31:57 INFO  SparkContext:54 - Created broadcast 1 from 
+2018-06-28 21:31:57 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on dc1master-lan1:34360 (size: 25.1 KB, free: 2004.6 MB)
+2018-06-28 21:31:57 INFO  SparkContext:54 - Created broadcast 0 from 
+2018-06-28 21:31:57 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.3.2:52628) with ID 2
+2018-06-28 21:31:57 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.3.1:38464) with ID 6
+2018-06-28 21:31:57 INFO  FileInputFormat:249 - Total input paths to process : 1
+2018-06-28 21:31:57 INFO  FileInputFormat:249 - Total input paths to process : 1
+2018-06-28 21:31:57 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.4.1:48784) with ID 7
+2018-06-28 21:31:57 INFO  SparkContext:54 - Starting job: run at ThreadPoolExecutor.java:1142
+2018-06-28 21:31:57 INFO  SparkContext:54 - Starting job: run at ThreadPoolExecutor.java:1142
+2018-06-28 21:31:57 INFO  DAGScheduler:54 - Got job 0 (run at ThreadPoolExecutor.java:1142) with 2 output partitions
+2018-06-28 21:31:57 INFO  DAGScheduler:54 - Final stage: ResultStage 0 (run at ThreadPoolExecutor.java:1142)
+2018-06-28 21:31:57 INFO  DAGScheduler:54 - Parents of final stage: List()
+2018-06-28 21:31:57 INFO  DAGScheduler:54 - Missing parents: List()
+2018-06-28 21:31:57 INFO  DAGScheduler:54 - Submitting ResultStage 0 (MapPartitionsRDD[10] at run at ThreadPoolExecutor.java:1142), which has no missing parents
+2018-06-28 21:31:57 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.4.2:48574) with ID 9
+2018-06-28 21:31:57 INFO  MemoryStore:54 - Block broadcast_2 stored as values in memory (estimated size 12.7 KB, free 2004.0 MB)
+2018-06-28 21:31:57 INFO  MemoryStore:54 - Block broadcast_2_piece0 stored as bytes in memory (estimated size 6.1 KB, free 2004.0 MB)
+2018-06-28 21:31:57 INFO  BlockManagerInfo:54 - Added broadcast_2_piece0 in memory on dc1master-lan1:34360 (size: 6.1 KB, free: 2004.5 MB)
+2018-06-28 21:31:57 INFO  SparkContext:54 - Created broadcast 2 from broadcast at DAGScheduler.scala:1039
+2018-06-28 21:31:57 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 0 (MapPartitionsRDD[10] at run at ThreadPoolExecutor.java:1142) (first 15 tasks are for partitions Vector(0, 1))
+2018-06-28 21:31:57 INFO  TaskSchedulerImpl:54 - Adding task set 0.0 with 2 tasks
+2018-06-28 21:31:57 INFO  DAGScheduler:54 - Got job 1 (run at ThreadPoolExecutor.java:1142) with 2 output partitions
+2018-06-28 21:31:57 INFO  DAGScheduler:54 - Final stage: ResultStage 1 (run at ThreadPoolExecutor.java:1142)
+2018-06-28 21:31:57 INFO  DAGScheduler:54 - Parents of final stage: List()
+2018-06-28 21:31:57 INFO  DAGScheduler:54 - Missing parents: List()
+2018-06-28 21:31:57 INFO  DAGScheduler:54 - Submitting ResultStage 1 (MapPartitionsRDD[11] at run at ThreadPoolExecutor.java:1142), which has no missing parents
+2018-06-28 21:31:57 INFO  MemoryStore:54 - Block broadcast_3 stored as values in memory (estimated size 13.1 KB, free 2004.0 MB)
+2018-06-28 21:31:57 INFO  MemoryStore:54 - Block broadcast_3_piece0 stored as bytes in memory (estimated size 6.3 KB, free 2003.9 MB)
+2018-06-28 21:31:57 INFO  BlockManagerInfo:54 - Added broadcast_3_piece0 in memory on dc1master-lan1:34360 (size: 6.3 KB, free: 2004.5 MB)
+2018-06-28 21:31:57 INFO  SparkContext:54 - Created broadcast 3 from broadcast at DAGScheduler.scala:1039
+2018-06-28 21:31:57 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 1 (MapPartitionsRDD[11] at run at ThreadPoolExecutor.java:1142) (first 15 tasks are for partitions Vector(0, 1))
+2018-06-28 21:31:57 INFO  TaskSchedulerImpl:54 - Adding task set 1.0 with 2 tasks
+2018-06-28 21:31:57 INFO  TaskSetManager:54 - Starting task 0.0 in stage 0.0 (TID 0, 10.0.1.1, executor 3, partition 0, ANY, 7916 bytes)
+2018-06-28 21:31:57 INFO  TaskSetManager:54 - Starting task 1.0 in stage 0.0 (TID 1, 10.0.3.2, executor 2, partition 1, ANY, 7916 bytes)
+2018-06-28 21:31:57 INFO  TaskSetManager:54 - Starting task 0.0 in stage 1.0 (TID 2, 10.0.2.1, executor 0, partition 0, ANY, 7912 bytes)
+2018-06-28 21:31:57 INFO  TaskSetManager:54 - Starting task 1.0 in stage 1.0 (TID 3, 10.0.4.1, executor 7, partition 1, ANY, 7912 bytes)
+2018-06-28 21:31:57 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.0.3.2:37458 with 2004.6 MB RAM, BlockManagerId(2, 10.0.3.2, 37458, None)
+2018-06-28 21:31:57 INFO  BlockManagerInfo:54 - Added broadcast_2_piece0 in memory on 10.0.1.1:37150 (size: 6.1 KB, free: 2004.6 MB)
+2018-06-28 21:31:57 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.0.3.1:39457 with 2004.6 MB RAM, BlockManagerId(6, 10.0.3.1, 39457, None)
+2018-06-28 21:31:57 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.0.4.1:35056 with 2004.6 MB RAM, BlockManagerId(7, 10.0.4.1, 35056, None)
+2018-06-28 21:31:57 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.0.4.2:41779 with 2004.6 MB RAM, BlockManagerId(9, 10.0.4.2, 41779, None)
+2018-06-28 21:31:57 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on 10.0.1.1:37150 (size: 25.1 KB, free: 2004.6 MB)
+2018-06-28 21:31:58 INFO  BlockManagerInfo:54 - Added broadcast_3_piece0 in memory on 10.0.2.1:37178 (size: 6.3 KB, free: 2004.6 MB)
+2018-06-28 21:31:58 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.5.1:45308) with ID 1
+2018-06-28 21:31:58 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.5.2:55406) with ID 4
+2018-06-28 21:31:58 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.0.5.1:41424 with 2004.6 MB RAM, BlockManagerId(1, 10.0.5.1, 41424, None)
+2018-06-28 21:31:58 INFO  BlockManagerInfo:54 - Added broadcast_2_piece0 in memory on 10.0.3.2:37458 (size: 6.1 KB, free: 2004.6 MB)
+2018-06-28 21:31:58 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.0.5.2:40600 with 2004.6 MB RAM, BlockManagerId(4, 10.0.5.2, 40600, None)
+2018-06-28 21:31:58 INFO  BlockManagerInfo:54 - Added broadcast_3_piece0 in memory on 10.0.4.1:35056 (size: 6.3 KB, free: 2004.6 MB)
+2018-06-28 21:31:59 INFO  BlockManagerInfo:54 - Added broadcast_1_piece0 in memory on 10.0.2.1:37178 (size: 25.1 KB, free: 2004.6 MB)
+2018-06-28 21:31:59 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on 10.0.3.2:37458 (size: 25.1 KB, free: 2004.6 MB)
+2018-06-28 21:32:00 INFO  BlockManagerInfo:54 - Added broadcast_1_piece0 in memory on 10.0.4.1:35056 (size: 25.1 KB, free: 2004.6 MB)
+2018-06-28 21:32:01 INFO  TaskSetManager:54 - Finished task 0.0 in stage 1.0 (TID 2) in 4230 ms on 10.0.2.1 (executor 0) (1/2)
+2018-06-28 21:32:01 INFO  TaskSetManager:54 - Finished task 1.0 in stage 0.0 (TID 1) in 4526 ms on 10.0.3.2 (executor 2) (1/2)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Finished task 1.0 in stage 1.0 (TID 3) in 4888 ms on 10.0.4.1 (executor 7) (2/2)
+2018-06-28 21:32:02 INFO  TaskSchedulerImpl:54 - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2018-06-28 21:32:02 INFO  DAGScheduler:54 - ResultStage 1 (run at ThreadPoolExecutor.java:1142) finished in 4.904 s
+2018-06-28 21:32:02 INFO  DAGScheduler:54 - Job 1 finished: run at ThreadPoolExecutor.java:1142, took 4.956808 s
+2018-06-28 21:32:02 INFO  CodeGenerator:54 - Code generated in 6.863526 ms
+2018-06-28 21:32:02 INFO  MemoryStore:54 - Block broadcast_4 stored as values in memory (estimated size 1040.0 KB, free 2002.9 MB)
+2018-06-28 21:32:02 INFO  MemoryStore:54 - Block broadcast_4_piece0 stored as bytes in memory (estimated size 7.7 KB, free 2002.9 MB)
+2018-06-28 21:32:02 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on dc1master-lan1:34360 (size: 7.7 KB, free: 2004.5 MB)
+2018-06-28 21:32:02 INFO  SparkContext:54 - Created broadcast 4 from run at ThreadPoolExecutor.java:1142
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Finished task 0.0 in stage 0.0 (TID 0) in 5028 ms on 10.0.1.1 (executor 3) (2/2)
+2018-06-28 21:32:02 INFO  TaskSchedulerImpl:54 - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2018-06-28 21:32:02 INFO  DAGScheduler:54 - ResultStage 0 (run at ThreadPoolExecutor.java:1142) finished in 5.055 s
+2018-06-28 21:32:02 INFO  DAGScheduler:54 - Job 0 finished: run at ThreadPoolExecutor.java:1142, took 5.078757 s
+2018-06-28 21:32:02 INFO  MemoryStore:54 - Block broadcast_5 stored as values in memory (estimated size 1024.3 KB, free 2001.9 MB)
+2018-06-28 21:32:02 INFO  MemoryStore:54 - Block broadcast_5_piece0 stored as bytes in memory (estimated size 544.0 B, free 2001.9 MB)
+2018-06-28 21:32:02 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on dc1master-lan1:34360 (size: 544.0 B, free: 2004.5 MB)
+2018-06-28 21:32:02 INFO  SparkContext:54 - Created broadcast 5 from run at ThreadPoolExecutor.java:1142
+2018-06-28 21:32:02 INFO  CodeGenerator:54 - Code generated in 45.233829 ms
+2018-06-28 21:32:02 INFO  MemoryStore:54 - Block broadcast_6 stored as values in memory (estimated size 291.3 KB, free 2001.6 MB)
+2018-06-28 21:32:02 INFO  MemoryStore:54 - Block broadcast_6_piece0 stored as bytes in memory (estimated size 25.1 KB, free 2001.6 MB)
+2018-06-28 21:32:02 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on dc1master-lan1:34360 (size: 25.1 KB, free: 2004.5 MB)
+2018-06-28 21:32:02 INFO  SparkContext:54 - Created broadcast 6 from 
+2018-06-28 21:32:02 INFO  FileInputFormat:249 - Total input paths to process : 20
+2018-06-28 21:32:02 INFO  SparkContext:54 - Starting job: processCmd at CliDriver.java:376
+2018-06-28 21:32:02 INFO  DAGScheduler:54 - Registering RDD 17 (processCmd at CliDriver.java:376)
+2018-06-28 21:32:02 INFO  DAGScheduler:54 - Got job 2 (processCmd at CliDriver.java:376) with 40 output partitions
+2018-06-28 21:32:02 INFO  DAGScheduler:54 - Final stage: ResultStage 3 (processCmd at CliDriver.java:376)
+2018-06-28 21:32:02 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 2)
+2018-06-28 21:32:02 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 2)
+2018-06-28 21:32:02 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 2 (MapPartitionsRDD[17] at processCmd at CliDriver.java:376), which has no missing parents
+2018-06-28 21:32:02 INFO  MemoryStore:54 - Block broadcast_7 stored as values in memory (estimated size 52.1 KB, free 2001.6 MB)
+2018-06-28 21:32:02 INFO  MemoryStore:54 - Block broadcast_7_piece0 stored as bytes in memory (estimated size 22.3 KB, free 2001.5 MB)
+2018-06-28 21:32:02 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on dc1master-lan1:34360 (size: 22.3 KB, free: 2004.5 MB)
+2018-06-28 21:32:02 INFO  SparkContext:54 - Created broadcast 7 from broadcast at DAGScheduler.scala:1039
+2018-06-28 21:32:02 INFO  DAGScheduler:54 - Submitting 60 missing tasks from ShuffleMapStage 2 (MapPartitionsRDD[17] at processCmd at CliDriver.java:376) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14))
+2018-06-28 21:32:02 INFO  TaskSchedulerImpl:54 - Adding task set 2.0 with 60 tasks
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 0.0 in stage 2.0 (TID 4, 10.0.3.1, executor 6, partition 0, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 1.0 in stage 2.0 (TID 5, 10.0.5.1, executor 1, partition 1, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 2.0 in stage 2.0 (TID 6, 10.0.1.2, executor 5, partition 2, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 3.0 in stage 2.0 (TID 7, 10.0.2.1, executor 0, partition 3, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 4.0 in stage 2.0 (TID 8, 10.0.5.2, executor 4, partition 4, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 5.0 in stage 2.0 (TID 9, 10.0.3.2, executor 2, partition 5, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 6.0 in stage 2.0 (TID 10, 10.0.4.1, executor 7, partition 6, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 7.0 in stage 2.0 (TID 11, 10.0.1.1, executor 3, partition 7, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 8.0 in stage 2.0 (TID 12, 10.0.4.2, executor 9, partition 8, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 9.0 in stage 2.0 (TID 13, 10.0.2.2, executor 8, partition 9, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 10.0 in stage 2.0 (TID 14, 10.0.3.1, executor 6, partition 10, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 11.0 in stage 2.0 (TID 15, 10.0.5.1, executor 1, partition 11, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 12.0 in stage 2.0 (TID 16, 10.0.1.2, executor 5, partition 12, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 13.0 in stage 2.0 (TID 17, 10.0.2.1, executor 0, partition 13, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 14.0 in stage 2.0 (TID 18, 10.0.5.2, executor 4, partition 14, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 15.0 in stage 2.0 (TID 19, 10.0.3.2, executor 2, partition 15, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 16.0 in stage 2.0 (TID 20, 10.0.4.1, executor 7, partition 16, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 17.0 in stage 2.0 (TID 21, 10.0.1.1, executor 3, partition 17, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 18.0 in stage 2.0 (TID 22, 10.0.4.2, executor 9, partition 18, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 19.0 in stage 2.0 (TID 23, 10.0.2.2, executor 8, partition 19, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 20.0 in stage 2.0 (TID 24, 10.0.3.1, executor 6, partition 20, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 21.0 in stage 2.0 (TID 25, 10.0.5.1, executor 1, partition 21, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 22.0 in stage 2.0 (TID 26, 10.0.1.2, executor 5, partition 22, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 23.0 in stage 2.0 (TID 27, 10.0.2.1, executor 0, partition 23, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 24.0 in stage 2.0 (TID 28, 10.0.5.2, executor 4, partition 24, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 25.0 in stage 2.0 (TID 29, 10.0.3.2, executor 2, partition 25, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 26.0 in stage 2.0 (TID 30, 10.0.4.1, executor 7, partition 26, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 27.0 in stage 2.0 (TID 31, 10.0.1.1, executor 3, partition 27, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 28.0 in stage 2.0 (TID 32, 10.0.4.2, executor 9, partition 28, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 29.0 in stage 2.0 (TID 33, 10.0.2.2, executor 8, partition 29, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 30.0 in stage 2.0 (TID 34, 10.0.3.1, executor 6, partition 30, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 31.0 in stage 2.0 (TID 35, 10.0.5.1, executor 1, partition 31, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 32.0 in stage 2.0 (TID 36, 10.0.1.2, executor 5, partition 32, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 33.0 in stage 2.0 (TID 37, 10.0.2.1, executor 0, partition 33, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 34.0 in stage 2.0 (TID 38, 10.0.5.2, executor 4, partition 34, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 35.0 in stage 2.0 (TID 39, 10.0.3.2, executor 2, partition 35, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 36.0 in stage 2.0 (TID 40, 10.0.4.1, executor 7, partition 36, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 37.0 in stage 2.0 (TID 41, 10.0.1.1, executor 3, partition 37, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 38.0 in stage 2.0 (TID 42, 10.0.4.2, executor 9, partition 38, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 39.0 in stage 2.0 (TID 43, 10.0.2.2, executor 8, partition 39, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 40.0 in stage 2.0 (TID 44, 10.0.3.1, executor 6, partition 40, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 41.0 in stage 2.0 (TID 45, 10.0.5.1, executor 1, partition 41, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 42.0 in stage 2.0 (TID 46, 10.0.1.2, executor 5, partition 42, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 43.0 in stage 2.0 (TID 47, 10.0.2.1, executor 0, partition 43, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 44.0 in stage 2.0 (TID 48, 10.0.5.2, executor 4, partition 44, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 45.0 in stage 2.0 (TID 49, 10.0.3.2, executor 2, partition 45, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 46.0 in stage 2.0 (TID 50, 10.0.4.1, executor 7, partition 46, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 47.0 in stage 2.0 (TID 51, 10.0.1.1, executor 3, partition 47, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 48.0 in stage 2.0 (TID 52, 10.0.4.2, executor 9, partition 48, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 49.0 in stage 2.0 (TID 53, 10.0.2.2, executor 8, partition 49, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 50.0 in stage 2.0 (TID 54, 10.0.3.1, executor 6, partition 50, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 51.0 in stage 2.0 (TID 55, 10.0.5.1, executor 1, partition 51, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 52.0 in stage 2.0 (TID 56, 10.0.1.2, executor 5, partition 52, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 53.0 in stage 2.0 (TID 57, 10.0.2.1, executor 0, partition 53, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 54.0 in stage 2.0 (TID 58, 10.0.5.2, executor 4, partition 54, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 55.0 in stage 2.0 (TID 59, 10.0.3.2, executor 2, partition 55, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 56.0 in stage 2.0 (TID 60, 10.0.4.1, executor 7, partition 56, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 57.0 in stage 2.0 (TID 61, 10.0.1.1, executor 3, partition 57, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 58.0 in stage 2.0 (TID 62, 10.0.4.2, executor 9, partition 58, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  TaskSetManager:54 - Starting task 59.0 in stage 2.0 (TID 63, 10.0.2.2, executor 8, partition 59, ANY, 7908 bytes)
+2018-06-28 21:32:02 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on 10.0.1.1:37150 (size: 22.3 KB, free: 2004.5 MB)
+2018-06-28 21:32:02 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on 10.0.1.2:40048 (size: 22.3 KB, free: 2004.6 MB)
+2018-06-28 21:32:02 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on 10.0.1.1:37150 (size: 25.1 KB, free: 2004.5 MB)
+2018-06-28 21:32:02 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on 10.0.1.1:37150 (size: 544.0 B, free: 2004.5 MB)
+2018-06-28 21:32:02 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on 10.0.1.1:37150 (size: 7.7 KB, free: 2004.5 MB)
+2018-06-28 21:32:02 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on 10.0.1.2:40048 (size: 25.1 KB, free: 2004.6 MB)
+2018-06-28 21:32:03 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on 10.0.2.1:37178 (size: 22.3 KB, free: 2004.5 MB)
+2018-06-28 21:32:03 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on 10.0.2.2:43408 (size: 22.3 KB, free: 2004.6 MB)
+2018-06-28 21:32:03 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on 10.0.3.2:37458 (size: 22.3 KB, free: 2004.5 MB)
+2018-06-28 21:32:04 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on 10.0.1.2:40048 (size: 544.0 B, free: 2004.6 MB)
+2018-06-28 21:32:04 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on 10.0.4.1:35056 (size: 22.3 KB, free: 2004.5 MB)
+2018-06-28 21:32:04 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on 10.0.1.2:40048 (size: 7.7 KB, free: 2004.5 MB)
+2018-06-28 21:32:04 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on 10.0.4.2:41779 (size: 22.3 KB, free: 2004.6 MB)
+2018-06-28 21:32:04 INFO  TaskSetManager:54 - Finished task 47.0 in stage 2.0 (TID 51) in 1702 ms on 10.0.1.1 (executor 3) (1/60)
+2018-06-28 21:32:04 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on 10.0.3.1:39457 (size: 22.3 KB, free: 2004.6 MB)
+2018-06-28 21:32:04 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on 10.0.2.1:37178 (size: 25.1 KB, free: 2004.5 MB)
+2018-06-28 21:32:04 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on 10.0.5.1:41424 (size: 22.3 KB, free: 2004.6 MB)
+2018-06-28 21:32:04 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on 10.0.5.2:40600 (size: 22.3 KB, free: 2004.6 MB)
+2018-06-28 21:32:05 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on 10.0.2.2:43408 (size: 25.1 KB, free: 2004.6 MB)
+2018-06-28 21:32:05 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on 10.0.3.2:37458 (size: 25.1 KB, free: 2004.5 MB)
+2018-06-28 21:32:05 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on 10.0.4.1:35056 (size: 25.1 KB, free: 2004.5 MB)
+2018-06-28 21:32:05 INFO  TaskSetManager:54 - Finished task 22.0 in stage 2.0 (TID 26) in 3163 ms on 10.0.1.2 (executor 5) (2/60)
+2018-06-28 21:32:05 INFO  TaskSetManager:54 - Finished task 37.0 in stage 2.0 (TID 41) in 3186 ms on 10.0.1.1 (executor 3) (3/60)
+2018-06-28 21:32:05 INFO  TaskSetManager:54 - Finished task 52.0 in stage 2.0 (TID 56) in 3198 ms on 10.0.1.2 (executor 5) (4/60)
+2018-06-28 21:32:05 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on 10.0.2.1:37178 (size: 544.0 B, free: 2004.5 MB)
+2018-06-28 21:32:05 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on 10.0.3.1:39457 (size: 25.1 KB, free: 2004.6 MB)
+2018-06-28 21:32:05 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on 10.0.4.2:41779 (size: 25.1 KB, free: 2004.6 MB)
+2018-06-28 21:32:06 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on 10.0.3.2:37458 (size: 544.0 B, free: 2004.5 MB)
+2018-06-28 21:32:06 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on 10.0.5.2:40600 (size: 25.1 KB, free: 2004.6 MB)
+2018-06-28 21:32:06 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on 10.0.5.1:41424 (size: 25.1 KB, free: 2004.6 MB)
+2018-06-28 21:32:06 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on 10.0.2.1:37178 (size: 7.7 KB, free: 2004.5 MB)
+2018-06-28 21:32:06 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on 10.0.4.1:35056 (size: 544.0 B, free: 2004.5 MB)
+2018-06-28 21:32:07 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on 10.0.3.2:37458 (size: 7.7 KB, free: 2004.5 MB)
+2018-06-28 21:32:07 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on 10.0.2.2:43408 (size: 544.0 B, free: 2004.6 MB)
+2018-06-28 21:32:08 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on 10.0.3.1:39457 (size: 544.0 B, free: 2004.6 MB)
+2018-06-28 21:32:08 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on 10.0.4.1:35056 (size: 7.7 KB, free: 2004.5 MB)
+2018-06-28 21:32:08 INFO  TaskSetManager:54 - Finished task 3.0 in stage 2.0 (TID 7) in 5812 ms on 10.0.2.1 (executor 0) (5/60)
+2018-06-28 21:32:08 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on 10.0.2.2:43408 (size: 7.7 KB, free: 2004.5 MB)
+2018-06-28 21:32:08 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on 10.0.4.2:41779 (size: 544.0 B, free: 2004.6 MB)
+2018-06-28 21:32:08 INFO  TaskSetManager:54 - Finished task 15.0 in stage 2.0 (TID 19) in 6447 ms on 10.0.3.2 (executor 2) (6/60)
+2018-06-28 21:32:08 INFO  TaskSetManager:54 - Finished task 33.0 in stage 2.0 (TID 37) in 6456 ms on 10.0.2.1 (executor 0) (7/60)
+2018-06-28 21:32:09 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on 10.0.3.1:39457 (size: 7.7 KB, free: 2004.5 MB)
+2018-06-28 21:32:09 INFO  TaskSetManager:54 - Finished task 55.0 in stage 2.0 (TID 59) in 6744 ms on 10.0.3.2 (executor 2) (8/60)
+2018-06-28 21:32:09 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on 10.0.5.2:40600 (size: 544.0 B, free: 2004.6 MB)
+2018-06-28 21:32:09 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on 10.0.4.2:41779 (size: 7.7 KB, free: 2004.5 MB)
+2018-06-28 21:32:10 INFO  TaskSetManager:54 - Finished task 36.0 in stage 2.0 (TID 40) in 7517 ms on 10.0.4.1 (executor 7) (9/60)
+2018-06-28 21:32:10 INFO  TaskSetManager:54 - Finished task 16.0 in stage 2.0 (TID 20) in 7605 ms on 10.0.4.1 (executor 7) (10/60)
+2018-06-28 21:32:10 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on 10.0.5.1:41424 (size: 544.0 B, free: 2004.6 MB)
+2018-06-28 21:32:10 INFO  TaskSetManager:54 - Finished task 9.0 in stage 2.0 (TID 13) in 8125 ms on 10.0.2.2 (executor 8) (11/60)
+2018-06-28 21:32:10 INFO  TaskSetManager:54 - Finished task 39.0 in stage 2.0 (TID 43) in 8132 ms on 10.0.2.2 (executor 8) (12/60)
+2018-06-28 21:32:10 INFO  TaskSetManager:54 - Finished task 20.0 in stage 2.0 (TID 24) in 8163 ms on 10.0.3.1 (executor 6) (13/60)
+2018-06-28 21:32:10 INFO  TaskSetManager:54 - Finished task 0.0 in stage 2.0 (TID 4) in 8261 ms on 10.0.3.1 (executor 6) (14/60)
+2018-06-28 21:32:10 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on 10.0.5.2:40600 (size: 7.7 KB, free: 2004.5 MB)
+2018-06-28 21:32:10 INFO  TaskSetManager:54 - Finished task 40.0 in stage 2.0 (TID 44) in 8434 ms on 10.0.3.1 (executor 6) (15/60)
+2018-06-28 21:32:11 INFO  TaskSetManager:54 - Finished task 38.0 in stage 2.0 (TID 42) in 8989 ms on 10.0.4.2 (executor 9) (16/60)
+2018-06-28 21:32:11 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on 10.0.5.1:41424 (size: 7.7 KB, free: 2004.5 MB)
+2018-06-28 21:32:12 INFO  TaskSetManager:54 - Finished task 4.0 in stage 2.0 (TID 8) in 10197 ms on 10.0.5.2 (executor 4) (17/60)
+2018-06-28 21:32:13 INFO  TaskSetManager:54 - Finished task 53.0 in stage 2.0 (TID 57) in 10758 ms on 10.0.2.1 (executor 0) (18/60)
+2018-06-28 21:32:13 INFO  TaskSetManager:54 - Finished task 11.0 in stage 2.0 (TID 15) in 11218 ms on 10.0.5.1 (executor 1) (19/60)
+2018-06-28 21:32:14 INFO  TaskSetManager:54 - Finished task 34.0 in stage 2.0 (TID 38) in 11801 ms on 10.0.5.2 (executor 4) (20/60)
+2018-06-28 21:32:14 INFO  TaskSetManager:54 - Finished task 10.0 in stage 2.0 (TID 14) in 12275 ms on 10.0.3.1 (executor 6) (21/60)
+2018-06-28 21:32:15 INFO  TaskSetManager:54 - Finished task 6.0 in stage 2.0 (TID 10) in 12572 ms on 10.0.4.1 (executor 7) (22/60)
+2018-06-28 21:32:16 INFO  TaskSetManager:54 - Finished task 17.0 in stage 2.0 (TID 21) in 14186 ms on 10.0.1.1 (executor 3) (23/60)
+2018-06-28 21:32:16 INFO  TaskSetManager:54 - Finished task 43.0 in stage 2.0 (TID 47) in 14315 ms on 10.0.2.1 (executor 0) (24/60)
+2018-06-28 21:32:17 INFO  TaskSetManager:54 - Finished task 2.0 in stage 2.0 (TID 6) in 14595 ms on 10.0.1.2 (executor 5) (25/60)
+2018-06-28 21:32:17 INFO  TaskSetManager:54 - Finished task 7.0 in stage 2.0 (TID 11) in 14719 ms on 10.0.1.1 (executor 3) (26/60)
+2018-06-28 21:32:17 INFO  TaskSetManager:54 - Finished task 45.0 in stage 2.0 (TID 49) in 15174 ms on 10.0.3.2 (executor 2) (27/60)
+2018-06-28 21:32:18 INFO  TaskSetManager:54 - Finished task 56.0 in stage 2.0 (TID 60) in 15527 ms on 10.0.4.1 (executor 7) (28/60)
+2018-06-28 21:32:18 INFO  TaskSetManager:54 - Finished task 32.0 in stage 2.0 (TID 36) in 15690 ms on 10.0.1.2 (executor 5) (29/60)
+2018-06-28 21:32:19 INFO  TaskSetManager:54 - Finished task 29.0 in stage 2.0 (TID 33) in 17211 ms on 10.0.2.2 (executor 8) (30/60)
+2018-06-28 21:32:20 INFO  TaskSetManager:54 - Finished task 59.0 in stage 2.0 (TID 63) in 17954 ms on 10.0.2.2 (executor 8) (31/60)
+2018-06-28 21:32:20 INFO  TaskSetManager:54 - Finished task 19.0 in stage 2.0 (TID 23) in 18347 ms on 10.0.2.2 (executor 8) (32/60)
+2018-06-28 21:32:25 INFO  TaskSetManager:54 - Finished task 30.0 in stage 2.0 (TID 34) in 22587 ms on 10.0.3.1 (executor 6) (33/60)
+2018-06-28 21:32:26 INFO  TaskSetManager:54 - Finished task 46.0 in stage 2.0 (TID 50) in 23712 ms on 10.0.4.1 (executor 7) (34/60)
+2018-06-28 21:32:27 INFO  TaskSetManager:54 - Finished task 13.0 in stage 2.0 (TID 17) in 24911 ms on 10.0.2.1 (executor 0) (35/60)
+2018-06-28 21:32:30 INFO  TaskSetManager:54 - Finished task 1.0 in stage 2.0 (TID 5) in 27652 ms on 10.0.5.1 (executor 1) (36/60)
+2018-06-28 21:32:30 INFO  TaskSetManager:54 - Finished task 42.0 in stage 2.0 (TID 46) in 28282 ms on 10.0.1.2 (executor 5) (37/60)
+2018-06-28 21:32:32 INFO  TaskSetManager:54 - Finished task 26.0 in stage 2.0 (TID 30) in 29959 ms on 10.0.4.1 (executor 7) (38/60)
+2018-06-28 21:32:34 INFO  TaskSetManager:54 - Finished task 12.0 in stage 2.0 (TID 16) in 32231 ms on 10.0.1.2 (executor 5) (39/60)
+2018-06-28 21:32:35 INFO  TaskSetManager:54 - Finished task 54.0 in stage 2.0 (TID 58) in 32963 ms on 10.0.5.2 (executor 4) (40/60)
+2018-06-28 21:32:35 INFO  TaskSetManager:54 - Finished task 24.0 in stage 2.0 (TID 28) in 33016 ms on 10.0.5.2 (executor 4) (41/60)
+2018-06-28 21:32:37 INFO  TaskSetManager:54 - Finished task 5.0 in stage 2.0 (TID 9) in 34539 ms on 10.0.3.2 (executor 2) (42/60)
+2018-06-28 21:32:37 INFO  TaskSetManager:54 - Finished task 8.0 in stage 2.0 (TID 12) in 35140 ms on 10.0.4.2 (executor 9) (43/60)
+2018-06-28 21:32:38 INFO  TaskSetManager:54 - Finished task 50.0 in stage 2.0 (TID 54) in 35986 ms on 10.0.3.1 (executor 6) (44/60)
+2018-06-28 21:32:45 INFO  TaskSetManager:54 - Finished task 23.0 in stage 2.0 (TID 27) in 42947 ms on 10.0.2.1 (executor 0) (45/60)
+2018-06-28 21:32:47 INFO  TaskSetManager:54 - Finished task 48.0 in stage 2.0 (TID 52) in 44519 ms on 10.0.4.2 (executor 9) (46/60)
+2018-06-28 21:32:49 INFO  TaskSetManager:54 - Finished task 28.0 in stage 2.0 (TID 32) in 47174 ms on 10.0.4.2 (executor 9) (47/60)
+2018-06-28 21:32:50 INFO  TaskSetManager:54 - Finished task 27.0 in stage 2.0 (TID 31) in 47751 ms on 10.0.1.1 (executor 3) (48/60)
+2018-06-28 21:32:51 INFO  TaskSetManager:54 - Finished task 18.0 in stage 2.0 (TID 22) in 48835 ms on 10.0.4.2 (executor 9) (49/60)
+2018-06-28 21:32:53 INFO  TaskSetManager:54 - Finished task 58.0 in stage 2.0 (TID 62) in 50512 ms on 10.0.4.2 (executor 9) (50/60)
+2018-06-28 21:32:54 INFO  TaskSetManager:54 - Finished task 41.0 in stage 2.0 (TID 45) in 51585 ms on 10.0.5.1 (executor 1) (51/60)
+2018-06-28 21:32:55 INFO  TaskSetManager:54 - Finished task 14.0 in stage 2.0 (TID 18) in 53239 ms on 10.0.5.2 (executor 4) (52/60)
+2018-06-28 21:32:55 INFO  TaskSetManager:54 - Finished task 49.0 in stage 2.0 (TID 53) in 53369 ms on 10.0.2.2 (executor 8) (53/60)
+2018-06-28 21:32:56 INFO  TaskSetManager:54 - Finished task 51.0 in stage 2.0 (TID 55) in 53983 ms on 10.0.5.1 (executor 1) (54/60)
+2018-06-28 21:32:57 INFO  TaskSetManager:54 - Finished task 44.0 in stage 2.0 (TID 48) in 55073 ms on 10.0.5.2 (executor 4) (55/60)
+2018-06-28 21:32:58 INFO  TaskSetManager:54 - Finished task 21.0 in stage 2.0 (TID 25) in 56130 ms on 10.0.5.1 (executor 1) (56/60)
+2018-06-28 21:33:05 INFO  TaskSetManager:54 - Finished task 35.0 in stage 2.0 (TID 39) in 62718 ms on 10.0.3.2 (executor 2) (57/60)
+2018-06-28 21:33:06 INFO  TaskSetManager:54 - Finished task 25.0 in stage 2.0 (TID 29) in 63572 ms on 10.0.3.2 (executor 2) (58/60)
+2018-06-28 21:33:13 INFO  TaskSetManager:54 - Finished task 57.0 in stage 2.0 (TID 61) in 70806 ms on 10.0.1.1 (executor 3) (59/60)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Finished task 31.0 in stage 2.0 (TID 35) in 75407 ms on 10.0.5.1 (executor 1) (60/60)
+2018-06-28 21:33:17 INFO  TaskSchedulerImpl:54 - Removed TaskSet 2.0, whose tasks have all completed, from pool 
+2018-06-28 21:33:17 INFO  DAGScheduler:54 - ShuffleMapStage 2 (processCmd at CliDriver.java:376) finished in 75.424 s
+2018-06-28 21:33:17 INFO  DAGScheduler:54 - looking for newly runnable stages
+2018-06-28 21:33:17 INFO  DAGScheduler:54 - running: Set()
+2018-06-28 21:33:17 INFO  DAGScheduler:54 - waiting: Set(ResultStage 3)
+2018-06-28 21:33:17 INFO  DAGScheduler:54 - failed: Set()
+2018-06-28 21:33:17 INFO  DAGScheduler:54 - Submitting ResultStage 3 (MapPartitionsRDD[21] at processCmd at CliDriver.java:376), which has no missing parents
+2018-06-28 21:33:17 INFO  MemoryStore:54 - Block broadcast_8 stored as values in memory (estimated size 38.5 KB, free 2001.5 MB)
+2018-06-28 21:33:17 INFO  MemoryStore:54 - Block broadcast_8_piece0 stored as bytes in memory (estimated size 17.6 KB, free 2001.5 MB)
+2018-06-28 21:33:17 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on dc1master-lan1:34360 (size: 17.6 KB, free: 2004.5 MB)
+2018-06-28 21:33:17 INFO  SparkContext:54 - Created broadcast 8 from broadcast at DAGScheduler.scala:1039
+2018-06-28 21:33:17 INFO  DAGScheduler:54 - Submitting 40 missing tasks from ResultStage 3 (MapPartitionsRDD[21] at processCmd at CliDriver.java:376) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14))
+2018-06-28 21:33:17 INFO  TaskSchedulerImpl:54 - Adding task set 3.0 with 40 tasks
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 0.0 in stage 3.0 (TID 64, 10.0.1.2, executor 5, partition 0, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 1.0 in stage 3.0 (TID 65, 10.0.5.1, executor 1, partition 1, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 2.0 in stage 3.0 (TID 66, 10.0.3.2, executor 2, partition 2, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 3.0 in stage 3.0 (TID 67, 10.0.4.2, executor 9, partition 3, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 4.0 in stage 3.0 (TID 68, 10.0.2.1, executor 0, partition 4, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 5.0 in stage 3.0 (TID 69, 10.0.5.2, executor 4, partition 5, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 6.0 in stage 3.0 (TID 70, 10.0.1.1, executor 3, partition 6, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 7.0 in stage 3.0 (TID 71, 10.0.4.1, executor 7, partition 7, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 8.0 in stage 3.0 (TID 72, 10.0.3.1, executor 6, partition 8, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 9.0 in stage 3.0 (TID 73, 10.0.2.2, executor 8, partition 9, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 10.0 in stage 3.0 (TID 74, 10.0.1.2, executor 5, partition 10, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 11.0 in stage 3.0 (TID 75, 10.0.5.1, executor 1, partition 11, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 12.0 in stage 3.0 (TID 76, 10.0.3.2, executor 2, partition 12, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 13.0 in stage 3.0 (TID 77, 10.0.4.2, executor 9, partition 13, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 14.0 in stage 3.0 (TID 78, 10.0.2.1, executor 0, partition 14, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 15.0 in stage 3.0 (TID 79, 10.0.5.2, executor 4, partition 15, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 16.0 in stage 3.0 (TID 80, 10.0.1.1, executor 3, partition 16, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 17.0 in stage 3.0 (TID 81, 10.0.4.1, executor 7, partition 17, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 18.0 in stage 3.0 (TID 82, 10.0.3.1, executor 6, partition 18, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 19.0 in stage 3.0 (TID 83, 10.0.2.2, executor 8, partition 19, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 20.0 in stage 3.0 (TID 84, 10.0.1.2, executor 5, partition 20, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 21.0 in stage 3.0 (TID 85, 10.0.5.1, executor 1, partition 21, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 22.0 in stage 3.0 (TID 86, 10.0.3.2, executor 2, partition 22, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 23.0 in stage 3.0 (TID 87, 10.0.4.2, executor 9, partition 23, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 24.0 in stage 3.0 (TID 88, 10.0.2.1, executor 0, partition 24, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 25.0 in stage 3.0 (TID 89, 10.0.5.2, executor 4, partition 25, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 26.0 in stage 3.0 (TID 90, 10.0.1.1, executor 3, partition 26, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 27.0 in stage 3.0 (TID 91, 10.0.4.1, executor 7, partition 27, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 28.0 in stage 3.0 (TID 92, 10.0.3.1, executor 6, partition 28, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 29.0 in stage 3.0 (TID 93, 10.0.2.2, executor 8, partition 29, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 30.0 in stage 3.0 (TID 94, 10.0.1.2, executor 5, partition 30, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 31.0 in stage 3.0 (TID 95, 10.0.5.1, executor 1, partition 31, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 32.0 in stage 3.0 (TID 96, 10.0.3.2, executor 2, partition 32, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 33.0 in stage 3.0 (TID 97, 10.0.4.2, executor 9, partition 33, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 34.0 in stage 3.0 (TID 98, 10.0.2.1, executor 0, partition 34, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 35.0 in stage 3.0 (TID 99, 10.0.5.2, executor 4, partition 35, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 36.0 in stage 3.0 (TID 100, 10.0.1.1, executor 3, partition 36, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 37.0 in stage 3.0 (TID 101, 10.0.4.1, executor 7, partition 37, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 38.0 in stage 3.0 (TID 102, 10.0.3.1, executor 6, partition 38, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  TaskSetManager:54 - Starting task 39.0 in stage 3.0 (TID 103, 10.0.2.2, executor 8, partition 39, PROCESS_LOCAL, 7758 bytes)
+2018-06-28 21:33:17 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on 10.0.1.1:37150 (size: 17.6 KB, free: 2004.5 MB)
+2018-06-28 21:33:17 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on 10.0.1.2:40048 (size: 17.6 KB, free: 2004.5 MB)
+2018-06-28 21:33:18 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 0 to 10.0.1.2:42114
+2018-06-28 21:33:18 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 0 to 10.0.1.1:55442
+2018-06-28 21:33:18 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on 10.0.2.1:37178 (size: 17.6 KB, free: 2004.5 MB)
+2018-06-28 21:33:18 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on 10.0.2.2:43408 (size: 17.6 KB, free: 2004.5 MB)
+2018-06-28 21:33:18 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 0 to 10.0.2.1:59280
+2018-06-28 21:33:18 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on 10.0.3.2:37458 (size: 17.6 KB, free: 2004.5 MB)
+2018-06-28 21:33:19 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 0 to 10.0.2.2:59296
+2018-06-28 21:33:19 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on 10.0.4.1:35056 (size: 17.6 KB, free: 2004.5 MB)
+2018-06-28 21:33:19 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on 10.0.4.2:41779 (size: 17.6 KB, free: 2004.5 MB)
+2018-06-28 21:33:19 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on 10.0.3.1:39457 (size: 17.6 KB, free: 2004.5 MB)
+2018-06-28 21:33:19 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 0 to 10.0.3.2:52628
+2018-06-28 21:33:19 INFO  TaskSetManager:54 - Finished task 16.0 in stage 3.0 (TID 80) in 1366 ms on 10.0.1.1 (executor 3) (1/40)
+2018-06-28 21:33:19 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 0 to 10.0.4.1:48784
+2018-06-28 21:33:19 INFO  TaskSetManager:54 - Finished task 34.0 in stage 3.0 (TID 98) in 1416 ms on 10.0.2.1 (executor 0) (2/40)
+2018-06-28 21:33:19 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 0 to 10.0.4.2:48574
+2018-06-28 21:33:19 INFO  TaskSetManager:54 - Finished task 10.0 in stage 3.0 (TID 74) in 1467 ms on 10.0.1.2 (executor 5) (3/40)
+2018-06-28 21:33:19 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 0 to 10.0.3.1:38464
+2018-06-28 21:33:19 INFO  TaskSetManager:54 - Finished task 0.0 in stage 3.0 (TID 64) in 1678 ms on 10.0.1.2 (executor 5) (4/40)
+2018-06-28 21:33:19 INFO  TaskSetManager:54 - Finished task 30.0 in stage 3.0 (TID 94) in 1674 ms on 10.0.1.2 (executor 5) (5/40)
+2018-06-28 21:33:19 INFO  TaskSetManager:54 - Finished task 20.0 in stage 3.0 (TID 84) in 1676 ms on 10.0.1.2 (executor 5) (6/40)
+2018-06-28 21:33:19 INFO  TaskSetManager:54 - Finished task 27.0 in stage 3.0 (TID 91) in 1676 ms on 10.0.4.1 (executor 7) (7/40)
+2018-06-28 21:33:19 INFO  TaskSetManager:54 - Finished task 6.0 in stage 3.0 (TID 70) in 1696 ms on 10.0.1.1 (executor 3) (8/40)
+2018-06-28 21:33:19 INFO  TaskSetManager:54 - Finished task 36.0 in stage 3.0 (TID 100) in 1693 ms on 10.0.1.1 (executor 3) (9/40)
+2018-06-28 21:33:19 INFO  TaskSetManager:54 - Finished task 26.0 in stage 3.0 (TID 90) in 1695 ms on 10.0.1.1 (executor 3) (10/40)
+2018-06-28 21:33:19 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on 10.0.5.1:41424 (size: 17.6 KB, free: 2004.5 MB)
+2018-06-28 21:33:19 INFO  TaskSetManager:54 - Finished task 24.0 in stage 3.0 (TID 88) in 2059 ms on 10.0.2.1 (executor 0) (11/40)
+2018-06-28 21:33:19 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on 10.0.5.2:40600 (size: 17.6 KB, free: 2004.5 MB)
+2018-06-28 21:33:20 INFO  TaskSetManager:54 - Finished task 29.0 in stage 3.0 (TID 93) in 2098 ms on 10.0.2.2 (executor 8) (12/40)
+2018-06-28 21:33:20 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 0 to 10.0.5.1:45308
+2018-06-28 21:33:20 INFO  TaskSetManager:54 - Finished task 14.0 in stage 3.0 (TID 78) in 2171 ms on 10.0.2.1 (executor 0) (13/40)
+2018-06-28 21:33:20 INFO  TaskSetManager:54 - Finished task 4.0 in stage 3.0 (TID 68) in 2224 ms on 10.0.2.1 (executor 0) (14/40)
+2018-06-28 21:33:20 INFO  TaskSetManager:54 - Finished task 9.0 in stage 3.0 (TID 73) in 2264 ms on 10.0.2.2 (executor 8) (15/40)
+2018-06-28 21:33:20 INFO  TaskSetManager:54 - Finished task 39.0 in stage 3.0 (TID 103) in 2262 ms on 10.0.2.2 (executor 8) (16/40)
+2018-06-28 21:33:20 INFO  TaskSetManager:54 - Finished task 19.0 in stage 3.0 (TID 83) in 2264 ms on 10.0.2.2 (executor 8) (17/40)
+2018-06-28 21:33:20 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 0 to 10.0.5.2:55406
+2018-06-28 21:33:20 INFO  TaskSetManager:54 - Finished task 7.0 in stage 3.0 (TID 71) in 2471 ms on 10.0.4.1 (executor 7) (18/40)
+2018-06-28 21:33:20 INFO  TaskSetManager:54 - Finished task 3.0 in stage 3.0 (TID 67) in 2476 ms on 10.0.4.2 (executor 9) (19/40)
+2018-06-28 21:33:20 INFO  TaskSetManager:54 - Finished task 2.0 in stage 3.0 (TID 66) in 2532 ms on 10.0.3.2 (executor 2) (20/40)
+2018-06-28 21:33:20 INFO  TaskSetManager:54 - Finished task 8.0 in stage 3.0 (TID 72) in 2623 ms on 10.0.3.1 (executor 6) (21/40)
+2018-06-28 21:33:20 INFO  TaskSetManager:54 - Finished task 17.0 in stage 3.0 (TID 81) in 2692 ms on 10.0.4.1 (executor 7) (22/40)
+2018-06-28 21:33:20 INFO  TaskSetManager:54 - Finished task 37.0 in stage 3.0 (TID 101) in 2690 ms on 10.0.4.1 (executor 7) (23/40)
+2018-06-28 21:33:20 INFO  TaskSetManager:54 - Finished task 23.0 in stage 3.0 (TID 87) in 2696 ms on 10.0.4.2 (executor 9) (24/40)
+2018-06-28 21:33:20 INFO  TaskSetManager:54 - Finished task 13.0 in stage 3.0 (TID 77) in 2697 ms on 10.0.4.2 (executor 9) (25/40)
+2018-06-28 21:33:20 INFO  TaskSetManager:54 - Finished task 33.0 in stage 3.0 (TID 97) in 2695 ms on 10.0.4.2 (executor 9) (26/40)
+2018-06-28 21:33:20 INFO  TaskSetManager:54 - Finished task 12.0 in stage 3.0 (TID 76) in 2739 ms on 10.0.3.2 (executor 2) (27/40)
+2018-06-28 21:33:20 INFO  TaskSetManager:54 - Finished task 22.0 in stage 3.0 (TID 86) in 2738 ms on 10.0.3.2 (executor 2) (28/40)
+2018-06-28 21:33:20 INFO  TaskSetManager:54 - Finished task 32.0 in stage 3.0 (TID 96) in 2737 ms on 10.0.3.2 (executor 2) (29/40)
+2018-06-28 21:33:20 INFO  TaskSetManager:54 - Finished task 18.0 in stage 3.0 (TID 82) in 2830 ms on 10.0.3.1 (executor 6) (30/40)
+2018-06-28 21:33:20 INFO  TaskSetManager:54 - Finished task 38.0 in stage 3.0 (TID 102) in 2828 ms on 10.0.3.1 (executor 6) (31/40)
+2018-06-28 21:33:20 INFO  TaskSetManager:54 - Finished task 28.0 in stage 3.0 (TID 92) in 2829 ms on 10.0.3.1 (executor 6) (32/40)
+2018-06-28 21:33:21 INFO  TaskSetManager:54 - Finished task 11.0 in stage 3.0 (TID 75) in 3946 ms on 10.0.5.1 (executor 1) (33/40)
+2018-06-28 21:33:21 INFO  TaskSetManager:54 - Finished task 21.0 in stage 3.0 (TID 85) in 3945 ms on 10.0.5.1 (executor 1) (34/40)
+2018-06-28 21:33:21 INFO  TaskSetManager:54 - Finished task 15.0 in stage 3.0 (TID 79) in 4026 ms on 10.0.5.2 (executor 4) (35/40)
+2018-06-28 21:33:22 INFO  TaskSetManager:54 - Finished task 1.0 in stage 3.0 (TID 65) in 4148 ms on 10.0.5.1 (executor 1) (36/40)
+2018-06-28 21:33:22 INFO  TaskSetManager:54 - Finished task 31.0 in stage 3.0 (TID 95) in 4282 ms on 10.0.5.1 (executor 1) (37/40)
+2018-06-28 21:33:22 INFO  TaskSetManager:54 - Finished task 25.0 in stage 3.0 (TID 89) in 4362 ms on 10.0.5.2 (executor 4) (38/40)
+2018-06-28 21:33:22 INFO  TaskSetManager:54 - Finished task 5.0 in stage 3.0 (TID 69) in 4364 ms on 10.0.5.2 (executor 4) (39/40)
+2018-06-28 21:33:22 INFO  TaskSetManager:54 - Finished task 35.0 in stage 3.0 (TID 99) in 4498 ms on 10.0.5.2 (executor 4) (40/40)
+2018-06-28 21:33:22 INFO  TaskSchedulerImpl:54 - Removed TaskSet 3.0, whose tasks have all completed, from pool 
+2018-06-28 21:33:22 INFO  DAGScheduler:54 - ResultStage 3 (processCmd at CliDriver.java:376) finished in 4.511 s
+2018-06-28 21:33:22 INFO  DAGScheduler:54 - Job 2 finished: processCmd at CliDriver.java:376, took 79.954874 s
+4003002	exportiedu pack #2	1130125.3316831589
+4004002	edu packedu pack #2	1033877.5265991688
+2002002	importoimporto #2	826825.7497435808
+3003002	exportiexporti #2	765410.5899033546
+3004002	edu packexporti #2	720424.7185430527
+5001002	amalgscholar #2	693554.9187703133
+2001002	amalgimporto #2	515171.2807133794
+6010006	univbrand #6	511520.2404322624
+4001002	amalgedu pack #2	503183.23050379753
+7006008	corpbrand #8	496669.36780643463
+2004002	edu packimporto #2	496664.75058960915
+6015006	scholarbrand #6	478668.6099176407
+8015007	exportiamalg #2	315823.8611154556
+5002001	exportischolar #2	309525.81014060974
+4001001	importoedu pack #2	306286.2190346718
+5004001	importoamalg #2	305435.0395126343
+8011006	amalgmaxi #6	303401.46021699905
+3003001	scholarnameless #6	302546.5005469322
+3001001	exportiexporti #2	299523.859828949
+1004001	edu packamalg #2	298137.44895362854
+8014006	edu packmaxi #6	289023.2699151039
+6005004	scholarcorp #4	288797.71960639954
+6015007	scholarunivamalg #16	283120.2002502084
+6009006	maxicorp #6	283018.8684411049
+7002006	importobrand #6	279770.2207522392
+10006004	importonameless #10	279745.2101535797
+9006004	corpmaxi #4	279189.94010162354
+1004001	edu packexporti #2	275970.2600030899
+7004005	scholarmaxi #10	275029.48982191086
+9009004	maximaxi #4	273276.6021157503
+9003008	exportimaxi #8	272243.7693436146
+7003006	exportibrand #6	271822.472704649
+1003001	amalgnameless #2	268681.6911048889
+7014001	edu packcorp #4	267275.2701025009
+9001002	amalgmaxi #2	266273.8812906742
+8006003	edu packimporto #2	265032.1181836128
+10006011	corpunivamalg #11	263265.10917007923
+6013004	exportibrand #4	261975.1715143919
+10007003	scholarbrand #6	261727.6597867012
+6014008	edu packbrand #8	261721.9192428589
+6016001	importoamalg #2	260236.92012786865
+9004008	edu packmaxi #8	259670.9505815506
+5004001	scholarcorp #4	258870.56020641327
+9012005	maxiunivamalg #5	257429.35954022408
+3002002	importoexporti #2	255114.71944999695
+9015011	importoscholar #2	253970.11281454563
+3004001	exportibrand #4	252781.42015445232
+9005010	scholarmaxi #10	252110.56973195076
+9016009	amalgexporti #2	252075.1729030609
+6001002	amalgcorp #2	251592.82036972046
+8016009	edu packamalg #2	250830.71012997627
+3001001	amalgamalgamalg #15	248618.1395521164
+1001001	importoamalgamalg #7	248479.90143680573
+5003001	univunivamalg #4	246974.9591988325
+10007011	brandunivamalg #11	245588.43107700348
+2004001	importoimporto #2	245546.93051970005
+9013010	exportiunivamalg #10	244518.01927232742
+4002001	amalgmaxi #12	244204.9088355899
+8013007	amalgcorp #4	243344.46062660217
+7013008	exportinameless #8	240740.16931390762
+10013017	exportiamalgamalg #17	240454.0204371214
+10014005	edu packamalgamalg #5	239339.18864011765
+5003002	exportischolar #2	238391.89019680023
+4003001	univbrand #2	237928.88857603073
+8013002	exportimaxi #2	237834.57880663872
+4004001	amalgcorp #2	237675.86120700836
+9006002	corpmaxi #2	237373.34997487068
+7010004	univnameless #4	236889.15037226677
+5002002	importoscholar #2	233103.44025325775
+10002007	maxiunivamalg #8	232184.79164648056
+9007008	brandmaxi #8	231946.45938897133
+9005011	importoscholar #2	231326.04133796692
+9010002	univunivamalg #2	230843.19962453842
+9012005	amalgunivamalg #16	230276.32891607285
+10014007	edu packamalgamalg #7	226887.2696492672
+8008010	namelessnameless #10	226769.40104436874
+10011016	amalgamalgamalg #16	225304.3102092743
+1002001	maxiunivamalg #6	223209.83863449097
+5004001	scholarbrand #8	222420.12125778198
+2003002	exportiimporto #2	222416.1199541092
+10006015	amalgamalg #2	221596.18994045258
+10014008	edu packamalgamalg #8	221533.70000475645
+8001010	amalgnameless #10	220856.75098133087
+10004013	edu packunivamalg #13	220174.6799068451
+10008010	brandmaxi #6	219565.87958574295
+3002001	exportiexporti #2	219467.57018470764
+4002001	amalgedu pack #2	219395.5198097229
+9015009	scholarnameless #2	219245.5503900051
+5004002	edu packscholar #2	215046.34966945648
+9016012	corpunivamalg #12	214886.62016677856
+2003001	maxinameless #6	213717.04102903605
+7004002	edu packbrand #2	213583.12124538422
+10003017	maximaxi #6	212053.1399333477
+7012007	univamalgamalg #17	210944.46908187866
+7016002	corpnameless #2	207943.2208275795
+6004005	amalgmaxi #8	207086.4591627121
+7014010	edu packnameless #10	206927.62910366058
+10015009	scholaramalgamalg #9	203556.03930568695
+8008006	namelessnameless #6	201590.02952885628
+7015006	scholarnameless #6	198729.15018939972
+2018-06-28 21:33:22 INFO  SparkSQLCLIDriver:951 - Time taken: 87.773 seconds, Fetched 100 row(s)
+2018-06-28 21:33:22 INFO  AbstractConnector:318 - Stopped Spark@9b3be1c{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2018-06-28 21:33:22 INFO  SparkUI:54 - Stopped Spark web UI at http://dc1master-lan1:4040
+2018-06-28 21:33:24 INFO  StandaloneSchedulerBackend:54 - Shutting down all executors
+2018-06-28 21:33:24 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asking each executor to shut down
+2018-06-28 21:33:24 INFO  MapOutputTrackerMasterEndpoint:54 - MapOutputTrackerMasterEndpoint stopped!
+2018-06-28 21:33:24 INFO  MemoryStore:54 - MemoryStore cleared
+2018-06-28 21:33:24 INFO  BlockManager:54 - BlockManager stopped
+2018-06-28 21:33:24 INFO  BlockManagerMaster:54 - BlockManagerMaster stopped
+2018-06-28 21:33:24 INFO  OutputCommitCoordinator$OutputCommitCoordinatorEndpoint:54 - OutputCommitCoordinator stopped!
+2018-06-28 21:33:24 INFO  SparkContext:54 - Successfully stopped SparkContext
+2018-06-28 21:33:24 INFO  ShutdownHookManager:54 - Shutdown hook called
+2018-06-28 21:33:24 INFO  ShutdownHookManager:54 - Deleting directory /tmp/spark-f066d2aa-6b10-4bb1-b138-619785acc888
+2018-06-28 21:33:24 INFO  ShutdownHookManager:54 - Deleting directory /tmp/spark-fabc8f5a-634d-4bc4-8f91-81a8a67d09c5

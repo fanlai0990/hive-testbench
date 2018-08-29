@@ -123,5 +123,3 @@ select
  )
  order by 1,4,5
  limit 100;
-
-

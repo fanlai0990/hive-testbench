@@ -28,7 +28,8 @@ TABLES="part partsupp supplier customer orders lineitem nation region"
 
 # Get the parameters.
 SCALE=$1
-DIR=$2
+DIR=$3
+P=$2
 BUCKETS=13
 if [ "X$DEBUG_SCRIPT" != "X" ]; then
 	set -x
@@ -51,7 +52,7 @@ hdfs dfs -mkdir -p ${DIR}
 hdfs dfs -ls ${DIR}/${SCALE}/lineitem > /dev/null
 if [ $? -ne 0 ]; then
 	echo "Generating data at scale factor $SCALE."
-	(cd tpch-gen; hadoop jar target/*.jar -d ${DIR}/${SCALE}/ -s ${SCALE})
+	(cd tpch-gen; hadoop jar target/*.jar -d ${DIR}/${SCALE}/ -s ${SCALE} -p ${P})
 fi
 hdfs dfs -ls ${DIR}/${SCALE}/lineitem > /dev/null
 if [ $? -ne 0 ]; then
@@ -68,7 +69,7 @@ runcommand "hive -i settings/load-flat.sql -f ddl-tpch/bin_flat/alltables.sql -d
 i=1
 total=8
 
-if test $SCALE -le 1000; then 
+if test $SCALE -le 1000; then
 	SCHEMA_TYPE=flat
 else
 	SCHEMA_TYPE=partitioned
@@ -92,6 +93,6 @@ do
 	i=`expr $i + 1`
 done
 
-# hive -i settings/load-${SCHEMA_TYPE}.sql -f ddl-tpch/bin_${SCHEMA_TYPE}/analyze.sql --database ${DATABASE}; 
+# hive -i settings/load-${SCHEMA_TYPE}.sql -f ddl-tpch/bin_${SCHEMA_TYPE}/analyze.sql --database ${DATABASE};
 
 echo "Data loaded into database ${DATABASE}."

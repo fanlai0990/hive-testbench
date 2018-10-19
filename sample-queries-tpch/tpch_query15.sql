@@ -1,5 +1,3 @@
-drop view revenue0;
-
 create view revenue0 (supplier_no, total_revenue) as
 	select
 		l_suppkey,
@@ -32,3 +30,4 @@ where
 order by
 	s_suppkey
 limit 100;
+drop view revenue0;
